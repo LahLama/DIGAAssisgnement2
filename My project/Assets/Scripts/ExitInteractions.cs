@@ -9,8 +9,8 @@ public class ExitInteractions : MonoBehaviour
 
     public GameObject[] Level1Doors;
     public GameObject[] Level2Doors;
-    public GameObject[] Level2DoorsDeativate;
     public GameObject[] Level3Doors;
+    public GameObject[] Level4Doors;
 
 
     public PlayerStatus playerStatus;
@@ -35,11 +35,25 @@ public class ExitInteractions : MonoBehaviour
     public void OpenDoors()
     {
 
-        if (playerlvl == 2)
+        if (playerlvl >= 2)
         {
             foreach (var item in Level2Doors)
             {
-                item.SetActive(true);
+                item.gameObject.SetActive(true);
+            }
+        }
+        if (playerlvl >= 3)
+        {
+            foreach (var item in Level3Doors)
+            {
+                item.gameObject.SetActive(true);
+            }
+        }
+        if (playerlvl >= 4)
+        {
+            foreach (var item in Level4Doors)
+            {
+                item.gameObject.SetActive(true);
             }
         }
 
@@ -48,24 +62,30 @@ public class ExitInteractions : MonoBehaviour
     {
         Level1Doors = GameObject.FindGameObjectsWithTag("Level1Door");
 
-        foreach (var item in Level1Doors)
+        foreach (var door1 in Level1Doors)
         {
-            item.SetActive(true);
+            door1.SetActive(true);
         }
 
         Level2Doors = GameObject.FindGameObjectsWithTag("Level2Door");
-        foreach (var item in Level2DoorsDeativate)
+        foreach (var door2 in Level2Doors)
         {
-            Debug.Log("Item: " + item.name);
+
             Debug.Log("SETTING DOOR2 OFF");
-            item.SetActive(false);
-            Debug.Log("Item: " + item.name);
+            door2.gameObject.SetActive(false);
+            ;
         }
 
         Level3Doors = GameObject.FindGameObjectsWithTag("Level3Door");
-        foreach (var item in Level3Doors)
+        foreach (var door3 in Level3Doors)
         {
-            item.SetActive(true);
+            door3.gameObject.SetActive(false);
+        }
+
+        Level4Doors = GameObject.FindGameObjectsWithTag("Level4Door");
+        foreach (var door4 in Level4Doors)
+        {
+            door4.gameObject.SetActive(false);
         }
     }
 

@@ -5,9 +5,11 @@ public class PlayerStatus : MonoBehaviour
 {
 
     public int PlayerLevel;
+    public int MicrochipCount;
     void Awake()
     {
         PlayerLevel = 1;
+        MicrochipCount = 0;
     }
 
     public void IncPlayerLevel()
@@ -15,21 +17,10 @@ public class PlayerStatus : MonoBehaviour
         PlayerLevel++;
         print(PlayerLevel);
     }
-
-
-    public void AnomalyInteraction()
+    public void IncMicrochipCount()
     {
-        //
-
-    }
-
-
-
-
-    public void ObjectInteraction()
-    {
-
-
+        MicrochipCount++;
+        print(MicrochipCount);
     }
 
 

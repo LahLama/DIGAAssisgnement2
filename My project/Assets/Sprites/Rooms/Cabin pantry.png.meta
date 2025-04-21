@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9aea0c98f391b114880d66677df10bda
+guid: b69c18743221c95459ca034d79ac1115
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3756139844657550157
-    second: bedrooom_0
+      213: -4592372705788667481
+    second: Cabin pantry_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bedrooom_0
+      name: Cabin pantry_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 1920
-        height: 1200
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3bcee7056b28fdbc0800000000000000
-      internalID: -3756139844657550157
+      spriteID: 7a954430b5d9440c0800000000000000
+      internalID: -4592372705788667481
       vertices: []
       indices: 
       edges: []
