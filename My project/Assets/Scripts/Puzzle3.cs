@@ -7,12 +7,18 @@ public class Puzzle3 : MonoBehaviour
     public Puzzle3CodeButtons CdeBtn;
     public int CorrectChoice = 0;
     public int Codechances = 5;
+    public PlayerStatus playerStatus;
 
     public string[] CorrectCode = { "x", "x", "x", "x" };
 
     public GameObject[] PlayerCode;
 
     public GameObject[] CodeLights;
+
+    public ExitInteractions exitInteractions;
+    public Rigidbody2D camera1;
+    public PlayerStatus playerStatusP3;
+    int playerlvl;
     void Awake()
     {
         Codechances = 5;
@@ -25,6 +31,11 @@ public class Puzzle3 : MonoBehaviour
     }
 
 
+    void Update()
+    {
+        playerlvl = playerStatusP3.PlayerLevel;
+        camera1 = exitInteractions.MainCamera;
+    }
 
     public void ValidatePlayerCode()
     {
@@ -35,12 +46,16 @@ public class Puzzle3 : MonoBehaviour
         {
             if (CodePiece.tag == CorrectCode[indexure])
             {
-                print("SWITCH ON LIGHT AT " + indexure);
                 CodeLights[indexure].GetComponent<SpriteRenderer>().color = Color.green;
                 CorrectChoice++;
                 if (CorrectChoice == CorrectCode.Length)
                 {
-                    print("PUZZLE WON");
+                    playerlvl = 3;
+                    float movementAmount = -1920;
+                    Vector3 newPosition = camera1.transform.position;
+                    newPosition.x += movementAmount;
+                    camera1.transform.position = newPosition;
+                    playerStatus.PlayPuzz2 = true;
                 }
             }
             else

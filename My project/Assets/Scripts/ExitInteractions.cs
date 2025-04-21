@@ -19,8 +19,8 @@ public class ExitInteractions : MonoBehaviour
     public void Awake()
     {
         //playerStatus = GetComponent<PlayerStatus>();
-        print("THE PLAYERS LEVEL IS " + playerStatus.PlayerLevel);
-        InitDoors();
+        //print("THE PLAYERS LEVEL IS " + playerStatus.PlayerLevel);
+        CloseDoors();
         playerlvl = playerStatus.PlayerLevel;
 
     }
@@ -58,7 +58,7 @@ public class ExitInteractions : MonoBehaviour
         }
 
     }
-    public void InitDoors()
+    public void CloseDoors()
     {
         Level1Doors = GameObject.FindGameObjectsWithTag("Level1Door");
 
@@ -71,7 +71,7 @@ public class ExitInteractions : MonoBehaviour
         foreach (var door2 in Level2Doors)
         {
 
-            Debug.Log("SETTING DOOR2 OFF");
+            //Debug.Log("SETTING DOOR2 OFF");
             door2.gameObject.SetActive(false);
             ;
         }
@@ -119,17 +119,59 @@ public class ExitInteractions : MonoBehaviour
             newPosition.x += movementAmount;
             MainCamera.transform.position = newPosition;
         }
+        if (this.name == "LeftOrPuzzle1Btn")
+        {
+            if (playerStatus.PlayPuzz1 == true)
+            {
+                float movementAmount = -1920 * 2;
+                Vector3 newPosition = MainCamera.transform.position;
+                newPosition.x += movementAmount;
+                MainCamera.transform.position = newPosition;
+            }
+            else
+            {
+                float movementAmount = -1920;
+                Vector3 newPosition = MainCamera.transform.position;
+                newPosition.x += movementAmount;
+                MainCamera.transform.position = newPosition;
+            }
+
+        }
+
+        if (this.name == "RightBackBtn")
+        {
+            if (playerStatus.PlayPuzz1 == true)
+            {
+                float movementAmount = 1920 * 2;
+                Vector3 newPosition = MainCamera.transform.position;
+                newPosition.x += movementAmount;
+                MainCamera.transform.position = newPosition;
+            }
+
+        }
+        if (this.name == "LeftOrPuzzle2Btn")
+        {
+            if (playerStatus.PlayPuzz2 == true)
+            {
+                float movementAmount = -1920 * 2;
+                Vector3 newPosition = MainCamera.transform.position;
+                newPosition.x += movementAmount;
+                MainCamera.transform.position = newPosition;
+            }
+            else
+            {
+                float movementAmount = -1920;
+                Vector3 newPosition = MainCamera.transform.position;
+                newPosition.x += movementAmount;
+                MainCamera.transform.position = newPosition;
+            }
+
+        }
 
 
     }
 
-    public void MoveCameraLeft()
-    {
-        float movementAmount = -1920;
-        Vector3 newPosition = MainCamera.transform.position;
-        newPosition.x += movementAmount;
-        MainCamera.transform.position = newPosition;
-    }
+
 }
 
 

@@ -13,10 +13,10 @@ public class Puzzle4Robot : MonoBehaviour
     int indexure;
     void Start()
     {
-        CorrectSequence[0] = CodeOptions[Random.Range(0, 4)];
-        CorrectSequence[1] = CodeOptions[Random.Range(0, 4)];
-        CorrectSequence[2] = CodeOptions[Random.Range(0, 4)];
-        CorrectSequence[3] = CodeOptions[Random.Range(0, 4)];
+        CorrectSequence[0] = CodeOptions[(int)Random.Range(0, 4)];
+        CorrectSequence[1] = CodeOptions[(int)Random.Range(0, 4)];
+        CorrectSequence[2] = CodeOptions[(int)Random.Range(0, 4)];
+        CorrectSequence[3] = CodeOptions[(int)Random.Range(0, 4)];
 
         //ShowColourDelay();
     }
