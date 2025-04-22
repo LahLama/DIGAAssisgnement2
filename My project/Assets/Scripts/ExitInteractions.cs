@@ -1,4 +1,3 @@
-using JetBrains.Annotations;
 using TMPro;
 using UnityEngine;
 
@@ -15,45 +14,62 @@ public class ExitInteractions : MonoBehaviour
 
     public PlayerStatus playerStatus;
 
-    [SerializeField] int playerlvl;
+    public int playerlvl;
+
+    public int playerMicroCount;
     public void Awake()
     {
         //playerStatus = GetComponent<PlayerStatus>();
         //print("THE PLAYERS LEVEL IS " + playerStatus.PlayerLevel);
-        // InitDoors();
+        InitDoors();
+        playerStatus = GameObject.FindWithTag("Player").GetComponent<PlayerStatus>();
         playerlvl = playerStatus.PlayerLevel;
+        playerMicroCount = playerStatus.MicrochipCount;
 
     }
 
 
     private void Update()
     {
-        playerlvl = playerStatus.PlayerLevel;
         OpenDoors();
     }
 
     public void OpenDoors()
     {
+        playerlvl = playerStatus.PlayerLevel;
+        if (playerlvl == 1)
+        {
+            print("NOW OPEN DOORS 1");
+            foreach (var door1 in Level1Doors)
+            {
+                door1.SetActive(true);
+            }
+        }
+        else if (playerlvl == 2)
+        {
+            print("NOW OPEN DOORS 2");
+            foreach (var door2 in Level2Doors)
+            {
+                print("DoorName is: " + door2.name);
+                door2.SetActive(true);
+            }
+        }
+        else if (playerlvl == 3)
+        {
 
-        if (playerlvl >= 2)
-        {
-            foreach (var item in Level2Doors)
+            print("NOW OPEN DOORS 3");
+            foreach (var door3 in Level3Doors)
             {
-                item.gameObject.SetActive(true);
+                door3.SetActive(true);
             }
         }
-        if (playerlvl >= 3)
+        else if (playerlvl == 4)
         {
-            foreach (var item in Level3Doors)
+
+            print("NOW OPEN DOORS 4");
+            foreach (var door4 in Level4Doors)
             {
-                item.gameObject.SetActive(true);
-            }
-        }
-        if (playerlvl >= 4)
-        {
-            foreach (var item in Level4Doors)
-            {
-                item.gameObject.SetActive(true);
+                door4.SetActive(true);
             }
         }
 
@@ -61,31 +77,24 @@ public class ExitInteractions : MonoBehaviour
     public void InitDoors()
     {
         Level1Doors = GameObject.FindGameObjectsWithTag("Level1Door");
-
-        foreach (var door1 in Level1Doors)
-        {
-            door1.SetActive(true);
-        }
-
         Level2Doors = GameObject.FindGameObjectsWithTag("Level2Door");
+        Level3Doors = GameObject.FindGameObjectsWithTag("Level3Door");
+        Level4Doors = GameObject.FindGameObjectsWithTag("Level4Door");
+
+
         foreach (var door2 in Level2Doors)
         {
-
-            //Debug.Log("SETTING DOOR2 OFF");
-            door2.gameObject.SetActive(false);
-            ;
+            door2.SetActive(false);
         }
 
-        Level3Doors = GameObject.FindGameObjectsWithTag("Level3Door");
         foreach (var door3 in Level3Doors)
         {
-            door3.gameObject.SetActive(false);
+            door3.SetActive(false);
         }
 
-        Level4Doors = GameObject.FindGameObjectsWithTag("Level4Door");
         foreach (var door4 in Level4Doors)
         {
-            door4.gameObject.SetActive(false);
+            door4.SetActive(false);
         }
     }
 
@@ -138,6 +147,7 @@ public class ExitInteractions : MonoBehaviour
 
         }
         if (this.name == "LeftOrPuzzle2Btn")
+
         {
             if (playerStatus.PlayPuzz2 == true)
             {
@@ -195,6 +205,4 @@ public class ExitInteractions : MonoBehaviour
 
 
 }
-
-
 
