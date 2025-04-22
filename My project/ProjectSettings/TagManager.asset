@@ -17,6 +17,9 @@ TagManager:
   - Level3Door
   - Level4Door
   - ExitInteraction
+  - Anomaly
+  - Ornaments
+  - Microchip
   layers:
   - Default
   - TransparentFX
@@ -59,6 +62,9 @@ TagManager:
     locked: 0
   - name: Timer
     uniqueID: 2776700189
+    locked: 0
+  - name: ObjectInteractions
+    uniqueID: 3982409675
     locked: 0
   m_RenderingLayers:
   - Default

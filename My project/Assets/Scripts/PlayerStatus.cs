@@ -8,6 +8,7 @@ public class PlayerStatus : MonoBehaviour
 
     public int PlayerLevel;
     public int MicrochipCount;
+    public int AnomalyCount;
     public int[] MicrosPerLevel = { 2, 3, 4 };//{ 6, 6 + 5, 6 + 5 + 4 };
     public bool PlayPuzz1 = false, PlayPuzz2 = false, PlayPuzz3 = false, PlayPuzz4 = false;
     public bool PlayerLevelUpBool = false;
