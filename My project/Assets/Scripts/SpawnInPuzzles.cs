@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SpawnInPuzzles : MonoBehaviour
-{
+{/*
     public PlayerStatus playerStatus;
     public int MicroCount;
     public int playerlvl1;
@@ -46,7 +46,7 @@ public class SpawnInPuzzles : MonoBehaviour
         {
 
         }
-    }
+    }*/
 
 
 }

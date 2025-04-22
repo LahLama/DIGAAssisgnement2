@@ -15,6 +15,7 @@ public class ExitInteractions : MonoBehaviour
     public PlayerStatus playerStatus;
 
     public int playerlvl;
+    public bool playerlevelUpbool;
 
     public int playerMicroCount;
     public void Awake()
@@ -24,54 +25,61 @@ public class ExitInteractions : MonoBehaviour
         InitDoors();
         playerStatus = GameObject.FindWithTag("Player").GetComponent<PlayerStatus>();
         playerlvl = playerStatus.PlayerLevel;
-        playerMicroCount = playerStatus.MicrochipCount;
+        //    playerMicroCount = playerStatus.MicrochipCount;
+        playerlevelUpbool = playerStatus.PlayerLevelUpBool;
+
 
     }
 
 
     private void Update()
     {
-        OpenDoors();
+        playerlevelUpbool = playerStatus.PlayerLevelUpBool;
+        if (playerlevelUpbool == true)
+        {
+            OpenDoors();
+        }
     }
 
     public void OpenDoors()
     {
         playerlvl = playerStatus.PlayerLevel;
-        if (playerlvl == 1)
+        if (playerlvl >= 1)
         {
-            print("NOW OPEN DOORS 1");
+            //print("NOW OPEN DOORS 1");
             foreach (var door1 in Level1Doors)
             {
                 door1.SetActive(true);
             }
         }
-        else if (playerlvl == 2)
+        if (playerlvl >= 2)
         {
-            print("NOW OPEN DOORS 2");
+            //print("NOW OPEN DOORS 2");
             foreach (var door2 in Level2Doors)
             {
-                print("DoorName is: " + door2.name);
+                //print("DoorName is: " + door2.name);
                 door2.SetActive(true);
             }
         }
-        else if (playerlvl == 3)
+        if (playerlvl >= 3)
         {
 
-            print("NOW OPEN DOORS 3");
+            // print("NOW OPEN DOORS 3");
             foreach (var door3 in Level3Doors)
             {
                 door3.SetActive(true);
             }
         }
-        else if (playerlvl == 4)
+        if (playerlvl >= 4)
         {
 
-            print("NOW OPEN DOORS 4");
+            // print("NOW OPEN DOORS 4");
             foreach (var door4 in Level4Doors)
             {
                 door4.SetActive(true);
             }
         }
+        playerlevelUpbool = false;
 
     }
     public void InitDoors()
