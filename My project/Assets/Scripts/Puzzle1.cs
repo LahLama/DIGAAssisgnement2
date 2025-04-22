@@ -11,9 +11,13 @@ public class Puzzle0 : MonoBehaviour
     public ExitInteractions exitInteractions;
     public Rigidbody2D camera1;
     public PlayerStatus playerStatus;
+    public TimerScript timer;
+    bool startTimer;
+    float remianingTime;
     int playerlvl;
     public string correctCode = "test";
     public string input;
+
     public List<string> GuessedWords = new List<string>();
 
     //Timer Start
@@ -24,8 +28,19 @@ public class Puzzle0 : MonoBehaviour
 
     void Update()
     {
+        remianingTime = timer.remianingTime;
+        startTimer = timer.StartTimer;
         playerlvl = playerStatus.PlayerLevel;
         camera1 = exitInteractions.MainCamera;
+    }
+
+    public void OnInputField()
+    {
+        Debug.Log("****************");
+        remianingTime = 20;//seconds
+        timer.StartTimer = true;
+
+
     }
     public void ReadStringInput(string s)
     {
@@ -40,7 +55,7 @@ public class Puzzle0 : MonoBehaviour
             Vector3 newPosition = camera1.transform.position;
             newPosition.x += movementAmount;
             camera1.transform.position = newPosition;
-
+            timer.StartTimer = false;
             playerStatus.PlayPuzz1 = true;
 
         }

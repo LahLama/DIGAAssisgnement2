@@ -20,7 +20,7 @@ public class ExitInteractions : MonoBehaviour
     {
         //playerStatus = GetComponent<PlayerStatus>();
         //print("THE PLAYERS LEVEL IS " + playerStatus.PlayerLevel);
-        CloseDoors();
+        // InitDoors();
         playerlvl = playerStatus.PlayerLevel;
 
     }
@@ -58,7 +58,7 @@ public class ExitInteractions : MonoBehaviour
         }
 
     }
-    public void CloseDoors()
+    public void InitDoors()
     {
         Level1Doors = GameObject.FindGameObjectsWithTag("Level1Door");
 
@@ -137,18 +137,6 @@ public class ExitInteractions : MonoBehaviour
             }
 
         }
-
-        if (this.name == "RightBackBtn")
-        {
-            if (playerStatus.PlayPuzz1 == true)
-            {
-                float movementAmount = 1920 * 2;
-                Vector3 newPosition = MainCamera.transform.position;
-                newPosition.x += movementAmount;
-                MainCamera.transform.position = newPosition;
-            }
-
-        }
         if (this.name == "LeftOrPuzzle2Btn")
         {
             if (playerStatus.PlayPuzz2 == true)
@@ -166,6 +154,40 @@ public class ExitInteractions : MonoBehaviour
                 MainCamera.transform.position = newPosition;
             }
 
+        }
+
+
+        if (this.name == "UpORPuzzle3Btn")
+        {
+            if (playerStatus.PlayPuzz3 == true)
+            {
+                float movementAmount = 1080 * 2;
+                Vector3 newPosition = MainCamera.transform.position;
+                newPosition.y += movementAmount;
+                MainCamera.transform.position = newPosition;
+            }
+            else
+            {
+                float movementAmount = 1080;
+                Vector3 newPosition = MainCamera.transform.position;
+                newPosition.y += movementAmount;
+                MainCamera.transform.position = newPosition;
+            }
+
+        }
+        if (this.name == "RightBackBtn")
+        {
+            float movementAmount = 2 * 1920;
+            Vector3 newPosition = MainCamera.transform.position;
+            newPosition.x += movementAmount;
+            MainCamera.transform.position = newPosition;
+        }
+        if (this.name == "DownBackBtn")
+        {
+            float movementAmount = 2 * -1080;
+            Vector3 newPosition = MainCamera.transform.position;
+            newPosition.y += movementAmount;
+            MainCamera.transform.position = newPosition;
         }
 
 

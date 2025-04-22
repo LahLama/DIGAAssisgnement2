@@ -54,5 +54,11 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Path Leader
+    uniqueID: 858038941
+    locked: 0
+  - name: Timer
+    uniqueID: 2776700189
+    locked: 0
   m_RenderingLayers:
   - Default

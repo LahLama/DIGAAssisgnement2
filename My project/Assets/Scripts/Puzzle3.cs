@@ -7,8 +7,6 @@ public class Puzzle3 : MonoBehaviour
     public Puzzle3CodeButtons CdeBtn;
     public int CorrectChoice = 0;
     public int Codechances = 5;
-    public PlayerStatus playerStatus;
-
     public string[] CorrectCode = { "x", "x", "x", "x" };
 
     public GameObject[] PlayerCode;
@@ -17,7 +15,10 @@ public class Puzzle3 : MonoBehaviour
 
     public ExitInteractions exitInteractions;
     public Rigidbody2D camera1;
-    public PlayerStatus playerStatusP3;
+    public PlayerStatus playerStatus;
+    public TimerScript timer;
+    bool startTimer;
+    float remianingTime;
     int playerlvl;
     void Awake()
     {
@@ -33,13 +34,16 @@ public class Puzzle3 : MonoBehaviour
 
     void Update()
     {
-        playerlvl = playerStatusP3.PlayerLevel;
+        playerlvl = playerStatus.PlayerLevel;
         camera1 = exitInteractions.MainCamera;
+        remianingTime = timer.remianingTime;
+        startTimer = timer.StartTimer;
     }
 
     public void ValidatePlayerCode()
     {
-
+        remianingTime = 20;//seconds
+        timer.StartTimer = true;
         CorrectChoice = 0;
         int indexure = 0;
         foreach (var CodePiece in PlayerCode)
@@ -48,7 +52,7 @@ public class Puzzle3 : MonoBehaviour
             {
                 CodeLights[indexure].GetComponent<SpriteRenderer>().color = Color.green;
                 CorrectChoice++;
-                if (CorrectChoice == CorrectCode.Length)
+                if (CorrectChoice == 4)
                 {
                     playerlvl = 3;
                     float movementAmount = -1920;
@@ -56,6 +60,7 @@ public class Puzzle3 : MonoBehaviour
                     newPosition.x += movementAmount;
                     camera1.transform.position = newPosition;
                     playerStatus.PlayPuzz2 = true;
+                    timer.StartTimer = false;
                 }
             }
             else
