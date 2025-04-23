@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6339644112212902348
+--- !u!1 &4244347134327078334
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,25 +8,25 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1327788996070938651}
-  - component: {fileID: 1658553261876721898}
-  - component: {fileID: 515489749978519565}
-  - component: {fileID: 9045931842453770534}
-  - component: {fileID: 3123185994833638359}
+  - component: {fileID: 3011578054517195546}
+  - component: {fileID: 6137926979694126535}
+  - component: {fileID: 1332668253184623409}
+  - component: {fileID: 1002909312742558355}
+  - component: {fileID: 3016979591122904053}
   m_Layer: 5
-  m_Name: Anomaly
-  m_TagString: Anomaly
+  m_Name: Microchip
+  m_TagString: Microchip
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1327788996070938651
+--- !u!224 &3011578054517195546
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6339644112212902348}
+  m_GameObject: {fileID: 4244347134327078334}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -36,24 +36,24 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 411, y: 373}
+  m_AnchoredPosition: {x: -884, y: 106}
   m_SizeDelta: {x: 130, y: 106.8798}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &1658553261876721898
+--- !u!222 &6137926979694126535
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6339644112212902348}
+  m_GameObject: {fileID: 4244347134327078334}
   m_CullTransparentMesh: 1
---- !u!114 &515489749978519565
+--- !u!114 &1332668253184623409
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6339644112212902348}
+  m_GameObject: {fileID: 4244347134327078334}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7999124408013302761, guid: 328820583d4aca14399ceda82c982039, type: 3}
+  m_Sprite: {fileID: 3651681668006908986, guid: e6abd01321c64a5439c6739cc491e83e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -77,13 +77,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &9045931842453770534
+--- !u!114 &1002909312742558355
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6339644112212902348}
+  m_GameObject: {fileID: 4244347134327078334}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
@@ -107,7 +107,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: -6759168012338484586, guid: 9a47e2dcb5e40ec45af45036fb251ef9, type: 3}
+    m_PressedSprite: {fileID: 2727950698613549587, guid: 7584274322fdfa243badaa70fb60d6c4, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -117,13 +117,13 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 515489749978519565}
+  m_TargetGraphic: {fileID: 1332668253184623409}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 3d8c6f33464dc7b4a85a8eeea66d11df, type: 3}
+      - m_Target: {fileID: 3016979591122904053}
         m_TargetAssemblyTypeName: ObjectInteractoins, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: OnAnomalyInteraction
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -133,13 +133,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &3123185994833638359
+--- !u!114 &3016979591122904053
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6339644112212902348}
+  m_GameObject: {fileID: 4244347134327078334}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d8c6f33464dc7b4a85a8eeea66d11df, type: 3}

@@ -1,6 +1,3 @@
-using System.Collections;
-using Microsoft.Unity.VisualStudio.Editor;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,35 +11,40 @@ public class ObjectInteractoins : MonoBehaviour
 
     public PlayerStatus playerStatus;
     public int AnomalyCount;
+    public int MicrochipCount;
+    Button button;
 
 
     void Start()
     {
-        AnomalyObjects = GameObject.FindGameObjectsWithTag("Anomaly");
-        MicrochipObjects = GameObject.FindGameObjectsWithTag("Microchip");
-        OrnamentsObjects = GameObject.FindGameObjectsWithTag("Ornaments");
-
         playerStatus = GameObject.FindWithTag("Player").GetComponent<PlayerStatus>();
 
         AnomalyCount = playerStatus.AnomalyCount;
+        MicrochipCount = playerStatus.AnomalyCount;
 
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void OnAnomalyInteraction()
     {
+        button = GetComponent<Button>();
+        button.gameObject.SetActive(false);
+        playerStatus.IncAnomalyCount();
 
-        this.gameObject.SetActive(false);
-        AnomalyCount++;
-        print("ANOMALY COUNT IS: " + AnomalyCount);
 
     }
 
     public void OnMicrochipInteraction()
     {
+        button = GetComponent<Button>();
+        playerStatus.IncMicrochipCount();
+        button.gameObject.SetActive(false);
 
     }
     public void OnObjectInteraction()
     {
+        //move object up
+        //spawn micro IFF max numbers hasnt been spawnwed
+
 
     }
 
