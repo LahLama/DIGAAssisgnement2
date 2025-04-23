@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e6abd01321c64a5439c6739cc491e83e
+guid: b0a5fcfba6c5fd14b947269b0c9f6316
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3651681668006908986
-    second: MicrochipDefault_0
+      213: 184093112063059965
+    second: Microchip_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MicrochipDefault_0
+      name: Microchip_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 30
-        height: 28
+        x: 43
+        y: 5
+        width: 127
+        height: 194
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a349b5e21216da230800000000000000
-      internalID: 3651681668006908986
+      spriteID: df76d16c5b70e8200800000000000000
+      internalID: 184093112063059965
       vertices: []
       indices: 
       edges: []
