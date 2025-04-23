@@ -8,47 +8,35 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
-
-    void Update()
-    {
-        if (SceneManager.GetActiveScene().name == "Room")
+    /*
+        void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (SceneManager.GetActiveScene().name == "Room")
             {
-                if (GameIsPaused)
+                if (Input.GetKeyDown(KeyCode.Escape))
                 {
-                    Resume();
-                }
-                else
-                {
-                    Pause();
-                }
+                    if (GameIsPaused)
+                    {
+                        Resume();
+                    }
+                    else
+                    {
+                        Pause();
+                    }
 
+                }
             }
-        }
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (GameIsPaused)
-            {
-                Resume();
-            }
-            else
-            {
-                Pause();
-            }
-        }
-    }
+        }*/
 
     public void Resume()
     {
-        pauseMenuUI.SetActive(false);
+        SceneManager.UnloadSceneAsync("PauseMenu");
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
     void Pause()
     {
-        pauseMenuUI.SetActive(true);
+        SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive);
         Time.timeScale = 0f;
         GameIsPaused = true;
     }
@@ -56,7 +44,7 @@ public class PauseMenu : MonoBehaviour
     public void LoadMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("tittle");
+        SceneManager.LoadScene("StartScreen");
     }
 
     public void Setting()
@@ -67,6 +55,7 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitGame()
     {
+        SceneManager.LoadScene("StartScreen");
         Debug.Log("Quitting game...");
         Application.Quit();
     }
