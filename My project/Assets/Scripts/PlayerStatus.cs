@@ -36,8 +36,10 @@ public class PlayerStatus : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive);
-
+            if (!IsSceneLoaded("PauseMenu"))
+            {
+                SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive);
+            }
         }
 
         MicroChipCountText.text = "Microchip Count: " + MicrochipCount.ToString() + "/" + MicrosPerLevel[PlayerLevel - 1].ToString();
@@ -69,5 +71,19 @@ public class PlayerStatus : MonoBehaviour
         print("Anomaly: " + AnomalyCount);
     }
 
+
+    public bool IsSceneLoaded(string sceneName)
+    {
+        // Loop through all loaded scenes
+        for (int i = 0; i < SceneManager.sceneCount; i++)
+        {
+            Scene scene = SceneManager.GetSceneAt(i);
+            if (scene.name == sceneName)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 
 }
