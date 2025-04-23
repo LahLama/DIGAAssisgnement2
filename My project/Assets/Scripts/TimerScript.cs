@@ -13,7 +13,7 @@ public class TimerScript : MonoBehaviour
 
     void Awake()
     {
-        remianingTime = 270f;
+        remianingTime = 120;
         StartTimer = false;
     }
     public void Update()

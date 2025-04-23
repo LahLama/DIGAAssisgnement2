@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a885c3487ec8e044b8f168ac099effee
+guid: 19835f8a0571f2749b3c3d3d2982ed02
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3677778326073960070
-    second: puzzle 1_0
+      213: -198938125430884413
+    second: Menu_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: puzzle 1_0
+      name: Menu_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 711
-        height: 400
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 686e440e6e71a0330800000000000000
-      internalID: 3677778326073960070
+      spriteID: 3c7f86534da3d3df0800000000000000
+      internalID: -198938125430884413
       vertices: []
       indices: 
       edges: []

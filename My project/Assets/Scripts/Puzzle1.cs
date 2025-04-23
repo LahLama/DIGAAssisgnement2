@@ -11,7 +11,8 @@ public class Puzzle0 : MonoBehaviour
     public ExitInteractions exitInteractions;
     public Rigidbody2D camera1;
     public PlayerStatus playerStatus;
-    public TimerScript timer;
+    public GameObject IncorrectText;
+    public TimerScript Puzzle1Timer;
     bool startTimer;
     float remianingTime;
     int playerlvl;
@@ -20,25 +21,20 @@ public class Puzzle0 : MonoBehaviour
 
     public List<string> GuessedWords = new List<string>();
 
-    //Timer Start
-
-    /// <summary>
-    /// Update is called every frame, if the MonoBehaviour is enabled.
-    /// </summary>
 
     void Update()
     {
-        remianingTime = timer.remianingTime;
-        startTimer = timer.StartTimer;
+        remianingTime = Puzzle1Timer.remianingTime;
+        startTimer = Puzzle1Timer.StartTimer;
         playerlvl = playerStatus.PlayerLevel;
         camera1 = exitInteractions.MainCamera;
     }
 
-    public void OnInputField()
+    public void IsCorrect()
     {
-        Debug.Log("****************");
         remianingTime = 20;//seconds
-        timer.StartTimer = true;
+        Puzzle1Timer.StartTimer = true;
+        IncorrectText.SetActive(false);
 
 
     }
@@ -55,13 +51,14 @@ public class Puzzle0 : MonoBehaviour
             Vector3 newPosition = camera1.transform.position;
             newPosition.x += movementAmount;
             camera1.transform.position = newPosition;
-            timer.StartTimer = false;
+            Puzzle1Timer.StartTimer = false;
             playerStatus.PlayPuzz1 = true;
 
         }
         else
         {
             print("Word does not match: " + correctCode);
+            IncorrectText.SetActive(true);
             //Chances for 3 chances
         }
         /*

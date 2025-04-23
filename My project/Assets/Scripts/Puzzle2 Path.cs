@@ -22,6 +22,9 @@ public class Puzzle2Path : MonoBehaviour
 
     void Update()
     {
+
+
+
         remianingTime = timer.remianingTime;
         startTimer = timer.StartTimer;
         playerlvl = playerStatus.PlayerLevel;

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f69475c6676b93d40919457dfc120821
+guid: d773a345b9629fe4fb3bdc17cba6a9de
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4840859829892866624
-    second: puzzle4_0
+      213: 8953374015684013222
+    second: Puzzle2Own_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: puzzle4_0
+      name: Puzzle2Own_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 328
-        height: 154
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 042e8380e503e2340800000000000000
-      internalID: 4840859829892866624
+      spriteID: 6acee02fa36c04c70800000000000000
+      internalID: 8953374015684013222
       vertices: []
       indices: 
       edges: []
