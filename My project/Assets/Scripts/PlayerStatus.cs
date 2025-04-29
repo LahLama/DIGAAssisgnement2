@@ -10,7 +10,13 @@ public class PlayerStatus : MonoBehaviour
     public int PlayerLevel;
     public int MicrochipCount;
     public int AnomalyCount;
+<<<<<<< Updated upstream
     public int[] MicrosPerLevel = { 6, 6 + 5, 6 + 5 + 4 };//{ 6, 6 + 5, 6 + 5 + 4 };
+=======
+    public int[] MicrosPerLevel = { 6, 6 + 5, 6 + 5 + 4, 6 + 5 + 4 + 1 };//{ 6, 6 + 5, 6 + 5 + 4 };
+
+    //show only per level;
+>>>>>>> Stashed changes
     public bool PlayPuzz1 = false, PlayPuzz2 = false, PlayPuzz3 = false, PlayPuzz4 = false;
     public bool PlayerLevelUpBool = false;
     public Canvas CheatButtons;
@@ -47,7 +53,11 @@ public class PlayerStatus : MonoBehaviour
 
     public void MicroPlayerUp()
     {
+<<<<<<< Updated upstream
         if (MicrochipCount == MicrosPerLevel[0]) { PlayerLevel = 2; print("PLAYER IS NOW AT LEVEL: " + PlayerLevel + PlayerLevelUpBool); PlayerLevelUpBool = true; }
+=======
+        if (MicrochipCount == MicrosPerLevel[0] /*and player level*/) { PlayerLevel = 2; PlayerLevelUpBool = true; /*set chip count to zero*/ }
+>>>>>>> Stashed changes
         if (MicrochipCount == MicrosPerLevel[1]) { PlayerLevel = 3; print("PLAYER IS NOW AT LEVEL: " + PlayerLevel); PlayerLevelUpBool = true; }
         if (MicrochipCount == MicrosPerLevel[2]) { PlayerLevel = 4; print("PLAYER IS NOW AT LEVEL: " + PlayerLevel); PlayerLevelUpBool = true; }
     }
