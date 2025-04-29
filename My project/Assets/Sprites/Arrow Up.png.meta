@@ -148,7 +148,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<< Updated upstream:My project/Assets/Sprites/Arrow Up.png.meta
       right-arrow_0: 4313501347480536470
+=======
+      Microchip_0: 184093112063059965
+>>>>>>> Stashed changes:My project/Assets/Sprites/Interactions/Microchip.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
