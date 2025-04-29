@@ -1,10 +1,19 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:My project/Assets/Sprites/Puzzle/Menu.png.meta
+guid: 51a1a147a17589546b52dec6f00c8942
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2136733623990294904
+    second: Menu 1_0
+========
 guid: 6cb5d21c8bb59ad48ae201e0ed4eb932
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: -1577846492797285222
     second: MicrochipPressed 1_0
+>>>>>>>> James:My project/Assets/Sprites/Interactions/MicrochipPressed 1.png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +122,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+<<<<<<<< HEAD:My project/Assets/Sprites/Puzzle/Menu.png.meta
+      name: Menu 1_0
+========
       name: MicrochipPressed 1_0
+>>>>>>>> James:My project/Assets/Sprites/Interactions/MicrochipPressed 1.png.meta
       rect:
         serializedVersion: 2
         x: 43
@@ -128,8 +141,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
+<<<<<<<< HEAD:My project/Assets/Sprites/Puzzle/Menu.png.meta
+      spriteID: 886ec62071cc852e0800000000000000
+      internalID: -2136733623990294904
+========
       spriteID: a9cc8be79fc5a1ae0800000000000000
       internalID: -1577846492797285222
+>>>>>>>> James:My project/Assets/Sprites/Interactions/MicrochipPressed 1.png.meta
       vertices: []
       indices: 
       edges: []
@@ -147,7 +165,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+<<<<<<<< HEAD:My project/Assets/Sprites/Puzzle/Menu.png.meta
+      Menu 1_0: -2136733623990294904
+========
+      MicrochipPressed 1_0: -1577846492797285222
+>>>>>>>> James:My project/Assets/Sprites/Interactions/MicrochipPressed 1.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
