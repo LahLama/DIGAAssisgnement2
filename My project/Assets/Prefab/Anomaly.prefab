@@ -108,7 +108,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 3086016379878875753, guid: 392d586f8d85ac84794f51c274e1fde2, type: 3}
     m_PressedSprite: {fileID: 6694530736867785269, guid: de708c23dc33a404ab06baf2945219f1, type: 3}
-    m_SelectedSprite: {fileID: 3086016379878875753, guid: 392d586f8d85ac84794f51c274e1fde2, type: 3}
+    m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -121,9 +121,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 3d8c6f33464dc7b4a85a8eeea66d11df, type: 3}
+      - m_Target: {fileID: 3123185994833638359}
         m_TargetAssemblyTypeName: ObjectInteractoins, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: OnAnomalyInteraction
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
