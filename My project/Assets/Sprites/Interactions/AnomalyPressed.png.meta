@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 10d4fddfcbf1408419643b2698a41c68
+guid: de708c23dc33a404ab06baf2945219f1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2799692873189853672
-    second: Arrow Left_0
+      213: 6694530736867785269
+    second: AnomalyPressed_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Arrow Left_0
+      name: AnomalyPressed_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 90
-        width: 512
-        height: 332
+        y: 0
+        width: 200
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 816735d4a2e7529d0800000000000000
-      internalID: -2799692873189853672
+      spriteID: 53a30fc6c30c7ec50800000000000000
+      internalID: 6694530736867785269
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      AnomalyHighlighted_0: 3086016379878875753
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

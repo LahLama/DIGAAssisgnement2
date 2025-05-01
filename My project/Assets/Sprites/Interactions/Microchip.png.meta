@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 073f2ccdf56ff2142bf5735edc77099c
+guid: b0a5fcfba6c5fd14b947269b0c9f6316
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4313501347480536470
-    second: right-arrow_0
+      213: 184093112063059965
+    second: Microchip_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: right-arrow_0
+      name: Microchip_0
       rect:
         serializedVersion: 2
-        x: 33
-        y: 7
-        width: 427
-        height: 505
+        x: 43
+        y: 5
+        width: 127
+        height: 194
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6950fb22f92acdb30800000000000000
-      internalID: 4313501347480536470
+      spriteID: df76d16c5b70e8200800000000000000
+      internalID: 184093112063059965
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 84a8a67e56bceb8438319768fe340cda
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      right-arrow_0: 4313501347480536470
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
