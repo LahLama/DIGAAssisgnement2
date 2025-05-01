@@ -1,28 +1,30 @@
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering.Universal;
 
 public class Puzzle4ChooseColours : MonoBehaviour
 {
+    public Puzzle4Manager puzzle4Manager;
     public void OnClick()
     {
-        switch (this.name)
+        switch (name)
         {
             case "Red":
-                print("Red");
+                puzzle4Manager.playerSequence.Add("Red");
                 break;
             case "Blue":
-                print("Blue");
+                puzzle4Manager.playerSequence.Add("Blue");
                 break;
             case "Green":
-                print("Green");
+                puzzle4Manager.playerSequence.Add("Green");
                 break;
             case "Yellow":
-                print("Yellow");
+                puzzle4Manager.playerSequence.Add("Yellow");
                 break;
             default:
-                print("THIS HAS NO COLOUR");
+                // print("THIS HAS NO COLOUR");
                 break;
         }
+        print("player seq count is: " + puzzle4Manager.playerSequence.Count);
 
 
     }
