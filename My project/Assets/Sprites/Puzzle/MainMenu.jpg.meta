@@ -1,34 +1,10 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream:My project/Assets/Sprites/Puzzle/Menu.png.meta
 guid: 19835f8a0571f2749b3c3d3d2982ed02
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -198938125430884413
-    second: Menu_0
-=======
-=======
-<<<<<<<< Updated upstream:My project/Assets/Sprites/Interactions/MicrochipDefault.png.meta
-guid: e6abd01321c64a5439c6739cc491e83e
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 3651681668006908986
-    second: MicrochipDefault_0
-========
->>>>>>> Stashed changes
-guid: ceb7a49a3787ccc47a46cb5a46e9148d
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: -3451699440861859892
     second: MainMenu_0
-<<<<<<< Updated upstream
->>>>>>> Stashed changes:My project/Assets/Sprites/Puzzle/MainMenu.jpg.meta
-=======
->>>>>>>> Stashed changes:My project/Assets/Sprites/Puzzle/MainMenu.jpg.meta
->>>>>>> Stashed changes
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -137,35 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream:My project/Assets/Sprites/Puzzle/Menu.png.meta
-      name: Menu_0
-=======
       name: MainMenu_0
->>>>>>> Stashed changes:My project/Assets/Sprites/Puzzle/MainMenu.jpg.meta
-=======
-<<<<<<<< Updated upstream:My project/Assets/Sprites/Interactions/MicrochipDefault.png.meta
-      name: MicrochipDefault_0
-========
-      name: MainMenu_0
->>>>>>>> Stashed changes:My project/Assets/Sprites/Puzzle/MainMenu.jpg.meta
->>>>>>> Stashed changes
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-<<<<<<< Updated upstream
         width: 1280
         height: 720
-=======
-<<<<<<<< Updated upstream:My project/Assets/Sprites/Interactions/MicrochipDefault.png.meta
-        width: 30
-        height: 28
-========
-        width: 1280
-        height: 720
->>>>>>>> Stashed changes:My project/Assets/Sprites/Puzzle/MainMenu.jpg.meta
->>>>>>> Stashed changes
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,23 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream:My project/Assets/Sprites/Puzzle/Menu.png.meta
-      spriteID: 3c7f86534da3d3df0800000000000000
-      internalID: -198938125430884413
-=======
       spriteID: ccfa30c75a91910d0800000000000000
       internalID: -3451699440861859892
->>>>>>> Stashed changes:My project/Assets/Sprites/Puzzle/MainMenu.jpg.meta
-=======
-<<<<<<<< Updated upstream:My project/Assets/Sprites/Interactions/MicrochipDefault.png.meta
-      spriteID: a349b5e21216da230800000000000000
-      internalID: 3651681668006908986
-========
-      spriteID: ccfa30c75a91910d0800000000000000
-      internalID: -3451699440861859892
->>>>>>>> Stashed changes:My project/Assets/Sprites/Puzzle/MainMenu.jpg.meta
->>>>>>> Stashed changes
       vertices: []
       indices: 
       edges: []
@@ -208,16 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-<<<<<<< Updated upstream
     nameFileIdTable: {}
-=======
-<<<<<<<< Updated upstream:My project/Assets/Sprites/Interactions/MicrochipDefault.png.meta
-    nameFileIdTable:
-      Anomaly_0: 2570972602406725858
-========
-    nameFileIdTable: {}
->>>>>>>> Stashed changes:My project/Assets/Sprites/Puzzle/MainMenu.jpg.meta
->>>>>>> Stashed changes
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
