@@ -4,7 +4,7 @@ using UnityEngine.Android;
 using UnityEngine.SceneManagement;
 
 
-public class Puzzle0 : MonoBehaviour
+public class Puzzle1Manager : MonoBehaviour
 {
     //public ExitInteractions exitInteractions;
     //add an array of 4 letter words that can be choosen randomly from.
@@ -24,14 +24,11 @@ public class Puzzle0 : MonoBehaviour
 
     void Update()
     {
-        remianingTime = Puzzle1Timer.remianingTime;
-        startTimer = Puzzle1Timer.StartTimer;
-        playerlvl = playerStatus.PlayerLevel;
-        camera1 = exitInteractions.MainCamera;
     }
 
-    public void IsCorrect()
+    public void StartPuzzle1Timer()
     {
+
         remianingTime = 20;//seconds
         Puzzle1Timer.StartTimer = true;
         IncorrectText.SetActive(false);
@@ -47,12 +44,12 @@ public class Puzzle0 : MonoBehaviour
             print("PUZZLE COMPLETED");
             playerlvl = 2;
 
-            float movementAmount = -1920;
+
             Vector3 newPosition = camera1.transform.position;
-            newPosition.x += movementAmount;
+            newPosition.x += 1920;
+            newPosition.y += 1080;
             camera1.transform.position = newPosition;
             Puzzle1Timer.StartTimer = false;
-            playerStatus.PlayPuzz1 = true;
 
         }
         else

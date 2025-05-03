@@ -2,7 +2,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Puzzle3CodeButtons : MonoBehaviour
+public class Puzzle2CodeButtons : MonoBehaviour
 
 {
 
@@ -11,8 +11,8 @@ public class Puzzle3CodeButtons : MonoBehaviour
 
     Image CodeBlock;
 
-    public string[] CodeOptions = { "Puzzle3Red", "Puzzle3Green", "Puzzle3Blue", "Puzzle3Yellow" };
-    public Color[] CodeOptionsColor = { Color.red, Color.green, Color.blue, Color.yellow };
+    public string[] CodeOptions = { "Puzzle3Blue", "Puzzle3Yellow", "Puzzle3Red", "Puzzle3Green" };
+    public Color[] CodeOptionsColor = { Color.blue, Color.yellow, Color.red, Color.green };
     public int ChoiceIndex = 0;
 
 

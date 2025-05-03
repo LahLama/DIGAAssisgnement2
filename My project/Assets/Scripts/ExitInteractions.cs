@@ -13,6 +13,8 @@ public class ExitInteractions : MonoBehaviour
 
 
     public PlayerStatus playerStatus;
+    public Puzzle1Manager puzzle1Manager;
+    public Puzzle2Manager puzzle2Manager;
 
     public int playerlvl;
     public bool playerlevelUpbool;
@@ -23,7 +25,6 @@ public class ExitInteractions : MonoBehaviour
         //playerStatus = GetComponent<PlayerStatus>();
         //print("THE PLAYERS LEVEL IS " + playerStatus.PlayerLevel);
         InitDoors();
-        playerStatus = GameObject.FindWithTag("Player").GetComponent<PlayerStatus>();
         playerlvl = playerStatus.PlayerLevel;
         //    playerMicroCount = playerStatus.MicrochipCount;
         playerlevelUpbool = playerStatus.PlayerLevelUpBool;
@@ -39,6 +40,7 @@ public class ExitInteractions : MonoBehaviour
         {
             OpenDoors();
         }
+
     }
 
     public void OpenDoors()
@@ -84,11 +86,6 @@ public class ExitInteractions : MonoBehaviour
     }
     public void InitDoors()
     {
-        Level1Doors = GameObject.FindGameObjectsWithTag("Level1Door");
-        Level2Doors = GameObject.FindGameObjectsWithTag("Level2Door");
-        Level3Doors = GameObject.FindGameObjectsWithTag("Level3Door");
-        Level4Doors = GameObject.FindGameObjectsWithTag("Level4Door");
-
 
         foreach (var door2 in Level2Doors)
         {
@@ -108,109 +105,84 @@ public class ExitInteractions : MonoBehaviour
 
     public void MoveCamera()
     {
-        if (this.name == "UpBtn")
-        {
-            float movementAmount = 1080f;
-            Vector3 newPosition = MainCamera.transform.position;
-            newPosition.y += movementAmount;
-            MainCamera.transform.position = newPosition;
-        }
-        if (this.name == "DownBtn")
-        {
-            float movementAmount = -1080f;
-            Vector3 newPosition = MainCamera.transform.position;
-            newPosition.y += movementAmount;
-            MainCamera.transform.position = newPosition;
-        }
-        if (this.name == "RightBtn")
-        {
-            float movementAmount = 1920f;
-            Vector3 newPosition = MainCamera.transform.position;
-            newPosition.x += movementAmount;
-            MainCamera.transform.position = newPosition;
-        }
-        if (this.name == "LeftBtn")
-        {
-            float movementAmount = -1920;
-            Vector3 newPosition = MainCamera.transform.position;
-            newPosition.x += movementAmount;
-            MainCamera.transform.position = newPosition;
-        }
-        if (this.name == "LeftOrPuzzle1Btn")
-        {
-            if (playerStatus.PlayPuzz1 == true)
-            {
-                float movementAmount = -1920 * 2;
-                Vector3 newPosition = MainCamera.transform.position;
-                newPosition.x += movementAmount;
-                MainCamera.transform.position = newPosition;
-            }
-            else
-            {
-                float movementAmount = -1920;
-                Vector3 newPosition = MainCamera.transform.position;
-                newPosition.x += movementAmount;
-                MainCamera.transform.position = newPosition;
-            }
-
-        }
-        if (this.name == "LeftOrPuzzle2Btn")
-
-        {
-            if (playerStatus.PlayPuzz2 == true)
-            {
-                float movementAmount = -1920 * 2;
-                Vector3 newPosition = MainCamera.transform.position;
-                newPosition.x += movementAmount;
-                MainCamera.transform.position = newPosition;
-            }
-            else
-            {
-                float movementAmount = -1920;
-                Vector3 newPosition = MainCamera.transform.position;
-                newPosition.x += movementAmount;
-                MainCamera.transform.position = newPosition;
-            }
-
-        }
 
 
-        if (this.name == "UpORPuzzle3Btn")
+        switch (this.name)
         {
-            if (playerStatus.PlayPuzz3 == true)
-            {
-                float movementAmount = 1080 * 2;
-                Vector3 newPosition = MainCamera.transform.position;
-                newPosition.y += movementAmount;
-                MainCamera.transform.position = newPosition;
-            }
-            else
-            {
-                float movementAmount = 1080;
-                Vector3 newPosition = MainCamera.transform.position;
-                newPosition.y += movementAmount;
-                MainCamera.transform.position = newPosition;
-            }
+            case "UpBtn":
+                float movementAmount1 = 1080f;
+                Vector3 newPosition1 = MainCamera.transform.position;
+                newPosition1.y += movementAmount1;
+                MainCamera.transform.position = newPosition1;
+                break;
+            case "DownBtn":
+                float movementAmount2 = -1080f;
+                Vector3 newPosition2 = MainCamera.transform.position;
+                newPosition2.y += movementAmount2;
+                MainCamera.transform.position = newPosition2;
+                break;
+            case "UpOrPuzzle1":
+                if (playerStatus.PlayPuzz1 == false)
+                {
+                    float movementAmount3 = -1920f;
+                    Vector3 newPosition3 = MainCamera.transform.position;
+                    newPosition3.x += movementAmount3;
+                    MainCamera.transform.position = newPosition3;
+                    playerStatus.PlayPuzz1 = true;
+                    puzzle1Manager.StartPuzzle1Timer();
 
-        }
-        if (this.name == "RightBackBtn")
-        {
-            float movementAmount = 2 * 1920;
-            Vector3 newPosition = MainCamera.transform.position;
-            newPosition.x += movementAmount;
-            MainCamera.transform.position = newPosition;
-        }
-        if (this.name == "DownBackBtn")
-        {
-            float movementAmount = 2 * -1080;
-            Vector3 newPosition = MainCamera.transform.position;
-            newPosition.y += movementAmount;
-            MainCamera.transform.position = newPosition;
+                }
+                else
+                {
+                    float movementAmount4 = 1080f;
+                    Vector3 newPosition4 = MainCamera.transform.position;
+                    newPosition4.y += movementAmount4;
+                    MainCamera.transform.position = newPosition4;
+                }
+                break;
+            case "DownOrPuzzle2":
+                if (playerStatus.PlayPuzz2 == false)
+                {
+                    float movementAmount5 = -1920f;
+                    Vector3 newPosition5 = MainCamera.transform.position;
+                    newPosition5.x += movementAmount5;
+                    MainCamera.transform.position = newPosition5;
+                    playerStatus.PlayPuzz2 = true;
+                    puzzle2Manager.StartPuzzle2();
+                }
+                else
+                {
+                    float movementAmount6 = -1080f;
+                    Vector3 newPosition6 = MainCamera.transform.position;
+                    newPosition6.y += movementAmount6;
+                    MainCamera.transform.position = newPosition6;
+                }
+                break;
+            case "UpOrPuzzle3":
+                if (playerStatus.PlayPuzz3 == false)
+                {
+                    float movementAmount7 = -1920f;
+                    Vector3 newPosition7 = MainCamera.transform.position;
+                    newPosition7.x += movementAmount7;
+                    MainCamera.transform.position = newPosition7;
+                    playerStatus.PlayPuzz3 = true;
+                }
+                else
+                {
+                    float movementAmount8 = 1080f;
+                    Vector3 newPosition8 = MainCamera.transform.position;
+                    newPosition8.y += movementAmount8;
+                    MainCamera.transform.position = newPosition8;
+                }
+                break;
+            default:
+                Debug.Log("No camera movement assigned for this button.");
+                break;
+
+
         }
 
 
     }
-
-
 }
 

@@ -1,10 +1,10 @@
 using UnityEngine;
 
 
-public class Puzzle3 : MonoBehaviour
+public class Puzzle2Manager : MonoBehaviour
 {
 
-    public Puzzle3CodeButtons CdeBtn;
+    public Puzzle2CodeButtons CdeBtn;
     public int CorrectChoice = 0;
     public int Codechances = 5;
     public string[] CorrectCode = { "x", "x", "x", "x" };
@@ -16,7 +16,7 @@ public class Puzzle3 : MonoBehaviour
     public ExitInteractions exitInteractions;
     public Rigidbody2D camera1;
     public PlayerStatus playerStatus;
-    public TimerScript timer;
+    public TimerScript Puzzle2Timer;
     bool startTimer;
     float remianingTime;
     int playerlvl;
@@ -31,19 +31,22 @@ public class Puzzle3 : MonoBehaviour
         CorrectCode[3] = CdeBtn.CodeOptions[UnityEngine.Random.Range(0, 4)];
     }
 
+    public void StartPuzzle2()
+    {
+        Puzzle2Timer.remianingTime = 20;//seconds
+        Puzzle2Timer.StartTimer = true;
+    }
 
     void Update()
     {
-        playerlvl = playerStatus.PlayerLevel;
-        camera1 = exitInteractions.MainCamera;
-        remianingTime = timer.remianingTime;
-        startTimer = timer.StartTimer;
+
+
+
     }
 
     public void ValidatePlayerCode()
     {
         remianingTime = 20;//seconds
-        timer.StartTimer = true;
         CorrectChoice = 0;
         int indexure = 0;
         foreach (var CodePiece in PlayerCode)
@@ -55,12 +58,12 @@ public class Puzzle3 : MonoBehaviour
                 if (CorrectChoice == 4)
                 {
                     playerlvl = 3;
-                    float movementAmount = -1920;
                     Vector3 newPosition = camera1.transform.position;
-                    newPosition.x += movementAmount;
+                    newPosition.x += 1920;
+                    newPosition.y -= 1080;
                     camera1.transform.position = newPosition;
-                    playerStatus.PlayPuzz2 = true;
-                    timer.StartTimer = false;
+                    playerStatus.PlayPuzz2 = false;
+                    Puzzle2Timer.StartTimer = false;
                 }
             }
             else
