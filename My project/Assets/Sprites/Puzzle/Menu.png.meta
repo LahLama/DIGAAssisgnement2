@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 51a1a147a17589546b52dec6f00c8942
+<<<<<<<< HEAD:My project/Assets/Sprites/Puzzle/Menu.png.meta
+guid: 7d50ba9a77408de40869ccfcab19c3e8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2136733623990294904
-    second: Menu 1_0
+      213: -198938125430884413
+    second: Menu_0
+========
+guid: 392d586f8d85ac84794f51c274e1fde2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3086016379878875753
+    second: AnomalyHighlighted_0
+>>>>>>>> James:My project/Assets/Sprites/Interactions/AnomalyHighlighted.png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +122,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Menu 1_0
+<<<<<<<< HEAD:My project/Assets/Sprites/Puzzle/Menu.png.meta
+      name: Menu_0
+========
+      name: AnomalyHighlighted_0
+>>>>>>>> James:My project/Assets/Sprites/Interactions/AnomalyHighlighted.png.meta
       rect:
         serializedVersion: 2
         x: 0
         y: 0
+<<<<<<<< HEAD:My project/Assets/Sprites/Puzzle/Menu.png.meta
         width: 1920
         height: 1080
+========
+        width: 200
+        height: 200
+>>>>>>>> James:My project/Assets/Sprites/Interactions/AnomalyHighlighted.png.meta
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +146,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 886ec62071cc852e0800000000000000
-      internalID: -2136733623990294904
+<<<<<<<< HEAD:My project/Assets/Sprites/Puzzle/Menu.png.meta
+      spriteID: 3c7f86534da3d3df0800000000000000
+      internalID: -198938125430884413
+========
+      spriteID: 962a7bd0c8bb3da20800000000000000
+      internalID: 3086016379878875753
+>>>>>>>> James:My project/Assets/Sprites/Interactions/AnomalyHighlighted.png.meta
       vertices: []
       indices: 
       edges: []
@@ -147,8 +170,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
+<<<<<<<< HEAD:My project/Assets/Sprites/Puzzle/Menu.png.meta
     nameFileIdTable:
-      Menu 1_0: -2136733623990294904
+      Menu_0: -198938125430884413
+========
+    nameFileIdTable: {}
+>>>>>>>> James:My project/Assets/Sprites/Interactions/AnomalyHighlighted.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
