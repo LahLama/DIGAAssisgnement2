@@ -1,4 +1,3 @@
-using JetBrains.Annotations;
 using TMPro;
 using UnityEngine;
 
@@ -7,68 +6,21 @@ public class ExitInteractions : MonoBehaviour
 {
     public Rigidbody2D MainCamera;
 
-    public GameObject[] Level1Doors;
-    public GameObject[] Level2Doors;
-    public GameObject[] Level2DoorsDeativate;
-    public GameObject[] Level3Doors;
-
-
     public PlayerStatus playerStatus;
-
-    [SerializeField] int playerlvl;
+    public int playerlvl;
+    public bool playerlevelUpbool;
     public void Awake()
     {
-        //playerStatus = GetComponent<PlayerStatus>();
-        print("THE PLAYERS LEVEL IS " + playerStatus.PlayerLevel);
-        InitDoors();
+        playerStatus = GameObject.FindWithTag("Player").GetComponent<PlayerStatus>();
         playerlvl = playerStatus.PlayerLevel;
-
+        playerlevelUpbool = playerStatus.PlayerLevelUpBool;
     }
-
 
     private void Update()
     {
+        playerlevelUpbool = playerStatus.PlayerLevelUpBool;
         playerlvl = playerStatus.PlayerLevel;
-        OpenDoors();
     }
-
-    public void OpenDoors()
-    {
-
-        if (playerlvl == 2)
-        {
-            foreach (var item in Level2Doors)
-            {
-                item.SetActive(true);
-            }
-        }
-
-    }
-    public void InitDoors()
-    {
-        Level1Doors = GameObject.FindGameObjectsWithTag("Level1Door");
-
-        foreach (var item in Level1Doors)
-        {
-            item.SetActive(true);
-        }
-
-        Level2Doors = GameObject.FindGameObjectsWithTag("Level2Door");
-        foreach (var item in Level2DoorsDeativate)
-        {
-            Debug.Log("Item: " + item.name);
-            Debug.Log("SETTING DOOR2 OFF");
-            item.SetActive(false);
-            Debug.Log("Item: " + item.name);
-        }
-
-        Level3Doors = GameObject.FindGameObjectsWithTag("Level3Door");
-        foreach (var item in Level3Doors)
-        {
-            item.SetActive(true);
-        }
-    }
-
     public void MoveCamera()
     {
         if (this.name == "UpBtn")
@@ -99,18 +51,81 @@ public class ExitInteractions : MonoBehaviour
             newPosition.x += movementAmount;
             MainCamera.transform.position = newPosition;
         }
+        if (this.name == "LeftOrPuzzle1Btn")
+        {
+            if (playerStatus.PlayPuzz1 == true)
+            {
+                float movementAmount = -1920 * 2;
+                Vector3 newPosition = MainCamera.transform.position;
+                newPosition.x += movementAmount;
+                MainCamera.transform.position = newPosition;
+            }
+            else
+            {
+                float movementAmount = -1920;
+                Vector3 newPosition = MainCamera.transform.position;
+                newPosition.x += movementAmount;
+                MainCamera.transform.position = newPosition;
+            }
+
+        }
+        if (this.name == "LeftOrPuzzle2Btn")
+
+        {
+            if (playerStatus.PlayPuzz2 == true)
+            {
+                float movementAmount = -1920 * 2;
+                Vector3 newPosition = MainCamera.transform.position;
+                newPosition.x += movementAmount;
+                MainCamera.transform.position = newPosition;
+            }
+            else
+            {
+                float movementAmount = -1920;
+                Vector3 newPosition = MainCamera.transform.position;
+                newPosition.x += movementAmount;
+                MainCamera.transform.position = newPosition;
+            }
+
+        }
+
+
+        if (this.name == "UpORPuzzle3Btn")
+        {
+            if (playerStatus.PlayPuzz3 == true)
+            {
+                float movementAmount = 1080 * 2;
+                Vector3 newPosition = MainCamera.transform.position;
+                newPosition.y += movementAmount;
+                MainCamera.transform.position = newPosition;
+            }
+            else
+            {
+                float movementAmount = 1080;
+                Vector3 newPosition = MainCamera.transform.position;
+                newPosition.y += movementAmount;
+                MainCamera.transform.position = newPosition;
+            }
+
+        }
+        if (this.name == "RightBackBtn")
+        {
+            float movementAmount = 2 * 1920;
+            Vector3 newPosition = MainCamera.transform.position;
+            newPosition.x += movementAmount;
+            MainCamera.transform.position = newPosition;
+        }
+        if (this.name == "DownBackBtn")
+        {
+            float movementAmount = 2 * -1080;
+            Vector3 newPosition = MainCamera.transform.position;
+            newPosition.y += movementAmount;
+            MainCamera.transform.position = newPosition;
+        }
 
 
     }
 
-    public void MoveCameraLeft()
-    {
-        float movementAmount = -1920;
-        Vector3 newPosition = MainCamera.transform.position;
-        newPosition.x += movementAmount;
-        MainCamera.transform.position = newPosition;
-    }
+
 }
-
-
 

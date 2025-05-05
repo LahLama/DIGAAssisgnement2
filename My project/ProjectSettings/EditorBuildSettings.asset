@@ -6,47 +6,28 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Room/Room_Entrance.unity
-    guid: 43988ac34b870d846bf08aa037615c09
+    path: Assets/Scenes/StartScreen.unity
+    guid: 63e937cedc632f0419663b74cbbc905f
   - enabled: 1
-    path: Assets/Scenes/Room/Room_LivingRoom.unity
-    guid: 6e9a0f248f3e1d4488e492e60cda144a
+    path: Assets/Scenes/Room.unity
+    guid: ae27fb364e1358a4293b9098ff250b79
   - enabled: 1
-    path: Assets/Scenes/Room/Room_DiningRoom.unity
-    guid: 9fb64564c5acf2747b72ce58b44bdc73
-  - enabled: 1
-    path: Assets/Scenes/Puzzles/Puzzle1.unity
-    guid: 675fc3190ed22b24ebe7a14cb1727a02
+    path: Assets/Scenes/Promise/PauseMenu.unity
+    guid: ac203e1a53b3e594d93ce9a459f411ff
   - enabled: 0
     path: Assets/Scenes/Puzzles/Puzzle1 MatchWord.unity
-    guid: 5ac8ca5514e2b2a4ab65b8ad9a2e178c
-  - enabled: 1
-    path: Assets/Scenes/Room/Room_Kitchen.unity
-    guid: 043d648edca2dcc469e3977676b96bee
-  - enabled: 1
-    path: Assets/Scenes/Room/Room_Pantry.unity
-    guid: 2356a463160add84bbc70ca63b9336bb
-  - enabled: 1
+    guid: 675fc3190ed22b24ebe7a14cb1727a02
+  - enabled: 0
     path: Assets/Scenes/Puzzles/Puzzle2 Path.unity
     guid: cd6ceb14ec50390479451b2cd06d9139
-  - enabled: 1
-    path: Assets/Scenes/Room/Room_Bedroom.unity
-    guid: 8c193593b2e7dde4d9d09e81d5b57e3c
-  - enabled: 1
-    path: Assets/Scenes/Room/Room_Bathroom.unity
-    guid: 6c441b4aa236ba845b9fe916f512c09f
-  - enabled: 1
-    path: Assets/Scenes/Puzzles/Puzzle3 Robot.unity
-    guid: c6f98878c9b8dae4d8e6882c3a89a46f
-  - enabled: 1
-    path: Assets/Scenes/Room/Room_Attic.unity
-    guid: 858869ea40db8f14f906610916e1bf9e
   - enabled: 0
-    path: Assets/Scenes/Room/Room_StairAttic.unity
-    guid: b07e95701728a75438f9a21eee436cb6
-  - enabled: 1
-    path: Assets/Scenes/Room/Room_Transition.unity
-    guid: c1f4b3bb8e1aa9743a2dd27aece507de
+    path: Assets/Scenes/Puzzles/Puzzle3 Wordle.unity
+    guid: c6f98878c9b8dae4d8e6882c3a89a46f
+  - enabled: 0
+    path: Assets/Scenes/Puzzles/Scene4 Robot.unity
+    guid: 6697e4b757e02ba4ebaaa9610e3406b7
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 624253fee5063d7438a67769d7f141d6, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 58cfcbcee2ec7784d8108ec22da95d5c, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

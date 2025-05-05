@@ -1,64 +1,73 @@
 
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Puzzle4Robot : MonoBehaviour
 {
-    public GameObject Robot;
-    public string[] CodeOptions = { "Red", "Blue", "Green", "Yellow" };
 
-    public string[] CorrectSequence = { "red", "red", "red", "red" };
+    public List<string> CodeOptions = new List<string> { "Red", "Blue", "Green", "Yellow" };
 
+    public List<string> CorrectSequence = new List<string> { "Red", "Red", "Red", "Red" };
+    public Puzzle4Manager puzzle4Manager;
 
-
-    int indexure;
     void Start()
     {
-        CorrectSequence[0] = CodeOptions[Random.Range(0, 4)];
-        CorrectSequence[1] = CodeOptions[Random.Range(0, 4)];
-        CorrectSequence[2] = CodeOptions[Random.Range(0, 4)];
-        CorrectSequence[3] = CodeOptions[Random.Range(0, 4)];
+        CorrectSequence[0] = CodeOptions[(int)Random.Range(0, 4)];
+        CorrectSequence[1] = CodeOptions[(int)Random.Range(0, 4)];
+        CorrectSequence[2] = CodeOptions[(int)Random.Range(0, 4)];
+        CorrectSequence[3] = CodeOptions[(int)Random.Range(0, 4)];
+        ShowColour();
 
-        //ShowColourDelay();
     }
 
 
     public void ShowColour()
     {
+        puzzle4Manager.ButtonsOff();
+        StartCoroutine(ShowColourDelay());
+
+
+    }
+
+    private IEnumerator ShowColourDelay()
+    {
+
         foreach (var item in CorrectSequence)
         {
-            if (item == "Puzzle3Red")
+            if (item == "Red")
             {
-                Robot.GetComponent<SpriteRenderer>().color = Color.red;
+                this.GetComponent<SpriteRenderer>().color = Color.red;
+                Debug.Log("Red");
             }
-            if (item == "Puzzle3Blue")
+            else if (item == "Blue")
             {
-                Robot.GetComponent<SpriteRenderer>().color = Color.blue;
-                print("Blue");
+                this.GetComponent<SpriteRenderer>().color = Color.blue;
+                Debug.Log("Blue");
             }
-            if (item == "Puzzle3Green")
+            else if (item == "Green")
             {
-                Robot.GetComponent<SpriteRenderer>().color = Color.green;
-                print("green");
+                this.GetComponent<SpriteRenderer>().color = Color.green;
+                Debug.Log("Green");
             }
-            if (item == "Puzzle3Yellow")
+            else if (item == "Yellow")
             {
-                Robot.GetComponent<SpriteRenderer>().color = Color.yellow;
-                print("yellow");
+                this.GetComponent<SpriteRenderer>().color = Color.yellow;
+                Debug.Log("Yellow");
             }
+
+
+
+            // Wait for 1 seconds before showing the next color
+            yield return new WaitForSeconds(1f);
+            this.GetComponent<SpriteRenderer>().color = Color.white;
+            yield return new WaitForSeconds(0.5f);
 
         }
+        puzzle4Manager.ButtonsOn();
     }
 
-    public void ShowColourDelay()
-    {
-        int delay = 3;
 
-        while (delay > 0)
-        {
-            delay -= 1 * (int)Time.deltaTime;
-            print(delay);
-        }
-    }
 
 
 }
