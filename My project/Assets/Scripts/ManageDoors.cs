@@ -21,11 +21,11 @@ public class ManageDoors : MonoBehaviour
         InitDoors();
         playerStatus = GameObject.FindWithTag("Player").GetComponent<PlayerStatus>();
         playerlvl = playerStatus.PlayerLevel;
-        playerlevelUpbool = playerStatus.PlayerLevelUpBool;
+
     }
     private void Update()
     {
-        playerlevelUpbool = playerStatus.PlayerLevelUpBool;
+
 
         if (playerlevelUpbool == true)
         {

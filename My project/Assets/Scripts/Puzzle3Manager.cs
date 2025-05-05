@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Assertions.Must;
 using UnityEngine.UI;
 
-public class Puzzle2Path : MonoBehaviour
+public class Puzzle3Manager : MonoBehaviour
 {
     public GameObject PathLeader;
     public Transform[] Waypoints;
@@ -13,7 +13,7 @@ public class Puzzle2Path : MonoBehaviour
     int playerlvl;
     public int moveSpeed = 5;
     public int WayIndex = 0;
-    public bool Puzzle2Start = false;
+    public bool Puzzle3Start = false;
     public TimerScript timer;
     bool startTimer;
     float remianingTime;
@@ -29,7 +29,7 @@ public class Puzzle2Path : MonoBehaviour
         startTimer = timer.StartTimer;
         playerlvl = playerStatus.PlayerLevel;
         camera1 = exitInteractions.MainCamera;
-        if (Puzzle2Start == true)
+        if (Puzzle3Start == true)
         {
 
             if (WayIndex <= Waypoints.Length - 1)
@@ -44,7 +44,7 @@ public class Puzzle2Path : MonoBehaviour
             }
 
         }
-        else if (Puzzle2Start == false)
+        else if (Puzzle3Start == false)
         {
             PathLeader.transform.position = Waypoints[0].transform.position;
             WayIndex = 0;
@@ -53,21 +53,38 @@ public class Puzzle2Path : MonoBehaviour
 
     }
 
+    void StartPuzzle2()
+    {
+        if (playerStatus.PlayPuzz3 == true)
+        {
+            Puzzle3Start = true;
+            playerStatus.PlayPuzz2 = true;
+            playerStatus.PlayerLevel = 3;
+
+        }
+        else
+        {
+            Debug.Log("Puzzle 1 not completed yet.");
+        }
+    }
+
     public void OnClick()
     {
-        Puzzle2Start = !Puzzle2Start;
-        remianingTime = 20;//seconds
-        timer.StartTimer = true;
+        Puzzle3Start = !Puzzle3Start;
+
         if (WayIndex == Waypoints.Length)
         {
             PathLeader.transform.position = Waypoints[0].transform.position;
             playerlvl = 3;
             playerStatus.PlayPuzz3 = true;
 
-            float movementAmount = 1080;
+
             Vector3 newPosition = camera1.transform.position;
-            newPosition.y += movementAmount;
+            newPosition.x += 1920;
+            newPosition.y += 1080;
             camera1.transform.position = newPosition;
+
+            ;
 
         }
         Debug.Log("START TIMER HERE. by calling the function after setting a bool");
@@ -75,7 +92,7 @@ public class Puzzle2Path : MonoBehaviour
 
         PathLeader.transform.position = Waypoints[0].transform.position;
         WayIndex = 0;
-        Debug.Log(Puzzle2Start);
+        Debug.Log(Puzzle3Start);
 
 
 

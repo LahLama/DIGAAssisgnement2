@@ -20,6 +20,7 @@ TagManager:
   - Anomaly
   - Ornaments
   - Microchip
+  - Puzzle1Manager
   layers:
   - Default
   - TransparentFX

@@ -3,7 +3,7 @@ using UnityEngine;
 public class Puzzle2PathLeaderCheck : MonoBehaviour
 {
 
-    public Puzzle2Path _Puzzle2Script;
+    public Puzzle3Manager _Puzzle3Script;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     //timer here
@@ -19,7 +19,7 @@ public class Puzzle2PathLeaderCheck : MonoBehaviour
             {
                 //Debug.Log("NOO YOU CANT PASS");
                 Debug.Log("MINUS A CHANCE HERE");
-                _Puzzle2Script.Puzzle2Start = false;
+                _Puzzle3Script.Puzzle3Start = false;
 
             }
         }
