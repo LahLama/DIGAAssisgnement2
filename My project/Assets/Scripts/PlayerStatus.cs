@@ -11,10 +11,10 @@ public class PlayerStatus : MonoBehaviour
     public int MicrochipCount;
     public int AnomalyCount;
 
-    public int[] MicrosPerLevel = { 5, 6, 4 };
+    [SerializeField] public int[] MicrosPerLevel = { 0, 5, 6, 4, 1 };
 
 
-
+    public bool GameOver = false;
     public bool PlayPuzz1 = false, PlayPuzz2 = false, PlayPuzz3 = false, PlayPuzz4 = false;
     public bool PlayerLevelUpBool = false;
     public Canvas CheatButtons;
@@ -42,7 +42,7 @@ public class PlayerStatus : MonoBehaviour
             Application.Quit();
         }
 
-        MicroChipCountText.text = "Microchip Count: " + MicrochipCount.ToString() + "/" + MicrosPerLevel[PlayerLevel - 1].ToString();
+        MicroChipCountText.text = "Microchip Count: " + MicrochipCount.ToString() + "/" + MicrosPerLevel[PlayerLevel].ToString();
         AnomalyCountText.text = "Anomaly Count: " + AnomalyCount.ToString();
         PlayerLevelText.text = "Player Level: " + PlayerLevel.ToString();
     }
@@ -53,9 +53,9 @@ public class PlayerStatus : MonoBehaviour
     {
 
 
-        if (MicrochipCount == MicrosPerLevel[0] && PlayerLevel == 1) { PlayerLevel = 2; PlayerLevelUpBool = true; MicrochipCount = 0; }
-        if (MicrochipCount == MicrosPerLevel[1] && PlayerLevel == 2) { PlayerLevel = 3; PlayerLevelUpBool = true; MicrochipCount = 0; }
-        if (MicrochipCount == MicrosPerLevel[2] && PlayerLevel == 3) { PlayerLevel = 4; PlayerLevelUpBool = true; MicrochipCount = 0; }
+        if (MicrochipCount == MicrosPerLevel[PlayerLevel] && PlayerLevel == 1) { PlayerLevel = 2; PlayerLevelUpBool = true; MicrochipCount = 0; }
+        if (MicrochipCount == MicrosPerLevel[PlayerLevel] && PlayerLevel == 2) { PlayerLevel = 3; PlayerLevelUpBool = true; MicrochipCount = 0; }
+        if (MicrochipCount == MicrosPerLevel[PlayerLevel] && PlayerLevel == 3) { PlayerLevel = 4; PlayerLevelUpBool = true; MicrochipCount = 0; }
     }
     public void IncPlayerLevel()
     {
