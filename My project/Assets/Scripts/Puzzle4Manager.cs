@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class Puzzle4Manager : MonoBehaviour
 {
+    /// <summary>
+    /// ADD A THING THAT SHOWS THE PLAYER THE COLOURS THEY HAVE SELECTED
+    /// </summary>
+
 
     public TextMeshProUGUI IncorrectText;
     public Puzzle4Robot robot;
