@@ -18,8 +18,6 @@ public class Puzzle2Manager : MonoBehaviour
     public PlayerStatus playerStatus;
     public TimerScript Puzzle2Timer;
     bool startTimer;
-    float remianingTime;
-    int playerlvl;
     void Awake()
     {
         Codechances = 5;
@@ -46,7 +44,6 @@ public class Puzzle2Manager : MonoBehaviour
 
     public void ValidatePlayerCode()
     {
-        remianingTime = 20;//seconds
         CorrectChoice = 0;
         int indexure = 0;
         foreach (var CodePiece in PlayerCode)
@@ -57,7 +54,6 @@ public class Puzzle2Manager : MonoBehaviour
                 CorrectChoice++;
                 if (CorrectChoice == 4)
                 {
-                    playerlvl = 3;
                     Vector3 newPosition = camera1.transform.position;
                     newPosition.x += 1920;
                     newPosition.y -= 1080;
