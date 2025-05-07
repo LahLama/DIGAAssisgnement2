@@ -28,6 +28,7 @@ public class ObjectInteractoins : MonoBehaviour
     {
         button = GetComponent<Button>();
         button.gameObject.SetActive(false);
+        SoundManager.PlaySound("AnomalySelect");
         playerStatus.IncAnomalyCount();
 
 
@@ -37,6 +38,7 @@ public class ObjectInteractoins : MonoBehaviour
     {
         button = GetComponent<Button>();
         playerStatus.IncMicrochipCount();
+        SoundManager.PlaySound("MicrochipPickUp");
         button.gameObject.SetActive(false);
 
     }

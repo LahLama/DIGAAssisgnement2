@@ -15,7 +15,7 @@ public class Puzzle1Manager : MonoBehaviour
     public TimerScript Puzzle1Timer;
     bool startTimer;
     float remianingTime;
-    int playerlvl;
+
     public string correctCode = "test";
     public string input;
 
@@ -29,7 +29,7 @@ public class Puzzle1Manager : MonoBehaviour
     public void StartPuzzle1Timer()
     {
 
-        remianingTime = 20;//seconds
+        Puzzle1Timer.remianingTime = 20;//seconds
         Puzzle1Timer.StartTimer = true;
         IncorrectText.SetActive(false);
 
@@ -42,8 +42,6 @@ public class Puzzle1Manager : MonoBehaviour
         if (input.ToLower() == correctCode)
         {
             print("PUZZLE COMPLETED");
-            playerlvl = 2;
-
 
             Vector3 newPosition = camera1.transform.position;
             newPosition.x += 1920;
