@@ -9,11 +9,13 @@ public class Puzzle3Manager : MonoBehaviour
     public ExitInteractions exitInteractions;
     public Rigidbody2D camera1;
     public PlayerStatus playerStatus;
+    public TimerScript Puzzle3Timer;
+    public Puzzle4Manager puzzle4Manager;
     int playerlvl;
     public int moveSpeed = 5;
     public int WayIndex = 0;
     public bool Puzzle3Start = false;
-    public TimerScript Puzzle3Timer;
+
 
 
 
@@ -79,10 +81,8 @@ public class Puzzle3Manager : MonoBehaviour
         playerlvl = 3;
         Puzzle3Start = false;
         playerStatus.PlayPuzz3 = true;
-        Vector3 newPosition = camera1.transform.position;
-        newPosition.x += 1920;
-        newPosition.y += 1080;
-        camera1.transform.position = newPosition;
+        exitInteractions.MoveCameraUp();
+        puzzle4Manager.Puzzle4Start();
 
     }
 }
