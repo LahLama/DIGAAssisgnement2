@@ -15,6 +15,7 @@ public class ExitInteractions : MonoBehaviour
     public PlayerStatus playerStatus;
     public Puzzle1Manager puzzle1Manager;
     public Puzzle2Manager puzzle2Manager;
+    public Puzzle3Manager puzzle3Manager;
 
     public int playerlvl;
     public bool playerlevelUpbool;
@@ -180,6 +181,7 @@ public class ExitInteractions : MonoBehaviour
                     playerStatus.PlayPuzz3 = true;
                     //https://mixkit.co/free-sound-effects/time-machine/
                     SoundManager.PlaySound("PuzzleOpen");
+                    puzzle3Manager.StartPuzzle3();
                 }
                 else
                 {

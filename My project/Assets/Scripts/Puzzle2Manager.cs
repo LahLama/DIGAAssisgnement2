@@ -31,7 +31,7 @@ public class Puzzle2Manager : MonoBehaviour
 
     public void StartPuzzle2()
     {
-        Puzzle2Timer.remianingTime = 20;//seconds
+        Puzzle2Timer.remianingTime = 120;//seconds
         Puzzle2Timer.StartTimer = true;
     }
 

@@ -29,7 +29,7 @@ public class Puzzle1Manager : MonoBehaviour
     {
         Debug.Log("Puzzle 1 started");
         playerStatus.PlayPuzz1 = true;
-        Puzzle1Timer.remianingTime = 20;//seconds
+        Puzzle1Timer.remianingTime = 120;//seconds
         Puzzle1Timer.StartTimer = true;
         IncorrectText.SetActive(false);
         int randomValue = Random.Range(0, words.Length);

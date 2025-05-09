@@ -1,7 +1,6 @@
-using Unity.VisualScripting;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Assertions.Must;
-using UnityEngine.UI;
 
 public class Puzzle3Manager : MonoBehaviour
 {
@@ -14,19 +13,12 @@ public class Puzzle3Manager : MonoBehaviour
     public int moveSpeed = 5;
     public int WayIndex = 0;
     public bool Puzzle3Start = false;
-    public TimerScript timer;
-    bool startTimer;
-    float remianingTime;
+    public TimerScript Puzzle3Timer;
 
 
 
     void Update()
     {
-
-
-
-        remianingTime = timer.remianingTime;
-        startTimer = timer.StartTimer;
         playerlvl = playerStatus.PlayerLevel;
         camera1 = exitInteractions.MainCamera;
         if (Puzzle3Start == true)
@@ -35,11 +27,13 @@ public class Puzzle3Manager : MonoBehaviour
             if (WayIndex <= Waypoints.Length - 1)
             {
                 PathLeader.transform.position = Vector2.MoveTowards(PathLeader.transform.position, Waypoints[WayIndex].transform.position, moveSpeed * Time.deltaTime);
-
-
                 if (PathLeader.transform.position == Waypoints[WayIndex].transform.position)
                 {
                     WayIndex++;
+                }
+                if (WayIndex == Waypoints.Length)
+                {
+                    StartCoroutine(WaitBeforeReset());
                 }
             }
 
@@ -49,16 +43,14 @@ public class Puzzle3Manager : MonoBehaviour
             PathLeader.transform.position = Waypoints[0].transform.position;
             WayIndex = 0;
         }
-
-
     }
 
-    void StartPuzzle2()
+    public void StartPuzzle3()
     {
         if (playerStatus.PlayPuzz3 == true)
         {
-            Puzzle3Start = true;
-            playerStatus.PlayPuzz2 = true;
+            Puzzle3Timer.remianingTime = 120;//seconds
+            Puzzle3Timer.StartTimer = true;
             playerStatus.PlayerLevel = 3;
 
         }
@@ -98,11 +90,9 @@ public class Puzzle3Manager : MonoBehaviour
 
     }
 
+    IEnumerator WaitBeforeReset()
+    {
+        yield return new WaitForSeconds(2);
 
-
-
-
-
-
-
+    }
 }
