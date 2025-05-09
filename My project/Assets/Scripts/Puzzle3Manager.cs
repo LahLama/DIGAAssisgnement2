@@ -31,9 +31,12 @@ public class Puzzle3Manager : MonoBehaviour
                 {
                     WayIndex++;
                 }
-                if (WayIndex == Waypoints.Length)
+                if (WayIndex == Waypoints.Length && Puzzle3Start == true)
                 {
+
+                    Puzzle3Timer.StartTimer = false;
                     StartCoroutine(WaitBeforeReset());
+
                 }
             }
 
@@ -52,34 +55,12 @@ public class Puzzle3Manager : MonoBehaviour
             Puzzle3Timer.remianingTime = 120;//seconds
             Puzzle3Timer.StartTimer = true;
             playerStatus.PlayerLevel = 3;
-
-        }
-        else
-        {
-            Debug.Log("Puzzle 1 not completed yet.");
         }
     }
 
     public void OnClick()
     {
         Puzzle3Start = !Puzzle3Start;
-
-        if (WayIndex == Waypoints.Length)
-        {
-            PathLeader.transform.position = Waypoints[0].transform.position;
-            playerlvl = 3;
-            playerStatus.PlayPuzz3 = true;
-
-
-            Vector3 newPosition = camera1.transform.position;
-            newPosition.x += 1920;
-            newPosition.y += 1080;
-            camera1.transform.position = newPosition;
-
-            ;
-
-        }
-        Debug.Log("START TIMER HERE. by calling the function after setting a bool");
         //https://www.youtube.com/watch?v=am3IitICcyA
 
         PathLeader.transform.position = Waypoints[0].transform.position;
@@ -92,7 +73,16 @@ public class Puzzle3Manager : MonoBehaviour
 
     IEnumerator WaitBeforeReset()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(2);     //we have to add it here cause coroutines happen asyncourously
+
+
+        playerlvl = 3;
+        Puzzle3Start = false;
+        playerStatus.PlayPuzz3 = true;
+        Vector3 newPosition = camera1.transform.position;
+        newPosition.x += 1920;
+        newPosition.y += 1080;
+        camera1.transform.position = newPosition;
 
     }
 }
