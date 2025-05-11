@@ -1168,10 +1168,11 @@ MonoBehaviour:
   exitInteractions: {fileID: 2041913852}
   camera1: {fileID: 494884437}
   playerStatus: {fileID: 2033192346}
+  Puzzle3Timer: {fileID: 878801267}
+  puzzle4Manager: {fileID: 1404904147}
   moveSpeed: 500
   WayIndex: 0
   Puzzle3Start: 0
-  Puzzle3Timer: {fileID: 878801267}
 --- !u!4 &171032501
 Transform:
   m_ObjectHideFlags: 0
@@ -1776,7 +1777,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 542.7
+  orthographic size: 529.46
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -2391,6 +2392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzle4Manager: {fileID: 1404904147}
+  Puzzle4Robot: {fileID: 975902204}
 --- !u!114 &319588998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4641,7 +4643,7 @@ Transform:
   m_GameObject: {fileID: 494884435}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4320, z: 0}
+  m_LocalPosition: {x: -1920, y: 4320, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9211,6 +9213,7 @@ MonoBehaviour:
   - Red
   - Red
   puzzle4Manager: {fileID: 1404904147}
+  spriteRenderer: {fileID: 0}
 --- !u!212 &975902205
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9337,6 +9340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzle4Manager: {fileID: 1404904147}
+  Puzzle4Robot: {fileID: 975902204}
 --- !u!114 &984277066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13975,6 +13979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzle4Manager: {fileID: 1404904147}
+  Puzzle4Robot: {fileID: 975902204}
 --- !u!114 &1489813031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15761,6 +15766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzle4Manager: {fileID: 1404904147}
+  Puzzle4Robot: {fileID: 975902204}
 --- !u!114 &1650306144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16119,8 +16125,8 @@ MonoBehaviour:
   camera1: {fileID: 494884437}
   playerStatus: {fileID: 2033192346}
   IncorrectText: {fileID: 1593739040}
-  ChangeText: {fileID: 2075957263}
-  ChangeNum: {fileID: 1305529130}
+  ChangeText: {fileID: 0}
+  ChangeNum: {fileID: 0}
   Puzzle1Timer: {fileID: 1162081}
   words:
   - ___
@@ -18118,7 +18124,7 @@ MonoBehaviour:
   playerStatus: {fileID: 2033192346}
   puzzle1Manager: {fileID: 1722891428}
   puzzle2Manager: {fileID: 44055501}
-  puzzle3Manager: {fileID: 171032500}
+  puzzle3Manager: {fileID: 0}
   playerlvl: 0
   playerlevelUpbool: 0
   playerMicroCount: 0
