@@ -1168,11 +1168,18 @@ MonoBehaviour:
   exitInteractions: {fileID: 2041913852}
   camera1: {fileID: 494884437}
   playerStatus: {fileID: 2033192346}
+<<<<<<< Updated upstream
   Puzzle3Timer: {fileID: 878801267}
   puzzle4Manager: {fileID: 1404904147}
   moveSpeed: 500
   WayIndex: 0
   Puzzle3Start: 0
+=======
+  moveSpeed: 500
+  WayIndex: 0
+  Puzzle3Start: 0
+  timer: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!4 &171032501
 Transform:
   m_ObjectHideFlags: 0
@@ -2392,7 +2399,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzle4Manager: {fileID: 1404904147}
+<<<<<<< Updated upstream
   Puzzle4Robot: {fileID: 975902204}
+=======
+>>>>>>> Stashed changes
 --- !u!114 &319588998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4643,7 +4653,11 @@ Transform:
   m_GameObject: {fileID: 494884435}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: -1920, y: 4320, z: 0}
+=======
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9213,7 +9227,10 @@ MonoBehaviour:
   - Red
   - Red
   puzzle4Manager: {fileID: 1404904147}
+<<<<<<< Updated upstream
   spriteRenderer: {fileID: 0}
+=======
+>>>>>>> Stashed changes
 --- !u!212 &975902205
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9340,7 +9357,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzle4Manager: {fileID: 1404904147}
+<<<<<<< Updated upstream
   Puzzle4Robot: {fileID: 975902204}
+=======
+>>>>>>> Stashed changes
 --- !u!114 &984277066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13979,7 +13999,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzle4Manager: {fileID: 1404904147}
+<<<<<<< Updated upstream
   Puzzle4Robot: {fileID: 975902204}
+=======
+>>>>>>> Stashed changes
 --- !u!114 &1489813031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14504,7 +14527,10 @@ MonoBehaviour:
   MicrochipCount: 0
   AnomalyCount: 0
   MicrosPerLevel: 0000000005000000060000000400000001000000
+<<<<<<< Updated upstream
   GameOver: 0
+=======
+>>>>>>> Stashed changes
   PlayPuzz1: 0
   PlayPuzz2: 0
   PlayPuzz3: 0
@@ -15766,7 +15792,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzle4Manager: {fileID: 1404904147}
+<<<<<<< Updated upstream
   Puzzle4Robot: {fileID: 975902204}
+=======
+>>>>>>> Stashed changes
 --- !u!114 &1650306144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18067,7 +18096,10 @@ MonoBehaviour:
   MicrochipCount: 0
   AnomalyCount: 0
   MicrosPerLevel: 0000000005000000060000000400000004000000
+<<<<<<< Updated upstream
   GameOver: 0
+=======
+>>>>>>> Stashed changes
   PlayPuzz1: 0
   PlayPuzz2: 0
   PlayPuzz3: 0
@@ -18124,7 +18156,10 @@ MonoBehaviour:
   playerStatus: {fileID: 2033192346}
   puzzle1Manager: {fileID: 1722891428}
   puzzle2Manager: {fileID: 44055501}
+<<<<<<< Updated upstream
   puzzle3Manager: {fileID: 0}
+=======
+>>>>>>> Stashed changes
   playerlvl: 0
   playerlevelUpbool: 0
   playerMicroCount: 0
@@ -18140,8 +18175,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49d314e7626e09c40bf2721e1b43cad2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   chances: []
   playerStatus: {fileID: 2033192346}
+=======
+>>>>>>> Stashed changes
 --- !u!1001 &2041913850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19900,7 +19938,11 @@ PrefabInstance:
     - target: {fileID: 515489749978519565, guid: 5fe4e4ae22d696a478bce419669e8842, type: 3}
       propertyPath: m_Sprite
       value: 
+<<<<<<< Updated upstream
       objectReference: {fileID: 2570972602406725858, guid: 6712b91af910c924aba7a78f7fc60b44, type: 3}
+=======
+      objectReference: {fileID: 2570972602406725858, guid: b5bb01b41c508ef47b742190b17f9f96, type: 3}
+>>>>>>> Stashed changes
     - target: {fileID: 1327788996070938651, guid: 5fe4e4ae22d696a478bce419669e8842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
