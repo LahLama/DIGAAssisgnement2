@@ -11,7 +11,7 @@ public class PlayerStatus : MonoBehaviour
     public int MicrochipCount;
     public int AnomalyCount;
 
-    public int[] MicrosPerLevel = { 6, 6 + 5, 6 + 5 + 4 };//{ 6, 6 + 5, 6 + 5 + 4 };
+    public int[] MicrosPerLevel = { 5, 6, 4 };
 
 
 
@@ -53,10 +53,9 @@ public class PlayerStatus : MonoBehaviour
     {
 
 
-        if (MicrochipCount == MicrosPerLevel[0] /*and player level*/) { PlayerLevel = 2; PlayerLevelUpBool = true; /*set chip count to zero*/ }
-
-        if (MicrochipCount == MicrosPerLevel[1]) { PlayerLevel = 3; print("PLAYER IS NOW AT LEVEL: " + PlayerLevel); PlayerLevelUpBool = true; }
-        if (MicrochipCount == MicrosPerLevel[2]) { PlayerLevel = 4; print("PLAYER IS NOW AT LEVEL: " + PlayerLevel); PlayerLevelUpBool = true; }
+        if (MicrochipCount == MicrosPerLevel[0] && PlayerLevel == 1) { PlayerLevel = 2; PlayerLevelUpBool = true; MicrochipCount = 0; }
+        if (MicrochipCount == MicrosPerLevel[1] && PlayerLevel == 2) { PlayerLevel = 3; PlayerLevelUpBool = true; MicrochipCount = 0; }
+        if (MicrochipCount == MicrosPerLevel[2] && PlayerLevel == 3) { PlayerLevel = 4; PlayerLevelUpBool = true; MicrochipCount = 0; }
     }
     public void IncPlayerLevel()
     {
