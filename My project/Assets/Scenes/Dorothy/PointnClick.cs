@@ -7,8 +7,8 @@ public class PointnClick : MonoBehaviour
     public float spawnDistanceBehind = 1.5f;
 
     [Header("Animation Settings")]
-    private float animationHeight = 3.0f; // How high the object moves up
-    private float animationDuration = 1.0f; // Duration to move up or down
+    private float animationHeight = 150f; // How high the object moves up
+    private float animationDuration = 1.5f; // Duration to move up or down
 
     private bool isAnimating = false;
     private bool hasSpawned = false;
@@ -22,39 +22,56 @@ public class PointnClick : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !isAnimating)
-        {
-            HandleClick(0); // Left-click
-        }
+        /* if (Input.GetMouseButtonDown(0) && !isAnimating)
+         {
+             HandleClick(0); // Left-click
+         }
 
-        if (Input.GetMouseButtonDown(1))
-        {
-            HandleClick(1); // Right-click
-        }
+         if (Input.GetMouseButtonDown(1))
+         {
+             HandleClick(1); // Right-click
+         }*/
     }
 
-    void HandleClick(int mouseButton)
+    public void OnObjectClick()
     {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
+        print("Object clicked");
+        //TrySpawnObjectOnceBehind();
+        StartCoroutine(AnimateVerticalMovement());
+        //this.interactable = false;
 
-        if (Physics.Raycast(ray, out hit))
+        if (name.StartsWith("pillow"))
         {
-            GameObject hitObject = hit.collider.gameObject;
-
-            if (mouseButton == 0 && hitObject == gameObject && !hitObject.name.StartsWith("micro-chip"))
-            {
-                Debug.Log("Left-clicked: Animate + Spawn (if not already)");
-                TrySpawnObjectOnceBehind();
-                StartCoroutine(AnimateVerticalMovement());
-            }
-            else if (mouseButton == 1 && hitObject.name.StartsWith("micro-chip"))
-            {
-                Debug.Log("Right-clicked: micro-chip destroyed");
-                Destroy(hitObject);
-            }
+            SoundManager.PlaySound("pillow");
+        }
+        if (name.StartsWith("Vase"))
+        {
+            SoundManager.PlaySound("vase");
         }
     }
+    /*
+        void HandleClick(int mouseButton)
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                GameObject hitObject = hit.collider.gameObject;
+
+                if (mouseButton == 0 && hitObject == gameObject && !hitObject.name.StartsWith("micro-chip"))
+                {
+                    Debug.Log("Left-clicked: Animate + Spawn (if not already)");
+                    TrySpawnObjectOnceBehind();
+                    StartCoroutine(AnimateVerticalMovement());
+                }
+                else if (mouseButton == 1 && hitObject.name.StartsWith("micro-chip"))
+                {
+                    Debug.Log("Right-clicked: micro-chip destroyed");
+                    Destroy(hitObject);
+                }
+            }
+        }*/
 
     private System.Collections.IEnumerator AnimateVerticalMovement()
     {
@@ -83,19 +100,19 @@ public class PointnClick : MonoBehaviour
 
         isAnimating = false;
     }
+    /*
+        private void TrySpawnObjectOnceBehind()
+        {
+            if (hasSpawned || randomPrefabs.Length == 0)
+                return;
 
-    private void TrySpawnObjectOnceBehind()
-    {
-        if (hasSpawned || randomPrefabs.Length == 0)
-            return;
+            int randomIndex = Random.Range(0, randomPrefabs.Length);
+            GameObject prefabToSpawn = randomPrefabs[randomIndex];
 
-        int randomIndex = Random.Range(0, randomPrefabs.Length);
-        GameObject prefabToSpawn = randomPrefabs[randomIndex];
+            Vector3 spawnPosition = transform.position - transform.forward * spawnDistanceBehind;
+            spawnedObject = Instantiate(prefabToSpawn, spawnPosition, Quaternion.identity);
+            Debug.Log($"Spawned {spawnedObject.name} behind {gameObject.name}");
 
-        Vector3 spawnPosition = transform.position - transform.forward * spawnDistanceBehind;
-        spawnedObject = Instantiate(prefabToSpawn, spawnPosition, Quaternion.identity);
-        Debug.Log($"Spawned {spawnedObject.name} behind {gameObject.name}");
-
-        hasSpawned = true;
-    }
+            hasSpawned = true;
+        }*/
 }
