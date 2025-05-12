@@ -1,6 +1,10 @@
 fileFormatVersion: 2
 <<<<<<<< HEAD:My project/Assets/Sprites/Interactions/AnomalyPressed.png.meta
+<<<<<<< HEAD
 guid: 1f65d63c67ed82d439a0d52e582cf50e
+=======
+guid: 7b280d024919d6f438bba1b6abbaa1db
+>>>>>>> origin/Promise
 TextureImporter:
   internalIDToNameTable:
   - first:
