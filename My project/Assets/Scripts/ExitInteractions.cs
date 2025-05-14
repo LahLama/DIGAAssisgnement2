@@ -15,6 +15,7 @@ public class ExitInteractions : MonoBehaviour
     public PlayerStatus playerStatus;
     public Puzzle1Manager puzzle1Manager;
     public Puzzle2Manager puzzle2Manager;
+    public Puzzle3Manager puzzle3Manager;
 
     public int playerlvl;
     public bool playerlevelUpbool;
@@ -103,6 +104,34 @@ public class ExitInteractions : MonoBehaviour
         }
     }
 
+    public void MoveCameraUp()
+    {
+        float movementAmount1 = 1080f;
+        Vector3 newPosition1 = MainCamera.transform.position;
+        newPosition1.y += movementAmount1;
+        MainCamera.transform.position = newPosition1;
+        //https://mixkit.co/free-sound-effects/doors/
+        SoundManager.PlaySound("DoorOpen");
+    }
+    public void MoveCameraDown()
+    {
+        float movementAmount2 = -1080f;
+        Vector3 newPosition2 = MainCamera.transform.position;
+        newPosition2.y += movementAmount2;
+        MainCamera.transform.position = newPosition2;
+        //https://mixkit.co/free-sound-effects/doors/
+        SoundManager.PlaySound("DoorOpen");
+    }
+
+    public void MoveCameraLeft()
+    {
+        float movementAmount3 = -1920f;
+        Vector3 newPosition3 = MainCamera.transform.position;
+        newPosition3.x += movementAmount3;
+        MainCamera.transform.position = newPosition3;
+        //https://mixkit.co/free-sound-effects/doors/
+        SoundManager.PlaySound("DoorOpen");
+    }
     public void MoveCamera()
     {
 
@@ -110,69 +139,53 @@ public class ExitInteractions : MonoBehaviour
         switch (this.name)
         {
             case "UpBtn":
-                float movementAmount1 = 1080f;
-                Vector3 newPosition1 = MainCamera.transform.position;
-                newPosition1.y += movementAmount1;
-                MainCamera.transform.position = newPosition1;
+                MoveCameraUp();
                 break;
             case "DownBtn":
-                float movementAmount2 = -1080f;
-                Vector3 newPosition2 = MainCamera.transform.position;
-                newPosition2.y += movementAmount2;
-                MainCamera.transform.position = newPosition2;
+                MoveCameraDown();
                 break;
             case "UpOrPuzzle1":
                 if (playerStatus.PlayPuzz1 == false)
                 {
-                    float movementAmount3 = -1920f;
-                    Vector3 newPosition3 = MainCamera.transform.position;
-                    newPosition3.x += movementAmount3;
-                    MainCamera.transform.position = newPosition3;
+                    MoveCameraLeft();
                     playerStatus.PlayPuzz1 = true;
                     puzzle1Manager.StartPuzzle1Timer();
+                    Debug.Log("Puzzle 1 started ********************");
+                    //https://mixkit.co/free-sound-effects/time-machine/
+                    SoundManager.PlaySound("PuzzleOpen");
 
                 }
                 else
                 {
-                    float movementAmount4 = 1080f;
-                    Vector3 newPosition4 = MainCamera.transform.position;
-                    newPosition4.y += movementAmount4;
-                    MainCamera.transform.position = newPosition4;
+                    MoveCameraUp();
                 }
                 break;
             case "DownOrPuzzle2":
                 if (playerStatus.PlayPuzz2 == false)
                 {
-                    float movementAmount5 = -1920f;
-                    Vector3 newPosition5 = MainCamera.transform.position;
-                    newPosition5.x += movementAmount5;
-                    MainCamera.transform.position = newPosition5;
+                    MoveCameraLeft();
                     playerStatus.PlayPuzz2 = true;
                     puzzle2Manager.StartPuzzle2();
+                    //https://mixkit.co/free-sound-effects/time-machine/
+                    SoundManager.PlaySound("PuzzleOpen");
                 }
                 else
                 {
-                    float movementAmount6 = -1080f;
-                    Vector3 newPosition6 = MainCamera.transform.position;
-                    newPosition6.y += movementAmount6;
-                    MainCamera.transform.position = newPosition6;
+                    MoveCameraDown();
                 }
                 break;
             case "UpOrPuzzle3":
                 if (playerStatus.PlayPuzz3 == false)
                 {
-                    float movementAmount7 = -1920f;
-                    Vector3 newPosition7 = MainCamera.transform.position;
-                    newPosition7.x += movementAmount7;
-                    MainCamera.transform.position = newPosition7;
+                    MoveCameraLeft();
                     playerStatus.PlayPuzz3 = true;
+                    //https://mixkit.co/free-sound-effects/time-machine/
+                    SoundManager.PlaySound("PuzzleOpen");
+                    puzzle3Manager.StartPuzzle3();
                 }
                 else
                 {
-                    float movementAmount8 = 1080f;
-                    Vector3 newPosition8 = MainCamera.transform.position;
-                    newPosition8.y += movementAmount8;
-                    MainCamera.transform.position = newPosition8;
+                    MoveCameraUp();
                 }
                 break;
             default:
@@ -181,6 +194,8 @@ public class ExitInteractions : MonoBehaviour
 
 
         }
+
+
 
 
     }

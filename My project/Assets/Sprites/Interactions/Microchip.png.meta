@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:My project/Assets/Sprites/Interactions/Anomaly.png.meta
 guid: 6712b91af910c924aba7a78f7fc60b44
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 2570972602406725858
-    second: Anomaly_0
-========
-guid: b0a5fcfba6c5fd14b947269b0c9f6316
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 184093112063059965
     second: Microchip_0
->>>>>>>> James:My project/Assets/Sprites/Interactions/Microchip.png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,15 +113,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<<< HEAD:My project/Assets/Sprites/Interactions/Anomaly.png.meta
-      name: Anomaly_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 200
-        height: 200
-========
       name: Microchip_0
       rect:
         serializedVersion: 2
@@ -138,7 +120,6 @@ TextureImporter:
         y: 5
         width: 127
         height: 194
->>>>>>>> James:My project/Assets/Sprites/Interactions/Microchip.png.meta
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,13 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-<<<<<<<< HEAD:My project/Assets/Sprites/Interactions/Anomaly.png.meta
-      spriteID: 2e8e6b5d5fdeda320800000000000000
-      internalID: 2570972602406725858
-========
       spriteID: df76d16c5b70e8200800000000000000
       internalID: 184093112063059965
->>>>>>>> James:My project/Assets/Sprites/Interactions/Microchip.png.meta
       vertices: []
       indices: 
       edges: []
@@ -171,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Microchip_0: 184093112063059965
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

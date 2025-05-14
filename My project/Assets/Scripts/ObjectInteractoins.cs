@@ -28,6 +28,9 @@ public class ObjectInteractoins : MonoBehaviour
     {
         button = GetComponent<Button>();
         button.gameObject.SetActive(false);
+        SoundManager.PlaySound("AnomalySelect");
+        //https://mixkit.co/free-sound-effects/error/
+        //mixkit-short-electric-fence-buzz-2966
         playerStatus.IncAnomalyCount();
 
 
@@ -37,6 +40,8 @@ public class ObjectInteractoins : MonoBehaviour
     {
         button = GetComponent<Button>();
         playerStatus.IncMicrochipCount();
+        SoundManager.PlaySound("MicrochipPickUp");
+        //https://mixkit.co/free-sound-effects/high-tech/
         button.gameObject.SetActive(false);
 
     }
