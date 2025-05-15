@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: d73a03a5c01a1004fb44dbda7a3c062b
+=======
 guid: 0065dbd8795cd0e408b284fb885b3639
+>>>>>>> origin/Promise
 TextureImporter:
   internalIDToNameTable:
   - first:
