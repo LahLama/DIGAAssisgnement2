@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 8c873f6034940934caedc5f15c9601bf
+=======
+<<<<<<<< HEAD:My project/Assets/Scenes/James Room.unity.meta
+guid: b2c0ed55a30afd547bd0133f98144304
+========
+guid: b8cbdfea27c7d734b8719e7a0bfdf37b
+>>>>>>>> Promise:My project/Assets/Scenes/Refinement/Puzzle1 Refinement.unity.meta
+>>>>>>> James
 DefaultImporter:
   externalObjects: {}
   userData: 
