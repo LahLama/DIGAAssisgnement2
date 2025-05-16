@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScreen.unity
     guid: 5d1c5439507b0dc43843599949486344
   - enabled: 1
-    path: Assets/Scenes/James Room.unity
+    path: Assets/Scenes/True James Room.unity
     guid: ae27fb364e1358a4293b9098ff250b79
   - enabled: 1
     path: Assets/Scenes/Promise/PauseMenu.unity

@@ -3,9 +3,9 @@ using UnityEngine;
 public class RandomSoundEffect : MonoBehaviour
 {
     public AudioSource audioSource; // Reference to the AudioSource component
-    float waitTimeCountdown = 20;
-    float minWaitBetweenPlays = 20;
-    float maxWaitBetweenPlays = 50;
+    float waitTimeCountdown = 2;
+    float minWaitBetweenPlays = 5;
+    float maxWaitBetweenPlays = 20;
     void Update()
     {
         if (!audioSource.isPlaying)
