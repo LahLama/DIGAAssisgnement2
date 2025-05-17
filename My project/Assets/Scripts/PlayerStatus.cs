@@ -22,6 +22,7 @@ public class PlayerStatus : MonoBehaviour
     public TextMeshProUGUI AnomalyCountText;
     public TextMeshProUGUI PlayerLevelText;
     public TextMeshProUGUI GameChancesText;
+    public
 
 
 

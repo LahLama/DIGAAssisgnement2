@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 772578a6f5728954b9c202d8b05c8243
+guid: 5e4152dbb1045744c9b9a70bc86abb6d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8535953073115663823
-    second: Cabin kitchen sketch_0
+      213: 4986190733806725710
+    second: entrance_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cabin kitchen sketch_0
+      name: entrance_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1327989c7e33a8980800000000000000
-      internalID: -8535953073115663823
+      spriteID: e4ae4eeed02823540800000000000000
+      internalID: 4986190733806725710
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Cabin kitchen sketch_0: -8535953073115663823
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
