@@ -1,4 +1,6 @@
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ObjectInteractoins : MonoBehaviour
@@ -49,8 +51,17 @@ public class ObjectInteractoins : MonoBehaviour
     {
         //move object up
         //spawn micro IFF max numbers hasnt been spawnwed
+    }
 
-
+    public void OnChanceMinus()
+    {
+        playerStatus.GameChances--;
+        SoundManager.PlaySound("GameChanceMinus");
+        if (playerStatus.GameChances <= 0)
+        {
+            SceneManager.LoadScene("GameOver");
+            //GameOver
+        }
     }
 
 

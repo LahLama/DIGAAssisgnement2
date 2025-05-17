@@ -10,7 +10,7 @@ public class PlayerStatus : MonoBehaviour
     public int PlayerLevel;
     public int MicrochipCount;
     public int AnomalyCount;
-
+    public int GameChances = 5;
     public int[] MicrosPerLevel = { 5, 6, 4 };
 
 
@@ -19,9 +19,10 @@ public class PlayerStatus : MonoBehaviour
     public bool PlayerLevelUpBool = false;
     public Canvas CheatButtons;
     public TextMeshProUGUI MicroChipCountText;
-
     public TextMeshProUGUI AnomalyCountText;
     public TextMeshProUGUI PlayerLevelText;
+    public TextMeshProUGUI GameChancesText;
+    public
 
 
 
@@ -29,6 +30,8 @@ public class PlayerStatus : MonoBehaviour
     {
         PlayerLevel = 1;
         MicrochipCount = 0;
+        GameChances = 5;
+        SoundManager.PlaySound("AI_Intro");
     }
     void Update()
     {
@@ -41,10 +44,17 @@ public class PlayerStatus : MonoBehaviour
         {
             Application.Quit();
         }
-
-        MicroChipCountText.text = "Microchip Count: " + MicrochipCount.ToString() + "/" + MicrosPerLevel[PlayerLevel - 1].ToString();
-        AnomalyCountText.text = "Anomaly Count: " + AnomalyCount.ToString();
+        if (PlayerLevel <= MicrosPerLevel.Length)
+        {
+            MicroChipCountText.text = ": " + MicrochipCount.ToString() + "/" + MicrosPerLevel[PlayerLevel - 1].ToString();
+        }
+        else
+        {
+            MicroChipCountText.text = ": / ";
+        }
+        //AnomalyCountText.text = ": " + AnomalyCount.ToString();
         PlayerLevelText.text = "Player Level: " + PlayerLevel.ToString();
+        GameChancesText.text = ": " + GameChances.ToString();
     }
 
 
@@ -53,9 +63,9 @@ public class PlayerStatus : MonoBehaviour
     {
 
 
-        if (MicrochipCount == MicrosPerLevel[0] && PlayerLevel == 1) { PlayerLevel = 2; PlayerLevelUpBool = true; MicrochipCount = 0; }
-        if (MicrochipCount == MicrosPerLevel[1] && PlayerLevel == 2) { PlayerLevel = 3; PlayerLevelUpBool = true; MicrochipCount = 0; }
-        if (MicrochipCount == MicrosPerLevel[2] && PlayerLevel == 3) { PlayerLevel = 4; PlayerLevelUpBool = true; MicrochipCount = 0; }
+        if (MicrochipCount == MicrosPerLevel[0] && PlayerLevel == 1) { PlayerLevel = 2; PlayerLevelUpBool = true; MicrochipCount = 0; GameChances = 5; }
+        if (MicrochipCount == MicrosPerLevel[1] && PlayerLevel == 2) { PlayerLevel = 3; PlayerLevelUpBool = true; MicrochipCount = 0; GameChances = 5; }
+        if (MicrochipCount == MicrosPerLevel[2] && PlayerLevel == 3) { PlayerLevel = 4; PlayerLevelUpBool = true; MicrochipCount = 0; GameChances = 5; }
     }
     public void IncPlayerLevel()
     {

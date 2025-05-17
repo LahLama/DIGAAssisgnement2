@@ -48,7 +48,7 @@ public class PlayerObjective : MonoBehaviour
 
         }
         else if (playerStatus.PlayerLevel == 4 && playerStatus.PlayPuzz3 == true)
-            Objective.text = "Find all the microchips!";
+            Objective.text = "Complete the puzzles!";
 
     }
 }
