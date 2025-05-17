@@ -7,11 +7,10 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
 
-    public GameObject pauseMenuUI;
-    /*
+    
         void Update()
         {
-            if (SceneManager.GetActiveScene().name == "Room")
+            if (SceneManager.GetActiveScene().name == "True James Room")
             {
                 if (Input.GetKeyDown(KeyCode.Escape))
                 {
@@ -26,7 +25,7 @@ public class PauseMenu : MonoBehaviour
 
                 }
             }
-        }*/
+        }
 
     public void Resume()
     {

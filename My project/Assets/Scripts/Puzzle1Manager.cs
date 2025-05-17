@@ -28,7 +28,6 @@ public class Puzzle1Manager : MonoBehaviour
     public void StartPuzzle1Timer()
     {
         Debug.Log("Puzzle 1 started");
-        playerStatus.PlayPuzz1 = true;
         Puzzle1Timer.remianingTime = 120;//seconds
         Puzzle1Timer.StartTimer = true;
         IncorrectText.SetActive(false);
@@ -53,6 +52,8 @@ public class Puzzle1Manager : MonoBehaviour
             newPosition.y += 1080;
             camera1.transform.position = newPosition;
             Puzzle1Timer.StartTimer = false;
+            playerStatus.PlayPuzz1 = true;
+            SoundManager.PlaySound("AI_puzzleComplete1");
 
         }
         else

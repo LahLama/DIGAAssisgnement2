@@ -106,7 +106,7 @@ public class ExitInteractions : MonoBehaviour
 
     public void MoveCameraUp()
     {
-        float movementAmount1 = 1080f;
+        float movementAmount1 = 540f;
         Vector3 newPosition1 = MainCamera.transform.position;
         newPosition1.y += movementAmount1;
         MainCamera.transform.position = newPosition1;
@@ -115,7 +115,7 @@ public class ExitInteractions : MonoBehaviour
     }
     public void MoveCameraDown()
     {
-        float movementAmount2 = -1080f;
+        float movementAmount2 = -540f;
         Vector3 newPosition2 = MainCamera.transform.position;
         newPosition2.y += movementAmount2;
         MainCamera.transform.position = newPosition2;
@@ -125,7 +125,7 @@ public class ExitInteractions : MonoBehaviour
 
     public void MoveCameraLeft()
     {
-        float movementAmount3 = -1920f;
+        float movementAmount3 = -960;
         Vector3 newPosition3 = MainCamera.transform.position;
         newPosition3.x += movementAmount3;
         MainCamera.transform.position = newPosition3;
@@ -148,7 +148,7 @@ public class ExitInteractions : MonoBehaviour
                 if (playerStatus.PlayPuzz1 == false)
                 {
                     MoveCameraLeft();
-                    playerStatus.PlayPuzz1 = true;
+
                     puzzle1Manager.StartPuzzle1Timer();
                     Debug.Log("Puzzle 1 started ********************");
                     //https://mixkit.co/free-sound-effects/time-machine/
@@ -164,7 +164,7 @@ public class ExitInteractions : MonoBehaviour
                 if (playerStatus.PlayPuzz2 == false)
                 {
                     MoveCameraLeft();
-                    playerStatus.PlayPuzz2 = true;
+
                     puzzle2Manager.StartPuzzle2();
                     //https://mixkit.co/free-sound-effects/time-machine/
                     SoundManager.PlaySound("PuzzleOpen");
