@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Glitch Material
+  m_Name: Glitch Vase
   m_Shader: {fileID: -6465566751694194690, guid: b5b3df62286d10a4880bbd0aaf399064, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
