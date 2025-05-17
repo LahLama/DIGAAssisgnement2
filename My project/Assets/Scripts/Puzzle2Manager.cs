@@ -54,12 +54,14 @@ public class Puzzle2Manager : MonoBehaviour
                 CorrectChoice++;
                 if (CorrectChoice == 4)
                 {
+                    playerStatus.PlayPuzz2 = true;
                     Vector3 newPosition = camera1.transform.position;
                     newPosition.x += 1920;
                     newPosition.y -= 1080;
                     camera1.transform.position = newPosition;
-                    playerStatus.PlayPuzz2 = false;
                     Puzzle2Timer.StartTimer = false;
+                    SoundManager.PlaySound("AI_puzzleComplete2");
+
                 }
             }
             else

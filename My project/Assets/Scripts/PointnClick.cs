@@ -42,11 +42,11 @@ public class PointnClick : MonoBehaviour
 
         if (name.StartsWith("pillow"))
         {
-            SoundManager.PlaySound("pillow");
+            SoundManager.PlaySound("soft");
         }
         if (name.StartsWith("Vase"))
         {
-            SoundManager.PlaySound("vase");
+            SoundManager.PlaySound("glass");
         }
     }
     /*

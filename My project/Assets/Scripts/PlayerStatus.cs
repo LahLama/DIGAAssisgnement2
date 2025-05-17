@@ -31,6 +31,7 @@ public class PlayerStatus : MonoBehaviour
         PlayerLevel = 1;
         MicrochipCount = 0;
         GameChances = 5;
+        SoundManager.PlaySound("AI_Intro");
     }
     void Update()
     {
@@ -43,9 +44,15 @@ public class PlayerStatus : MonoBehaviour
         {
             Application.Quit();
         }
-
-        MicroChipCountText.text = ": " + MicrochipCount.ToString() + "/" + MicrosPerLevel[PlayerLevel - 1].ToString();
-        AnomalyCountText.text = ": " + AnomalyCount.ToString();
+        if (PlayerLevel <= MicrosPerLevel.Length)
+        {
+            MicroChipCountText.text = ": " + MicrochipCount.ToString() + "/" + MicrosPerLevel[PlayerLevel - 1].ToString();
+        }
+        else
+        {
+            MicroChipCountText.text = ": / ";
+        }
+        //AnomalyCountText.text = ": " + AnomalyCount.ToString();
         PlayerLevelText.text = "Player Level: " + PlayerLevel.ToString();
         GameChancesText.text = ": " + GameChances.ToString();
     }

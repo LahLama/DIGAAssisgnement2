@@ -148,7 +148,7 @@ public class ExitInteractions : MonoBehaviour
                 if (playerStatus.PlayPuzz1 == false)
                 {
                     MoveCameraLeft();
-                    playerStatus.PlayPuzz1 = true;
+
                     puzzle1Manager.StartPuzzle1Timer();
                     Debug.Log("Puzzle 1 started ********************");
                     //https://mixkit.co/free-sound-effects/time-machine/
@@ -164,7 +164,7 @@ public class ExitInteractions : MonoBehaviour
                 if (playerStatus.PlayPuzz2 == false)
                 {
                     MoveCameraLeft();
-                    playerStatus.PlayPuzz2 = true;
+
                     puzzle2Manager.StartPuzzle2();
                     //https://mixkit.co/free-sound-effects/time-machine/
                     SoundManager.PlaySound("PuzzleOpen");
