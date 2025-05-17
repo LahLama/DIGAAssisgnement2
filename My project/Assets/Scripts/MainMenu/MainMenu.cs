@@ -5,7 +5,7 @@ public class MainMenu : MonoBehaviour
 
     public void ButtonStartGame()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Room");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("True James Room");
     }
 
     public void ButtonExitGame()
