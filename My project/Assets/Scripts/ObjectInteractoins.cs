@@ -3,15 +3,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/* Asset Refencing
+[1] Error Sound Effects. mixkit. [Sound Effect] https://mixkit.co/free-sound-effects/error/ Date Accessed: 08 / 05 / 2025
+-----------------------------------------------
+[2] High Tech Sound Effects . mixkit. [Sound Effect] .https://mixkit.co/free-sound-effects/high-tech/ Date Accessed: 08 / 05 / 2025
+-----------------------------------------------*/
 public class ObjectInteractoins : MonoBehaviour
 {
-
-    public GameObject[] AnomalyObjects;
-    public GameObject[] MicrochipObjects;
-    public GameObject[] OrnamentsObjects;
-
-
-    public PlayerStatus playerStatus;
+    
+    public PlayerStatus playerStatus;       // refencing the player status script for the methods
     public int AnomalyCount;
     public int MicrochipCount;
     Button button;
@@ -25,25 +25,24 @@ public class ObjectInteractoins : MonoBehaviour
         MicrochipCount = playerStatus.AnomalyCount;
 
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // each time an anomaly is clicked on it calls this method that hides it from the player view
     public void OnAnomalyInteraction()
     {
         button = GetComponent<Button>();
         button.gameObject.SetActive(false);
         SoundManager.PlaySound("AnomalySelect");
-        //https://mixkit.co/free-sound-effects/error/
-        //mixkit-short-electric-fence-buzz-2966
+        //[[1]
         playerStatus.IncAnomalyCount();
 
 
     }
-
+// each time an microchip is clicked on it calls this method that hides it from the player view
     public void OnMicrochipInteraction()
     {
         button = GetComponent<Button>();
         playerStatus.IncMicrochipCount();
         SoundManager.PlaySound("MicrochipPickUp");
-        //https://mixkit.co/free-sound-effects/high-tech/
+        //[2]
         button.gameObject.SetActive(false);
 
     }
@@ -55,6 +54,7 @@ public class ObjectInteractoins : MonoBehaviour
 
     public void OnChanceMinus()
     {
+        //when the player clicks on an empty space , a chance is taken away.
         playerStatus.GameChances--;
         SoundManager.PlaySound("GameChanceMinus");
         if (playerStatus.GameChances <= 0)

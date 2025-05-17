@@ -20,6 +20,14 @@ public class Puzzle4Manager : MonoBehaviour
         ButtonsOff();
         robot.Puzzle4RobotStart();
     }
+
+
+
+     // Takes in the players code once they have pressed the validate button and has three states
+    // Enough colours were pressed, but wrong order,
+    // Enough colours were pressed and correct order,
+    // Not enough colours were pressed
+    // Too many colours were pressed
     public void CheckSequence()
     {
 

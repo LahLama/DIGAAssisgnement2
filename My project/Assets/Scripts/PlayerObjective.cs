@@ -12,17 +12,12 @@ public class PlayerObjective : MonoBehaviour
     void Update()
     {
 
-        //level 1 - before puzzle 1
-        //level 2 - after puzzle 1
-        //level 2 - before puzzle 2
-        //level 3 - after puzzle 2
-        //level 3 - before puzzle 3
-
+        //This script updates the player's objective panel that is seen on screen.
+        //This checks two conditions, the player level and if they have completed the respective puzzle
 
         if (playerStatus.PlayerLevel == 1)
         {
             Objective.text = "Find all the microchips!";
-
         }
 
         else if (playerStatus.PlayerLevel == 2 && playerStatus.PlayPuzz1 == false)
