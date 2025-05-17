@@ -163,7 +163,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfa4767eb3ed58a458613effc93e70a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 0}
 --- !u!1 &344231782
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,7 +673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.6156863}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1031,7 +1030,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3451699440861859892, guid: 19835f8a0571f2749b3c3d3d2982ed02, type: 3}
+  m_Sprite: {fileID: -3451699440861859892, guid: 7098e5184a30d6741a0c72068c8b6206, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

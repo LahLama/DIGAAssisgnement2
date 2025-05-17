@@ -23,7 +23,7 @@ public class Puzzle4Manager : MonoBehaviour
 
 
 
-     // Takes in the players code once they have pressed the validate button and has three states
+     // Takes in the players code once they have pressed the validate button and has four states
     // Enough colours were pressed, but wrong order,
     // Enough colours were pressed and correct order,
     // Not enough colours were pressed
@@ -71,7 +71,7 @@ public class Puzzle4Manager : MonoBehaviour
         playerSequence.Clear();
 
     }
-
+// switches the buttons to a state where you cant press them to avoid player interuption
     public void ButtonsOff()
     {
         foreach (Button button in buttons)
@@ -80,7 +80,7 @@ public class Puzzle4Manager : MonoBehaviour
 
         }
     }
-
+// switches the buttons to a state where you can press them
     public void ButtonsOn()
     {
         foreach (Button button in buttons)

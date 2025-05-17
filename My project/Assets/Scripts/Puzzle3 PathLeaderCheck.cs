@@ -4,9 +4,7 @@ public class Puzzle2PathLeaderCheck : MonoBehaviour
 {
 
     public Puzzle3Manager _Puzzle3Script;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
 
-    //timer here
     void OnTriggerEnter2D(Collider2D PathSwitch)
     {
         {

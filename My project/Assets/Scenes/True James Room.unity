@@ -717,7 +717,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a7027adc8766eb4baaf55100ac286b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CdeBtn: {fileID: 1363042542}
   CorrectChoice: 0
   Codechances: 0
   CorrectCode:
@@ -735,7 +734,7 @@ MonoBehaviour:
   - {fileID: 1366133970}
   - {fileID: 157369817}
   - {fileID: 1355438149}
-  exitInteractions: {fileID: 1866034784}
+  CdeBtn: {fileID: 1363042542}
   camera1: {fileID: 494884437}
   playerStatus: {fileID: 2033192346}
   Puzzle2Timer: {fileID: 327557353}
@@ -1335,6 +1334,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92e20ef300f025a439cc8c23fe5e0333, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  exitInteractions: {fileID: 2041913852}
+  playerStatus: {fileID: 2033192346}
+  Puzzle3Timer: {fileID: 878801267}
+  puzzle4Manager: {fileID: 1404904147}
   PathLeader: {fileID: 1017550899}
   Waypoints:
   - {fileID: 1687043384}
@@ -1345,11 +1348,7 @@ MonoBehaviour:
   - {fileID: 1324316534}
   - {fileID: 816460103}
   - {fileID: 541437358}
-  exitInteractions: {fileID: 2041913852}
   camera1: {fileID: 494884437}
-  playerStatus: {fileID: 2033192346}
-  Puzzle3Timer: {fileID: 878801267}
-  puzzle4Manager: {fileID: 1404904147}
   moveSpeed: 500
   WayIndex: 0
   Puzzle3Start: 0
@@ -21511,7 +21510,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 399423641}
-  - {fileID: 1316062788}
   m_Father: {fileID: 1341965814}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -22684,7 +22682,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1142829541}
+    m_TransformParent: {fileID: 2092031207}
     m_Modifications:
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Name
@@ -22736,7 +22734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_LocalRotation.w
@@ -24768,7 +24766,7 @@ ParticleSystem:
     donutRadius: 1.21
     m_Position: {x: 0, y: -1, z: 0}
     m_Rotation: {x: 90, y: 90, z: 0}
-    m_Scale: {x: 44.25, y: 20.02, z: 0}
+    m_Scale: {x: 43.42, y: 6.8, z: 0}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -41493,8 +41491,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   exitInteractions: {fileID: 0}
-  camera1: {fileID: 494884437}
   playerStatus: {fileID: 2033192346}
+  camera1: {fileID: 494884437}
   IncorrectText: {fileID: 1593739040}
   ChangeText: {fileID: 2075957263}
   ChangeNum: {fileID: 1305529130}
@@ -41516,7 +41514,6 @@ MonoBehaviour:
   - 0403
   correctCode: test
   input: 
-  GuessedWords: []
 --- !u!4 &1722891429
 Transform:
   m_ObjectHideFlags: 0
@@ -42518,17 +42515,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7154957708209871559, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
   m_PrefabInstance: {fileID: 110638461}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1866034784 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5211073254265196470, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
-  m_PrefabInstance: {fileID: 1636784836}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2060395809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82b6a0f93fa25b64eb5a2a2a260315d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1867092389
 GameObject:
   m_ObjectHideFlags: 0
@@ -43134,6 +43120,7 @@ MonoBehaviour:
   - name: DoorOpen
     audioClips:
     - {fileID: 8300000, guid: b52d42e4be0fe694fbae898a627c0430, type: 3}
+    - {fileID: 8300000, guid: 52b757542bac6b244a98ebf8c9168e11, type: 3}
   - name: PuzzleOpen
     audioClips:
     - {fileID: 8300000, guid: 7e74f7f0f498b1e48a61ac653a701998, type: 3}
@@ -43146,6 +43133,12 @@ MonoBehaviour:
   - name: glass
     audioClips:
     - {fileID: 8300000, guid: 62cc824eb4abe304e80c8e1e33075273, type: 3}
+  - name: metal
+    audioClips:
+    - {fileID: 8300000, guid: 35b9f69a73808d248bd0d29111671946, type: 3}
+  - name: tough
+    audioClips:
+    - {fileID: 8300000, guid: 35b9f69a73808d248bd0d29111671946, type: 3}
   - name: RandomEffect
     audioClips:
     - {fileID: 8300000, guid: 9faea28daf62e784a8e49442c35a0f12, type: 3}
@@ -44845,6 +44838,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1316062788}
   - {fileID: 2061849994}
   - {fileID: 1389334057}
   m_Father: {fileID: 1341965814}

@@ -10,7 +10,6 @@ using UnityEngine;
 public class PointnClick : MonoBehaviour
 {
     [Header("Spawn Settings")]
-    public GameObject[] randomPrefabs; // Prefabs to spawn
     public float spawnDistanceBehind = 1.5f;
 
     [Header("Animation Settings")]

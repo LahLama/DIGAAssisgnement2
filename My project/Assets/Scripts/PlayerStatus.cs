@@ -22,7 +22,7 @@ public class PlayerStatus : MonoBehaviour
 // Text Gameobjects that update with the current players stats
     public Canvas CheatButtons;
     public TextMeshProUGUI MicroChipCountText;
-    public TextMeshProUGUI AnomalyCountText;
+    //public TextMeshProUGUI AnomalyCountText;
     public TextMeshProUGUI PlayerLevelText;
     public TextMeshProUGUI GameChancesText;
     public

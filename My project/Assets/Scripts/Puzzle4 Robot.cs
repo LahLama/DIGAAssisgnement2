@@ -14,6 +14,7 @@ public class Puzzle4Robot : MonoBehaviour
 
     public void Puzzle4RobotStart()
     {
+        // Generates the random sequence for the game and then shows the colours
         spriteRenderer = this.GetComponent<SpriteRenderer>();
         CorrectSequence[0] = CodeOptions[(int)Random.Range(0, 4)];
         CorrectSequence[1] = CodeOptions[(int)Random.Range(0, 4)];
@@ -26,12 +27,13 @@ public class Puzzle4Robot : MonoBehaviour
 
     public void ShowColour()
     {
+        // disables player input by the buttons
         puzzle4Manager.ButtonsOff();
         StartCoroutine(ShowColourDelay());
 
 
     }
-
+    // Shows the colour memory with a short white colour inbetween each other to differiant if there was 2 or more of the same colour
     private IEnumerator ShowColourDelay()
     {
         yield return new WaitForSeconds(0.5f);

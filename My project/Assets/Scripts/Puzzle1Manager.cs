@@ -48,10 +48,8 @@ public class Puzzle1Manager : MonoBehaviour
         // -------------------------------------------------
 
     }
-    public void ReadStringInput(string s)
+    public void ReadStringInput(string input)
     {
-        input = s;
-        GuessedWords.Add(input);
         if (input.ToLower() == correctCode)
         {
             print("PUZZLE COMPLETED");
