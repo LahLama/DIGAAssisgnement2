@@ -5,16 +5,15 @@ using UnityEngine.UI;
 
 public class Puzzle4Manager : MonoBehaviour
 {
-    /// <summary>
-    /// ADD A THING THAT SHOWS THE PLAYER THE COLOURS THEY HAVE SELECTED
-    /// </summary>
-
+    public PlayerObjective playerObjective;
 
     public TextMeshProUGUI IncorrectText;
     public Puzzle4Robot robot;
     public List<string> playerSequence;
 
     public Button[] buttons;
+
+
     public void Puzzle4Start()
     {
         ButtonsOff();
@@ -39,6 +38,7 @@ public class Puzzle4Manager : MonoBehaviour
                 {
                     print("Correct sequence!");
                     IncorrectText.text = "Correct sequence!";
+                        playerObjective.UpdateObjective();
 
                 }
                 else

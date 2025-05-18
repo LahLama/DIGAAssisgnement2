@@ -13,6 +13,9 @@ public class Puzzle1Manager : MonoBehaviour
     //References all the external scripts
     public ExitInteractions exitInteractions;
     public PlayerStatus playerStatus;
+    public PlayerObjective playerObjective;
+
+
     //references the gameobjects needed
     public Rigidbody2D camera1;
     public GameObject IncorrectText;
@@ -65,6 +68,7 @@ public class Puzzle1Manager : MonoBehaviour
             playerStatus.PlayPuzz1 = true;
 
             // Plays the AI voice reacting to the puzzle behind completed
+                playerObjective.UpdateObjective();
             SoundManager.PlaySound("AI_puzzleComplete1");
 
         }

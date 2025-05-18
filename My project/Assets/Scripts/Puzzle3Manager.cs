@@ -18,6 +18,8 @@ public class Puzzle3Manager : MonoBehaviour
     public PlayerStatus playerStatus;
     public TimerScript Puzzle3Timer;
     public Puzzle4Manager puzzle4Manager;
+    public PlayerObjective playerObjective;
+
     
     //Varibles needed
     public GameObject PathLeader;
@@ -48,7 +50,8 @@ public class Puzzle3Manager : MonoBehaviour
                 }
                 if (WayIndex == Waypoints.Length && Puzzle3Start == true)
                 {
-
+                    // Puzzle has been completed
+                    playerObjective.UpdateObjective();
                     Puzzle3Timer.StartTimer = false;
                     StartCoroutine(WaitBeforeReset());
 
@@ -94,6 +97,7 @@ public class Puzzle3Manager : MonoBehaviour
         //upgrades player to level 3
         playerlvl = 3;
         Puzzle3Start = false;
+        
         // Puzzle 3 has been played
         playerStatus.PlayPuzz3 = true;
         //stops timer, moves camera up with exinteractions method and starts the next puzzle

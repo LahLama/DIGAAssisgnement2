@@ -16,7 +16,8 @@ public class Puzzle2Manager : MonoBehaviour
     //Referencing the scripts that are needed for player stas, and for starting and stopping the timer two 
     public PlayerStatus playerStatus;
     public TimerScript Puzzle2Timer;
- 
+    public PlayerObjective playerObjective;
+    
     // intializes the values with random values
     void Awake()
     {
@@ -62,6 +63,7 @@ public class Puzzle2Manager : MonoBehaviour
                     //stop the timer and play the AI response
                     Puzzle2Timer.StartTimer = false;
                     SoundManager.PlaySound("AI_puzzleComplete2");
+                    playerObjective.UpdateObjective();
 
                 }
             }

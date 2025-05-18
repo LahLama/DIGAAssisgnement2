@@ -20,13 +20,14 @@ public class PlayerStatus : MonoBehaviour
     public bool PlayerLevelUpBool = false;
 
 // Text Gameobjects that update with the current players stats
-    public Canvas CheatButtons;
+    public Canvas CheatButtons; 
+//public TextMeshProUGUI AnomalyCountText;
     public TextMeshProUGUI MicroChipCountText;
-    //public TextMeshProUGUI AnomalyCountText;
     public TextMeshProUGUI PlayerLevelText;
     public TextMeshProUGUI GameChancesText;
-    public
 
+    public PlayerObjective playerObjective;
+    
 
 // intiallizes all the nessercary varibles and plays the AI intro sound
     void Awake()
@@ -65,10 +66,11 @@ public class PlayerStatus : MonoBehaviour
         //on a level increase, the level up bool is set to true and used in other scripts
         //the microchip count is set to zero
         //the game chances for that level is set to zero
-        if (MicrochipCount == MicrosPerLevel[0] && PlayerLevel == 1) { PlayerLevel = 2; PlayerLevelUpBool = true; MicrochipCount = 0; GameChances = 5; }
-        if (MicrochipCount == MicrosPerLevel[1] && PlayerLevel == 2) { PlayerLevel = 3; PlayerLevelUpBool = true; MicrochipCount = 0; GameChances = 5; }
-        if (MicrochipCount == MicrosPerLevel[2] && PlayerLevel == 3) { PlayerLevel = 4; PlayerLevelUpBool = true; MicrochipCount = 0; GameChances = 5; }
-    }
+        if (MicrochipCount == MicrosPerLevel[0] && PlayerLevel == 1) { PlayerLevel = 2; PlayerLevelUpBool = true; MicrochipCount = 0; GameChances = 5; playerObjective.UpdateObjective();}
+        if (MicrochipCount == MicrosPerLevel[1] && PlayerLevel == 2) { PlayerLevel = 3; PlayerLevelUpBool = true; MicrochipCount = 0; GameChances = 5;playerObjective.UpdateObjective(); }
+        if (MicrochipCount == MicrosPerLevel[2] && PlayerLevel == 3) { PlayerLevel = 4; PlayerLevelUpBool = true; MicrochipCount = 0; GameChances = 5;playerObjective.UpdateObjective(); }
+        
+}
     // used by ObjectInteractions.
     public void IncPlayerLevel()
     {
