@@ -8,22 +8,23 @@ public class Puzzle2Switches : MonoBehaviour
 
     //false = Disallow
     //true = allow
-    bool SwitchStatus = false;
+
     public void OnMouseDown()
     {
-        SwitchStatus = !SwitchStatus;
 
-        if (SwitchStatus == false)
+        if (this.tag == "SwitchDisallow")
         {
-            this.gameObject.tag = "SwitchDisallow";
             this.transform.Rotate(0, 0, 90f);
-            print(this.gameObject.tag);
+            this.tag = "SwitchAllow";
         }
-        else if (SwitchStatus == true)
+        else if (this.tag == "SwitchAllow")
         {
-            this.gameObject.tag = "SwitchAllow";
             this.transform.Rotate(0, 0, 90f);
-            print(this.gameObject.tag);
+            this.tag = "SwitchDisallow";
+        }
+        else
+        {
+            Debug.Log("NO TAG FOUND");
         }
     }
 }

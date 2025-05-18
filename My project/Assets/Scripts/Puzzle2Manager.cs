@@ -31,7 +31,7 @@ public class Puzzle2Manager : MonoBehaviour
 
     public void StartPuzzle2()
     {
-        Puzzle2Timer.remianingTime = 20;//seconds
+        Puzzle2Timer.remianingTime = 120;//seconds
         Puzzle2Timer.StartTimer = true;
     }
 
@@ -54,12 +54,14 @@ public class Puzzle2Manager : MonoBehaviour
                 CorrectChoice++;
                 if (CorrectChoice == 4)
                 {
+                    playerStatus.PlayPuzz2 = true;
                     Vector3 newPosition = camera1.transform.position;
                     newPosition.x += 1920;
                     newPosition.y -= 1080;
                     camera1.transform.position = newPosition;
-                    playerStatus.PlayPuzz2 = false;
                     Puzzle2Timer.StartTimer = false;
+                    SoundManager.PlaySound("AI_puzzleComplete2");
+
                 }
             }
             else
