@@ -69,7 +69,7 @@ public class Puzzle1Manager : MonoBehaviour
 
             // Plays the AI voice reacting to the puzzle behind completed
                 playerObjective.UpdateObjective();
-            SoundManager.PlaySound("AI_puzzleComplete1");
+
 
         }
         else
@@ -77,6 +77,7 @@ public class Puzzle1Manager : MonoBehaviour
             // Case where the word entered does not match the word needed.
             print("Word does not match: " + correctCode);
             IncorrectText.SetActive(true);
+            SoundManager.PlaySound("AI_CommentOnFailure");
             //Chances for 3 chances
         }
         /*

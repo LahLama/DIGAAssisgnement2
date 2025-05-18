@@ -1,7 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
+using System.Collections;
+using System.Collections.Generic;
 /* Asset Refencing
 [1] Error Sound Effects. mixkit. [Sound Effect] https://mixkit.co/free-sound-effects/error/ Date Accessed: 08 / 05 / 2025
 -----------------------------------------------
@@ -51,17 +52,23 @@ public class ObjectInteractoins : MonoBehaviour
         //spawn micro IFF max numbers hasnt been spawnwed
     }
 
-    public void OnChanceMinus()
+    public void OnMouseDown()
     {
         //when the player clicks on an empty space , a chance is taken away.
         playerStatus.GameChances--;
         SoundManager.PlaySound("GameChanceMinus");
         if (playerStatus.GameChances <= 0)
         {
+            StartCoroutine(WaitForAITease());
             SceneManager.LoadScene("GameOver");
             //GameOver
         }
     }
 
+    private IEnumerator WaitForAITease()
+    {
+        yield return new WaitForSeconds(2f);
+        SoundManager.PlaySound("AI_GameOver");
+    }
 
 }

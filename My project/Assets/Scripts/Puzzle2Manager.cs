@@ -1,11 +1,11 @@
 using UnityEngine;
 
-
 public class Puzzle2Manager : MonoBehaviour
 {
     // Varibles that are used across puzzle 2 scripts. Intial values are stored here
     public int CorrectChoice = 0;
     public int Codechances = 5;
+    bool CanTalk = true;
     public string[] CorrectCode = { "x", "x", "x", "x" };
     public GameObject[] PlayerCode;
     public GameObject[] CodeLights;
@@ -49,6 +49,7 @@ public class Puzzle2Manager : MonoBehaviour
                 //if the corresponding element is correct then turn the circle above it to green to show a correct choice
                 CodeLights[indexure].GetComponent<SpriteRenderer>().color = Color.green;
                 CorrectChoice++;
+                SoundManager.PlaySound("ButtonClick");
                 if (CorrectChoice == 4)
                 {
                     //puzzle has been completed
@@ -62,22 +63,24 @@ public class Puzzle2Manager : MonoBehaviour
 
                     //stop the timer and play the AI response
                     Puzzle2Timer.StartTimer = false;
-                    SoundManager.PlaySound("AI_puzzleComplete2");
                     playerObjective.UpdateObjective();
+                    CanTalk = false;
 
                 }
             }
             else
             {   //if it was an incorrect choice, set the above circle to be red.
-
+SoundManager.PlaySound("ButtonClick");
                 CodeLights[indexure].GetComponent<SpriteRenderer>().color = Color.red;
             }
             print(Codechances);
-
+          
             indexure++;
         }
+        if ( CanTalk ){
+         SoundManager.PlaySound("AI_CommentOnFailure");
         Codechances--;
-
+    }
         // STILL TO BE IMPLEMENTED
         if (Codechances <= 0)
         {

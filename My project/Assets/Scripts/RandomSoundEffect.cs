@@ -4,7 +4,7 @@ public class RandomSoundEffect : MonoBehaviour
 {
     public AudioSource audioSource; // Reference to the AudioSource component
     float waitTimeCountdown = 10;
-    float minWaitBetweenPlays = 10;
+    float minWaitBetweenPlays = 10; 
     float maxWaitBetweenPlays = 50;
     void Update()
     {

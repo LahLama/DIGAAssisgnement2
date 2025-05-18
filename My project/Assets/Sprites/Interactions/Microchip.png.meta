@@ -116,10 +116,10 @@ TextureImporter:
       name: Microchip_0
       rect:
         serializedVersion: 2
-        x: 43
-        y: 5
-        width: 127
-        height: 194
+        x: 426
+        y: 174
+        width: 418
+        height: 375
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Microchip_0: 184093112063059965
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

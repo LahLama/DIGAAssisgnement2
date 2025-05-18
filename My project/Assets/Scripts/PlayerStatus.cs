@@ -55,7 +55,7 @@ public class PlayerStatus : MonoBehaviour
         }
         //AnomalyCountText.text = ": " + AnomalyCount.ToString();
         PlayerLevelText.text = "Player Level: " + PlayerLevel.ToString();
-        GameChancesText.text = ": " + GameChances.ToString();
+        GameChancesText.text = " 1 MORE " + GameChances.ToString();
     }
 
 
@@ -80,12 +80,12 @@ public class PlayerStatus : MonoBehaviour
     public void IncMicrochipCount()
     {
         MicrochipCount++;
-        print("Microchip: " + MicrochipCount);
+//        print("Microchip: " + MicrochipCount);
     }
     public void IncAnomalyCount()
     {
         AnomalyCount++;
-        print("Anomaly: " + AnomalyCount);
+    //    print("Anomaly: " + AnomalyCount);
     }
 
 
