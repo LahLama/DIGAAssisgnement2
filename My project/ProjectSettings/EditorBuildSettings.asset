@@ -9,14 +9,21 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScreen.unity
     guid: 5d1c5439507b0dc43843599949486344
   - enabled: 1
+<<<<<<< HEAD
+    path: Assets/Scenes/MyName Room.unity
+=======
     path: Assets/Scenes/True James Room.unity
+>>>>>>> main
     guid: ae27fb364e1358a4293b9098ff250b79
   - enabled: 1
-    path: Assets/Scenes/Promise/PauseMenu.unity
+    path: Assets/Scenes/PauseMenu.unity
     guid: ac203e1a53b3e594d93ce9a459f411ff
   - enabled: 1
     path: Assets/Scenes/Promise/GameOver.unity
     guid: 16520d8aefaa30a4b9986b001a2c8a51
+  - enabled: 1
+    path: Assets/Scenes/LoadingScene.unity
+    guid: 490a0328d16840f459c31aeeb084e0f9
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 624253fee5063d7438a67769d7f141d6, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 58cfcbcee2ec7784d8108ec22da95d5c, type: 2}

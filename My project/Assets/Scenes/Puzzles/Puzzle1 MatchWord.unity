@@ -227,7 +227,24 @@ MonoBehaviour:
   camera1: {fileID: 0}
   playerStatus: {fileID: 0}
   IncorrectText: {fileID: 728305207}
+  ChangeText: {fileID: 0}
+  ChangeNum: {fileID: 0}
   Puzzle1Timer: {fileID: 2129096183}
+  words:
+  - ___
+  - d___
+  - pl__
+  - l_v_
+  RealWords:
+  - test
+  - ward
+  - help
+  - evil
+  numbers:
+  - 1321
+  - 0586
+  - 0039
+  - 0403
   correctCode: test
   input: 
   GuessedWords: []
@@ -788,7 +805,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &728305208
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1395,7 +1412,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!223 &1009125917
 Canvas:
   m_ObjectHideFlags: 0
