@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 6712b91af910c924aba7a78f7fc60b44
+guid: 9cd9fe796bece784fa0e2bc739f09047
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 184093112063059965
-    second: Microchip_0
+      213: 6166262156997948288
+    second: AI Manifested_0
+  - first:
+      213: 7303341639544925408
+    second: AI Manifested_1
+  - first:
+      213: -7614261649721669429
+    second: AI Manifested_2
+  - first:
+      213: -1301642335853682899
+    second: AI Manifested_3
+  - first:
+      213: 1457893570516736629
+    second: AI Manifested_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Microchip_0
+      name: AI Manifested_0
       rect:
         serializedVersion: 2
-        x: 426
-        y: 174
-        width: 418
-        height: 375
+        x: 0
+        y: 0
+        width: 870
+        height: 724
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +140,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: df76d16c5b70e8200800000000000000
-      internalID: 184093112063059965
+      spriteID: 083fbc3f2c6f29550800000000000000
+      internalID: 6166262156997948288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AI Manifested_1
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 0
+        width: 873
+        height: 724
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ece462c68eaa5560800000000000000
+      internalID: 7303341639544925408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AI Manifested_2
+      rect:
+        serializedVersion: 2
+        x: 1781
+        y: 0
+        width: 873
+        height: 724
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc8c5752f55b45690800000000000000
+      internalID: -7614261649721669429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AI Manifested_3
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 0
+        width: 872
+        height: 724
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2fd4d22133afede0800000000000000
+      internalID: -1301642335853682899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AI Manifested_4
+      rect:
+        serializedVersion: 2
+        x: 3483
+        y: 0
+        width: 857
+        height: 724
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ad9f66a7a7b3410800000000000000
+      internalID: 1457893570516736629
       vertices: []
       indices: 
       edges: []
@@ -138,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ff577acb21068fb4caaa1a17c4d8a870
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Microchip_0: 184093112063059965
+      AI Manifested_0: 6166262156997948288
+      AI Manifested_1: 7303341639544925408
+      AI Manifested_2: -7614261649721669429
+      AI Manifested_3: -1301642335853682899
+      AI Manifested_4: 1457893570516736629
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
