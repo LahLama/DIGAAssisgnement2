@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c95acfad341248340824324298cf92c8
+guid: 28bb89d120f6a5745b9791c32dfebf1a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3351692967750143423
-    second: Evil AI camera_0
+      213: -4219050991236670281
+    second: Evil AI_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Evil AI camera_0
+      name: Evil AI_0
       rect:
         serializedVersion: 2
-        x: 500
-        y: 123
-        width: 991
-        height: 931
+        x: 401
+        y: 0
+        width: 1272
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fbd0ce20ffa938e20800000000000000
-      internalID: 3351692967750143423
+      spriteID: 7bc141a1a7be275c0800000000000000
+      internalID: -4219050991236670281
       vertices: []
       indices: 
       edges: []
@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Evil AI_0: -4219050991236670281
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
