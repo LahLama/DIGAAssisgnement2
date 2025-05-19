@@ -17,8 +17,8 @@ public class MainMenu : MonoBehaviour
 
     public void ButtonStartGame()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("True James Room");
-        MusicManager.Instance.PlayMusic("True James Room");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Room");
+        MusicManager.Instance.PlayMusic("Room");
     }
 
     public void ButtonExitGame()
