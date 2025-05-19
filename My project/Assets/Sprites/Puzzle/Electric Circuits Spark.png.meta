@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: b0528af4765a13244bc9a2a2ecab88a5
+guid: 65958b8fc74f0bb439a4746191a3441e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5183175655961484896
-    second: Button and UI_0
+      213: -7859351364552481678
+    second: Electric Circuits_0
+  - first:
+      213: 3790444364618971031
+    second: Electric Circuits_1
+  - first:
+      213: -3527515567612771430
+    second: Electric Circuits_2
+  - first:
+      213: -1781722135504765671
+    second: Electric Circuits_3
+  - first:
+      213: 2104511038201683367
+    second: Electric Circuits_4
+  - first:
+      213: 1028789465646037910
+    second: Electric Circuits_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -113,23 +128,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Button and UI_0
+      name: Electric Circuits_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 31
-        width: 114
-        height: 46
+        x: 4
+        y: 38
+        width: 24
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0a1a6f9d339a118b0800000000000000
-      internalID: -5183175655961484896
+      spriteID: 2742ed61399fde290800000000000000
+      internalID: -7859351364552481678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric Circuits_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 38
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 797bef5211d5a9430800000000000000
+      internalID: 3790444364618971031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric Circuits_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 38
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a93c7c4e74fbb0fc0800000000000000
+      internalID: -3527515567612771430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric Circuits_3
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 6
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91db9c0682d0647e0800000000000000
+      internalID: -1781722135504765671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric Circuits_4
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 6
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ad56e993a9b43d10800000000000000
+      internalID: 2104511038201683367
       vertices: []
       indices: 
       edges: []
@@ -138,7 +241,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9e5e128d17bf38e40a4a5a52186b4b26
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +251,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Button and UI_0: -5183175655961484896
+      Electric Circuits_0: -7859351364552481678
+      Electric Circuits_1: 3790444364618971031
+      Electric Circuits_2: -3527515567612771430
+      Electric Circuits_3: -1781722135504765671
+      Electric Circuits_4: 2104511038201683367
+      Electric Circuits_5: 1028789465646037910
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

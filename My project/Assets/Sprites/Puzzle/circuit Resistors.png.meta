@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b0528af4765a13244bc9a2a2ecab88a5
+guid: a8484f2b84598b84eabbb6091d5c2505
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5183175655961484896
-    second: Button and UI_0
+      213: -8915110311401138423
+    second: circuit Resistors_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Button and UI_0
+      name: circuit Resistors_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 31
-        width: 114
-        height: 46
+        x: 43
+        y: 7
+        width: 38
+        height: 121
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0a1a6f9d339a118b0800000000000000
-      internalID: -5183175655961484896
+      spriteID: 9075383f76a274480800000000000000
+      internalID: -8915110311401138423
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Button and UI_0: -5183175655961484896
+      circuit Resistors_0: -8915110311401138423
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
