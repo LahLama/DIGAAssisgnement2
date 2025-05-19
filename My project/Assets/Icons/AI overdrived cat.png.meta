@@ -248,7 +248,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AI overdrived cat_0: -8386634697858144821
+      AI overdrived cat_1: 8022420799454789428
+      AI overdrived cat_2: -8895305421911241987
+      AI overdrived cat_3: -8519310982131494218
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

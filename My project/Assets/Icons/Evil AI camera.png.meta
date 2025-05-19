@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Evil AI camera_0: 3351692967750143423
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

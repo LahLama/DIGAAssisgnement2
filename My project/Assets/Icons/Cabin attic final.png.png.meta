@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cabin attic final.png_0: -2484593664710839601
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
