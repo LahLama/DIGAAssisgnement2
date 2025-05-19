@@ -10,6 +10,7 @@ public class Puzzle4Manager : MonoBehaviour
     public TextMeshProUGUI IncorrectText;
     public Puzzle4Robot robot;
     public List<string> playerSequence;
+    public TimerScript Puzzle4Timer;
 
     public Button[] buttons;
 
@@ -18,6 +19,8 @@ public class Puzzle4Manager : MonoBehaviour
     {
         ButtonsOff();
         robot.Puzzle4RobotStart();
+                Puzzle4Timer.remianingTime = 120;//seconds
+        Puzzle4Timer.StartTimer = true;
     }
 
 
@@ -39,12 +42,14 @@ public class Puzzle4Manager : MonoBehaviour
                     print("Correct sequence!");
                     IncorrectText.text = "Correct sequence!";
                         playerObjective.UpdateObjective();
+                         Puzzle4Timer.StartTimer = false;
 
                 }
                 else
                 {
                     IncorrectText.text = "Incorrect sequence! Please try again.";
                     print("Incorrect sequence!");
+                    SoundManager.PlaySound("AI_CommentOnFailure");
                     robot.ShowColour();
                     break;
                 }

@@ -11,7 +11,7 @@ public class PauseMenu : MonoBehaviour
         void Update()
         {// Checks if the current room is the game room and if the escape key is down, if both are true it will pause the game
             {
-            if (SceneManager.GetActiveScene().index == 1 ) 
+            if (SceneManager.GetActiveScene().buildIndex == 1 ) 
                 if (Input.GetKeyDown(KeyCode.Escape))
                 {
                     if (GameIsPaused)

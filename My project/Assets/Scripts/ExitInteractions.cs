@@ -21,6 +21,7 @@ public class ExitInteractions : MonoBehaviour
     public Puzzle1Manager puzzle1Manager;
     public Puzzle2Manager puzzle2Manager;
     public Puzzle3Manager puzzle3Manager;
+    public Puzzle4Manager puzzle4Manager;
 
     public int playerlvl;
     public bool playerlevelUpbool;
@@ -182,11 +183,12 @@ public class ExitInteractions : MonoBehaviour
             case "UpOrPuzzle3":
                 if (playerStatus.PlayPuzz3 == false)
                 {
-                    MoveCameraLeft();
+                    MoveCameraUp();
                     playerStatus.PlayPuzz3 = true;
                     //Asset [2]
                     SoundManager.PlaySound("PuzzleOpen");
-                    puzzle3Manager.StartPuzzle3();
+
+                    puzzle4Manager.Puzzle4Start();
                 }
                 else
                 {
