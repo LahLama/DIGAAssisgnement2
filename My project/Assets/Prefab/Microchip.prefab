@@ -29,8 +29,8 @@ RectTransform:
   m_GameObject: {fileID: 4244347134327078334}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.69, y: 1.69, z: 1.69}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: 09af9d9d5e30acc4d991a3289879e8da, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -106,8 +106,8 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: -1577846492797285222, guid: 51a1a147a17589546b52dec6f00c8942, type: 3}
+    m_HighlightedSprite: {fileID: -1577846492797285222, guid: d624c991dd68784479b082cdb50a990e, type: 3}
+    m_PressedSprite: {fileID: -1577846492797285222, guid: d624c991dd68784479b082cdb50a990e, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -145,9 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d8c6f33464dc7b4a85a8eeea66d11df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AnomalyObjects: []
-  MicrochipObjects: []
-  OrnamentsObjects: []
   playerStatus: {fileID: 0}
   AnomalyCount: 0
   MicrochipCount: 0
+  microchipMaterial: {fileID: 2100000, guid: 09af9d9d5e30acc4d991a3289879e8da, type: 2}

@@ -1,13 +1,19 @@
 using UnityEngine;
+// Everything but sound effects Made by Dorothy
 
+
+/*
+ [1] Fall . mixkit. [Sound Effect] https://mixkit.co/free-sound-effects/ Date Accessed: 08 / 05 / 2025 
+ [2] Cup On Table Sfx. mixkit. [Sound Effect] https://mixkit.co/free-sound-effects/ Date Accessed: 08 / 05 / 2025
+ */
+ 
 public class PointnClick : MonoBehaviour
 {
     [Header("Spawn Settings")]
-    public GameObject[] randomPrefabs; // Prefabs to spawn
     public float spawnDistanceBehind = 1.5f;
 
     [Header("Animation Settings")]
-    private float animationHeight = 150f; // How high the object moves up
+    private float animationHeight = 75f; // How high the object moves up
     private float animationDuration = 1.5f; // Duration to move up or down
 
     private bool isAnimating = false;
@@ -20,19 +26,6 @@ public class PointnClick : MonoBehaviour
         originalPosition = transform.position;
     }
 
-    void Update()
-    {
-        /* if (Input.GetMouseButtonDown(0) && !isAnimating)
-         {
-             HandleClick(0); // Left-click
-         }
-
-         if (Input.GetMouseButtonDown(1))
-         {
-             HandleClick(1); // Right-click
-         }*/
-    }
-
     public void OnObjectClick()
     {
         print("Object clicked");
@@ -40,38 +33,32 @@ public class PointnClick : MonoBehaviour
         StartCoroutine(AnimateVerticalMovement());
         //this.interactable = false;
 
-        if (name.StartsWith("pillow"))
+        // Sounds are played depending on thier properties, this limits the amount of code we need to implement as there will be a random sound played each tie
+        // giving the illusion of different sounding objects
+        //[1]
+        if (name.StartsWith("soft"))
         {
             SoundManager.PlaySound("soft");
         }
-        if (name.StartsWith("Vase"))
+        //[2]
+        if (name.StartsWith("glass"))
         {
             SoundManager.PlaySound("glass");
         }
-    }
-    /*
-        void HandleClick(int mouseButton)
+        // No sound for these yet.
+        if (name.StartsWith("metal"))
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit))
-            {
-                GameObject hitObject = hit.collider.gameObject;
-
-                if (mouseButton == 0 && hitObject == gameObject && !hitObject.name.StartsWith("micro-chip"))
-                {
-                    Debug.Log("Left-clicked: Animate + Spawn (if not already)");
-                    TrySpawnObjectOnceBehind();
-                    StartCoroutine(AnimateVerticalMovement());
-                }
-                else if (mouseButton == 1 && hitObject.name.StartsWith("micro-chip"))
-                {
-                    Debug.Log("Right-clicked: micro-chip destroyed");
-                    Destroy(hitObject);
-                }
-            }
-        }*/
+            SoundManager.PlaySound("metal");
+        }
+        if (name.StartsWith("tough"))
+        {
+            SoundManager.PlaySound("tough");
+        }
+        if (name.StartsWith("silver"))
+        {
+            SoundManager.PlaySound("silver");
+        }
+    }
 
     private System.Collections.IEnumerator AnimateVerticalMovement()
     {
@@ -100,19 +87,4 @@ public class PointnClick : MonoBehaviour
 
         isAnimating = false;
     }
-    /*
-        private void TrySpawnObjectOnceBehind()
-        {
-            if (hasSpawned || randomPrefabs.Length == 0)
-                return;
-
-            int randomIndex = Random.Range(0, randomPrefabs.Length);
-            GameObject prefabToSpawn = randomPrefabs[randomIndex];
-
-            Vector3 spawnPosition = transform.position - transform.forward * spawnDistanceBehind;
-            spawnedObject = Instantiate(prefabToSpawn, spawnPosition, Quaternion.identity);
-            Debug.Log($"Spawned {spawnedObject.name} behind {gameObject.name}");
-
-            hasSpawned = true;
-        }*/
 }

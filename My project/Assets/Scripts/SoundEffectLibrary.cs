@@ -2,7 +2,12 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using NUnit.Framework;
 using UnityEngine;
-
+/*
+Title:  Add a Sound Effect Manager to Your Game - 2D Platformer Unity #26 
+Author: Game Code Library
+Date :  16 Feb 2024
+Availibility: https://www.youtube.com/watch?v=rAX_r0yBwzQ
+*/
 public class SoundEffectLibrary : MonoBehaviour
 {
     [SerializeField] private SoundEffectGroup[] soundEffectsGroups; // Array of sound effect groups

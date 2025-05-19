@@ -3,11 +3,14 @@ using UnityEngine;
 public class RandomSoundEffect : MonoBehaviour
 {
     public AudioSource audioSource; // Reference to the AudioSource component
-    float waitTimeCountdown = 2;
-    float minWaitBetweenPlays = 5;
-    float maxWaitBetweenPlays = 20;
+    float waitTimeCountdown = 10;
+    float minWaitBetweenPlays = 10; 
+    float maxWaitBetweenPlays = 50;
     void Update()
     {
+
+        // checks if the audio player is playing, if not it will choose a random time,wait that long 
+        // and then play a random sound from the random sound effect group
         if (!audioSource.isPlaying)
         {
 

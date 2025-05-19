@@ -6,26 +6,30 @@ using UnityEngine.UI;
 
 public class PlayerStatus : MonoBehaviour
 {
-
+// this sets up all the varibles that will be used to used to keep track off across multiple scripts
+//;-----------------------------------------------------------------------
     public int PlayerLevel;
     public int MicrochipCount;
     public int AnomalyCount;
     public int GameChances = 5;
     public int[] MicrosPerLevel = { 5, 6, 4 };
+//;-----------------------------------------------------------------------
 
-
-
+//Bools to check of a puzzle has been played
     public bool PlayPuzz1 = false, PlayPuzz2 = false, PlayPuzz3 = false, PlayPuzz4 = false;
     public bool PlayerLevelUpBool = false;
-    public Canvas CheatButtons;
+
+// Text Gameobjects that update with the current players stats
+    public Canvas CheatButtons; 
+//public TextMeshProUGUI AnomalyCountText;
     public TextMeshProUGUI MicroChipCountText;
-    public TextMeshProUGUI AnomalyCountText;
     public TextMeshProUGUI PlayerLevelText;
     public TextMeshProUGUI GameChancesText;
-    public
 
+    public PlayerObjective playerObjective;
+    
 
-
+// intiallizes all the nessercary varibles and plays the AI intro sound
     void Awake()
     {
         PlayerLevel = 1;
@@ -36,14 +40,11 @@ public class PlayerStatus : MonoBehaviour
     void Update()
     {
         MicroPlayerUp();
-        if (Input.GetKeyDown(KeyCode.L))
+       /* if (Input.GetKeyDown(KeyCode.L))
         {
             CheatButtons.gameObject.SetActive(!CheatButtons.isActiveAndEnabled);
-        }
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Application.Quit();
-        }
+        }*/
+        // updates the microchip count up til the last entry in the array
         if (PlayerLevel <= MicrosPerLevel.Length)
         {
             MicroChipCountText.text = ": " + MicrochipCount.ToString() + "/" + MicrosPerLevel[PlayerLevel - 1].ToString();
@@ -54,19 +55,23 @@ public class PlayerStatus : MonoBehaviour
         }
         //AnomalyCountText.text = ": " + AnomalyCount.ToString();
         PlayerLevelText.text = "Player Level: " + PlayerLevel.ToString();
-        GameChancesText.text = ": " + GameChances.ToString();
+        GameChancesText.text = " 1 MORE " + GameChances.ToString();
     }
 
 
 
     public void MicroPlayerUp()
     {
-
-
-        if (MicrochipCount == MicrosPerLevel[0] && PlayerLevel == 1) { PlayerLevel = 2; PlayerLevelUpBool = true; MicrochipCount = 0; GameChances = 5; }
-        if (MicrochipCount == MicrosPerLevel[1] && PlayerLevel == 2) { PlayerLevel = 3; PlayerLevelUpBool = true; MicrochipCount = 0; GameChances = 5; }
-        if (MicrochipCount == MicrosPerLevel[2] && PlayerLevel == 3) { PlayerLevel = 4; PlayerLevelUpBool = true; MicrochipCount = 0; GameChances = 5; }
-    }
+        //microchips determine the the player's level
+        //on a level increase, the level up bool is set to true and used in other scripts
+        //the microchip count is set to zero
+        //the game chances for that level is set to zero
+        if (MicrochipCount == MicrosPerLevel[0] && PlayerLevel == 1) { PlayerLevel = 2; PlayerLevelUpBool = true; MicrochipCount = 0; GameChances = 5; playerObjective.UpdateObjective();}
+        if (MicrochipCount == MicrosPerLevel[1] && PlayerLevel == 2) { PlayerLevel = 3; PlayerLevelUpBool = true; MicrochipCount = 0; GameChances = 5;playerObjective.UpdateObjective(); }
+        if (MicrochipCount == MicrosPerLevel[2] && PlayerLevel == 3) { PlayerLevel = 4; PlayerLevelUpBool = true; MicrochipCount = 0; GameChances = 5;playerObjective.UpdateObjective(); }
+        
+}
+    // used by ObjectInteractions.
     public void IncPlayerLevel()
     {
         PlayerLevel++;
@@ -75,12 +80,12 @@ public class PlayerStatus : MonoBehaviour
     public void IncMicrochipCount()
     {
         MicrochipCount++;
-        print("Microchip: " + MicrochipCount);
+//        print("Microchip: " + MicrochipCount);
     }
     public void IncAnomalyCount()
     {
         AnomalyCount++;
-        print("Anomaly: " + AnomalyCount);
+    //    print("Anomaly: " + AnomalyCount);
     }
 
 
