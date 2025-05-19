@@ -1,30 +1,10 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-guid: b5bb01b41c508ef47b742190b17f9f96
-=======
-<<<<<<<< HEAD:My project/Assets/Sprites/Interactions/AnomalyPressed.png.meta
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-guid: 3fa484ec939e6ba4897c0f954da3dea8
-=======
-guid: 7b280d024919d6f438bba1b6abbaa1db
->>>>>>> James
-=======
-guid: 3fa484ec939e6ba4897c0f954da3dea8
->>>>>>> Stashed changes
+guid: 93352980bdf0d8c40b6bbeae124186ae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6694530736867785269
-    second: AnomalyPressed_0
-========
-guid: 6712b91af910c924aba7a78f7fc60b44
->>>>>>> Stashed changes
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 2570972602406725858
-    second: Anomaly_0
+      213: -6349879922431821992
+    second: Cabin_UI_final_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Anomaly_0
+      name: Cabin_UI_final_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 200
-        height: 200
+        width: 1250
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2e8e6b5d5fdeda320800000000000000
-      internalID: 2570972602406725858
+      spriteID: 857f0198ad1b0e7a0800000000000000
+      internalID: -6349879922431821992
       vertices: []
       indices: 
       edges: []
@@ -167,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cabin_UI_final_0: -6349879922431821992
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

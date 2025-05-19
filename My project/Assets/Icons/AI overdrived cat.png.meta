@@ -1,30 +1,19 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-guid: b5bb01b41c508ef47b742190b17f9f96
-=======
-<<<<<<<< HEAD:My project/Assets/Sprites/Interactions/AnomalyPressed.png.meta
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-guid: 3fa484ec939e6ba4897c0f954da3dea8
-=======
-guid: 7b280d024919d6f438bba1b6abbaa1db
->>>>>>> James
-=======
-guid: 3fa484ec939e6ba4897c0f954da3dea8
->>>>>>> Stashed changes
+guid: c22aea7b83711d74c8cacd71ca3f9bec
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6694530736867785269
-    second: AnomalyPressed_0
-========
-guid: 6712b91af910c924aba7a78f7fc60b44
->>>>>>> Stashed changes
-TextureImporter:
-  internalIDToNameTable:
+      213: -8386634697858144821
+    second: AI overdrived cat_0
   - first:
-      213: 2570972602406725858
-    second: Anomaly_0
+      213: 8022420799454789428
+    second: AI overdrived cat_1
+  - first:
+      213: -8895305421911241987
+    second: AI overdrived cat_2
+  - first:
+      213: -8519310982131494218
+    second: AI overdrived cat_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,17 +118,43 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Anomaly_0
+      name: AI overdrived cat_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 200
-        height: 200
+        x: 519
+        y: 168
+        width: 877
+        height: 728
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,8 +163,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2e8e6b5d5fdeda320800000000000000
-      internalID: 2570972602406725858
+      spriteID: bc523353d20bc9b80800000000000000
+      internalID: -8386634697858144821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AI overdrived cat_1
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 98
+        width: 236
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43f3536663d555f60800000000000000
+      internalID: 8022420799454789428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AI overdrived cat_2
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 133
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfacf5e19d68d8480800000000000000
+      internalID: -8895305421911241987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AI overdrived cat_3
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 136
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b2d7fa8cc355c980800000000000000
+      internalID: -8519310982131494218
       vertices: []
       indices: 
       edges: []
