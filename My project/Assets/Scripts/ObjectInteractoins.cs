@@ -7,14 +7,34 @@ using System.Collections.Generic;
 [1] Error Sound Effects. mixkit. [Sound Effect] https://mixkit.co/free-sound-effects/error/ Date Accessed: 08 / 05 / 2025
 -----------------------------------------------
 [2] High Tech Sound Effects . mixkit. [Sound Effect] .https://mixkit.co/free-sound-effects/high-tech/ Date Accessed: 08 / 05 / 2025
------------------------------------------------*/
+-----------------------------------------------
+[3]
+Title: How to Control SHADERS with SCRIPTS (Updated 2023)
+Author: Rigor Mortis Tortoise
+Date :  3 Novemeber 2023
+Availibility: https://www.youtube.com/watch?v=k11wcndXrmc&t=410s
+----------------------------------------------------
+[4] Shader was made with help from:
+Title: 10 Shaders in 10 Minutes - Unity Shader Graph
+Author: Daniel Ilett
+Date :  3 April 2023
+Availibility: https://www.youtube.com/watch?v=vje0x1BNpp8
+
+
+*/
 public class ObjectInteractoins : MonoBehaviour
 {
     
     public PlayerStatus playerStatus;       // refencing the player status script for the methods
     public int AnomalyCount;
     public int MicrochipCount;
+    public Material microchipMaterial;
+    private Material clonedMaterial;
     Button button;
+
+  
+
+
 
 
     void Start()
@@ -23,7 +43,8 @@ public class ObjectInteractoins : MonoBehaviour
 
         AnomalyCount = playerStatus.AnomalyCount;
         MicrochipCount = playerStatus.AnomalyCount;
-
+        
+   
     }
     // each time an anomaly is clicked on it calls this method that hides it from the player view
     public void OnAnomalyInteraction()
@@ -33,17 +54,28 @@ public class ObjectInteractoins : MonoBehaviour
         SoundManager.PlaySound("AnomalySelect");
         //[[1]
         playerStatus.IncAnomalyCount();
+   
 
 
     }
 // each time an microchip is clicked on it calls this method that hides it from the player view
     public void OnMicrochipInteraction()
     {
+  
         button = GetComponent<Button>();
         playerStatus.IncMicrochipCount();
         SoundManager.PlaySound("MicrochipPickUp");
+        button.interactable = false;
         //[2]
-        button.gameObject.SetActive(false);
+            if (clonedMaterial == null)
+    {
+        clonedMaterial = Instantiate(GetComponent<Image>().material);
+        GetComponent<Image>().material = clonedMaterial;
+    }
+
+        StartCoroutine(DelayForMaterialMicrochip());
+ 
+
 
     }
     public void OnObjectInteraction()
@@ -69,6 +101,19 @@ public class ObjectInteractoins : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         SoundManager.PlaySound("AI_GameOver");
+    }
+
+        private IEnumerator DelayForMaterialMicrochip()
+    {
+    float targetHeight = 0f;
+    while (targetHeight < 1f)
+    {
+        clonedMaterial.SetFloat("_CutOff_Height", targetHeight);
+        targetHeight += 0.1f;
+        yield return new WaitForSeconds(0.05f);
+    }
+    button.gameObject.SetActive(false);
+    
     }
 
 }
