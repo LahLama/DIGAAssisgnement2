@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d624c991dd68784479b082cdb50a990e
+guid: 396ecc634d959ba4298ee93c37234c2f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1577846492797285222
-    second: MicrochipPressed 1_0
+      213: -5538011841769415282
+    second: livingroomWindow_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MicrochipPressed 1_0
+      name: livingroomWindow_0
       rect:
         serializedVersion: 2
-        x: 426
-        y: 174
-        width: 418
-        height: 375
+        x: 730
+        y: 580
+        width: 444
+        height: 291
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a9cc8be79fc5a1ae0800000000000000
-      internalID: -1577846492797285222
+      spriteID: e8d5d6152970523b0800000000000000
+      internalID: -5538011841769415282
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MicrochipPressed 1_0: -1577846492797285222
+      livingroomWindow_0: -5538011841769415282
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

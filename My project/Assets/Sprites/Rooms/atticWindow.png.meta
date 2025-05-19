@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ab3c601ac8234a5458025c0b6f3b3371
+guid: 965e5a1a8d8c2514e9e369bf1be08958
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7987603529116848802
-    second: room_transition_0
+      213: -7342466637374336848
+    second: atticWindow_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,43 +109,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: VisionOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: room_transition_0
+      name: atticWindow_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1284
-        height: 700
+        x: 790
+        y: 647
+        width: 169
+        height: 159
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e5d655019e4562190800000000000000
-      internalID: -7987603529116848802
+      spriteID: 0b05520de715a1a90800000000000000
+      internalID: -7342466637374336848
       vertices: []
       indices: 
       edges: []
@@ -174,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      room_transition_0: -7987603529116848802
+      atticWindow_0: -7342466637374336848
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
