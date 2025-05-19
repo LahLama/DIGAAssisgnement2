@@ -1,4 +1,6 @@
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ObjectInteractoins : MonoBehaviour
@@ -28,6 +30,9 @@ public class ObjectInteractoins : MonoBehaviour
     {
         button = GetComponent<Button>();
         button.gameObject.SetActive(false);
+        SoundManager.PlaySound("AnomalySelect");
+        //https://mixkit.co/free-sound-effects/error/
+        //mixkit-short-electric-fence-buzz-2966
         playerStatus.IncAnomalyCount();
 
 
@@ -37,6 +42,8 @@ public class ObjectInteractoins : MonoBehaviour
     {
         button = GetComponent<Button>();
         playerStatus.IncMicrochipCount();
+        SoundManager.PlaySound("MicrochipPickUp");
+        //https://mixkit.co/free-sound-effects/high-tech/
         button.gameObject.SetActive(false);
 
     }
@@ -44,8 +51,17 @@ public class ObjectInteractoins : MonoBehaviour
     {
         //move object up
         //spawn micro IFF max numbers hasnt been spawnwed
+    }
 
-
+    public void OnChanceMinus()
+    {
+        playerStatus.GameChances--;
+        SoundManager.PlaySound("GameChanceMinus");
+        if (playerStatus.GameChances <= 0)
+        {
+            SceneManager.LoadScene("GameOver");
+            //GameOver
+        }
     }
 
 

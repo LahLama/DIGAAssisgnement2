@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:My project/Assets/Scenes/StartScreen.unity.meta
-guid: 63e937cedc632f0419663b74cbbc905f
-========
-guid: e2bc949951c4b4844b377731756806af
->>>>>>>> James:My project/Assets/Scenes/Promise/GameOver.unity.meta
+<<<<<<< HEAD
+guid: 16520d8aefaa30a4b9986b001a2c8a51
+=======
+guid: 6eb6b91b60e492d4b85ff2da07ad8906
+>>>>>>> James
 DefaultImporter:
   externalObjects: {}
   userData: 

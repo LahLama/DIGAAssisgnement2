@@ -5,18 +5,24 @@ using UnityEngine.UI;
 
 public class Puzzle4Manager : MonoBehaviour
 {
+    /// <summary>
+    /// ADD A THING THAT SHOWS THE PLAYER THE COLOURS THEY HAVE SELECTED
+    /// </summary>
+
 
     public TextMeshProUGUI IncorrectText;
     public Puzzle4Robot robot;
     public List<string> playerSequence;
 
     public Button[] buttons;
-    public void Start()
+    public void Puzzle4Start()
     {
         ButtonsOff();
+        robot.Puzzle4RobotStart();
     }
     public void CheckSequence()
     {
+
         if (playerSequence.Count == 4)
         {
             for (int i = 0; i < playerSequence.Count; i++)
@@ -36,11 +42,22 @@ public class Puzzle4Manager : MonoBehaviour
                 }
             }
         }
-        else
+        else if (playerSequence.Count < 4)
         {
             IncorrectText.text = "Not enough colours selected!";
             print("Not enough colours selected!");
             robot.ShowColour();
+        }
+        else if (playerSequence.Count > 4)
+        {
+            IncorrectText.text = "Too many colours selected!";
+            print("Too many colours selected!");
+            robot.ShowColour();
+        }
+        else
+        {
+            IncorrectText.text = "Please select a colour!";
+            print("Please select a colour!");
         }
 
         playerSequence.Clear();
