@@ -1168,8 +1168,13 @@ MonoBehaviour:
   exitInteractions: {fileID: 2041913852}
   camera1: {fileID: 494884437}
   playerStatus: {fileID: 2033192346}
+<<<<<<< Updated upstream:My project/Assets/Scenes/Promise Room.unity
   Puzzle3Timer: {fileID: 878801267}
   puzzle4Manager: {fileID: 1404904147}
+=======
+  Puzzle3Timer: {fileID: 0}
+  puzzle4Manager: {fileID: 0}
+>>>>>>> Stashed changes:My project/Assets/Scenes/MyName Room.unity
   moveSpeed: 500
   WayIndex: 0
   Puzzle3Start: 0
@@ -2392,7 +2397,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzle4Manager: {fileID: 1404904147}
+<<<<<<< Updated upstream:My project/Assets/Scenes/Promise Room.unity
   Puzzle4Robot: {fileID: 975902204}
+=======
+  Puzzle4Robot: {fileID: 0}
+>>>>>>> Stashed changes:My project/Assets/Scenes/MyName Room.unity
 --- !u!114 &319588998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9340,7 +9349,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzle4Manager: {fileID: 1404904147}
+<<<<<<< Updated upstream:My project/Assets/Scenes/Promise Room.unity
   Puzzle4Robot: {fileID: 975902204}
+=======
+  Puzzle4Robot: {fileID: 0}
+>>>>>>> Stashed changes:My project/Assets/Scenes/MyName Room.unity
 --- !u!114 &984277066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13979,7 +13992,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzle4Manager: {fileID: 1404904147}
+<<<<<<< Updated upstream:My project/Assets/Scenes/Promise Room.unity
   Puzzle4Robot: {fileID: 975902204}
+=======
+  Puzzle4Robot: {fileID: 0}
+>>>>>>> Stashed changes:My project/Assets/Scenes/MyName Room.unity
 --- !u!114 &1489813031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15767,7 +15784,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzle4Manager: {fileID: 1404904147}
+<<<<<<< Updated upstream:My project/Assets/Scenes/Promise Room.unity
   Puzzle4Robot: {fileID: 975902204}
+=======
+  Puzzle4Robot: {fileID: 0}
+>>>>>>> Stashed changes:My project/Assets/Scenes/MyName Room.unity
 --- !u!114 &1650306144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19608,7 +19629,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22640283571366196, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 16
+      value: 15.9
       objectReference: {fileID: 0}
     - target: {fileID: 5211073254265196470, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: MainCamera
@@ -19648,6 +19669,13 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+<<<<<<< Updated upstream:My project/Assets/Scenes/Promise Room.unity
+=======
+    - target: {fileID: 8939140559302003014, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+>>>>>>> Stashed changes:My project/Assets/Scenes/MyName Room.unity
     - target: {fileID: 8973238898707295039, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.45192677
