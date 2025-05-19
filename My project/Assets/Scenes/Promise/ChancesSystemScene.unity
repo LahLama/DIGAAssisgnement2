@@ -481,8 +481,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -989, y: 380.52}
-  m_SizeDelta: {x: 162.5, y: 131.25}
+  m_AnchoredPosition: {x: -1030.5, y: 376.01}
+  m_SizeDelta: {x: 79.47, y: 140.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1065863930
 MonoBehaviour:
@@ -504,8 +504,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -5449771802638469709, guid: 3f9dd6adbfdec97428c6f2a3c493a8b2, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -556,8 +556,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 203, y: 0.000014415}
-  m_SizeDelta: {x: 162.5, y: 131.25}
+  m_AnchoredPosition: {x: 164.2, y: 0.000014415}
+  m_SizeDelta: {x: 84.89, y: 131.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1221576659
 MonoBehaviour:
@@ -579,8 +579,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -5449771802638469709, guid: 3f9dd6adbfdec97428c6f2a3c493a8b2, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -922,8 +922,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 811, y: 0.000014415}
-  m_SizeDelta: {x: 162.5, y: 131.25}
+  m_AnchoredPosition: {x: 769.49, y: 0.00064043}
+  m_SizeDelta: {x: 79.48, y: 131.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1814262685
 MonoBehaviour:
@@ -945,8 +945,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -5449771802638469709, guid: 3f9dd6adbfdec97428c6f2a3c493a8b2, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -997,8 +997,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 395, y: 0.000014415}
-  m_SizeDelta: {x: 162.5, y: 131.25}
+  m_AnchoredPosition: {x: 356.2, y: 0.000014415}
+  m_SizeDelta: {x: 84.89, y: 131.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1820224825
 MonoBehaviour:
@@ -1020,8 +1020,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -5449771802638469709, guid: 3f9dd6adbfdec97428c6f2a3c493a8b2, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1072,8 +1072,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 588, y: 0.000014415}
-  m_SizeDelta: {x: 162.5, y: 131.25}
+  m_AnchoredPosition: {x: 546.49, y: 0.0012603}
+  m_SizeDelta: {x: 79.47, y: 131.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1885736996
 MonoBehaviour:
@@ -1095,8 +1095,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -5449771802638469709, guid: 3f9dd6adbfdec97428c6f2a3c493a8b2, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1213,12 +1213,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffe85e89a323cb044a4c280feb2fe917, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chances:
-  - {fileID: 1065863928}
-  - {fileID: 1221576657}
-  - {fileID: 1820224823}
-  - {fileID: 1885736994}
-  - {fileID: 1814262683}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
