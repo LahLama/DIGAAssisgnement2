@@ -11,6 +11,8 @@ public class RandomSoundEffect : MonoBehaviour
 
         // checks if the audio player is playing, if not it will choose a random time,wait that long 
         // and then play a random sound from the random sound effect group
+            if (audioSource == null)
+        return;
         if (!audioSource.isPlaying)
         {
 

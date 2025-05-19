@@ -21,12 +21,8 @@ Availibility: https://www.youtube.com/watch?v=rAX_r0yBwzQ
             instance = this;
             audioSource = GetComponent<AudioSource>(); // Get the AudioSource component attached to this GameObject
             soundEffectLibrary = GetComponent<SoundEffectLibrary>(); // Get the SoundEffectLibrary component attached to this GameObject
-            DontDestroyOnLoad(gameObject); // Keep this object alive across scenes
         }
-        else
-        {
-            Destroy(gameObject); // Destroy duplicate instances
-        }
+
     }
 
 
