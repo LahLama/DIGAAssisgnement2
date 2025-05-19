@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/PauseMenu.unity
     guid: ac203e1a53b3e594d93ce9a459f411ff
   - enabled: 1
-    path: Assets/Scenes/True James Room.unity
+    path: Assets/Scenes/True True Room.unity
     guid: ae27fb364e1358a4293b9098ff250b79
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
