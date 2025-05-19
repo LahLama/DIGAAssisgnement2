@@ -8,6 +8,7 @@ public class Puzzle4Manager : MonoBehaviour
     public PlayerObjective playerObjective;
 
     public TextMeshProUGUI IncorrectText;
+    public ExitInteractions exitInteractions;
     public Puzzle4Robot robot;
     public List<string> playerSequence;
     public TimerScript Puzzle4Timer;
@@ -43,7 +44,7 @@ public class Puzzle4Manager : MonoBehaviour
                     IncorrectText.text = "Correct sequence!";
                         playerObjective.UpdateObjective();
                          Puzzle4Timer.StartTimer = false;
-
+                        exitInteractions.MoveCameraUp();
                 }
                 else
                 {
