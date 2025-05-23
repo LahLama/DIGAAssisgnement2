@@ -8847,7 +8847,7 @@ PrefabInstance:
     - target: {fileID: 8954459857348586710, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 2100000, guid: 0763c5a4b228f074f9de01f229524c66, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 8954459857348586710, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_UseSpriteMesh
       value: 0
@@ -11693,6 +11693,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0.000024796
       objectReference: {fileID: 0}
+    - target: {fileID: 4069133261992965045, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069133261992965045, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: 59fc0b61313f2c3449305a3a92e32da8, type: 2}
     - target: {fileID: 5211073254265196470, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: MainCamera
       value: 
@@ -11708,6 +11716,10 @@ PrefabInstance:
     - target: {fileID: 5758693079653581294, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_Layer
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465366037514380220, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
+      propertyPath: m_Material
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7154957708209871559, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_Name
@@ -47823,9 +47835,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -2116875718, guid: 1505f4ea4f928a84aaeaa9b34fd761fa, type: 3}
     - target: {fileID: 8954459857348586710, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_Color.b
+      value: 0.6901961
+      objectReference: {fileID: 0}
+    - target: {fileID: 8954459857348586710, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6901961
+      objectReference: {fileID: 0}
+    - target: {fileID: 8954459857348586710, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_Color.r
+      value: 0.6901961
+      objectReference: {fileID: 0}
+    - target: {fileID: 8954459857348586710, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 2100000, guid: 0763c5a4b228f074f9de01f229524c66, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 8954459857348586710, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_UseSpriteMesh
       value: 0
@@ -49094,7 +49118,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 60d8409bcfef4f8498360d96aced8a08, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -50791,7 +50815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: 05b14f9bfedc5a943b68e75fb3e8d32f, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -50981,6 +51005,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 4069133261992965045, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: 05b14f9bfedc5a943b68e75fb3e8d32f, type: 2}
     - target: {fileID: 5211073254265196470, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: MainCamera
       value: 
