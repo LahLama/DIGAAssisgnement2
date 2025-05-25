@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 // Everything but sound effects Made by Dorothy
 
@@ -6,7 +7,7 @@ using UnityEngine;
  [1] Fall . mixkit. [Sound Effect] https://mixkit.co/free-sound-effects/ Date Accessed: 08 / 05 / 2025 
  [2] Cup On Table Sfx. mixkit. [Sound Effect] https://mixkit.co/free-sound-effects/ Date Accessed: 08 / 05 / 2025
  */
- 
+
 public class PointnClick : MonoBehaviour
 {
     [Header("Spawn Settings")]
@@ -26,20 +27,24 @@ public class PointnClick : MonoBehaviour
         originalPosition = transform.position;
     }
 
-    public void OnObjectClick()
+    private void OnMouseDown()
     {
-        print("Object clicked");
+        isAnimating = true;
+         Debug.Log("Clicked on: " + gameObject.name);
         //TrySpawnObjectOnceBehind();
-        StartCoroutine(AnimateVerticalMovement());
+        if (isAnimating == true)
+        {
+            StartCoroutine(AnimateVerticalMovement());
+        }
         //this.interactable = false;
 
-        // Sounds are played depending on thier properties, this limits the amount of code we need to implement as there will be a random sound played each tie
-        // giving the illusion of different sounding objects
-        //[1]
-        if (name.StartsWith("soft"))
-        {
-            SoundManager.PlaySound("soft");
-        }
+            // Sounds are played depending on thier properties, this limits the amount of code we need to implement as there will be a random sound played each tie
+            // giving the illusion of different sounding objects
+            //[1]
+            if (name.StartsWith("soft"))
+            {
+                SoundManager.PlaySound("soft");
+            }
         //[2]
         if (name.StartsWith("glass"))
         {
@@ -60,9 +65,9 @@ public class PointnClick : MonoBehaviour
         }
     }
 
-    private System.Collections.IEnumerator AnimateVerticalMovement()
+    private IEnumerator AnimateVerticalMovement()
     {
-        isAnimating = true;
+        isAnimating = false;
         Vector3 targetPosition = originalPosition + Vector3.up * animationHeight;
 
         // Move up
@@ -85,6 +90,7 @@ public class PointnClick : MonoBehaviour
         }
         transform.position = originalPosition;
 
-        isAnimating = false;
+        isAnimating = true;
     }
+
 }
