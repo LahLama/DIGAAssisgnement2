@@ -59,13 +59,12 @@ public class ObjectInteractoins : MonoBehaviour
 
     }
 // each time an microchip is clicked on it calls this method that hides it from the player view
-    public void OnMicrochipInteraction()
+    private void OnMouseDown()
     {
   
-        button = GetComponent<Button>();
+        print("Microchip Clicked");
         playerStatus.IncMicrochipCount();
         SoundManager.PlaySound("MicrochipPickUp");
-        button.interactable = false;
         //[2]
             if (clonedMaterial == null)
     {
@@ -84,7 +83,7 @@ public class ObjectInteractoins : MonoBehaviour
         //spawn micro IFF max numbers hasnt been spawnwed
     }
 
-    public void OnMouseDown()
+    public void TempOnMouseDown()
     {
         //when the player clicks on an empty space , a chance is taken away.
         playerStatus.GameChances--;
