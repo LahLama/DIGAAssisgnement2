@@ -58,22 +58,23 @@ public class ObjectInteractoins : MonoBehaviour
 
 
     }
-// each time an microchip is clicked on it calls this method that hides it from the player view
+    // each time an microchip is clicked on it calls this method that hides it from the player view
     private void OnMouseDown()
     {
-  
+
         print("Microchip Clicked");
         playerStatus.IncMicrochipCount();
         SoundManager.PlaySound("MicrochipPickUp");
+
         //[2]
-            if (clonedMaterial == null)
-    {
-        clonedMaterial = Instantiate(GetComponent<Image>().material);
-        GetComponent<Image>().material = clonedMaterial;
-    }
+        if (clonedMaterial == null)
+        {
+            clonedMaterial = Instantiate(GetComponent<SpriteRenderer>().material);
+            GetComponent<SpriteRenderer>().material = clonedMaterial;
+        }
 
         StartCoroutine(DelayForMaterialMicrochip());
- 
+        
 
 
     }
@@ -111,7 +112,7 @@ public class ObjectInteractoins : MonoBehaviour
         targetHeight += 0.1f;
         yield return new WaitForSeconds(0.05f);
     }
-    button.gameObject.SetActive(false);
+    this.gameObject.SetActive(false);
     
     }
 
