@@ -40,7 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2D:
-        m_Texture: {fileID: 2800000, guid: 34414e4d421d3eb43ab02bf0b24ce83f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1505f4ea4f928a84aaeaa9b34fd761fa, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2DAsset_72d4599ab6f840dab6f406c0b7937a54_Out_0_Texture2D:
@@ -63,7 +63,7 @@ Material:
     m_Floats:
     - _EnableExternalAlpha: 0
     - _Intensity: 0
-    - _Speed: 0
+    - _Speed: 0.2
     - _ZWrite: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}

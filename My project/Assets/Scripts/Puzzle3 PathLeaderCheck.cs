@@ -16,7 +16,7 @@ public class Puzzle2PathLeaderCheck : MonoBehaviour
             if (PathSwitch.tag == "SwitchDisallow")
             {
                 //Debug.Log("NOO YOU CANT PASS");
-                Debug.Log("MINUS A CHANCE HERE");
+               // Debug.Log("MINUS A CHANCE HERE");
                 _Puzzle3Script.Puzzle3Start = false;
 
             }

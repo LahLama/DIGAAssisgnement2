@@ -8,19 +8,17 @@ using UnityEngine;
  [2] Cup On Table Sfx. mixkit. [Sound Effect] https://mixkit.co/free-sound-effects/ Date Accessed: 08 / 05 / 2025
  */
 
-public class PointnClick : MonoBehaviour
+public class ObjectInteraction : MonoBehaviour
 {
-    [Header("Spawn Settings")]
-    public float spawnDistanceBehind = 1.5f;
+
 
     [Header("Animation Settings")]
     private float animationHeight = 75f; // How high the object moves up
     private float animationDuration = 1.5f; // Duration to move up or down
 
     private bool isAnimating = false;
-    private bool hasSpawned = false;
+
     private Vector3 originalPosition;
-    private GameObject spawnedObject = null;
 
     void Start()
     {
@@ -29,6 +27,18 @@ public class PointnClick : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (this.gameObject.tag == "Anomaly")
+        {
+            print("Anomaly Clicked");
+        }
+        else if (this.gameObject.tag == "Ornament")
+        {
+            print("Ornament Clicked");
+        }
+        else
+        {
+            print("Object Clicked");
+        }
         isAnimating = true;
          Debug.Log("Clicked on: " + gameObject.name);
         //TrySpawnObjectOnceBehind();

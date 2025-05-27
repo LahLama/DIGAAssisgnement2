@@ -42,9 +42,10 @@ public class Puzzle4Manager : MonoBehaviour
                 {
                     print("Correct sequence!");
                     IncorrectText.text = "Correct sequence!";
-                        playerObjective.UpdateObjective();
-                         Puzzle4Timer.StartTimer = false;
-                        exitInteractions.MoveCameraUp();
+                    playerObjective.UpdateObjective();
+                    Puzzle4Timer.StartTimer = false;
+                    exitInteractions.MoveCameraUp();
+                    return;
                 }
                 else
                 {

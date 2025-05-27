@@ -22,7 +22,7 @@ Availibility: https://www.youtube.com/watch?v=vje0x1BNpp8
 
 
 */
-public class ObjectInteractoins : MonoBehaviour
+public class MicrochipInteraction : MonoBehaviour
 {
     
     public PlayerStatus playerStatus;       // refencing the player status script for the methods
@@ -62,7 +62,8 @@ public class ObjectInteractoins : MonoBehaviour
     private void OnMouseDown()
     {
 
-        print("Microchip Clicked");
+        //ornaments are manahed in PointnClick.cs
+           print("Microchip Clicked");
         playerStatus.IncMicrochipCount();
         SoundManager.PlaySound("MicrochipPickUp");
 
@@ -78,30 +79,7 @@ public class ObjectInteractoins : MonoBehaviour
 
 
     }
-    public void OnObjectInteraction()
-    {
-        //move object up
-        //spawn micro IFF max numbers hasnt been spawnwed
-    }
 
-    public void TempOnMouseDown()
-    {
-        //when the player clicks on an empty space , a chance is taken away.
-        playerStatus.GameChances--;
-        SoundManager.PlaySound("GameChanceMinus");
-        if (playerStatus.GameChances <= 0)
-        {
-            StartCoroutine(WaitForAITease());
-            SceneManager.LoadScene("GameOver");
-            //GameOver
-        }
-    }
-
-    private IEnumerator WaitForAITease()
-    {
-        yield return new WaitForSeconds(2f);
-        SoundManager.PlaySound("AI_GameOver");
-    }
 
         private IEnumerator DelayForMaterialMicrochip()
     {
