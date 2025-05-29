@@ -19,20 +19,19 @@ public class Puzzle2CodeButtons : MonoBehaviour
 
 
     Image CodeBlock;
-    //Arrays that have the colour order and tags
+    // Arrays that have the colour order, tags, and image names
     public string[] CodeOptions = { "Puzzle3Blue", "Puzzle3Yellow", "Puzzle3Red", "Puzzle3Green" };
-    public Color[] CodeOptionsColor = { Color.blue, Color.yellow, Color.red, Color.green };
+    public Sprite[] CodeOptionsImageNames;
     public int ChoiceIndex = 0;
-
 
     public void OnClick()
     {
         // Cycles through the colours and tags stipulated in the arrays above. 
-        if (ChoiceIndex == CodeOptionsColor.Length)
+        if (ChoiceIndex == CodeOptionsImageNames.Length)
         {//[1]
         
             ChoiceIndex = 0;
-            CodeBlock.color = CodeOptionsColor[ChoiceIndex];
+            CodeBlock.sprite = CodeOptionsImageNames[ChoiceIndex];
             gameObject.tag = CodeOptions[ChoiceIndex];
             ChoiceIndex++;
         }
@@ -40,8 +39,9 @@ public class Puzzle2CodeButtons : MonoBehaviour
         {
             SoundManager.PlaySound("ButtonClick");
             CodeBlock = GetComponent<Image>();
-            Color CurrentColor = CodeBlock.color;
-            CodeBlock.color = CodeOptionsColor[ChoiceIndex];
+            //Color CurrentColor = CodeBlock.color;
+            //CodeBlock.color = CodeOptionsColor[ChoiceIndex];
+            CodeBlock.sprite = CodeOptionsImageNames[ChoiceIndex];
             gameObject.tag = CodeOptions[ChoiceIndex];
             ChoiceIndex++;
             print(gameObject.tag);

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 29a895aebe48c5643aa448b39f3bd517
+guid: 876539b74ab6be14093f6116a14b6fd2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 982276271995811029
-    second: path way_0
+      213: -6349879922431821992
+    second: Cabin_UI_final_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: path way_0
+      name: Cabin_UI_final_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1152
-        height: 648
+        y: 540
+        width: 625
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d4fa97a01fb1ad00800000000000000
-      internalID: 982276271995811029
+      spriteID: 857f0198ad1b0e7a0800000000000000
+      internalID: -6349879922431821992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cabin_UI_final_1
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 540
+        width: 625
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf4f8c8bf45bb6d4a9a90048308b9c7e
+      internalID: 1334862106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cabin_UI_final_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 625
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdffb80f5b85f7648b036241e356ffc9
+      internalID: 1270331296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cabin_UI_final_3
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 0
+        width: 625
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 807900c6db84dae43bb4bfbb0a9fc15f
+      internalID: -451500582
       vertices: []
       indices: 
       edges: []
@@ -138,7 +204,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a95088fc2cae9504286d9f7453ed3a0e
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +214,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      path way_0: 982276271995811029
+      Cabin_UI_final_0: -6349879922431821992
+      Cabin_UI_final_1: 1334862106
+      Cabin_UI_final_2: 1270331296
+      Cabin_UI_final_3: -451500582
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
