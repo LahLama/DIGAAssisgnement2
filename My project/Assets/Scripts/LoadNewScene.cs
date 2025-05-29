@@ -21,7 +21,7 @@ public class LoadNewScene : MonoBehaviour
     IEnumerator LoadAsynchrously()
     {
         yield return new WaitForSeconds(0.35f);
-        AsyncOperation operation = SceneManager.LoadSceneAsync(PlayerPrefs.GetString("James Room"));
+        AsyncOperation operation = SceneManager.LoadSceneAsync(PlayerPrefs.GetString("Scene to go to"));
 
         while (!operation.isDone)
         {
