@@ -20,7 +20,7 @@ public class Puzzle3Manager : MonoBehaviour
     public Puzzle4Manager puzzle4Manager;
     public PlayerObjective playerObjective;
 
-    
+
     //Varibles needed
     public GameObject PathLeader;
     public Transform[] Waypoints;
@@ -59,19 +59,20 @@ public class Puzzle3Manager : MonoBehaviour
             }
 
         }
-        else if (Puzzle3Start == false)
-        {
-            PathLeader.transform.position = Waypoints[0].transform.position;
-            WayIndex = 0;
-        }
     }
 
+    public void ResetPathLeader()
+    {
+        PathLeader.transform.position = Waypoints[0].transform.position;
+        WayIndex = 0;
+        Puzzle3Start = false;
+    }
     public void StartPuzzle3()
     {
         if (playerStatus.PlayPuzz3 == true)
         {
-        Puzzle3Timer.remianingTime = 120;//seconds
-        Puzzle3Timer.StartTimer = true;
+            Puzzle3Timer.remianingTime = 120;//seconds
+            Puzzle3Timer.StartTimer = true;
             playerStatus.PlayerLevel = 3;
         }
     }
@@ -97,7 +98,7 @@ public class Puzzle3Manager : MonoBehaviour
         //upgrades player to level 3
         playerlvl = 3;
         Puzzle3Start = false;
-        
+
         // Puzzle 3 has been played
         playerStatus.PlayPuzz3 = true;
         //stops timer, moves camera up with exinteractions method and starts the next puzzle
