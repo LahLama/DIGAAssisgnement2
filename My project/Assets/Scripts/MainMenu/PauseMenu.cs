@@ -46,7 +46,7 @@ public class PauseMenu : MonoBehaviour
     {
         //this takes you back to the start screen
         Time.timeScale = 1f;
-        SceneManager.LoadScene("StartScreen");
+        SceneManager.LoadScene("Room");
     }
 
     public void Setting()

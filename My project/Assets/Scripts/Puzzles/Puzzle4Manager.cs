@@ -12,6 +12,8 @@ public class Puzzle4Manager : MonoBehaviour
     public Puzzle4Robot robot;
     public List<string> playerSequence;
     public TimerScript Puzzle4Timer;
+    public Puzzle5Manager puzzle5Manager;
+    private int correctCount = 0;
 
     public Button[] buttons;
 
@@ -20,13 +22,14 @@ public class Puzzle4Manager : MonoBehaviour
     {
         ButtonsOff();
         robot.Puzzle4RobotStart();
-                Puzzle4Timer.remianingTime = 120;//seconds
+        Puzzle4Timer.remianingTime = 120;//seconds
         Puzzle4Timer.StartTimer = true;
+
     }
 
 
 
-     // Takes in the players code once they have pressed the validate button and has four states
+    // Takes in the players code once they have pressed the validate button and has four states
     // Enough colours were pressed, but wrong order,
     // Enough colours were pressed and correct order,
     // Not enough colours were pressed
@@ -36,16 +39,13 @@ public class Puzzle4Manager : MonoBehaviour
 
         if (playerSequence.Count == 4)
         {
+            correctCount = 0;
             for (int i = 0; i < playerSequence.Count; i++)
             {
                 if (playerSequence[i] == robot.CorrectSequence[i])
                 {
-                    print("Correct sequence!");
-                    IncorrectText.text = "Correct sequence!";
-                    playerObjective.UpdateObjective();
-                    Puzzle4Timer.StartTimer = false;
-                    exitInteractions.MoveCameraUp();
-                    return;
+                    correctCount++;
+                    print("Correct colour at position " + correctCount);
                 }
                 else
                 {
@@ -53,9 +53,20 @@ public class Puzzle4Manager : MonoBehaviour
                     print("Incorrect sequence!");
                     SoundManager.PlaySound("AI_CommentOnFailure");
                     robot.ShowColour();
-                    break;
+
                 }
             }
+            if (correctCount == 4)
+            {
+                print("Correct sequence!");
+                IncorrectText.text = "Correct sequence!";
+                playerObjective.UpdateObjective();
+                Puzzle4Timer.StartTimer = false;
+                puzzle5Manager.Puzzle5Start();
+                exitInteractions.MoveCameraUp();
+                return;
+            }
+
         }
         else if (playerSequence.Count < 4)
         {
@@ -78,7 +89,7 @@ public class Puzzle4Manager : MonoBehaviour
         playerSequence.Clear();
 
     }
-// switches the buttons to a state where you cant press them to avoid player interuption
+    // switches the buttons to a state where you cant press them to avoid player interuption
     public void ButtonsOff()
     {
         foreach (Button button in buttons)
@@ -87,7 +98,7 @@ public class Puzzle4Manager : MonoBehaviour
 
         }
     }
-// switches the buttons to a state where you can press them
+    // switches the buttons to a state where you can press them
     public void ButtonsOn()
     {
         foreach (Button button in buttons)

@@ -55,7 +55,7 @@ public class PlayerStatus : MonoBehaviour
         }
         //AnomalyCountText.text = ": " + AnomalyCount.ToString();
         PlayerLevelText.text = "Player Level: " + PlayerLevel.ToString();
-        GameChancesText.text = " 1 MORE " + GameChances.ToString();
+        
     }
 
 

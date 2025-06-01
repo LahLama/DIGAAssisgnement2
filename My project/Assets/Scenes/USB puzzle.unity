@@ -182,7 +182,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5868168622735454807, guid: ee163dd274e8fd648ad33b7e49514b25, type: 3}
+  m_Sprite: {fileID: 1067410039, guid: 876539b74ab6be14093f6116a14b6fd2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -202,8 +202,8 @@ Transform:
   m_GameObject: {fileID: 47602436}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.6329994, y: -0.0064000487, z: 0}
-  m_LocalScale: {x: 15, y: 15, z: 15}
+  m_LocalPosition: {x: 5.3599997, y: -0.15999955, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1693596023}
@@ -246,13 +246,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.22, y: 0.22}
+    oldSize: {x: 3.12, y: 3.6}
     newSize: {x: 0.22, y: 0.22}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.22, y: 0.22}
+  m_Size: {x: 3.12, y: 3.6}
   m_EdgeRadius: 0
 --- !u!114 &47602440
 MonoBehaviour:
@@ -263,10 +263,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 47602436}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b938e709b2b925b489a8928b55b1b5a4, type: 3}
+  m_Script: {fileID: 11500000, guid: b312bfb4cf038104e966460bc077259f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1769499902}
+  - {fileID: 1291925760}
+  - {fileID: 79147966}
+  - {fileID: 1952611800}
+  - {fileID: 1155268660}
+  - {fileID: 517661874}
+  - {fileID: 1070198165}
+  - {fileID: 47602438}
+  - {fileID: 1728559988}
+  - {fileID: 768707688}
+  - {fileID: 1069571163}
+  - {fileID: 1425422432}
+  PuzzleRotations:
+  - 90
+  - 180
+  - 270
+  rotationTolerance: 0.1
 --- !u!1 &79147964
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,7 +347,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2471824152556642998, guid: ee163dd274e8fd648ad33b7e49514b25, type: 3}
+  m_Sprite: {fileID: 1270331296, guid: 876539b74ab6be14093f6116a14b6fd2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -351,7 +368,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.2399998, y: 3.4400003, z: 0}
-  m_LocalScale: {x: 15, y: 15, z: 15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1693596023}
@@ -394,13 +411,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.22, y: 0.22}
+    oldSize: {x: 3.12, y: 3.6}
     newSize: {x: 0.22, y: 0.22}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.22, y: 0.22}
+  m_Size: {x: 3.12, y: 3.6}
   m_EdgeRadius: 0
 --- !u!114 &79147968
 MonoBehaviour:
@@ -411,10 +428,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 79147964}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b938e709b2b925b489a8928b55b1b5a4, type: 3}
+  m_Script: {fileID: 11500000, guid: b312bfb4cf038104e966460bc077259f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1769499902}
+  - {fileID: 1291925760}
+  - {fileID: 79147966}
+  - {fileID: 1952611800}
+  - {fileID: 1155268660}
+  - {fileID: 517661874}
+  - {fileID: 1070198165}
+  - {fileID: 47602438}
+  - {fileID: 1728559988}
+  - {fileID: 768707688}
+  - {fileID: 1069571163}
+  - {fileID: 1425422432}
+  PuzzleRotations:
+  - 90
+  - 180
+  - 270
+  rotationTolerance: 0.1
 --- !u!1 &318628793
 GameObject:
   m_ObjectHideFlags: 0
@@ -557,7 +591,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7864344582074673878, guid: ee163dd274e8fd648ad33b7e49514b25, type: 3}
+  m_Sprite: {fileID: -1843864376, guid: 876539b74ab6be14093f6116a14b6fd2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -577,8 +611,8 @@ Transform:
   m_GameObject: {fileID: 517661872}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9670005, y: -0.0064001083, z: 0}
-  m_LocalScale: {x: 15, y: 15, z: 15}
+  m_LocalPosition: {x: -0.8800001, y: -0.15999961, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1693596023}
@@ -621,13 +655,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.22, y: 0.22}
+    oldSize: {x: 3.12, y: 3.6}
     newSize: {x: 0.22, y: 0.22}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.22, y: 0.22}
+  m_Size: {x: 3.12, y: 3.6}
   m_EdgeRadius: 0
 --- !u!114 &517661876
 MonoBehaviour:
@@ -638,10 +672,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 517661872}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b938e709b2b925b489a8928b55b1b5a4, type: 3}
+  m_Script: {fileID: 11500000, guid: b312bfb4cf038104e966460bc077259f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1769499902}
+  - {fileID: 1291925760}
+  - {fileID: 79147966}
+  - {fileID: 1952611800}
+  - {fileID: 1155268660}
+  - {fileID: 517661874}
+  - {fileID: 1070198165}
+  - {fileID: 47602438}
+  - {fileID: 1728559988}
+  - {fileID: 768707688}
+  - {fileID: 1069571163}
+  - {fileID: 1425422432}
+  PuzzleRotations:
+  - 90
+  - 180
+  - 270
+  rotationTolerance: 0.1
 --- !u!1 &531469251
 GameObject:
   m_ObjectHideFlags: 0
@@ -842,7 +893,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6193461194148457225, guid: ee163dd274e8fd648ad33b7e49514b25, type: 3}
+  m_Sprite: {fileID: 1658363537, guid: 876539b74ab6be14093f6116a14b6fd2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -862,8 +913,8 @@ Transform:
   m_GameObject: {fileID: 768707686}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9670005, y: -3.3064003, z: 0}
-  m_LocalScale: {x: 15, y: 15, z: 15}
+  m_LocalPosition: {x: -0.8800001, y: -3.7599995, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1693596023}
@@ -906,13 +957,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.22, y: 0.22}
+    oldSize: {x: 3.12, y: 3.6}
     newSize: {x: 0.22, y: 0.22}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.22, y: 0.22}
+  m_Size: {x: 3.12, y: 3.6}
   m_EdgeRadius: 0
 --- !u!114 &768707690
 MonoBehaviour:
@@ -923,10 +974,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 768707686}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b938e709b2b925b489a8928b55b1b5a4, type: 3}
+  m_Script: {fileID: 11500000, guid: b312bfb4cf038104e966460bc077259f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1769499902}
+  - {fileID: 1291925760}
+  - {fileID: 79147966}
+  - {fileID: 1952611800}
+  - {fileID: 1155268660}
+  - {fileID: 517661874}
+  - {fileID: 1070198165}
+  - {fileID: 47602438}
+  - {fileID: 1728559988}
+  - {fileID: 768707688}
+  - {fileID: 1069571163}
+  - {fileID: 1425422432}
+  PuzzleRotations:
+  - 90
+  - 180
+  - 270
+  rotationTolerance: 0.1
 --- !u!1 &1069571161
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,7 +1058,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2962598828048125496, guid: ee163dd274e8fd648ad33b7e49514b25, type: 3}
+  m_Sprite: {fileID: 412032375, guid: 876539b74ab6be14093f6116a14b6fd2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1010,8 +1078,8 @@ Transform:
   m_GameObject: {fileID: 1069571161}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.3329997, y: -3.3063998, z: 0}
-  m_LocalScale: {x: 15, y: 15, z: 15}
+  m_LocalPosition: {x: 2.2399998, y: -3.7599995, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1693596023}
@@ -1054,13 +1122,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.22, y: 0.22}
+    oldSize: {x: 3.12, y: 3.6}
     newSize: {x: 0.22, y: 0.22}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.22, y: 0.22}
+  m_Size: {x: 3.12, y: 3.6}
   m_EdgeRadius: 0
 --- !u!114 &1069571165
 MonoBehaviour:
@@ -1071,10 +1139,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1069571161}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b938e709b2b925b489a8928b55b1b5a4, type: 3}
+  m_Script: {fileID: 11500000, guid: b312bfb4cf038104e966460bc077259f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1769499902}
+  - {fileID: 1291925760}
+  - {fileID: 79147966}
+  - {fileID: 1952611800}
+  - {fileID: 1155268660}
+  - {fileID: 517661874}
+  - {fileID: 1070198165}
+  - {fileID: 47602438}
+  - {fileID: 1728559988}
+  - {fileID: 768707688}
+  - {fileID: 1069571163}
+  - {fileID: 1425422432}
+  PuzzleRotations:
+  - 90
+  - 180
+  - 270
+  rotationTolerance: 0.1
 --- !u!1 &1070198163
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,7 +1223,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2139465918961271377, guid: ee163dd274e8fd648ad33b7e49514b25, type: 3}
+  m_Sprite: {fileID: 623726268, guid: 876539b74ab6be14093f6116a14b6fd2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1158,8 +1243,8 @@ Transform:
   m_GameObject: {fileID: 1070198163}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.3329997, y: -0.0064000487, z: 0}
-  m_LocalScale: {x: 15, y: 15, z: 15}
+  m_LocalPosition: {x: 2.2399998, y: -0.15999955, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1693596023}
@@ -1202,13 +1287,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.22, y: 0.22}
+    oldSize: {x: 3.12, y: 3.6}
     newSize: {x: 0.22, y: 0.22}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.22, y: 0.22}
+  m_Size: {x: 3.12, y: 3.6}
   m_EdgeRadius: 0
 --- !u!114 &1070198167
 MonoBehaviour:
@@ -1219,10 +1304,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1070198163}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b938e709b2b925b489a8928b55b1b5a4, type: 3}
+  m_Script: {fileID: 11500000, guid: b312bfb4cf038104e966460bc077259f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1769499902}
+  - {fileID: 1291925760}
+  - {fileID: 79147966}
+  - {fileID: 1952611800}
+  - {fileID: 1155268660}
+  - {fileID: 517661874}
+  - {fileID: 1070198165}
+  - {fileID: 47602438}
+  - {fileID: 1728559988}
+  - {fileID: 768707688}
+  - {fileID: 1069571163}
+  - {fileID: 1425422432}
+  PuzzleRotations:
+  - 90
+  - 180
+  - 270
+  rotationTolerance: 0.1
 --- !u!1 &1085431122
 GameObject:
   m_ObjectHideFlags: 0
@@ -1265,6 +1367,11 @@ MonoBehaviour:
   - {fileID: 768707688}
   - {fileID: 1069571163}
   - {fileID: 1425422432}
+  PuzzleRotations:
+  - 90
+  - 180
+  - 270
+  rotationTolerance: 0.1
 --- !u!4 &1085431124
 Transform:
   m_ObjectHideFlags: 0
@@ -1343,7 +1450,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8965754064016805220, guid: ee163dd274e8fd648ad33b7e49514b25, type: 3}
+  m_Sprite: {fileID: 754430427, guid: 876539b74ab6be14093f6116a14b6fd2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1363,8 +1470,8 @@ Transform:
   m_GameObject: {fileID: 1155268658}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.2670007, y: -0.0064000487, z: 0}
-  m_LocalScale: {x: 15, y: 15, z: 15}
+  m_LocalPosition: {x: -4, y: -0.15999973, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1693596023}
@@ -1407,13 +1514,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.22, y: 0.22}
+    oldSize: {x: 3.12, y: 3.6}
     newSize: {x: 0.22, y: 0.22}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.22, y: 0.22}
+  m_Size: {x: 3.12, y: 3.6}
   m_EdgeRadius: 0
 --- !u!114 &1155268662
 MonoBehaviour:
@@ -1424,10 +1531,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1155268658}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b938e709b2b925b489a8928b55b1b5a4, type: 3}
+  m_Script: {fileID: 11500000, guid: b312bfb4cf038104e966460bc077259f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1769499902}
+  - {fileID: 1291925760}
+  - {fileID: 79147966}
+  - {fileID: 1952611800}
+  - {fileID: 1155268660}
+  - {fileID: 517661874}
+  - {fileID: 1070198165}
+  - {fileID: 47602438}
+  - {fileID: 1728559988}
+  - {fileID: 768707688}
+  - {fileID: 1069571163}
+  - {fileID: 1425422432}
+  PuzzleRotations:
+  - 90
+  - 180
+  - 270
+  rotationTolerance: 0.1
 --- !u!1 &1291925758
 GameObject:
   m_ObjectHideFlags: 0
@@ -1491,7 +1615,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3740704723409198594, guid: ee163dd274e8fd648ad33b7e49514b25, type: 3}
+  m_Sprite: {fileID: 1334862106, guid: 876539b74ab6be14093f6116a14b6fd2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1511,8 +1635,8 @@ Transform:
   m_GameObject: {fileID: 1291925758}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0600004, y: 3.4400003, z: 0}
-  m_LocalScale: {x: 15, y: 15, z: 15}
+  m_LocalPosition: {x: -0.8800001, y: 3.4400003, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1693596023}
@@ -1555,13 +1679,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.22, y: 0.22}
+    oldSize: {x: 3.12, y: 3.6}
     newSize: {x: 0.22, y: 0.22}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.22, y: 0.22}
+  m_Size: {x: 3.12, y: 3.6}
   m_EdgeRadius: 0
 --- !u!114 &1291925762
 MonoBehaviour:
@@ -1572,10 +1696,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1291925758}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b938e709b2b925b489a8928b55b1b5a4, type: 3}
+  m_Script: {fileID: 11500000, guid: b312bfb4cf038104e966460bc077259f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1769499902}
+  - {fileID: 1291925760}
+  - {fileID: 79147966}
+  - {fileID: 1952611800}
+  - {fileID: 1155268660}
+  - {fileID: 517661874}
+  - {fileID: 1070198165}
+  - {fileID: 47602438}
+  - {fileID: 1728559988}
+  - {fileID: 768707688}
+  - {fileID: 1069571163}
+  - {fileID: 1425422432}
+  PuzzleRotations:
+  - 90
+  - 180
+  - 270
+  rotationTolerance: 0.1
 --- !u!1 &1425422430
 GameObject:
   m_ObjectHideFlags: 0
@@ -1639,7 +1780,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4005884182456628391, guid: ee163dd274e8fd648ad33b7e49514b25, type: 3}
+  m_Sprite: {fileID: 996024403, guid: 876539b74ab6be14093f6116a14b6fd2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1659,8 +1800,8 @@ Transform:
   m_GameObject: {fileID: 1425422430}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.6329994, y: -3.3063998, z: 0}
-  m_LocalScale: {x: 15, y: 15, z: 15}
+  m_LocalPosition: {x: 5.3599997, y: -3.7599995, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1693596023}
@@ -1703,13 +1844,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.22, y: 0.22}
+    oldSize: {x: 3.12, y: 3.6}
     newSize: {x: 0.22, y: 0.22}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.22, y: 0.22}
+  m_Size: {x: 3.12, y: 3.6}
   m_EdgeRadius: 0
 --- !u!114 &1425422434
 MonoBehaviour:
@@ -1720,10 +1861,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1425422430}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b938e709b2b925b489a8928b55b1b5a4, type: 3}
+  m_Script: {fileID: 11500000, guid: b312bfb4cf038104e966460bc077259f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1769499902}
+  - {fileID: 1291925760}
+  - {fileID: 79147966}
+  - {fileID: 1952611800}
+  - {fileID: 1155268660}
+  - {fileID: 517661874}
+  - {fileID: 1070198165}
+  - {fileID: 47602438}
+  - {fileID: 1728559988}
+  - {fileID: 768707688}
+  - {fileID: 1069571163}
+  - {fileID: 1425422432}
+  PuzzleRotations:
+  - 90
+  - 180
+  - 270
+  rotationTolerance: 0.1
 --- !u!1 &1693596022
 GameObject:
   m_ObjectHideFlags: 0
@@ -1830,7 +1988,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1760203510719836123, guid: ee163dd274e8fd648ad33b7e49514b25, type: 3}
+  m_Sprite: {fileID: -1511373758, guid: 876539b74ab6be14093f6116a14b6fd2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1850,8 +2008,8 @@ Transform:
   m_GameObject: {fileID: 1728559986}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.2670007, y: -3.3063998, z: 0}
-  m_LocalScale: {x: 15, y: 15, z: 15}
+  m_LocalPosition: {x: -4, y: -3.7599998, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1693596023}
@@ -1894,13 +2052,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.22, y: 0.22}
+    oldSize: {x: 3.12, y: 3.6}
     newSize: {x: 0.22, y: 0.22}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.22, y: 0.22}
+  m_Size: {x: 3.12, y: 3.6}
   m_EdgeRadius: 0
 --- !u!114 &1728559990
 MonoBehaviour:
@@ -1911,10 +2069,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1728559986}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b938e709b2b925b489a8928b55b1b5a4, type: 3}
+  m_Script: {fileID: 11500000, guid: b312bfb4cf038104e966460bc077259f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1769499902}
+  - {fileID: 1291925760}
+  - {fileID: 79147966}
+  - {fileID: 1952611800}
+  - {fileID: 1155268660}
+  - {fileID: 517661874}
+  - {fileID: 1070198165}
+  - {fileID: 47602438}
+  - {fileID: 1728559988}
+  - {fileID: 768707688}
+  - {fileID: 1069571163}
+  - {fileID: 1425422432}
+  PuzzleRotations:
+  - 90
+  - 180
+  - 270
+  rotationTolerance: 0.1
 --- !u!1 &1769499900
 GameObject:
   m_ObjectHideFlags: 0
@@ -1978,7 +2153,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4541332317861485833, guid: ee163dd274e8fd648ad33b7e49514b25, type: 3}
+  m_Sprite: {fileID: -6349879922431821992, guid: 876539b74ab6be14093f6116a14b6fd2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1998,8 +2173,8 @@ Transform:
   m_GameObject: {fileID: 1769499900}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.36, y: 3.44, z: 0}
-  m_LocalScale: {x: 15, y: 15, z: 15}
+  m_LocalPosition: {x: -4, y: 3.44, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1693596023}
@@ -2042,13 +2217,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.22, y: 0.22}
+    oldSize: {x: 3.12, y: 3.6}
     newSize: {x: 0.22, y: 0.22}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.22, y: 0.22}
+  m_Size: {x: 3.12, y: 3.6}
   m_EdgeRadius: 0
 --- !u!114 &1769499904
 MonoBehaviour:
@@ -2059,10 +2234,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1769499900}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b938e709b2b925b489a8928b55b1b5a4, type: 3}
+  m_Script: {fileID: 11500000, guid: b312bfb4cf038104e966460bc077259f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1769499902}
+  - {fileID: 1291925760}
+  - {fileID: 79147966}
+  - {fileID: 1952611800}
+  - {fileID: 1155268660}
+  - {fileID: 517661874}
+  - {fileID: 1070198165}
+  - {fileID: 47602438}
+  - {fileID: 1728559988}
+  - {fileID: 768707688}
+  - {fileID: 1069571163}
+  - {fileID: 1425422432}
+  PuzzleRotations:
+  - 90
+  - 180
+  - 270
+  rotationTolerance: 0.1
 --- !u!1 &1952611798
 GameObject:
   m_ObjectHideFlags: 0
@@ -2126,7 +2318,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2099322279040570265, guid: ee163dd274e8fd648ad33b7e49514b25, type: 3}
+  m_Sprite: {fileID: -451500582, guid: 876539b74ab6be14093f6116a14b6fd2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2146,8 +2338,8 @@ Transform:
   m_GameObject: {fileID: 1952611798}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.54, y: 3.44, z: 0}
-  m_LocalScale: {x: 15, y: 15, z: 15}
+  m_LocalPosition: {x: 5.3599997, y: 3.4400005, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1693596023}
@@ -2190,13 +2382,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.22, y: 0.22}
+    oldSize: {x: 3.12, y: 3.6}
     newSize: {x: 0.22, y: 0.22}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.22, y: 0.22}
+  m_Size: {x: 3.12, y: 3.6}
   m_EdgeRadius: 0
 --- !u!114 &1952611802
 MonoBehaviour:
@@ -2207,10 +2399,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1952611798}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b938e709b2b925b489a8928b55b1b5a4, type: 3}
+  m_Script: {fileID: 11500000, guid: b312bfb4cf038104e966460bc077259f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1769499902}
+  - {fileID: 1291925760}
+  - {fileID: 79147966}
+  - {fileID: 1952611800}
+  - {fileID: 1155268660}
+  - {fileID: 517661874}
+  - {fileID: 1070198165}
+  - {fileID: 47602438}
+  - {fileID: 1728559988}
+  - {fileID: 768707688}
+  - {fileID: 1069571163}
+  - {fileID: 1425422432}
+  PuzzleRotations:
+  - 90
+  - 180
+  - 270
+  rotationTolerance: 0.1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -2,15 +2,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Splines.ExtrusionShapes;
 
 public class Puzzle4Robot : MonoBehaviour
 {
 
-    public List<string> CodeOptions = new List<string> { "Red", "Blue", "Green", "Yellow" };
+    public List<string> CodeOptions = new List<string> { "Red", "Blue", "Green", "Yellow", "White" };
 
     public List<string> CorrectSequence = new List<string> { "Red", "Red", "Red", "Red" };
     public Puzzle4Manager puzzle4Manager;
     public SpriteRenderer spriteRenderer;
+    public Sprite[] CodeOptionsImageNames;
+
 
     public void Puzzle4RobotStart()
     {
@@ -41,22 +44,22 @@ public class Puzzle4Robot : MonoBehaviour
         {
             if (item == "Red")
             {
-                spriteRenderer.color = Color.red;
+                spriteRenderer.sprite = CodeOptionsImageNames[0];
                 Debug.Log("Red");
             }
             else if (item == "Blue")
             {
-                spriteRenderer.color = Color.blue;
+                spriteRenderer.sprite = CodeOptionsImageNames[1];
                 Debug.Log("Blue");
             }
             else if (item == "Green")
             {
-                spriteRenderer.color = Color.green;
+                spriteRenderer.sprite = CodeOptionsImageNames[2];
                 Debug.Log("Green");
             }
             else if (item == "Yellow")
             {
-                spriteRenderer.color = Color.yellow;
+                spriteRenderer.sprite = CodeOptionsImageNames[3];
                 Debug.Log("Yellow");
             }
 
@@ -64,7 +67,7 @@ public class Puzzle4Robot : MonoBehaviour
 
             // Wait for 1 seconds before showing the next color
             yield return new WaitForSeconds(1f);
-            spriteRenderer.color = Color.white;
+            spriteRenderer.sprite = CodeOptionsImageNames[4]; ; // Show white inbetween
             yield return new WaitForSeconds(0.5f);
 
         }
