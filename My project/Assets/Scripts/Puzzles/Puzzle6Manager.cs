@@ -18,6 +18,9 @@ public class Puzzle6Manager : MonoBehaviour
         }
         else
         {
+
+            //REFERNCE -----------------------------------------------------------------------------------------------------------------------------------------------
+            //https://discussions.unity.com/t/order-a-list-of-gameobjects-by-name/745736/4
             // Reset index to start checking from the first cell
             // Sort both lists by name
             var sortedNeed = NeedToClickCells.OrderBy(cell => cell.name).ToList();
