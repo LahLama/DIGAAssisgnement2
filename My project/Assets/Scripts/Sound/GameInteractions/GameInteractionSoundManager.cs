@@ -31,7 +31,20 @@ public class GameInteractionSoundManager : MonoBehaviour     //here
         AudioClip audioClip = gameInteractionSoundLibrary.GetRandomClip(soundName); // Get a random audio clip from the SoundEffectLibrary            //here
         if (audioClip != null)
         {
-            audioSource.PlayOneShot(audioClip); // Play the audio clip using the AudioSource
+            if (audioSource.isPlaying)
+            {
+                print("Audio is already playing, stopping the current sound before playing a new one.");
+            }
+            else
+            {
+                audioSource.PlayOneShot(audioClip); // Play the audio clip using the AudioSource
+                print("Playing sound: " + soundName);
+            }
         }
+    }
+    public void Test()
+    {
+        // This method is for testing purposes, you can call it to test the sound manager
+        PlaySound("TestSound"); // Replace "TestSound" with the name of the sound you want to play
     }
 }

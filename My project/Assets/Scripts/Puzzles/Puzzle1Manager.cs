@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -23,7 +24,7 @@ public class Puzzle1Manager : MonoBehaviour
     public TextMeshProUGUI ChangeNum;
     public TimerScript Puzzle1Timer;
 
-// array of the words that could appear, their real words, the assosiated number combination
+    // array of the words that could appear, their real words, the assosiated number combination
     public string[] words = { "___", "d___", "pl__", "l_v_" };
     public string[] RealWords = { "test", "ward", "help", "evil" };
     public string[] numbers = { "1321", "0586", "0039", "0403" };
@@ -57,18 +58,7 @@ public class Puzzle1Manager : MonoBehaviour
         {
             print("PUZZLE COMPLETED");
 
-            // moves the camera to the right and up so it can be on to the next room.
-            Vector3 newPosition = camera1.transform.position;
-            newPosition.x += 960;
-            newPosition.y += 540;
-            camera1.transform.position = newPosition;
 
-            //stops the timer
-            Puzzle1Timer.StartTimer = false;
-            playerStatus.PlayPuzz1 = true;
-
-            // Plays the AI voice reacting to the puzzle behind completed
-                playerObjective.UpdateObjective();
 
 
         }
@@ -85,5 +75,23 @@ public class Puzzle1Manager : MonoBehaviour
         {
             print(index);   
         }*/
+    }
+    IEnumerator WaitBeforeReset() // this is a delay timer that simulates a delay and does other tasks after said delay
+    {
+        yield return new WaitForSeconds(2);     //we have to add it here cause coroutines happen asyncourously
+
+        // moves the camera to the right and up so it can be on to the next room.
+        Vector3 newPosition = camera1.transform.position;
+        newPosition.x += 960;
+        newPosition.y += 540;
+        camera1.transform.position = newPosition;
+
+        //stops the timer
+        Puzzle1Timer.StartTimer = false;
+        playerStatus.PlayPuzz1 = true;
+
+        // Plays the AI voice reacting to the puzzle behind completed
+        playerObjective.UpdateObjective();
+
     }
 }
