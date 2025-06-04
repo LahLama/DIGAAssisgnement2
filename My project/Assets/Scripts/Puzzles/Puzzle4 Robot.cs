@@ -40,6 +40,7 @@ public class Puzzle4Robot : MonoBehaviour
     private IEnumerator ShowColourDelay()
     {
         yield return new WaitForSeconds(0.5f);
+        GameInteractionSoundManager.PlaySound("knob");
         foreach (var item in CorrectSequence)
         {
             if (item == "Red")
@@ -67,6 +68,7 @@ public class Puzzle4Robot : MonoBehaviour
 
             // Wait for 1 seconds before showing the next color
             yield return new WaitForSeconds(1f);
+            GameInteractionSoundManager.PlaySound("knob");
             spriteRenderer.sprite = CodeOptionsImageNames[4]; ; // Show white inbetween
             yield return new WaitForSeconds(0.5f);
 

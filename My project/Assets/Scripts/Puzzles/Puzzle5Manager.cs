@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using System.Runtime.CompilerServices;
 using UnityEditor.U2D.Aseprite;
-public class Puzzle5Manager : MonoBehaviour
+using System.Collections;
+public class Puzzle5Manager : PuzzleClass
 {
 
     public List<Transform> puzzlePieces;
@@ -44,8 +45,8 @@ public class Puzzle5Manager : MonoBehaviour
 
         if (correctPieces == 12)
         {
-            Debug.Log("Puzzle Solved!");
-            exitInteractions.MoveCameraUp();
+            EndPuzzleSound();
+            StartCoroutine(WaitBeforeReset());
         }
         else
         {
@@ -53,5 +54,14 @@ public class Puzzle5Manager : MonoBehaviour
         }
     }
 
+    IEnumerator WaitBeforeReset() // this is a delay timer that simulates a delay and does other tasks after said delay
+    {
+        yield return new WaitForSeconds(2);     //we have to add it here cause coroutines happen asyncourously
+
+        Debug.Log("Puzzle Solved!");
+        exitInteractions.MoveCameraUp();
+
+
+    }
 
 }

@@ -9,7 +9,7 @@ public class Puzzle2Switches : MonoBehaviour
 
     public void OnMouseDown()
     {
-
+        GameInteractionSoundManager.PlaySound("knob");
         if (this.tag == "SwitchDisallow")
         {
             this.transform.Rotate(0, 0, 90f);

@@ -17,6 +17,7 @@ public class Puzzle3PathLeaderCheck : MonoBehaviour
             {
                 //Debug.Log("NOO YOU CANT PASS");
                 // Debug.Log("MINUS A CHANCE HERE");
+                GameInteractionSoundManager.StopSound();
                 _Puzzle3Script.ResetPathLeader();
 
             }

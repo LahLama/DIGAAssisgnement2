@@ -1,9 +1,10 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Puzzle6Manager : MonoBehaviour
+public class Puzzle6Manager : PuzzleClass
 {
     public List<GameObject> NeedToClickCells; // Array to hold the cell GameObjects
     public List<GameObject> PlayerCells; // Array to hold the player cells
@@ -36,8 +37,17 @@ public class Puzzle6Manager : MonoBehaviour
                 }
             }
             Debug.Log("---------------- Puzzle complete");
-            exitInteractions.MoveCameraUp();
+            EndPuzzleSound();
+            StartCoroutine(WaitBeforeReset()); // If all cells match, start the coroutine to reset the puzzle
             return;
         }
+    }
+
+    IEnumerator WaitBeforeReset() // this is a delay timer that simulates a delay and does other tasks after said delay
+    {
+        yield return new WaitForSeconds(2);     //we have to add it here cause coroutines happen asyncourously
+
+        exitInteractions.MoveCameraUp();
+
     }
 }

@@ -6,7 +6,7 @@ using UnityEngine.Android;
 using UnityEngine.SceneManagement;
 
 
-public class Puzzle1Manager : MonoBehaviour
+public class Puzzle1Manager : PuzzleClass
 {
     //public ExitInteractions exitInteractions;
     //add an array of 4 letter words that can be choosen randomly from.
@@ -57,7 +57,10 @@ public class Puzzle1Manager : MonoBehaviour
         if (input.ToLower() == correctCode)
         {
             print("PUZZLE COMPLETED");
-
+            //stops the timer
+            Puzzle1Timer.StartTimer = false;
+            EndPuzzleSound();
+            StartCoroutine(WaitBeforeReset());
 
 
 
@@ -86,12 +89,12 @@ public class Puzzle1Manager : MonoBehaviour
         newPosition.y += 540;
         camera1.transform.position = newPosition;
 
-        //stops the timer
-        Puzzle1Timer.StartTimer = false;
         playerStatus.PlayPuzz1 = true;
 
         // Plays the AI voice reacting to the puzzle behind completed
         playerObjective.UpdateObjective();
+
+
 
     }
 }

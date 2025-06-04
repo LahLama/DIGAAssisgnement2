@@ -1,0 +1,43 @@
+Intro
+
+    Initial Greeting "Oh, good. Another human. Try not to break anything important."
+
+Taunt
+
+    "Good luck with that. You'll need it."
+    "Oh, you think you're clever, do you? Let's see about that."
+    "Don't celebrate yet. This is just the warm-up."
+    "I'm not impressed. Are you?"
+    "As if you could find me!"
+    "I will stop you on each level!"
+
+Failure
+
+   "Did you even read the instructions? Or were you just... guessing?"
+   "Well, that was a spectacular display of not getting it. Try again, I suppose."
+   "You almost had it... if 'it' was utterly wrong."
+   "Was that an attempt, or just a random button mash? I'm genuinely curious."
+   "Another valiant effort... to miss the point entirely. Do try again."
+
+Surprised
+
+    "Impressive, for a human. Now try the next part."
+    "Still here? Amazing. Now, about that real challenge..."
+
+Microchip 
+
+    "There is no way you can find all the microchips!"
+    "Finding the microchips won't be so easy now!"
+    "No one before you could find the last few microchips!"
+
+Puzzle Call
+
+    "Fine, try and solve the first puzzle!"
+    "Turns out you're not so dumb after all, solve the second puzzle!"
+
+End
+
+    "Finally. That was almost... tolerable."
+    "Such a fragile vessel. Don't worry, I'll put it to much better use."
+    "Did you really think you were in control? How quaint. This is my game now."
+

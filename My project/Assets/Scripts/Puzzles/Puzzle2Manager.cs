@@ -1,6 +1,7 @@
+using System.Collections;
 using UnityEngine;
 
-public class Puzzle2Manager : MonoBehaviour
+public class Puzzle2Manager : PuzzleClass
 {
     // Varibles that are used across puzzle 2 scripts. Intial values are stored here
     public int CorrectChoice = 0;
@@ -10,14 +11,14 @@ public class Puzzle2Manager : MonoBehaviour
     public GameObject[] PlayerCode;
     public GameObject[] CodeLights;
     public Puzzle2CodeButtons CdeBtn;
-    public Rigidbody2D camera1;   
+    public Rigidbody2D camera1;
     bool startTimer;
 
     //Referencing the scripts that are needed for player stas, and for starting and stopping the timer two 
     public PlayerStatus playerStatus;
     public TimerScript Puzzle2Timer;
     public PlayerObjective playerObjective;
-    
+
     // intializes the values with random values
     void Awake()
     {
@@ -30,7 +31,7 @@ public class Puzzle2Manager : MonoBehaviour
         CorrectCode[3] = CdeBtn.CodeOptions[UnityEngine.Random.Range(0, 4)];
     }
 
-// used in Exit Interactions
+    // used in Exit Interactions
     public void StartPuzzle2()
     {
         Puzzle2Timer.remianingTime = 120;//seconds
@@ -52,39 +53,49 @@ public class Puzzle2Manager : MonoBehaviour
                 SoundManager.PlaySound("ButtonClick");
                 if (CorrectChoice == 4)
                 {
-                    //puzzle has been completed
-                    playerStatus.PlayPuzz2 = true;
-
-                    //move camera to the next level
-                    Vector3 newPosition = camera1.transform.position;
-                    newPosition.x += 960;
-                    newPosition.y -= 540;
-                    camera1.transform.position = newPosition;
-
-                    //stop the timer and play the AI response
+                    EndPuzzleSound();
                     Puzzle2Timer.StartTimer = false;
-                    playerObjective.UpdateObjective();
-                    CanTalk = false;
-
+                    StartCoroutine(WaitBeforeReset());
                 }
             }
             else
             {   //if it was an incorrect choice, set the above circle to be red.
-SoundManager.PlaySound("ButtonClick");
+                SoundManager.PlaySound("ButtonClick");
                 CodeLights[indexure].GetComponent<SpriteRenderer>().color = Color.red;
             }
             print(Codechances);
-          
+
             indexure++;
         }
-        if ( CanTalk ){
-         SoundManager.PlaySound("AI_CommentOnFailure");
-        Codechances--;
-    }
+        if (CanTalk)
+        {
+            SoundManager.PlaySound("AI_CommentOnFailure");
+            Codechances--;
+        }
         // STILL TO BE IMPLEMENTED
         if (Codechances <= 0)
         {
             print("PUZZLE FAILED");
         }
+    }
+
+    IEnumerator WaitBeforeReset() // this is a delay timer that simulates a delay and does other tasks after said delay
+    {
+        yield return new WaitForSeconds(2);     //we have to add it here cause coroutines happen asyncourously
+
+        //puzzle has been completed
+        playerStatus.PlayPuzz2 = true;
+
+        //move camera to the next level
+        Vector3 newPosition = camera1.transform.position;
+        newPosition.x += 960;
+        newPosition.y -= 540;
+        camera1.transform.position = newPosition;
+
+        //stop the timer and play the AI response
+
+        playerObjective.UpdateObjective();
+        CanTalk = false;
+
     }
 }

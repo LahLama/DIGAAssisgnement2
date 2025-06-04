@@ -13,5 +13,9 @@ public class ObjectInteractions : MonoBehaviour
         {
             ObjectInteractionSoundManager.PlaySound("tap");
         }
+        if (name.StartsWith("window"))
+        {
+            ObjectInteractionSoundManager.PlaySound("windowtap");
+        }
     }
 }

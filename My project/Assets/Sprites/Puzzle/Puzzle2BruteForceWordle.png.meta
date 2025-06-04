@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Puzzle2BruteForceWordle_0: 6008427742998772945
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

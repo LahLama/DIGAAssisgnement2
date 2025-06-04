@@ -10,7 +10,7 @@ Date :   10 May 2022
 Availibility: https://www.youtube.com/watch?v=am3IitICcyA
 */
 
-public class Puzzle3Manager : MonoBehaviour
+public class Puzzle3Manager : PuzzleClass
 {
     //refencing the scripts needed
 
@@ -52,7 +52,9 @@ public class Puzzle3Manager : MonoBehaviour
                 {
                     // Puzzle has been completed
                     playerObjective.UpdateObjective();
+                    GameInteractionSoundManager.StopSound();
                     Puzzle3Timer.StartTimer = false;
+                    EndPuzzleSound();
                     StartCoroutine(WaitBeforeReset());
 
                 }
@@ -65,6 +67,7 @@ public class Puzzle3Manager : MonoBehaviour
     {
         PathLeader.transform.position = Waypoints[0].transform.position;
         WayIndex = 0;
+
         Puzzle3Start = false;
     }
     public void StartPuzzle3()
@@ -81,6 +84,7 @@ public class Puzzle3Manager : MonoBehaviour
     {
         // Sets the puzzle status to the opposite of what it was
         Puzzle3Start = !Puzzle3Start;
+        GameInteractionSoundManager.PlaySound("spark");
         //[1]
         // sets the path leader to the intial position
         PathLeader.transform.position = Waypoints[0].transform.position;
@@ -95,14 +99,15 @@ public class Puzzle3Manager : MonoBehaviour
     {
         yield return new WaitForSeconds(2);     //we have to add it here cause coroutines happen asyncourously
 
+
         //upgrades player to level 3
         playerlvl = 3;
         Puzzle3Start = false;
 
         // Puzzle 3 has been played
         playerStatus.PlayPuzz3 = true;
-        //stops timer, moves camera up with exinteractions method and starts the next puzzle
-        Puzzle3Timer.StartTimer = false;
+        //moves camera up with exinteractions method and starts the next puzzle
+
         exitInteractions.MoveCameraUp();
         // Add ai voice line here
         puzzle4Manager.Puzzle4Start();

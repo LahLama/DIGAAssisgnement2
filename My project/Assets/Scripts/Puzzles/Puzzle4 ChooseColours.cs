@@ -10,6 +10,7 @@ public class Puzzle4ChooseColours : MonoBehaviour
 
     public void OnClick()
     {
+        GameInteractionSoundManager.PlaySound("knob");
         // Depending on what the player clicks , it will add that colour to the sequence and temporarily disable the buttons
         puzzle4Manager.IncorrectText.text = "";
         switch (name)

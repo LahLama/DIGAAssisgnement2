@@ -1,9 +1,10 @@
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Puzzle4Manager : MonoBehaviour
+public class Puzzle4Manager : PuzzleClass
 {
     public PlayerObjective playerObjective;
 
@@ -58,13 +59,9 @@ public class Puzzle4Manager : MonoBehaviour
             }
             if (correctCount == 4)
             {
-                print("Correct sequence!");
-                IncorrectText.text = "Correct sequence!";
-                playerObjective.UpdateObjective();
                 Puzzle4Timer.StartTimer = false;
-                puzzle5Manager.Puzzle5Start();
-                exitInteractions.MoveCameraUp();
-                return;
+                EndPuzzleSound();
+                StartCoroutine(WaitBeforeReset());
             }
 
         }
@@ -108,4 +105,18 @@ public class Puzzle4Manager : MonoBehaviour
 
 
     }
+
+    IEnumerator WaitBeforeReset() // this is a delay timer that simulates a delay and does other tasks after said delay
+    {
+        yield return new WaitForSeconds(2);     //we have to add it here cause coroutines happen asyncourously
+
+        print("Correct sequence!");
+        IncorrectText.text = "Correct sequence!";
+        playerObjective.UpdateObjective();
+        puzzle5Manager.Puzzle5Start();
+        exitInteractions.MoveCameraUp();
+
+
+    }
+
 }

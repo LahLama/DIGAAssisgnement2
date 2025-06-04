@@ -31,15 +31,19 @@ public class GameInteractionSoundManager : MonoBehaviour     //here
         AudioClip audioClip = gameInteractionSoundLibrary.GetRandomClip(soundName); // Get a random audio clip from the SoundEffectLibrary            //here
         if (audioClip != null)
         {
-            if (audioSource.isPlaying)
-            {
-                print("Audio is already playing, stopping the current sound before playing a new one.");
-            }
-            else
-            {
-                audioSource.PlayOneShot(audioClip); // Play the audio clip using the AudioSource
-                print("Playing sound: " + soundName);
-            }
+
+            audioSource.PlayOneShot(audioClip); // Play the audio clip using the AudioSource
+            print("Playing sound: " + soundName);
+
+        }
+    }
+
+    public static void StopSound()
+    {
+        if (audioSource.isPlaying)
+        {
+            audioSource.Stop(); // Stop the currently playing sound
+            print("Stopping current sound.");
         }
     }
     public void Test()

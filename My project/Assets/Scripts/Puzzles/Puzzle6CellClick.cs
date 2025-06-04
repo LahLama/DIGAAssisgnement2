@@ -7,6 +7,7 @@ public class Puzzle6CellClick : MonoBehaviour
     private bool isClicked = false;
     void OnMouseDown()
     {
+        GameInteractionSoundManager.PlaySound("knob");
         isClicked = !isClicked; // Toggle the clicked state
         print("Clicked on: " + gameObject.name);
         if (isClicked)
