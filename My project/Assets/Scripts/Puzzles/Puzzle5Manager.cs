@@ -27,6 +27,7 @@ public class Puzzle5Manager : PuzzleClass
         {
             puzzleRot.Rotate(0f, 0f, PuzzleRotations[(int)Random.Range(0, 3)]);
         }
+        StartTimer();
     }
 
     void PuzzleComplete()
@@ -62,7 +63,10 @@ public class Puzzle5Manager : PuzzleClass
         yield return new WaitForSeconds(2);     //we have to add it here cause coroutines happen asyncourously
 
         //    Debug.Log("Puzzle Solved!");
+        StopTimer();
+
         exitInteractions.MoveCameraUp();
+        StartTimer(); //for the next puzzle
 
 
     }

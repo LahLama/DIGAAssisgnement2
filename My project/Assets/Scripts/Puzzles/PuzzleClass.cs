@@ -7,6 +7,13 @@ public class PuzzleClass : MonoBehaviour
 {
     private static PuzzleClass instance;          //here
 
+    public GameObject PuzzleTimerGO;
+    public TimerScript PuzzleTimer;
+
+    public void Awake()
+    {
+        StopTimer();
+    }
     public void EndPuzzleSound()
     {
         // This method can be used to play a sound when the puzzle ends
@@ -17,6 +24,18 @@ public class PuzzleClass : MonoBehaviour
     {
         // This method can be used to play a sound when the puzzle fails
         AiInteractionSoundManager.PlaySound("Failure");
+    }
+
+    public void StartTimer()
+    {
+        PuzzleTimerGO.SetActive(true);
+        PuzzleTimer.remianingTime = 120;//seconds
+        PuzzleTimer.StartTimer = true;
+    }
+    public void StopTimer()
+    {
+        PuzzleTimer.StartTimer = false;
+        PuzzleTimerGO.SetActive(false);
     }
 
 

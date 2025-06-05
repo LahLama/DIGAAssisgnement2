@@ -77,6 +77,11 @@ public class ObjectInteraction : MonoBehaviour
 
     private IEnumerator AnimateVerticalMovement()
     {
+        Collider2D collider = GetComponent<Collider2D>();
+        if (collider != null)
+        {
+            collider.enabled = false;
+        }
         isAnimating = false;
         Vector3 targetPosition = originalPosition + Vector3.up * animationHeight;
 
@@ -101,6 +106,12 @@ public class ObjectInteraction : MonoBehaviour
         transform.position = originalPosition;
 
         isAnimating = true;
+
+
+        if (collider != null)
+        {
+            collider.enabled = true;
+        }
     }
 
 }

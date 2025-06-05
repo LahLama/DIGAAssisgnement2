@@ -8,8 +8,6 @@ using UnityEngine.SceneManagement;
 
 public class Puzzle1Manager : PuzzleClass
 {
-    //public ExitInteractions exitInteractions;
-    //add an array of 4 letter words that can be choosen randomly from.
 
     //References all the external scripts
     public ExitInteractions exitInteractions;
@@ -33,12 +31,11 @@ public class Puzzle1Manager : PuzzleClass
     public string input;
 
     // This starts the timer and the game. It is called in ExitInteractions
-    public void StartPuzzle1Timer()
+    public void StartPuzzle1()
     {
         // -------------- Timer ----------------------------
         Debug.Log("Puzzle 1 started");
-        Puzzle1Timer.remianingTime = 120;//seconds
-        Puzzle1Timer.StartTimer = true;
+        StartTimer();
         WordScrollAnimations.SetActive(true); // Activates the word scroll animations
         // ------------------------------------------------
 
@@ -47,7 +44,6 @@ public class Puzzle1Manager : PuzzleClass
 
         // ------------ Random Word Chooser ------------------
         int randomValue = Random.Range(0, words.Length);
-        print("Random Value: " + randomValue);
         correctCode = RealWords[randomValue];
         ChangeText.text = words[randomValue];
         ChangeNum.text = numbers[randomValue];
@@ -60,7 +56,7 @@ public class Puzzle1Manager : PuzzleClass
         {
             print("PUZZLE COMPLETED");
             //stops the timer
-            Puzzle1Timer.StartTimer = false;
+
             EndPuzzleSound();
             playerStatus.CurrentGameState = PlayerStatus.GameState.Player2;
             StartCoroutine(WaitBeforeReset());
@@ -85,8 +81,9 @@ public class Puzzle1Manager : PuzzleClass
     IEnumerator WaitBeforeReset() // this is a delay timer that simulates a delay and does other tasks after said delay
     {
         yield return new WaitForSeconds(2);     //we have to add it here cause coroutines happen asyncourously
-
+        StopTimer();
         // moves the camera to the right and up so it can be on to the next room.
+
         Vector3 newPosition = camera1.transform.position;
         newPosition.x += 960;
         newPosition.y += 540;
@@ -94,6 +91,7 @@ public class Puzzle1Manager : PuzzleClass
 
 
         WordScrollAnimations.SetActive(false); // Deactivates the word scroll animations
+
 
         // Plays the AI voice reacting to the puzzle behind completed
         playerObjective.UpdateObjective();

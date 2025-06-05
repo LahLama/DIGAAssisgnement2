@@ -26,8 +26,7 @@ public class Puzzle4Manager : PuzzleClass
     {
         ButtonsOff();
         robot.Puzzle4RobotStart();
-        Puzzle4Timer.remianingTime = 120;//seconds
-        Puzzle4Timer.StartTimer = true;
+        StartTimer();
 
     }
 
@@ -123,7 +122,9 @@ public class Puzzle4Manager : PuzzleClass
         IncorrectText.text = "Correct sequence!";
         playerObjective.UpdateObjective();
         puzzle5Manager.Puzzle5Start();
+        StopTimer();
         exitInteractions.MoveCameraUp();
+
 
 
     }

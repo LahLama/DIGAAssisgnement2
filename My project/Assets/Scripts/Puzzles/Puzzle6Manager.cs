@@ -12,6 +12,8 @@ public class Puzzle6Manager : PuzzleClass
     public List<GameObject> PlayerCells; // Array to hold the player cells
     int index = 0;
     public ExitInteractions exitInteractions;
+
+
     public void CheckCapthca()
     {
         if (PlayerCells.Count == 0)
@@ -52,7 +54,7 @@ public class Puzzle6Manager : PuzzleClass
     {
         yield return new WaitForSeconds(2);     //we have to add it here cause coroutines happen asyncourously
 
-
+        StopTimer();
         exitInteractions.MoveCameraUp();
 
     }

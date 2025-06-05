@@ -68,7 +68,7 @@ public class ExitInteractions : MonoBehaviour
             //print("NOW OPEN DOORS 2");
             foreach (var door2 in Level2Doors)
             {
-                print("DoorName is: " + door2.name);
+                //    print("DoorName is: " + door2.name);
                 door2.SetActive(true);
             }
         }
@@ -160,7 +160,7 @@ public class ExitInteractions : MonoBehaviour
                 {
                     MoveCameraLeft();
 
-                    puzzle1Manager.StartPuzzle1Timer();
+                    puzzle1Manager.StartPuzzle1();
                     Debug.Log("Puzzle 1 started ********************");
                     //Asset [2]
                     SoundManager.PlaySound("PuzzleOpen");

@@ -75,10 +75,7 @@ public class Puzzle3Manager : PuzzleClass
     }
     public void StartPuzzle3()
     {
-
-        Puzzle3Timer.remianingTime = 120;//seconds
-        Puzzle3Timer.StartTimer = true;
-        playerStatus.PlayerLevel = 3;
+        StartTimer();
     }
 
     public void OnClick()
@@ -108,8 +105,9 @@ public class Puzzle3Manager : PuzzleClass
         // Puzzle 3 has been played
 
         //moves camera up with exinteractions method and starts the next puzzle
-
+        StopTimer();
         exitInteractions.MoveCameraUp();
+
         // Add ai voice line here
         puzzle4Manager.Puzzle4Start();
 

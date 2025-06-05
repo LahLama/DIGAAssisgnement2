@@ -19,8 +19,18 @@ public class Puzzle2Manager : PuzzleClass
     public TimerScript Puzzle2Timer;
     public PlayerObjective playerObjective;
 
+
+
+    // used in Exit Interactions
+    public void StartPuzzle2()
+    {
+        StartTimer();
+        intializeColours(); // initializes the colours
+
+    }
+
     // intializes the values with random values
-    void Awake()
+    void intializeColours()
     {
         Codechances = 5;
         CorrectChoice = 0;
@@ -30,14 +40,6 @@ public class Puzzle2Manager : PuzzleClass
         CorrectCode[2] = CdeBtn.CodeOptions[UnityEngine.Random.Range(0, 4)];
         CorrectCode[3] = CdeBtn.CodeOptions[UnityEngine.Random.Range(0, 4)];
     }
-
-    // used in Exit Interactions
-    public void StartPuzzle2()
-    {
-        Puzzle2Timer.remianingTime = 120;//seconds
-        Puzzle2Timer.StartTimer = true;
-    }
-
     public void ValidatePlayerCode()
     {
         // goes through the player sequecne and the correct sequence element by element and sees if they correspond/
@@ -87,7 +89,7 @@ public class Puzzle2Manager : PuzzleClass
         yield return new WaitForSeconds(2);     //we have to add it here cause coroutines happen asyncourously
 
 
-
+        StopTimer();
         //move camera to the next level
         Vector3 newPosition = camera1.transform.position;
         newPosition.x += 960;
@@ -95,6 +97,7 @@ public class Puzzle2Manager : PuzzleClass
         camera1.transform.position = newPosition;
 
         //stop the timer and play the AI response
+
 
         playerObjective.UpdateObjective();
         CanTalk = false;
