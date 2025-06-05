@@ -6,19 +6,21 @@ using UnityEngine.UI;
 
 public class Puzzle4Manager : PuzzleClass
 {
+    [Header("Scripts")]
     public PlayerObjective playerObjective;
     public PlayerStatus playerStatus;
-
-    public TextMeshProUGUI IncorrectText;
-    public ExitInteractions exitInteractions;
-    public Puzzle4Robot robot;
-    public List<string> playerSequence;
     public TimerScript Puzzle4Timer;
     public Puzzle5Manager puzzle5Manager;
-    private int correctCount = 0;
+    public ExitInteractions exitInteractions;
 
+    [Header("Objects")]
+    public TextMeshProUGUI IncorrectText;
+    public Puzzle4Robot robot;
+
+    [Header("Lists")]
+    public List<string> playerSequence;
     public Button[] buttons;
-
+    private int correctCount = 0;
 
     public void Puzzle4Start()
     {
@@ -47,12 +49,12 @@ public class Puzzle4Manager : PuzzleClass
                 if (playerSequence[i] == robot.CorrectSequence[i])
                 {
                     correctCount++;
-                    print("Correct colour at position " + correctCount);
+                    //                    print("Correct colour at position " + correctCount);
                 }
                 else
                 {
                     IncorrectText.text = "Incorrect sequence! Please try again.";
-                    print("Incorrect sequence!");
+                    //     print("Incorrect sequence!");
                     SoundManager.PlaySound("AI_CommentOnFailure");
                     robot.ShowColour();
 
@@ -64,6 +66,7 @@ public class Puzzle4Manager : PuzzleClass
                 EndPuzzleSound();
 
                 playerStatus.CurrentGameState = PlayerStatus.GameState.Puzzle5;
+                playerObjective.UpdateObjective();
                 StartCoroutine(WaitBeforeReset());
             }
 
@@ -72,21 +75,21 @@ public class Puzzle4Manager : PuzzleClass
         {
             PuzzleFailSound();
             IncorrectText.text = "Not enough colours selected!";
-            print("Not enough colours selected!");
+            //  print("Not enough colours selected!");
             robot.ShowColour();
         }
         else if (playerSequence.Count > 4)
         {
             PuzzleFailSound();
             IncorrectText.text = "Too many colours selected!";
-            print("Too many colours selected!");
+            //   print("Too many colours selected!");
             robot.ShowColour();
         }
         else
         {
             PuzzleFailSound();
             IncorrectText.text = "Please select a colour!";
-            print("Please select a colour!");
+            //   print("Please select a colour!");
         }
 
         playerSequence.Clear();
@@ -116,7 +119,7 @@ public class Puzzle4Manager : PuzzleClass
     {
         yield return new WaitForSeconds(2);     //we have to add it here cause coroutines happen asyncourously
 
-        print("Correct sequence!");
+        //    print("Correct sequence!");
         IncorrectText.text = "Correct sequence!";
         playerObjective.UpdateObjective();
         puzzle5Manager.Puzzle5Start();

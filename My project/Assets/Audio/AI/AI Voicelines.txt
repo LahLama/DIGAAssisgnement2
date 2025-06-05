@@ -34,10 +34,13 @@ Puzzle Call
 
 [1]    "As if you can hack into my system software!"				[Word code]
 [2]    "Security is on high, only a dumb human would try to brute force this!"	[Colour wordle]
-[3]    "A human can never be this good! Are you a robot?"			[Captcha]
-[4]    "The way forward is mixed up, as if you could solve this puzzle"		[Jigsaw]
-[5]    "No, my source code! Don't replicate it!"				[Robot]
-[6]    "What are you doing in my circuitry!?, leave that spark alone!"		[Circuit]
+[3]    "What are you doing in my circuitry!?, leave that spark alone!"		[Circuit]
+[4]    "No, my source code! Don't replicate it!"				[Robot]
+[5]    "The way forward is mixed up, as if you could solve this puzzle"		[Jigsaw]
+[6]    "A human can never be this good! Are you a robot?"			[Captcha]
+
+
+
 
 End
 

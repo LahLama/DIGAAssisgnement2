@@ -46,22 +46,22 @@ public class Puzzle4Robot : MonoBehaviour
             if (item == "Red")
             {
                 spriteRenderer.sprite = CodeOptionsImageNames[0];
-                Debug.Log("Red");
+                //   Debug.Log("Red");
             }
             else if (item == "Blue")
             {
                 spriteRenderer.sprite = CodeOptionsImageNames[1];
-                Debug.Log("Blue");
+                //  Debug.Log("Blue");
             }
             else if (item == "Green")
             {
                 spriteRenderer.sprite = CodeOptionsImageNames[2];
-                Debug.Log("Green");
+                //    Debug.Log("Green");
             }
             else if (item == "Yellow")
             {
                 spriteRenderer.sprite = CodeOptionsImageNames[3];
-                Debug.Log("Yellow");
+                //    Debug.Log("Yellow");
             }
 
 

@@ -9,7 +9,7 @@ public class Puzzle6CellClick : MonoBehaviour
     {
         GameInteractionSoundManager.PlaySound("knob");
         isClicked = !isClicked; // Toggle the clicked state
-        print("Clicked on: " + gameObject.name);
+                                //        print("Clicked on: " + gameObject.name);
         if (isClicked)
         {
             puzzle6Manager.PlayerCells.Add(gameObject);

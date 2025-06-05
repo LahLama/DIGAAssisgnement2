@@ -33,7 +33,7 @@ public class GameInteractionSoundManager : MonoBehaviour     //here
         {
 
             audioSource.PlayOneShot(audioClip); // Play the audio clip using the AudioSource
-            print("Playing sound: " + soundName);
+                                                //            print("Playing sound: " + soundName);
 
         }
     }

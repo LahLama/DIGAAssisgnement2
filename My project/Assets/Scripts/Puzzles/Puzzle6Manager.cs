@@ -7,6 +7,7 @@ using UnityEngine;
 public class Puzzle6Manager : PuzzleClass
 {
     public PlayerStatus playerStatus;
+    public PlayerObjective playerObjective;
     public List<GameObject> NeedToClickCells; // Array to hold the cell GameObjects
     public List<GameObject> PlayerCells; // Array to hold the player cells
     int index = 0;
@@ -41,6 +42,7 @@ public class Puzzle6Manager : PuzzleClass
             Debug.Log("---------------- Puzzle complete");
             EndPuzzleSound();
             playerStatus.CurrentGameState = PlayerStatus.GameState.EndGame;
+            playerObjective.UpdateObjective();
             StartCoroutine(WaitBeforeReset()); // If all cells match, start the coroutine to reset the puzzle
             return;
         }

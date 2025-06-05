@@ -29,18 +29,18 @@ public class ObjectInteraction : MonoBehaviour
     {
         if (this.gameObject.tag == "Anomaly")
         {
-            print("Anomaly Clicked");
+            // print("Anomaly Clicked");
         }
         else if (this.gameObject.tag == "Ornament")
         {
-            print("Ornament Clicked");
+            // print("Ornament Clicked");
         }
         else
         {
-            print("Object Clicked");
+            //  print("Object Clicked");
         }
         isAnimating = true;
-         Debug.Log("Clicked on: " + gameObject.name);
+        //         Debug.Log("Clicked on: " + gameObject.name);
         //TrySpawnObjectOnceBehind();
         if (isAnimating == true)
         {
@@ -48,13 +48,13 @@ public class ObjectInteraction : MonoBehaviour
         }
         //this.interactable = false;
 
-            // Sounds are played depending on thier properties, this limits the amount of code we need to implement as there will be a random sound played each tie
-            // giving the illusion of different sounding objects
-            //[1]
-            if (name.StartsWith("soft"))
-            {
-                SoundManager.PlaySound("soft");
-            }
+        // Sounds are played depending on thier properties, this limits the amount of code we need to implement as there will be a random sound played each tie
+        // giving the illusion of different sounding objects
+        //[1]
+        if (name.StartsWith("soft"))
+        {
+            SoundManager.PlaySound("soft");
+        }
         //[2]
         if (name.StartsWith("glass"))
         {

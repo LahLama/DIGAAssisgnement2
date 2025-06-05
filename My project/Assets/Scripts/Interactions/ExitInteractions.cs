@@ -52,25 +52,27 @@ public class ExitInteractions : MonoBehaviour
 
     public void OpenDoors()                     //this activates specific doors based on the players level
     {
-        playerlvl = playerStatus.PlayerLevel;
-        if (playerlvl >= 1)
-        {
-            //print("NOW OPEN DOORS 1");
-            foreach (var door1 in Level1Doors)
-            {
-                door1.SetActive(true);
-            }
-        }
-        if (playerlvl >= 2)
+        PlayerStatus.GameState gamestate = playerStatus.CurrentGameState;
+
+        /* if (gamestate.Equals(PlayerStatus.GameState.Puzzle1))
+         {
+
+             print("NOW OPEN DOORS 1");
+             foreach (var door1 in Level1Doors)
+             {
+                 door1.SetActive(true);
+             }
+         }*/
+        if (gamestate.Equals(PlayerStatus.GameState.Puzzle1))
         {
             //print("NOW OPEN DOORS 2");
             foreach (var door2 in Level2Doors)
             {
-                //print("DoorName is: " + door2.name);
+                print("DoorName is: " + door2.name);
                 door2.SetActive(true);
             }
         }
-        if (playerlvl >= 3)
+        else if (gamestate.Equals(PlayerStatus.GameState.Puzzle2))
         {
 
             // print("NOW OPEN DOORS 3");
@@ -79,7 +81,7 @@ public class ExitInteractions : MonoBehaviour
                 door3.SetActive(true);
             }
         }
-        if (playerlvl >= 4)
+        else if (gamestate.Equals(PlayerStatus.GameState.Puzzle3))
         {
 
             // print("NOW OPEN DOORS 4");
@@ -88,6 +90,8 @@ public class ExitInteractions : MonoBehaviour
                 door4.SetActive(true);
             }
         }
+        else
+        { print("No doors to open for this level"); }
         playerlevelUpbool = false;
 
     }

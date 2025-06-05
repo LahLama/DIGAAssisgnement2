@@ -51,11 +51,12 @@ public class Puzzle3Manager : PuzzleClass
                 if (WayIndex == Waypoints.Length && Puzzle3Start == true)
                 {
                     // Puzzle has been completed
-                    playerObjective.UpdateObjective();
+
                     GameInteractionSoundManager.StopSound();
                     Puzzle3Timer.StartTimer = false;
                     EndPuzzleSound();
                     playerStatus.CurrentGameState = PlayerStatus.GameState.Puzzle4;
+                    playerObjective.UpdateObjective();
                     StartCoroutine(WaitBeforeReset());
 
                 }

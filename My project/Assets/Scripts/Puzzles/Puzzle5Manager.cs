@@ -7,6 +7,7 @@ using System.Collections;
 public class Puzzle5Manager : PuzzleClass
 {
     public PlayerStatus playerStatus;
+    public PlayerObjective playerObjective;
     public List<Transform> puzzlePieces;
     public ExitInteractions exitInteractions;
     public List<float> PuzzleRotations = new List<float> { 90, 180, 270 };
@@ -47,11 +48,12 @@ public class Puzzle5Manager : PuzzleClass
         {
             EndPuzzleSound();
             playerStatus.CurrentGameState = PlayerStatus.GameState.Puzzle6;
+            playerObjective.UpdateObjective();
             StartCoroutine(WaitBeforeReset());
         }
         else
         {
-            Debug.Log("Puzzle Not Solved Yet! at: " + correctPieces);
+            //            Debug.Log("Puzzle Not Solved Yet! at: " + correctPieces);
         }
     }
 
@@ -59,7 +61,7 @@ public class Puzzle5Manager : PuzzleClass
     {
         yield return new WaitForSeconds(2);     //we have to add it here cause coroutines happen asyncourously
 
-        Debug.Log("Puzzle Solved!");
+        //    Debug.Log("Puzzle Solved!");
         exitInteractions.MoveCameraUp();
 
 

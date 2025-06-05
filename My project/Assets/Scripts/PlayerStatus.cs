@@ -38,7 +38,6 @@ public class PlayerStatus : MonoBehaviour
         PuzzleLevel = 0;
         MicrochipCount = 0;
         GameChances = 5;
-        AiInteractionSoundManager.PlaySound("Intro");
     }
     void Update()
     {
