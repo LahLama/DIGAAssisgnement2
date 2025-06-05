@@ -67,18 +67,21 @@ public class Puzzle4Manager : PuzzleClass
         }
         else if (playerSequence.Count < 4)
         {
+            PuzzleFailSound();
             IncorrectText.text = "Not enough colours selected!";
             print("Not enough colours selected!");
             robot.ShowColour();
         }
         else if (playerSequence.Count > 4)
         {
+            PuzzleFailSound();
             IncorrectText.text = "Too many colours selected!";
             print("Too many colours selected!");
             robot.ShowColour();
         }
         else
         {
+            PuzzleFailSound();
             IncorrectText.text = "Please select a colour!";
             print("Please select a colour!");
         }

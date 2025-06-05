@@ -69,7 +69,7 @@ public class Puzzle2Manager : PuzzleClass
         }
         if (CanTalk)
         {
-            SoundManager.PlaySound("AI_CommentOnFailure");
+            PuzzleFailSound();
             Codechances--;
         }
         // STILL TO BE IMPLEMENTED

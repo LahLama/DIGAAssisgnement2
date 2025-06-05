@@ -23,6 +23,7 @@ public class Puzzle1Manager : PuzzleClass
     public TextMeshProUGUI ChangeText;
     public TextMeshProUGUI ChangeNum;
     public TimerScript Puzzle1Timer;
+    public GameObject WordScrollAnimations;
 
     // array of the words that could appear, their real words, the assosiated number combination
     public string[] words = { "___", "d___", "pl__", "l_v_" };
@@ -38,6 +39,7 @@ public class Puzzle1Manager : PuzzleClass
         Debug.Log("Puzzle 1 started");
         Puzzle1Timer.remianingTime = 120;//seconds
         Puzzle1Timer.StartTimer = true;
+        WordScrollAnimations.SetActive(true); // Activates the word scroll animations
         // ------------------------------------------------
 
         // hides the text that says incorrect please try again
@@ -70,7 +72,7 @@ public class Puzzle1Manager : PuzzleClass
             // Case where the word entered does not match the word needed.
             print("Word does not match: " + correctCode);
             IncorrectText.SetActive(true);
-            SoundManager.PlaySound("AI_CommentOnFailure");
+            PuzzleFailSound();
             //Chances for 3 chances
         }
         /*
@@ -90,6 +92,7 @@ public class Puzzle1Manager : PuzzleClass
         camera1.transform.position = newPosition;
 
         playerStatus.PlayPuzz1 = true;
+        WordScrollAnimations.SetActive(false); // Deactivates the word scroll animations
 
         // Plays the AI voice reacting to the puzzle behind completed
         playerObjective.UpdateObjective();

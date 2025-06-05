@@ -16,16 +16,16 @@ public class PlayerObjective : MonoBehaviour
 {
     public PlayerStatus playerStatus;
     public TextMeshProUGUI Objective;
-    public GameObject AIHolder; 
+    public GameObject AIHolder;
     private Animator AIAnimator;
 
     private string lastObjectiveText = "";
     string newObjective = "";
-    
+
     private void Start()
     {
         AIAnimator = AIHolder.GetComponent<Animator>();
-        Objective.text = "";                  
+        Objective.text = "";
         AIAnimator.SetTrigger("PopUp");
         StartCoroutine(WaitForAnimationAndPopAway());
         newObjective = "There is no way you can find all the microchips!";
@@ -38,39 +38,39 @@ public class PlayerObjective : MonoBehaviour
         if (playerStatus.PlayerLevel == 1)
         {
             newObjective = "Find all the microchips!";
-            SoundManager.PlaySound("AI_Intro");
+            AiInteractionSoundManager.PlaySound("Intro");
         }
         else if (playerStatus.PlayerLevel == 2 && !playerStatus.PlayPuzz1)
         {
             newObjective = "Fine, try and solve the first puzzle!";
-            SoundManager.PlaySound("AI_Puzzle1");
+            AiInteractionSoundManager.PlaySound("Puzzle1");
         }
         else if (playerStatus.PlayerLevel == 2 && playerStatus.PlayPuzz1)
         {
             newObjective = "Finding the microchips wont be so easy now!";
-            SoundManager.PlaySound("AI_Microchip1");
+            AiInteractionSoundManager.PlaySound("Microchip1");
         }
         else if (playerStatus.PlayerLevel == 3 && !playerStatus.PlayPuzz2)
         {
             newObjective = "Turns out your not so dumb after all, solve the second puzzle!";
-            SoundManager.PlaySound("AI_Puzzle2");
+            AiInteractionSoundManager.PlaySound("Puzzle2");
         }
         else if (playerStatus.PlayerLevel == 3 && playerStatus.PlayPuzz2)
         {
             newObjective = "No one before you could find the last few microchips!";
-            SoundManager.PlaySound("AI_Microchip2");
+            AiInteractionSoundManager.PlaySound("Microchip2");
         }
         else if (playerStatus.PlayerLevel == 4 && !playerStatus.PlayPuzz3)
         {
             newObjective = "As if you could find me!";
-            SoundManager.PlaySound("AI_Microchip3");
+            AiInteractionSoundManager.PlaySound("Microchip3");
         }
         else if (playerStatus.PlayerLevel == 4 && playerStatus.PlayPuzz3)
         {
             newObjective = "I will stop you on each level!";
-            SoundManager.PlaySound("AI_Puzzle3");
+            AiInteractionSoundManager.PlaySound("Puzzle3");
         }
-        
+
         // Only update if the objective has changed
         if (newObjective != lastObjectiveText)
         {

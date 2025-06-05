@@ -32,6 +32,7 @@ public class Puzzle6Manager : PuzzleClass
             {
                 if (sortedNeed[i].name != sortedPlayer[i].name)
                 {
+                    PuzzleFailSound();
                     Debug.Log("Puzzle not complete");
                     return;
                 }

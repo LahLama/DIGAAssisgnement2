@@ -1,6 +1,6 @@
 Intro
 
-    Initial Greeting "Oh, good. Another human. Try not to break anything important."
+    "Oh, good. Another human. Try not to break anything important."
 
 Taunt
 
@@ -26,14 +26,18 @@ Surprised
 
 Microchip 
 
-    "There is no way you can find all the microchips!"
-    "Finding the microchips won't be so easy now!"
-    "No one before you could find the last few microchips!"
+[1]    "There is no way you can find all the microchips!"
+[2]    "Finding the microchips won't be so easy now!"
+[3]    "No one before you could find the last few microchips!"
 
 Puzzle Call
 
-    "Fine, try and solve the first puzzle!"
-    "Turns out you're not so dumb after all, solve the second puzzle!"
+[1]    "As if you can hack into my system software!"				[Word code]
+[2]    "Security is on high, only a dumb human would try to brute force this!"	[Colour wordle]
+[3]    "A human can never be this good! Are you a robot?"			[Captcha]
+[4]    "The way forward is mixed up, as if you could solve this puzzle"		[Jigsaw]
+[5]    "No, my source code! Don't replicate it!"				[Robot]
+[6]    "What are you doing in my circuitry!?, leave that spark alone!"		[Circuit]
 
 End
 

@@ -65,6 +65,7 @@ public class Puzzle3Manager : PuzzleClass
 
     public void ResetPathLeader()
     {
+        PuzzleFailSound();
         PathLeader.transform.position = Waypoints[0].transform.position;
         WayIndex = 0;
 
