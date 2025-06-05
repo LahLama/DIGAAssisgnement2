@@ -6,7 +6,7 @@ using UnityEditor.U2D.Aseprite;
 using System.Collections;
 public class Puzzle5Manager : PuzzleClass
 {
-
+    public PlayerStatus playerStatus;
     public List<Transform> puzzlePieces;
     public ExitInteractions exitInteractions;
     public List<float> PuzzleRotations = new List<float> { 90, 180, 270 };
@@ -46,6 +46,7 @@ public class Puzzle5Manager : PuzzleClass
         if (correctPieces == 12)
         {
             EndPuzzleSound();
+            playerStatus.CurrentGameState = PlayerStatus.GameState.Puzzle6;
             StartCoroutine(WaitBeforeReset());
         }
         else

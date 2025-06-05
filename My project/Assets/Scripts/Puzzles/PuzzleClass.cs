@@ -1,8 +1,12 @@
 using System.Collections;
+using System.Collections.Generic;
+using NUnit.Framework.Constraints;
 using UnityEngine;
 
 public class PuzzleClass : MonoBehaviour
 {
+    private static PuzzleClass instance;          //here
+
     public void EndPuzzleSound()
     {
         // This method can be used to play a sound when the puzzle ends
@@ -15,15 +19,6 @@ public class PuzzleClass : MonoBehaviour
         AiInteractionSoundManager.PlaySound("Failure");
     }
 
-    enum PuzzleActive
-    {
-        None,
-        WordCode,
-        ColourWordle,
-        Captcha,
-        Jigsaw,
-        Robot,
-        Circuit
-    }
+
 
 }

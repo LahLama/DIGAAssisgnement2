@@ -10,13 +10,13 @@ using UnityEngine;
 public class ExitInteractions : MonoBehaviour
 {
     public Rigidbody2D MainCamera;
-// This allows physical attributing of the level doors in unity engine
+    // This allows physical attributing of the level doors in unity engine
     public GameObject[] Level1Doors;
     public GameObject[] Level2Doors;
     public GameObject[] Level3Doors;
     public GameObject[] Level4Doors;
 
-// refences the scripts need to check the player status for each puzzle
+    // refences the scripts need to check the player status for each puzzle
     public PlayerStatus playerStatus;
     public Puzzle1Manager puzzle1Manager;
     public Puzzle2Manager puzzle2Manager;
@@ -128,7 +128,7 @@ public class ExitInteractions : MonoBehaviour
         //Asset [1]
         SoundManager.PlaySound("DoorOpen");
     }
-    
+
     public void MoveCameraLeft()        //this moves the camera left solely for puzzles 1 and 2
     {
         float movementAmount3 = -960;
@@ -142,6 +142,7 @@ public class ExitInteractions : MonoBehaviour
     public void MoveCamera()                //Depending on the button name, this function will detect the name and move the camera in the stipulated direction. 
                                             //this is easier like this as this reduces the amount of code that is repeated
     {
+        PlayerStatus.GameState gamestate = playerStatus.CurrentGameState;
         switch (this.name)
         {
             case "UpBtn":
@@ -149,9 +150,9 @@ public class ExitInteractions : MonoBehaviour
                 break;
             case "DownBtn":
                 MoveCameraDown();
-                break;  
+                break;
             case "UpOrPuzzle1":             //Detemines if the button pressed takes the player to the puzzle or to the next room if they have completeted the puzzle
-                if (playerStatus.PlayPuzz1 == false)
+                if (gamestate.Equals(PlayerStatus.GameState.Puzzle1))
                 {
                     MoveCameraLeft();
 
@@ -167,13 +168,13 @@ public class ExitInteractions : MonoBehaviour
                 }
                 break;
             case "DownOrPuzzle2":
-                if (playerStatus.PlayPuzz2 == false)
+                if (gamestate.Equals(PlayerStatus.GameState.Puzzle2))
                 {
                     MoveCameraLeft();
 
                     puzzle2Manager.StartPuzzle2();
-                   //Asset [2]
-                SoundManager.PlaySound("PuzzleOpen");
+                    //Asset [2]
+                    SoundManager.PlaySound("PuzzleOpen");
                 }
                 else
                 {
@@ -181,10 +182,10 @@ public class ExitInteractions : MonoBehaviour
                 }
                 break;
             case "UpOrPuzzle3":
-                if (playerStatus.PlayPuzz3 == false)
+                if (gamestate.Equals(PlayerStatus.GameState.Puzzle3))
                 {
                     MoveCameraUp();
-                    playerStatus.PlayPuzz3 = true;
+                    puzzle3Manager.StartPuzzle3();
                     //Asset [2]
                     SoundManager.PlaySound("PuzzleOpen");
 

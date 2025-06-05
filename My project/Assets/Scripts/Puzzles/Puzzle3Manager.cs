@@ -55,6 +55,7 @@ public class Puzzle3Manager : PuzzleClass
                     GameInteractionSoundManager.StopSound();
                     Puzzle3Timer.StartTimer = false;
                     EndPuzzleSound();
+                    playerStatus.CurrentGameState = PlayerStatus.GameState.Puzzle4;
                     StartCoroutine(WaitBeforeReset());
 
                 }
@@ -73,12 +74,10 @@ public class Puzzle3Manager : PuzzleClass
     }
     public void StartPuzzle3()
     {
-        if (playerStatus.PlayPuzz3 == true)
-        {
-            Puzzle3Timer.remianingTime = 120;//seconds
-            Puzzle3Timer.StartTimer = true;
-            playerStatus.PlayerLevel = 3;
-        }
+
+        Puzzle3Timer.remianingTime = 120;//seconds
+        Puzzle3Timer.StartTimer = true;
+        playerStatus.PlayerLevel = 3;
     }
 
     public void OnClick()
@@ -102,11 +101,11 @@ public class Puzzle3Manager : PuzzleClass
 
 
         //upgrades player to level 3
-        playerlvl = 3;
+
         Puzzle3Start = false;
 
         // Puzzle 3 has been played
-        playerStatus.PlayPuzz3 = true;
+
         //moves camera up with exinteractions method and starts the next puzzle
 
         exitInteractions.MoveCameraUp();

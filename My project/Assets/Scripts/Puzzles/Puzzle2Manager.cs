@@ -55,6 +55,9 @@ public class Puzzle2Manager : PuzzleClass
                 {
                     EndPuzzleSound();
                     Puzzle2Timer.StartTimer = false;
+                    //puzzle has been completed
+                    playerStatus.CurrentGameState = PlayerStatus.GameState.Player3;
+
                     StartCoroutine(WaitBeforeReset());
                 }
             }
@@ -83,8 +86,7 @@ public class Puzzle2Manager : PuzzleClass
     {
         yield return new WaitForSeconds(2);     //we have to add it here cause coroutines happen asyncourously
 
-        //puzzle has been completed
-        playerStatus.PlayPuzz2 = true;
+
 
         //move camera to the next level
         Vector3 newPosition = camera1.transform.position;

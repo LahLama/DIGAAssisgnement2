@@ -62,6 +62,7 @@ public class Puzzle1Manager : PuzzleClass
             //stops the timer
             Puzzle1Timer.StartTimer = false;
             EndPuzzleSound();
+            playerStatus.CurrentGameState = PlayerStatus.GameState.Player2;
             StartCoroutine(WaitBeforeReset());
 
 
@@ -91,7 +92,7 @@ public class Puzzle1Manager : PuzzleClass
         newPosition.y += 540;
         camera1.transform.position = newPosition;
 
-        playerStatus.PlayPuzz1 = true;
+
         WordScrollAnimations.SetActive(false); // Deactivates the word scroll animations
 
         // Plays the AI voice reacting to the puzzle behind completed

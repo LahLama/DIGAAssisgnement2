@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Puzzle6Manager : PuzzleClass
 {
+    public PlayerStatus playerStatus;
     public List<GameObject> NeedToClickCells; // Array to hold the cell GameObjects
     public List<GameObject> PlayerCells; // Array to hold the player cells
     int index = 0;
@@ -39,6 +40,7 @@ public class Puzzle6Manager : PuzzleClass
             }
             Debug.Log("---------------- Puzzle complete");
             EndPuzzleSound();
+            playerStatus.CurrentGameState = PlayerStatus.GameState.EndGame;
             StartCoroutine(WaitBeforeReset()); // If all cells match, start the coroutine to reset the puzzle
             return;
         }
@@ -47,6 +49,7 @@ public class Puzzle6Manager : PuzzleClass
     IEnumerator WaitBeforeReset() // this is a delay timer that simulates a delay and does other tasks after said delay
     {
         yield return new WaitForSeconds(2);     //we have to add it here cause coroutines happen asyncourously
+
 
         exitInteractions.MoveCameraUp();
 

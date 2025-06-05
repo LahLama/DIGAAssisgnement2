@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Puzzle4Manager : PuzzleClass
 {
     public PlayerObjective playerObjective;
+    public PlayerStatus playerStatus;
 
     public TextMeshProUGUI IncorrectText;
     public ExitInteractions exitInteractions;
@@ -61,6 +62,8 @@ public class Puzzle4Manager : PuzzleClass
             {
                 Puzzle4Timer.StartTimer = false;
                 EndPuzzleSound();
+
+                playerStatus.CurrentGameState = PlayerStatus.GameState.Puzzle5;
                 StartCoroutine(WaitBeforeReset());
             }
 

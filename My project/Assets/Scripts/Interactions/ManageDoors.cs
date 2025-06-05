@@ -12,6 +12,7 @@ public class ManageDoors : MonoBehaviour
 
     public PlayerStatus playerStatus;
 
+
     public int playerlvl;
     public bool playerlevelUpbool;
 
@@ -35,10 +36,6 @@ public class ManageDoors : MonoBehaviour
 
     public void InitDoors()
     {
-        Level1Doors = GameObject.FindGameObjectsWithTag("Level1Door");
-        Level2Doors = GameObject.FindGameObjectsWithTag("Level2Door");
-        Level3Doors = GameObject.FindGameObjectsWithTag("Level3Door");
-        Level4Doors = GameObject.FindGameObjectsWithTag("Level4Door");
 
 
         foreach (var door2 in Level2Doors)
