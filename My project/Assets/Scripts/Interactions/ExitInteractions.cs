@@ -163,6 +163,7 @@ public class ExitInteractions : MonoBehaviour
                 if (gamestate.Equals(PlayerStatus.GameState.Puzzle1))
                 {
                     MoveCameraLeft();
+                    AiInteractionSoundManager.PlaySound("Puzzle1");
 
                     puzzle1Manager.StartPuzzle1();
                     Debug.Log("Puzzle 1 started ********************");
@@ -179,7 +180,7 @@ public class ExitInteractions : MonoBehaviour
                 if (gamestate.Equals(PlayerStatus.GameState.Puzzle2))
                 {
                     MoveCameraLeft();
-
+                    AiInteractionSoundManager.PlaySound("Puzzle2");
                     puzzle2Manager.StartPuzzle2();
                     //Asset [2]
                     SoundManager.PlaySound("PuzzleOpen");
@@ -193,6 +194,7 @@ public class ExitInteractions : MonoBehaviour
                 if (gamestate.Equals(PlayerStatus.GameState.Puzzle3))
                 {
                     MoveCameraUp();
+                    AiInteractionSoundManager.PlaySound("Puzzle3");
                     puzzle3Manager.StartPuzzle3();
                     //Asset [2]
                     SoundManager.PlaySound("PuzzleOpen");

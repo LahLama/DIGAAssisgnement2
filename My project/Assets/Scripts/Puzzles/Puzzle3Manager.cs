@@ -42,8 +42,14 @@ public class Puzzle3Manager : PuzzleClass
 
             if (WayIndex <= Waypoints.Length - 1)
             {
-                PathLeader.transform.position = Vector2.MoveTowards(PathLeader.transform.position, Waypoints[WayIndex].transform.position, moveSpeed * Time.deltaTime);
-                if (PathLeader.transform.position == Waypoints[WayIndex].transform.position)
+                Vector3 targetPosition = new Vector3(Waypoints[WayIndex].transform.position.x, Waypoints[WayIndex].transform.position.y, PathLeader.transform.position.z);
+                PathLeader.transform.position = Vector2.MoveTowards(
+                    new Vector2(PathLeader.transform.position.x, PathLeader.transform.position.y),
+                    new Vector2(targetPosition.x, targetPosition.y),
+                    moveSpeed * Time.deltaTime
+                );
+                // Check if the PathLeader reached the target x/y (ignore z)
+                if (Vector2.Distance(new Vector2(PathLeader.transform.position.x, PathLeader.transform.position.y), new Vector2(targetPosition.x, targetPosition.y)) < 0.01f)
                 {
                     WayIndex++;
                 }
@@ -66,7 +72,7 @@ public class Puzzle3Manager : PuzzleClass
     public void ResetPathLeader()
     {
         PuzzleFailSound();
-        PathLeader.transform.position = Waypoints[0].transform.position;
+        PathLeader.transform.position = new Vector3(Waypoints[0].transform.position.x, Waypoints[0].transform.position.y, PathLeader.transform.position.z);
         WayIndex = 0;
 
         Puzzle3Start = false;
@@ -83,9 +89,7 @@ public class Puzzle3Manager : PuzzleClass
         GameInteractionSoundManager.PlaySound("spark");
         //[1]
         // sets the path leader to the intial position
-        PathLeader.transform.position = Waypoints[0].transform.position;
-        WayIndex = 0;
-        Debug.Log(Puzzle3Start);
+        ResetPathLeader();
 
 
 

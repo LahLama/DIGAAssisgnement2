@@ -105,6 +105,10 @@
                 {
                     "objID": "Room_Puzzle4Manager_0_Puzzle4 Simon Says_3_Puzzles_5",
                     "colorValue": "262626FF"
+                },
+                {
+                    "objID": "Room_CameraMovement_1",
+                    "colorValue": "BFBF40FF"
                 }
             ],
             "styles": [

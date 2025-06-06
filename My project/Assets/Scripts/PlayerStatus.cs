@@ -29,6 +29,7 @@ public class PlayerStatus : MonoBehaviour
     public GameState CurrentGameState;
 
 
+
     // intiallizes all the nessercary varibles and plays the AI intro sound
     void Awake()
     {

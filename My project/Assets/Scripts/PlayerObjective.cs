@@ -36,17 +36,17 @@ public class PlayerObjective : MonoBehaviour
 
         if (gamestate.Equals(PlayerStatus.GameState.Puzzle1))
         {
-            AiInteractionSoundManager.PlaySound("Puzzle1");
+            // AiInteractionSoundManager.PlaySound("Puzzle1");
             Objective.text = "Puzzle 1";
         }
         else if (gamestate.Equals(PlayerStatus.GameState.Puzzle2))
         {
-            AiInteractionSoundManager.PlaySound("Puzzle2");
+            //AiInteractionSoundManager.PlaySound("Puzzle2");
             Objective.text = "Puzzle 2";
         }
         else if (gamestate.Equals(PlayerStatus.GameState.Puzzle3))
         {
-            AiInteractionSoundManager.PlaySound("Puzzle3");
+            //AiInteractionSoundManager.PlaySound("Puzzle3");
             Objective.text = "Puzzle 3";
         }
         else if (gamestate.Equals(PlayerStatus.GameState.Puzzle4))
