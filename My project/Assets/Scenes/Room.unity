@@ -2455,7 +2455,7 @@ Transform:
   m_GameObject: {fileID: 139558288}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.3599997, y: -3.7599995, z: 0}
+  m_LocalPosition: {x: 3.4099998, y: -0.72999954, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2477,19 +2477,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces:
-  - {fileID: 1857343669}
-  - {fileID: 1048443113}
-  - {fileID: 2072557259}
-  - {fileID: 1156491354}
-  - {fileID: 342400550}
-  - {fileID: 717087139}
-  - {fileID: 627263298}
-  - {fileID: 1661368852}
-  - {fileID: 304450002}
-  - {fileID: 1875645373}
-  - {fileID: 1454510625}
-  - {fileID: 139558289}
+  puzzlePieces: []
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -2530,17 +2518,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1.55, y: -1.55}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.75, y: 2.75}
+    pivot: {x: 0, y: 1}
+    oldSize: {x: 3.1, y: 3.1}
     newSize: {x: 3.12, y: 3.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.12, y: 3.6}
+  m_Size: {x: 3.1, y: 3.1}
   m_EdgeRadius: 0
 --- !u!212 &139558292
 SpriteRenderer:
@@ -4033,7 +4021,7 @@ Transform:
   m_GameObject: {fileID: 219126709}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.3599997, y: -3.7599995, z: 0}
+  m_LocalPosition: {x: 6.5499997, y: 2.3700004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -4055,19 +4043,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces:
-  - {fileID: 1857343669}
-  - {fileID: 1048443113}
-  - {fileID: 2072557259}
-  - {fileID: 1156491354}
-  - {fileID: 342400550}
-  - {fileID: 717087139}
-  - {fileID: 627263298}
-  - {fileID: 1661368852}
-  - {fileID: 304450002}
-  - {fileID: 1875645373}
-  - {fileID: 1454510625}
-  - {fileID: 219126710}
+  puzzlePieces: []
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -4108,17 +4084,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1.55, y: -1.55}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.75, y: 2.75}
+    pivot: {x: 0, y: 1}
+    oldSize: {x: 3.1, y: 3.1}
     newSize: {x: 3.12, y: 3.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.12, y: 3.6}
+  m_Size: {x: 3.1, y: 3.1}
   m_EdgeRadius: 0
 --- !u!212 &219126713
 SpriteRenderer:
@@ -5644,7 +5620,7 @@ Transform:
   m_GameObject: {fileID: 304450001}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4, y: -3.7599998, z: 0}
+  m_LocalPosition: {x: -2.7900004, y: 2.3700004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -5666,19 +5642,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces:
-  - {fileID: 1857343669}
-  - {fileID: 1048443113}
-  - {fileID: 2072557259}
-  - {fileID: 1156491354}
-  - {fileID: 342400550}
-  - {fileID: 717087139}
-  - {fileID: 627263298}
-  - {fileID: 1661368852}
-  - {fileID: 304450002}
-  - {fileID: 1875645373}
-  - {fileID: 1454510625}
-  - {fileID: 219126710}
+  puzzlePieces: []
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -5719,17 +5683,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1.55, y: -1.55}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.75, y: 2.75}
+    pivot: {x: 0, y: 1}
+    oldSize: {x: 3.1, y: 3.1}
     newSize: {x: 3.12, y: 3.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.12, y: 3.6}
+  m_Size: {x: 3.1, y: 3.1}
   m_EdgeRadius: 0
 --- !u!212 &304450005
 SpriteRenderer:
@@ -6889,7 +6853,7 @@ Transform:
   m_GameObject: {fileID: 342400549}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4, y: -0.15999973, z: 0}
+  m_LocalPosition: {x: 3.4499998, y: 5.4700003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -6911,19 +6875,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces:
-  - {fileID: 1857343669}
-  - {fileID: 1048443113}
-  - {fileID: 2072557259}
-  - {fileID: 1156491354}
-  - {fileID: 342400550}
-  - {fileID: 717087139}
-  - {fileID: 627263298}
-  - {fileID: 1661368852}
-  - {fileID: 304450002}
-  - {fileID: 1875645373}
-  - {fileID: 1454510625}
-  - {fileID: 219126710}
+  puzzlePieces: []
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -6964,17 +6916,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1.55, y: -1.55}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.75, y: 2.75}
+    pivot: {x: 0, y: 1}
+    oldSize: {x: 3.1, y: 3.1}
     newSize: {x: 3.12, y: 3.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.12, y: 3.6}
+  m_Size: {x: 3.1, y: 3.1}
   m_EdgeRadius: 0
 --- !u!212 &342400553
 SpriteRenderer:
@@ -14240,7 +14192,7 @@ Transform:
   m_GameObject: {fileID: 494884435}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -539.99976, z: -90}
+  m_LocalPosition: {x: 0, y: 3240.0002, z: -90}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18284,7 +18236,7 @@ Transform:
   m_GameObject: {fileID: 627263297}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.2399998, y: -0.15999955, z: 0}
+  m_LocalPosition: {x: -8.95, y: 2.3700004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -18306,19 +18258,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces:
-  - {fileID: 1857343669}
-  - {fileID: 1048443113}
-  - {fileID: 2072557259}
-  - {fileID: 1156491354}
-  - {fileID: 342400550}
-  - {fileID: 717087139}
-  - {fileID: 627263298}
-  - {fileID: 1661368852}
-  - {fileID: 304450002}
-  - {fileID: 1875645373}
-  - {fileID: 1454510625}
-  - {fileID: 219126710}
+  puzzlePieces: []
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -18359,17 +18299,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1.55, y: -1.55}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.75, y: 2.75}
+    pivot: {x: 0, y: 1}
+    oldSize: {x: 3.1, y: 3.1}
     newSize: {x: 3.12, y: 3.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.12, y: 3.6}
+  m_Size: {x: 3.1, y: 3.1}
   m_EdgeRadius: 0
 --- !u!212 &627263301
 SpriteRenderer:
@@ -19395,7 +19335,7 @@ Transform:
   m_GameObject: {fileID: 676077458}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.3599997, y: -3.7599995, z: 0}
+  m_LocalPosition: {x: 0.3099999, y: -0.72999954, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -19417,19 +19357,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces:
-  - {fileID: 1857343669}
-  - {fileID: 1048443113}
-  - {fileID: 2072557259}
-  - {fileID: 1156491354}
-  - {fileID: 342400550}
-  - {fileID: 717087139}
-  - {fileID: 627263298}
-  - {fileID: 1661368852}
-  - {fileID: 304450002}
-  - {fileID: 1875645373}
-  - {fileID: 1454510625}
-  - {fileID: 676077459}
+  puzzlePieces: []
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -19470,17 +19398,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1.55, y: -1.55}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.75, y: 2.75}
+    pivot: {x: 0, y: 1}
+    oldSize: {x: 3.1, y: 3.1}
     newSize: {x: 3.12, y: 3.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.12, y: 3.6}
+  m_Size: {x: 3.1, y: 3.1}
   m_EdgeRadius: 0
 --- !u!212 &676077462
 SpriteRenderer:
@@ -20303,7 +20231,7 @@ Transform:
   m_GameObject: {fileID: 717087138}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8800001, y: -0.15999961, z: 0}
+  m_LocalPosition: {x: 6.5499997, y: 5.4700003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -20325,19 +20253,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces:
-  - {fileID: 1857343669}
-  - {fileID: 1048443113}
-  - {fileID: 2072557259}
-  - {fileID: 1156491354}
-  - {fileID: 342400550}
-  - {fileID: 717087139}
-  - {fileID: 627263298}
-  - {fileID: 1661368852}
-  - {fileID: 304450002}
-  - {fileID: 1875645373}
-  - {fileID: 1454510625}
-  - {fileID: 219126710}
+  puzzlePieces: []
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -20378,17 +20294,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1.55, y: -1.55}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.75, y: 2.75}
+    pivot: {x: 0, y: 1}
+    oldSize: {x: 3.1, y: 3.1}
     newSize: {x: 3.12, y: 3.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.12, y: 3.6}
+  m_Size: {x: 3.1, y: 3.1}
   m_EdgeRadius: 0
 --- !u!212 &717087142
 SpriteRenderer:
@@ -28327,7 +28243,7 @@ Transform:
   m_GameObject: {fileID: 1048443112}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8800001, y: 3.4400003, z: 0}
+  m_LocalPosition: {x: -5.85, y: 5.4700003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -28349,19 +28265,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces:
-  - {fileID: 1857343669}
-  - {fileID: 1048443113}
-  - {fileID: 2072557259}
-  - {fileID: 1156491354}
-  - {fileID: 342400550}
-  - {fileID: 717087139}
-  - {fileID: 627263298}
-  - {fileID: 1661368852}
-  - {fileID: 304450002}
-  - {fileID: 1875645373}
-  - {fileID: 1454510625}
-  - {fileID: 219126710}
+  puzzlePieces: []
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -28402,17 +28306,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1.55, y: -1.55}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.75, y: 2.75}
+    pivot: {x: 0, y: 1}
+    oldSize: {x: 3.1, y: 3.1}
     newSize: {x: 3.12, y: 3.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.12, y: 3.6}
+  m_Size: {x: 3.1, y: 3.1}
   m_EdgeRadius: 0
 --- !u!212 &1048443116
 SpriteRenderer:
@@ -35245,7 +35149,7 @@ Transform:
   m_GameObject: {fileID: 1156491353}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.3599997, y: 3.4400005, z: 0}
+  m_LocalPosition: {x: 0.3499999, y: 5.4700007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -35267,19 +35171,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces:
-  - {fileID: 1857343669}
-  - {fileID: 1048443113}
-  - {fileID: 2072557259}
-  - {fileID: 1156491354}
-  - {fileID: 342400550}
-  - {fileID: 717087139}
-  - {fileID: 627263298}
-  - {fileID: 1661368852}
-  - {fileID: 304450002}
-  - {fileID: 1875645373}
-  - {fileID: 1454510625}
-  - {fileID: 219126710}
+  puzzlePieces: []
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -35320,17 +35212,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1.55, y: -1.55}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.75, y: 2.75}
+    pivot: {x: 0, y: 1}
+    oldSize: {x: 3.1, y: 3.1}
     newSize: {x: 3.12, y: 3.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.12, y: 3.6}
+  m_Size: {x: 3.1, y: 3.1}
   m_EdgeRadius: 0
 --- !u!212 &1156491357
 SpriteRenderer:
@@ -36392,7 +36284,7 @@ Transform:
   m_GameObject: {fileID: 1204640972}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.3599997, y: -3.7599995, z: 0}
+  m_LocalPosition: {x: -2.79, y: -0.72999954, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -36414,19 +36306,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces:
-  - {fileID: 1857343669}
-  - {fileID: 1048443113}
-  - {fileID: 2072557259}
-  - {fileID: 1156491354}
-  - {fileID: 342400550}
-  - {fileID: 717087139}
-  - {fileID: 627263298}
-  - {fileID: 1661368852}
-  - {fileID: 304450002}
-  - {fileID: 1875645373}
-  - {fileID: 1454510625}
-  - {fileID: 1204640973}
+  puzzlePieces: []
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -36467,17 +36347,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1.55, y: -1.55}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.75, y: 2.75}
+    pivot: {x: 0, y: 1}
+    oldSize: {x: 3.1, y: 3.1}
     newSize: {x: 3.12, y: 3.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.12, y: 3.6}
+  m_Size: {x: 3.1, y: 3.1}
   m_EdgeRadius: 0
 --- !u!212 &1204640976
 SpriteRenderer:
@@ -38545,7 +38425,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -236.46014, y: 2987}
+  m_AnchoredPosition: {x: -236.46011, y: 2987}
   m_SizeDelta: {x: -472.9158, y: -401.2766}
   m_Pivot: {x: 0.5, y: -6.442013}
 --- !u!114 &1333863820
@@ -46310,7 +46190,7 @@ Transform:
   m_GameObject: {fileID: 1454510624}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.2399998, y: -3.7599995, z: 0}
+  m_LocalPosition: {x: 3.4099998, y: 2.3700004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -46332,19 +46212,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces:
-  - {fileID: 1857343669}
-  - {fileID: 1048443113}
-  - {fileID: 2072557259}
-  - {fileID: 1156491354}
-  - {fileID: 342400550}
-  - {fileID: 717087139}
-  - {fileID: 627263298}
-  - {fileID: 1661368852}
-  - {fileID: 304450002}
-  - {fileID: 1875645373}
-  - {fileID: 1454510625}
-  - {fileID: 219126710}
+  puzzlePieces: []
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -46385,17 +46253,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1.55, y: -1.55}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.75, y: 2.75}
+    pivot: {x: 0, y: 1}
+    oldSize: {x: 3.1, y: 3.1}
     newSize: {x: 3.12, y: 3.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.12, y: 3.6}
+  m_Size: {x: 3.1, y: 3.1}
   m_EdgeRadius: 0
 --- !u!212 &1454510628
 SpriteRenderer:
@@ -60048,18 +59916,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1596526940
-Transform:
+--- !u!224 &1596526940
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596526939}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -47, y: 27, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 50, y: 50, z: 50}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1857343669}
   - {fileID: 1048443113}
@@ -60081,6 +59948,11 @@ Transform:
   - {fileID: 1955102345}
   m_Father: {fileID: 809684200}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -68, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1609340943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60362,7 +60234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.12452829, g: 0.12452829, b: 0.12452829, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -60814,7 +60686,7 @@ Transform:
   m_GameObject: {fileID: 1661368851}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.3599997, y: -0.15999955, z: 0}
+  m_LocalPosition: {x: -5.89, y: 2.3700004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -60836,19 +60708,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces:
-  - {fileID: 1857343669}
-  - {fileID: 1048443113}
-  - {fileID: 2072557259}
-  - {fileID: 1156491354}
-  - {fileID: 342400550}
-  - {fileID: 717087139}
-  - {fileID: 627263298}
-  - {fileID: 1661368852}
-  - {fileID: 304450002}
-  - {fileID: 1875645373}
-  - {fileID: 1454510625}
-  - {fileID: 219126710}
+  puzzlePieces: []
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -60889,17 +60749,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1.55, y: -1.55}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.75, y: 2.75}
+    pivot: {x: 0, y: 1}
+    oldSize: {x: 3.1, y: 3.1}
     newSize: {x: 3.12, y: 3.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.12, y: 3.6}
+  m_Size: {x: 3.1, y: 3.1}
   m_EdgeRadius: 0
 --- !u!212 &1661368855
 SpriteRenderer:
@@ -65370,7 +65230,7 @@ Transform:
   m_GameObject: {fileID: 1857343668}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4, y: 3.44, z: 0}
+  m_LocalPosition: {x: -8.95, y: 5.47, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -65392,19 +65252,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces:
-  - {fileID: 1857343669}
-  - {fileID: 1048443113}
-  - {fileID: 2072557259}
-  - {fileID: 1156491354}
-  - {fileID: 342400550}
-  - {fileID: 717087139}
-  - {fileID: 627263298}
-  - {fileID: 1661368852}
-  - {fileID: 304450002}
-  - {fileID: 1875645373}
-  - {fileID: 1454510625}
-  - {fileID: 219126710}
+  puzzlePieces: []
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -65445,17 +65293,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1.55, y: -1.55}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.75, y: 2.75}
+    pivot: {x: 0, y: 1}
+    oldSize: {x: 3.1, y: 3.1}
     newSize: {x: 3.12, y: 3.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.12, y: 3.6}
+  m_Size: {x: 3.1, y: 3.1}
   m_EdgeRadius: 0
 --- !u!212 &1857343672
 SpriteRenderer:
@@ -66046,7 +65894,7 @@ Transform:
   m_GameObject: {fileID: 1875645372}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8800001, y: -3.7599995, z: 0}
+  m_LocalPosition: {x: 0.30999994, y: 2.3700004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -66068,19 +65916,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces:
-  - {fileID: 1857343669}
-  - {fileID: 1048443113}
-  - {fileID: 2072557259}
-  - {fileID: 1156491354}
-  - {fileID: 342400550}
-  - {fileID: 717087139}
-  - {fileID: 627263298}
-  - {fileID: 1661368852}
-  - {fileID: 304450002}
-  - {fileID: 1875645373}
-  - {fileID: 1454510625}
-  - {fileID: 219126710}
+  puzzlePieces: []
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -66121,17 +65957,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1.55, y: -1.55}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.75, y: 2.75}
+    pivot: {x: 0, y: 1}
+    oldSize: {x: 3.1, y: 3.1}
     newSize: {x: 3.12, y: 3.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.12, y: 3.6}
+  m_Size: {x: 3.1, y: 3.1}
   m_EdgeRadius: 0
 --- !u!212 &1875645376
 SpriteRenderer:
@@ -66216,7 +66052,7 @@ Transform:
   m_GameObject: {fileID: 1879447171}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.3599997, y: -3.7599995, z: 0}
+  m_LocalPosition: {x: -5.89, y: -0.72999954, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -66238,19 +66074,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces:
-  - {fileID: 1857343669}
-  - {fileID: 1048443113}
-  - {fileID: 2072557259}
-  - {fileID: 1156491354}
-  - {fileID: 342400550}
-  - {fileID: 717087139}
-  - {fileID: 627263298}
-  - {fileID: 1661368852}
-  - {fileID: 304450002}
-  - {fileID: 1875645373}
-  - {fileID: 1454510625}
-  - {fileID: 1879447172}
+  puzzlePieces: []
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -66291,17 +66115,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1.55, y: -1.55}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.75, y: 2.75}
+    pivot: {x: 0, y: 1}
+    oldSize: {x: 3.1, y: 3.1}
     newSize: {x: 3.12, y: 3.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.12, y: 3.6}
+  m_Size: {x: 3.1, y: 3.1}
   m_EdgeRadius: 0
 --- !u!212 &1879447175
 SpriteRenderer:
@@ -66735,7 +66559,7 @@ Transform:
   m_GameObject: {fileID: 1933068526}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.3599997, y: -3.7599995, z: 0}
+  m_LocalPosition: {x: -8.950001, y: -0.72999954, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -66757,19 +66581,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces:
-  - {fileID: 1857343669}
-  - {fileID: 1048443113}
-  - {fileID: 2072557259}
-  - {fileID: 1156491354}
-  - {fileID: 342400550}
-  - {fileID: 717087139}
-  - {fileID: 627263298}
-  - {fileID: 1661368852}
-  - {fileID: 304450002}
-  - {fileID: 1875645373}
-  - {fileID: 1454510625}
-  - {fileID: 1933068527}
+  puzzlePieces: []
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -66810,17 +66622,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1.55, y: -1.55}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.75, y: 2.75}
+    pivot: {x: 0, y: 1}
+    oldSize: {x: 3.1, y: 3.1}
     newSize: {x: 3.12, y: 3.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.12, y: 3.6}
+  m_Size: {x: 3.1, y: 3.1}
   m_EdgeRadius: 0
 --- !u!212 &1933068530
 SpriteRenderer:
@@ -67059,7 +66871,7 @@ Transform:
   m_GameObject: {fileID: 1955102344}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.3599997, y: -3.7599995, z: 0}
+  m_LocalPosition: {x: 6.5099998, y: -0.72999954, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -67081,19 +66893,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces:
-  - {fileID: 1857343669}
-  - {fileID: 1048443113}
-  - {fileID: 2072557259}
-  - {fileID: 1156491354}
-  - {fileID: 342400550}
-  - {fileID: 717087139}
-  - {fileID: 627263298}
-  - {fileID: 1661368852}
-  - {fileID: 304450002}
-  - {fileID: 1875645373}
-  - {fileID: 1454510625}
-  - {fileID: 1955102345}
+  puzzlePieces: []
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -67134,17 +66934,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1.55, y: -1.55}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.75, y: 2.75}
+    pivot: {x: 0, y: 1}
+    oldSize: {x: 3.1, y: 3.1}
     newSize: {x: 3.12, y: 3.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.12, y: 3.6}
+  m_Size: {x: 3.1, y: 3.1}
   m_EdgeRadius: 0
 --- !u!212 &1955102348
 SpriteRenderer:
@@ -69918,7 +69718,7 @@ Transform:
   m_GameObject: {fileID: 2072557258}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.2399998, y: 3.4400003, z: 0}
+  m_LocalPosition: {x: -2.75, y: 5.4700003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -69940,19 +69740,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces:
-  - {fileID: 1857343669}
-  - {fileID: 1048443113}
-  - {fileID: 2072557259}
-  - {fileID: 1156491354}
-  - {fileID: 342400550}
-  - {fileID: 717087139}
-  - {fileID: 627263298}
-  - {fileID: 1661368852}
-  - {fileID: 304450002}
-  - {fileID: 1875645373}
-  - {fileID: 1454510625}
-  - {fileID: 219126710}
+  puzzlePieces: []
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -69993,17 +69781,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1.55, y: -1.55}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.75, y: 2.75}
+    pivot: {x: 0, y: 1}
+    oldSize: {x: 3.1, y: 3.1}
     newSize: {x: 3.12, y: 3.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.12, y: 3.6}
+  m_Size: {x: 3.1, y: 3.1}
   m_EdgeRadius: 0
 --- !u!212 &2072557262
 SpriteRenderer:

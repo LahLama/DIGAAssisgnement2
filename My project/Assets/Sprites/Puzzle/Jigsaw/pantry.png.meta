@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -116,10 +116,10 @@ TextureImporter:
       name: pantry_0
       rect:
         serializedVersion: 2
-        x: 121
-        y: 648
-        width: 275
-        height: 275
+        x: 32
+        y: 668
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,10 +138,10 @@ TextureImporter:
       name: pantry_1
       rect:
         serializedVersion: 2
-        x: 396
-        y: 648
-        width: 275
-        height: 275
+        x: 342
+        y: 668
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,10 +160,10 @@ TextureImporter:
       name: pantry_2
       rect:
         serializedVersion: 2
-        x: 671
-        y: 648
-        width: 275
-        height: 275
+        x: 652
+        y: 668
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,10 +182,10 @@ TextureImporter:
       name: pantry_3
       rect:
         serializedVersion: 2
-        x: 946
-        y: 648
-        width: 275
-        height: 275
+        x: 962
+        y: 668
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,10 +204,10 @@ TextureImporter:
       name: pantry_4
       rect:
         serializedVersion: 2
-        x: 1221
-        y: 648
-        width: 275
-        height: 275
+        x: 1272
+        y: 668
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,10 +226,10 @@ TextureImporter:
       name: pantry_5
       rect:
         serializedVersion: 2
-        x: 1496
-        y: 648
-        width: 275
-        height: 275
+        x: 1582
+        y: 668
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,10 +248,10 @@ TextureImporter:
       name: pantry_6
       rect:
         serializedVersion: 2
-        x: 121
-        y: 373
-        width: 275
-        height: 275
+        x: 32
+        y: 358
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,10 +270,10 @@ TextureImporter:
       name: pantry_7
       rect:
         serializedVersion: 2
-        x: 396
-        y: 373
-        width: 275
-        height: 275
+        x: 342
+        y: 358
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,10 +292,10 @@ TextureImporter:
       name: pantry_8
       rect:
         serializedVersion: 2
-        x: 671
-        y: 373
-        width: 275
-        height: 275
+        x: 652
+        y: 358
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -314,10 +314,10 @@ TextureImporter:
       name: pantry_9
       rect:
         serializedVersion: 2
-        x: 946
-        y: 373
-        width: 275
-        height: 275
+        x: 962
+        y: 358
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -336,10 +336,10 @@ TextureImporter:
       name: pantry_10
       rect:
         serializedVersion: 2
-        x: 1221
-        y: 373
-        width: 275
-        height: 275
+        x: 1273
+        y: 359
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,10 +358,10 @@ TextureImporter:
       name: pantry_11
       rect:
         serializedVersion: 2
-        x: 1496
-        y: 373
-        width: 275
-        height: 275
+        x: 1582
+        y: 358
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -380,10 +380,10 @@ TextureImporter:
       name: pantry_12
       rect:
         serializedVersion: 2
-        x: 121
-        y: 98
-        width: 275
-        height: 275
+        x: 32
+        y: 48
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -402,10 +402,10 @@ TextureImporter:
       name: pantry_13
       rect:
         serializedVersion: 2
-        x: 396
-        y: 98
-        width: 275
-        height: 275
+        x: 342
+        y: 48
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -424,10 +424,10 @@ TextureImporter:
       name: pantry_14
       rect:
         serializedVersion: 2
-        x: 671
-        y: 98
-        width: 275
-        height: 275
+        x: 652
+        y: 48
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -446,10 +446,10 @@ TextureImporter:
       name: pantry_15
       rect:
         serializedVersion: 2
-        x: 946
-        y: 98
-        width: 275
-        height: 275
+        x: 962
+        y: 48
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -468,10 +468,10 @@ TextureImporter:
       name: pantry_16
       rect:
         serializedVersion: 2
-        x: 1221
-        y: 98
-        width: 275
-        height: 275
+        x: 1272
+        y: 48
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -490,10 +490,10 @@ TextureImporter:
       name: pantry_17
       rect:
         serializedVersion: 2
-        x: 1496
-        y: 98
-        width: 275
-        height: 275
+        x: 1582
+        y: 48
+        width: 310
+        height: 310
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
