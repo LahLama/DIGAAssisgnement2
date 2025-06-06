@@ -33,7 +33,7 @@ public class ChanceManagement : MonoBehaviour
             }
         }
     }
-    
+
     private IEnumerator WaitForAITease()
     {
         yield return new WaitForSeconds(2f);

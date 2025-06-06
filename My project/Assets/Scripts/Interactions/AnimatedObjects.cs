@@ -27,18 +27,6 @@ public class AnimatedObjects : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (this.gameObject.tag == "Anomaly")
-        {
-            // print("Anomaly Clicked");
-        }
-        else if (this.gameObject.tag == "Ornament")
-        {
-            // print("Ornament Clicked");
-        }
-        else
-        {
-            //  print("Object Clicked");
-        }
         isAnimating = true;
         //         Debug.Log("Clicked on: " + gameObject.name);
         //TrySpawnObjectOnceBehind();
@@ -51,6 +39,13 @@ public class AnimatedObjects : MonoBehaviour
         // Sounds are played depending on thier properties, this limits the amount of code we need to implement as there will be a random sound played each tie
         // giving the illusion of different sounding objects
         //[1]
+        ObjectSounds();
+    }
+
+
+
+    private void ObjectSounds()
+    {
         if (name.StartsWith("soft"))
         {
             SoundManager.PlaySound("soft");
@@ -65,13 +60,17 @@ public class AnimatedObjects : MonoBehaviour
         {
             SoundManager.PlaySound("metal");
         }
-        if (name.StartsWith("tough"))
+        if (name.StartsWith("plastic"))
         {
-            SoundManager.PlaySound("tough");
+            SoundManager.PlaySound("plastic");
         }
-        if (name.StartsWith("silver"))
+        if (name.StartsWith("food"))
         {
-            SoundManager.PlaySound("silver");
+            SoundManager.PlaySound("food");
+        }
+        if (name.StartsWith("wood"))
+        {
+            SoundManager.PlaySound("wood");
         }
     }
 

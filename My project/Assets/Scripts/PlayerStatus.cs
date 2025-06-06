@@ -8,8 +8,7 @@ public class PlayerStatus : MonoBehaviour
 {
     // this sets up all the varibles that will be used to used to keep track off across multiple scripts
     //;-----------------------------------------------------------------------
-    public int PlayerLevel;
-    public int PuzzleLevel;
+    private int PlayerLevel;
     public int MicrochipCount;
     public int AnomalyCount;
     public int GameChances = 5;
@@ -35,7 +34,6 @@ public class PlayerStatus : MonoBehaviour
     {
         CurrentGameState = GameState.Player1;
         PlayerLevel = 1;
-        PuzzleLevel = 0;
         MicrochipCount = 0;
         GameChances = 5;
     }
@@ -53,7 +51,7 @@ public class PlayerStatus : MonoBehaviour
         }
         else
         {
-            MicroChipCountText.text = ": / ";
+            MicroChipCountText.text = "NULL";
         }
         //AnomalyCountText.text = ": " + AnomalyCount.ToString();
         PlayerLevelText.text = "Player Level: " + PlayerLevel.ToString();
@@ -68,13 +66,22 @@ public class PlayerStatus : MonoBehaviour
         //on a level increase, the level up bool is set to true and used in other scripts
         //the microchip count is set to zero
         //the game chances for that level is set to zero
-        if (MicrochipCount == MicrosPerLevel[0] && CurrentGameState == GameState.Player1) { CurrentGameState = GameState.Puzzle1; PlayerLevelUpBool = true; MicrochipCount = 0; GameChances = 5; playerObjective.UpdateObjective(); }
-        if (MicrochipCount == MicrosPerLevel[1] && CurrentGameState == GameState.Player2) { CurrentGameState = GameState.Puzzle2; PlayerLevelUpBool = true; MicrochipCount = 0; GameChances = 5; playerObjective.UpdateObjective(); }
-        if (MicrochipCount == MicrosPerLevel[2] && CurrentGameState == GameState.Player3) { CurrentGameState = GameState.Puzzle3; PlayerLevelUpBool = true; MicrochipCount = 0; GameChances = 5; playerObjective.UpdateObjective(); }
+        if (MicrochipCount == MicrosPerLevel[0] && CurrentGameState == GameState.Player1) { CurrentGameState = GameState.Puzzle1; LevelupSeq(); }
+        if (MicrochipCount == MicrosPerLevel[1] && CurrentGameState == GameState.Player2) { CurrentGameState = GameState.Puzzle2; LevelupSeq(); }
+        if (MicrochipCount == MicrosPerLevel[2] && CurrentGameState == GameState.Player3) { CurrentGameState = GameState.Puzzle3; LevelupSeq(); }
 
     }
     // used by ObjectInteractions.
-    public void IncPlayerLevel()
+    private void LevelupSeq()
+    {
+        PlayerLevelUpBool = true;
+        MicrochipCount = 0;
+        GameChances = 5;
+        playerObjective.UpdateObjective();
+        IncPlayerLevel();
+    }
+
+    private void IncPlayerLevel()
     {
         PlayerLevel++;
         print(PlayerLevel);

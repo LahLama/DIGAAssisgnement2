@@ -16,7 +16,6 @@ public class Puzzle3Manager : PuzzleClass
 
     public ExitInteractions exitInteractions;
     public PlayerStatus playerStatus;
-    public TimerScript Puzzle3Timer;
     public Puzzle4Manager puzzle4Manager;
     public PlayerObjective playerObjective;
 
@@ -36,7 +35,7 @@ public class Puzzle3Manager : PuzzleClass
 
     void Update()
     {
-        playerlvl = playerStatus.PlayerLevel;
+
         camera1 = exitInteractions.MainCamera;
         if (Puzzle3Start == true)
         {
@@ -53,7 +52,6 @@ public class Puzzle3Manager : PuzzleClass
                     // Puzzle has been completed
 
                     GameInteractionSoundManager.StopSound();
-                    Puzzle3Timer.StartTimer = false;
                     EndPuzzleSound();
                     playerStatus.CurrentGameState = PlayerStatus.GameState.Puzzle4;
                     playerObjective.UpdateObjective();

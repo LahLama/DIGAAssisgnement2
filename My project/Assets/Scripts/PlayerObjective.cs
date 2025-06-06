@@ -19,16 +19,13 @@ public class PlayerObjective : MonoBehaviour
     public GameObject AIHolder;
     private Animator AIAnimator;
 
-
-    private string lastObjectiveText = "";
     string newObjective = "";
 
     private void Start()
     {
         AiInteractionSoundManager.PlaySound("Intro");
-        Objective.text = "Intro";
+
         AIAnimator = AIHolder.GetComponent<Animator>();
-        Objective.text = "";
         AIAnimator.SetTrigger("PopUp");
         StartCoroutine(WaitForAnimationAndPopAway());
     }
@@ -68,6 +65,11 @@ public class PlayerObjective : MonoBehaviour
             Objective.text = "Puzzle 6";
         }
 
+        else if (gamestate.Equals(PlayerStatus.GameState.Player1))
+        {
+            AiInteractionSoundManager.PlaySound("Intro");
+            Objective.text = "Intro";
+        }
 
         else if (gamestate.Equals(PlayerStatus.GameState.Player2))
         {
@@ -84,11 +86,6 @@ public class PlayerObjective : MonoBehaviour
         {
             AiInteractionSoundManager.PlaySound("EndGame");
             Objective.text = "End Game";
-        }
-        else
-        {
-            AiInteractionSoundManager.PlaySound("Intro");
-            Objective.text = "Intro";
         }
 
     }

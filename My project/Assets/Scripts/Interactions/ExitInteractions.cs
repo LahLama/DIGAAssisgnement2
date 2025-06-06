@@ -32,7 +32,7 @@ public class ExitInteractions : MonoBehaviour
         //playerStatus = GetComponent<PlayerStatus>();
         //print("THE PLAYERS LEVEL IS " + playerStatus.PlayerLevel);
         InitDoors();
-        playerlvl = playerStatus.PlayerLevel;
+
         //    playerMicroCount = playerStatus.MicrochipCount;
         playerlevelUpbool = playerStatus.PlayerLevelUpBool;
 

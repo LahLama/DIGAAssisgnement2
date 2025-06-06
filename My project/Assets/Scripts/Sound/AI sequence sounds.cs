@@ -7,11 +7,10 @@ public class AISoundManager : MonoBehaviour
     public List<AudioClip> soundClips; // List of sound clips to play
     public AudioSource audioSource; // Reference to the AudioSource component
 
-    void start()
+    void Start()
     {
-
-            audioSource = GetComponent<AudioSource>(); // Get the AudioSource component attached to this GameObject
-            PlaySound();
+        audioSource = GetComponent<AudioSource>(); // Get the AudioSource component attached to this GameObject
+        PlaySound();
     }
 
     public void PlaySound()
@@ -20,9 +19,9 @@ public class AISoundManager : MonoBehaviour
 
         foreach (AudioClip clip in soundClips)
         {
-                audioSource.PlayOneShot(clip); 
-                break; // Exit the loop after playing the sound
-            }
+            audioSource.PlayOneShot(clip);
+            break; // Exit the loop after playing the sound
+        }
     }
 }
 

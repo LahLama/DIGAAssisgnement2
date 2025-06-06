@@ -16,7 +16,6 @@ public class Puzzle2Manager : PuzzleClass
 
     //Referencing the scripts that are needed for player stas, and for starting and stopping the timer two 
     public PlayerStatus playerStatus;
-    public TimerScript Puzzle2Timer;
     public PlayerObjective playerObjective;
 
 
@@ -56,7 +55,6 @@ public class Puzzle2Manager : PuzzleClass
                 if (CorrectChoice == 4)
                 {
                     EndPuzzleSound();
-                    Puzzle2Timer.StartTimer = false;
                     //puzzle has been completed
                     playerStatus.CurrentGameState = PlayerStatus.GameState.Player3;
 

@@ -1,0 +1,149 @@
+{
+    "objectsData": [
+        {
+            "colors": [
+                {
+                    "objID": "Room_=======Room_Entrance=======_0_------- LEVEL 1 ------- _0_Rooms_4",
+                    "colorValue": "8000FFFF"
+                },
+                {
+                    "objID": "Room_=======Room_Attic=======_0_------- LEVEL 4 ------- _3_Rooms_4",
+                    "colorValue": "8000FFFF"
+                },
+                {
+                    "objID": "Room_=======Room_Bathroom=======_1_------- LEVEL 3 -------_2_Rooms_4",
+                    "colorValue": "8000FFFF"
+                },
+                {
+                    "objID": "Room_=======Room_Bedroom=======_0_------- LEVEL 3 -------_2_Rooms_4",
+                    "colorValue": "8000FFFF"
+                },
+                {
+                    "objID": "Room_=======Room_DiningRoom=======_1_------- LEVEL 2 ------- _1_Rooms_4",
+                    "colorValue": "8000FFFF"
+                },
+                {
+                    "objID": "Room_=======Room_Kitchen=======_0_------- LEVEL 2 ------- _1_Rooms_4",
+                    "colorValue": "8000FFFF"
+                },
+                {
+                    "objID": "Room_=======Room_LivingRoom=======_1_------- LEVEL 1 ------- _0_Rooms_4",
+                    "colorValue": "8000FFFF"
+                },
+                {
+                    "objID": "Room_=======Room_Pantry=======_1_------- LEVEL 4 ------- _3_Rooms_4",
+                    "colorValue": "8000FFFF"
+                },
+                {
+                    "objID": "Room_------- LEVEL 1 ------- _0_Rooms_4",
+                    "colorValue": "4CB5FFFF"
+                },
+                {
+                    "objID": "Room_------- LEVEL 2 ------- _1_Rooms_4",
+                    "colorValue": "4CB5FFFF"
+                },
+                {
+                    "objID": "Room_------- LEVEL 3 -------_2_Rooms_4",
+                    "colorValue": "4CB5FFFF"
+                },
+                {
+                    "objID": "Room_------- LEVEL 4 ------- _3_Rooms_4",
+                    "colorValue": "4CB5FFFF"
+                },
+                {
+                    "objID": "Room_Puzzle1 Word_0_Puzzles_5",
+                    "colorValue": "008080FF"
+                },
+                {
+                    "objID": "Room_Puzzle2 Colour Wordle_1_Puzzles_5",
+                    "colorValue": "008080FF"
+                },
+                {
+                    "objID": "Room_Puzzle3 Circuit_2_Puzzles_5",
+                    "colorValue": "008080FF"
+                },
+                {
+                    "objID": "Room_Puzzle4 Simon Says_3_Puzzles_5",
+                    "colorValue": "008080FF"
+                },
+                {
+                    "objID": "Room_Puzzle5 Jigsaw_4_Puzzles_5",
+                    "colorValue": "008080FF"
+                },
+                {
+                    "objID": "Room_Puzzle6 Captca_5_Puzzles_5",
+                    "colorValue": "008080FF"
+                },
+                {
+                    "objID": "Room_Puzzles_5",
+                    "colorValue": "BF4040FF"
+                },
+                {
+                    "objID": "Room_Rooms_4",
+                    "colorValue": "BF4040FF"
+                },
+                {
+                    "objID": "Room_AudioSystems_7",
+                    "colorValue": "008080FF"
+                }
+            ],
+            "styles": [
+                {
+                    "objID": "Room_=======Room_Entrance=======_0_------- LEVEL 1 ------- _0_Rooms_4",
+                    "styleType": 0
+                },
+                {
+                    "objID": "Room_------- LEVEL 1 ------- _0_Rooms_4",
+                    "styleType": 0
+                },
+                {
+                    "objID": "Room_------- LEVEL 2 ------- _1_Rooms_4",
+                    "styleType": 0
+                },
+                {
+                    "objID": "Room_------- LEVEL 3 -------_2_Rooms_4",
+                    "styleType": 0
+                },
+                {
+                    "objID": "Room_------- LEVEL 4 ------- _3_Rooms_4",
+                    "styleType": 0
+                },
+                {
+                    "objID": "Room_Puzzles_5",
+                    "styleType": 0
+                },
+                {
+                    "objID": "Room_Rooms_4",
+                    "styleType": 0
+                },
+                {
+                    "objID": "Room_Particles_3",
+                    "styleType": 0
+                },
+                {
+                    "objID": "Room_UI_2",
+                    "styleType": 0
+                },
+                {
+                    "objID": "Room_CameraMovement_1",
+                    "styleType": 0
+                }
+            ],
+            "showComponents": [
+                {
+                    "objID": "Room_Contollers_0",
+                    "show": false
+                },
+                {
+                    "objID": "Room_Particles_3",
+                    "show": false
+                },
+                {
+                    "objID": "Room_Rooms_4",
+                    "show": true
+                }
+            ],
+            "sceneName": "Room"
+        }
+    ]
+}

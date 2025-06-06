@@ -31,6 +31,11 @@ public class Puzzle1Manager : PuzzleClass
     public string input;
 
     // This starts the timer and the game. It is called in ExitInteractions
+
+    new private void Awake()
+    {
+        WordScrollAnimations.SetActive(false); // Deactivates the word scroll animations
+    }
     public void StartPuzzle1()
     {
         // -------------- Timer ----------------------------

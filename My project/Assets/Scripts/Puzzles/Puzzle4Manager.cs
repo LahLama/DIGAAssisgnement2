@@ -9,7 +9,7 @@ public class Puzzle4Manager : PuzzleClass
     [Header("Scripts")]
     public PlayerObjective playerObjective;
     public PlayerStatus playerStatus;
-    public TimerScript Puzzle4Timer;
+
     public Puzzle5Manager puzzle5Manager;
     public ExitInteractions exitInteractions;
 
@@ -61,7 +61,6 @@ public class Puzzle4Manager : PuzzleClass
             }
             if (correctCount == 4)
             {
-                Puzzle4Timer.StartTimer = false;
                 EndPuzzleSound();
 
                 playerStatus.CurrentGameState = PlayerStatus.GameState.Puzzle5;
@@ -121,8 +120,8 @@ public class Puzzle4Manager : PuzzleClass
         //    print("Correct sequence!");
         IncorrectText.text = "Correct sequence!";
         playerObjective.UpdateObjective();
-        puzzle5Manager.Puzzle5Start();
         StopTimer();
+        puzzle5Manager.Puzzle5Start();
         exitInteractions.MoveCameraUp();
 
 

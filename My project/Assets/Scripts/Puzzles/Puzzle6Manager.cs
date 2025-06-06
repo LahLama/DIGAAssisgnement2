@@ -10,7 +10,6 @@ public class Puzzle6Manager : PuzzleClass
     public PlayerObjective playerObjective;
     public List<GameObject> NeedToClickCells; // Array to hold the cell GameObjects
     public List<GameObject> PlayerCells; // Array to hold the player cells
-    int index = 0;
     public ExitInteractions exitInteractions;
 
 
