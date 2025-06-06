@@ -9,6 +9,10 @@ public class ObjectInteractions : MonoBehaviour
         {
             ObjectInteractionSoundManager.PlaySound("cat");
         }
+        if (name.StartsWith("EvilCat"))
+        {
+            ObjectInteractionSoundManager.PlaySound("evilCat");
+        }
         if (name.StartsWith("tap"))
         {
             ObjectInteractionSoundManager.PlaySound("tap");

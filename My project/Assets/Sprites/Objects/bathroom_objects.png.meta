@@ -1,0 +1,529 @@
+fileFormatVersion: 2
+guid: 5f8ab0f838269e64ea17610168e9c382
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4009836186082115438
+    second: bathroom_objects_0
+  - first:
+      213: 4369232760777158672
+    second: bathroom_objects_1
+  - first:
+      213: -3134164049244633704
+    second: bathroom_objects_2
+  - first:
+      213: -2635601993027646179
+    second: bathroom_objects_3
+  - first:
+      213: -8034662539274345543
+    second: bathroom_objects_4
+  - first:
+      213: 1835617878240280244
+    second: bathroom_objects_5
+  - first:
+      213: -4964003731604190393
+    second: bathroom_objects_6
+  - first:
+      213: -6427962199868652910
+    second: bathroom_objects_7
+  - first:
+      213: -6730558256737909239
+    second: bathroom_objects_8
+  - first:
+      213: -4846082330185773789
+    second: bathroom_objects_9
+  - first:
+      213: 4782892250855248055
+    second: bathroom_objects_10
+  - first:
+      213: -680143193470795439
+    second: bathroom_objects_11
+  - first:
+      213: 8058044871359459328
+    second: bathroom_objects_12
+  - first:
+      213: 217558845019913988
+    second: bathroom_objects_13
+  - first:
+      213: 6475908308500070558
+    second: bathroom_objects_14
+  - first:
+      213: -7423003203521947380
+    second: bathroom_objects_15
+  - first:
+      213: 6484896581972589183
+    second: bathroom_objects_16
+  - first:
+      213: 2649943590668752964
+    second: bathroom_objects_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: laundrybasket
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 727
+        width: 301
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2908119db333a58c0800000000000000
+      internalID: -4009836186082115438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toiletpaper
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 802
+        width: 212
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0103f17fb02a2ac30800000000000000
+      internalID: 4369232760777158672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sponge
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 874
+        width: 213
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89549f817663184d0800000000000000
+      internalID: -3134164049244633704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tissuebox
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 900
+        width: 185
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d864c83f57c6bd0800000000000000
+      internalID: -2635601993027646179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: detergentbucket
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 762
+        width: 245
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b32a607df42f7090800000000000000
+      internalID: -8034662539274345543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterpuddle
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 847
+        width: 401
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4be3ed71cbc697910800000000000000
+      internalID: 1835617878240280244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothbrush
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 787
+        width: 227
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74bc40218e05c1bb0800000000000000
+      internalID: -4964003731604190393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: washingmachine
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 252
+        width: 511
+        height: 545
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 292c03f9f6a4bc6a0800000000000000
+      internalID: -6427962199868652910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toiletrolls
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 592
+        width: 205
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 906801fece04892a0800000000000000
+      internalID: -6730558256737909239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soap
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 654
+        width: 232
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b0123b492f306240800000000000000
+      internalID: 4782892250855248055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothpaste
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 584
+        width: 81
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40ff72bed9ce40300800000000000000
+      internalID: 217558845019913988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: earbuds
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 542
+        width: 142
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e90c526bb4c0fd950800000000000000
+      internalID: 6475908308500070558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: towel
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 320
+        width: 256
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c09dc774ae13cf890800000000000000
+      internalID: -7423003203521947380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slippers
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 120
+        width: 221
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7afe95351bfef950800000000000000
+      internalID: 6484896581972589183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: socks
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 60
+        width: 246
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44852acd7ad76c420800000000000000
+      internalID: 2649943590668752964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 341cb3bcef2ceeb46b98f3891ebf8cfa
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      detergentbucket: -8034662539274345543
+      earbuds: 6475908308500070558
+      laundrybasket: -4009836186082115438
+      slippers: 6484896581972589183
+      soap: 4782892250855248055
+      socks: 2649943590668752964
+      sponge: -3134164049244633704
+      tissuebox: -2635601993027646179
+      toiletpaper: 4369232760777158672
+      toiletrolls: -6730558256737909239
+      toothbrush: -4964003731604190393
+      toothpaste: 217558845019913988
+      towel: -7423003203521947380
+      washingmachine: -6427962199868652910
+      waterpuddle: 1835617878240280244
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

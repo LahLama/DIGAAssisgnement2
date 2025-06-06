@@ -1,0 +1,575 @@
+fileFormatVersion: 2
+guid: fe40459279e820e4ea6bdf7a0d2a564e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3682297421332035604
+    second: bedroom_objects_0
+  - first:
+      213: -1702455594969292103
+    second: bedroom_objects_1
+  - first:
+      213: 725921599007300435
+    second: bedroom_objects_2
+  - first:
+      213: 2972640549608297670
+    second: bedroom_objects_3
+  - first:
+      213: 804316669134155723
+    second: bedroom_objects_4
+  - first:
+      213: -7133676947679046237
+    second: bedroom_objects_5
+  - first:
+      213: 7556394751381740668
+    second: bedroom_objects_6
+  - first:
+      213: -1091460195839887857
+    second: bedroom_objects_7
+  - first:
+      213: 5404764745222495020
+    second: bedroom_objects_8
+  - first:
+      213: -8540560541437636021
+    second: bedroom_objects_9
+  - first:
+      213: -6405237942394612642
+    second: bedroom_objects_10
+  - first:
+      213: -6276008855793392498
+    second: bedroom_objects_11
+  - first:
+      213: 886525376900148344
+    second: bedroom_objects_12
+  - first:
+      213: -4825544298818979142
+    second: bedroom_objects_13
+  - first:
+      213: -8790642499634322984
+    second: bedroom_objects_14
+  - first:
+      213: 7273569334313050541
+    second: bedroom_objects_15
+  - first:
+      213: -8852894770334459571
+    second: bedroom_objects_16
+  - first:
+      213: -4310615059875667759
+    second: bedroom_objects_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: books
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 898
+        width: 267
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce7ca24410ad5ecc0800000000000000
+      internalID: -3682297421332035604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pillow
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 867
+        width: 330
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b2aaf708a9af58e0800000000000000
+      internalID: -1702455594969292103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fan
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 801
+        width: 289
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35b1d9329ddf21a00800000000000000
+      internalID: 725921599007300435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iron
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 845
+        width: 258
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c4135484d0f04920800000000000000
+      internalID: 2972640549608297670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vacumm
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 630
+        width: 424
+        height: 426
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcfaaa6cfb1892b00800000000000000
+      internalID: 804316669134155723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bedSheet
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 569
+        width: 803
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a59237ac96100d90800000000000000
+      internalID: -7133676947679046237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clock
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 588
+        width: 182
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7c1cbaadf4bdd860800000000000000
+      internalID: 7556394751381740668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: comb
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 653
+        width: 155
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f063c741cba5ad0f0800000000000000
+      internalID: -1091460195839887857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scissors
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 633
+        width: 114
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2b9a8d66e4910b40800000000000000
+      internalID: 5404764745222495020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clothes1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 319
+        width: 340
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4254e8ff65d97980800000000000000
+      internalID: -8540560541437636021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clothes2
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 277
+        width: 299
+        height: 299
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5417bd17060c17a0800000000000000
+      internalID: -6405237942394612642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clothes3
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 289
+        width: 294
+        height: 261
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e84aa37823327e8a0800000000000000
+      internalID: -6276008855793392498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tie
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 448
+        width: 134
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87ca08e12229d4c00800000000000000
+      internalID: 886525376900148344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cookie
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 482
+        width: 93
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ababbfce609380db0800000000000000
+      internalID: -4825544298818979142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underwear
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 425
+        width: 214
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d128dda83d510680800000000000000
+      internalID: -8790642499634322984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slippers
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 446
+        width: 185
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da167e4c5c8e0f460800000000000000
+      internalID: 7273569334313050541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoes
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 316
+        width: 199
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d069a0117e9d24c0800000000000000
+      internalID: -4310615059875667759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 742d88e6f535d5b4683f77d7ad0d7828
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bedSheet: -7133676947679046237
+      books: -3682297421332035604
+      clock: 7556394751381740668
+      clothes1: -8540560541437636021
+      clothes2: -6405237942394612642
+      clothes3: -6276008855793392498
+      comb: -1091460195839887857
+      cookie: -4825544298818979142
+      fan: 725921599007300435
+      iron: 2972640549608297670
+      pillow: -1702455594969292103
+      scissors: 5404764745222495020
+      shoes: -4310615059875667759
+      slippers: 7273569334313050541
+      tie: 886525376900148344
+      underwear: -8790642499634322984
+      vacumm: 804316669134155723
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

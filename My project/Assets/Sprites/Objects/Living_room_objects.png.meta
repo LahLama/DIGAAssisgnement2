@@ -1,0 +1,656 @@
+fileFormatVersion: 2
+guid: f70d8fac923669243accf4401ec758d2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1182539760476793743
+    second: Living_room_objects_0
+  - first:
+      213: 5942293106978972559
+    second: Living_room_objects_1
+  - first:
+      213: 162990457772746688
+    second: Living_room_objects_2
+  - first:
+      213: 5532540637093987082
+    second: Living_room_objects_3
+  - first:
+      213: 3287472916862403673
+    second: Living_room_objects_4
+  - first:
+      213: -44474099281726574
+    second: Living_room_objects_5
+  - first:
+      213: 4811810797932936747
+    second: Living_room_objects_6
+  - first:
+      213: -3393280817861702457
+    second: Living_room_objects_7
+  - first:
+      213: 21617886744563539
+    second: Living_room_objects_8
+  - first:
+      213: -8589100000219247878
+    second: Living_room_objects_9
+  - first:
+      213: 4400666819028745399
+    second: Living_room_objects_10
+  - first:
+      213: 6202631706921514135
+    second: Living_room_objects_11
+  - first:
+      213: -902964734036101215
+    second: Living_room_objects_12
+  - first:
+      213: 3917487815041665716
+    second: Living_room_objects_13
+  - first:
+      213: 1515430848394838446
+    second: Living_room_objects_14
+  - first:
+      213: -4569840117744656865
+    second: Living_room_objects_15
+  - first:
+      213: 536161754493672299
+    second: Living_room_objects_16
+  - first:
+      213: 8146630930222726309
+    second: Living_room_objects_17
+  - first:
+      213: -1642110407927868061
+    second: Living_room_objects_18
+  - first:
+      213: -3118870574629432854
+    second: Living_room_objects_19
+  - first:
+      213: 271717135073582480
+    second: Living_room_objects_20
+  - first:
+      213: 2493807728878863102
+    second: Living_room_objects_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hourglass
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 843
+        width: 130
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 174510c6a56c69fe0800000000000000
+      internalID: -1182539760476793743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beanbag
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 796
+        width: 304
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f83ebb0e814477250800000000000000
+      internalID: 5942293106978972559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: footcusion
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 842
+        width: 244
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c7a25135fe034200800000000000000
+      internalID: 162990457772746688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloth
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 837
+        width: 113
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a038663956887cc40800000000000000
+      internalID: 5532540637093987082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clock
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 847
+        width: 160
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9540d4a33337f9d20800000000000000
+      internalID: 3287472916862403673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trophy1
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 884
+        width: 153
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2937b96da0ff16ff0800000000000000
+      internalID: -44474099281726574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trophy2
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 868
+        width: 160
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e7e293d6cf6c240800000000000000
+      internalID: 4811810797932936747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pillow2
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 593
+        width: 275
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35f443c7a5dcc4000800000000000000
+      internalID: 21617886744563539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medal
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 640
+        width: 105
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afacf9a8e036dc880800000000000000
+      internalID: -8589100000219247878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trophy3
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 671
+        width: 109
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bc7e0bf72f421d30800000000000000
+      internalID: 4400666819028745399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lamp
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 563
+        width: 156
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 794b1abacac241650800000000000000
+      internalID: 6202631706921514135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pillow1
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 539
+        width: 272
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a7b217cb560873f0800000000000000
+      internalID: -902964734036101215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cookie
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 682
+        width: 95
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4baca7b7966bd5630800000000000000
+      internalID: 3917487815041665716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scroll
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 678
+        width: 224
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea14e38d354e70510800000000000000
+      internalID: 1515430848394838446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deadplant
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 309
+        width: 234
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1e108dff9aa490c0800000000000000
+      internalID: -4569840117744656865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spoon
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 470
+        width: 163
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6bdeb66644d07700800000000000000
+      internalID: 536161754493672299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiltdrink
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 429
+        width: 238
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5acb2281ba5ae0170800000000000000
+      internalID: 8146630930222726309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cigars
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 490
+        width: 141
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 365dc75c84d0639e0800000000000000
+      internalID: -1642110407927868061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: award1
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 92
+        width: 235
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09d92737b4555c300800000000000000
+      internalID: 271717135073582480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: award2
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 120
+        width: 323
+        height: 235
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef2c2f9aae8cb9220800000000000000
+      internalID: 2493807728878863102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7435254f1301165419a6013e04971c34
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Beanbag: 5942293106978972559
+      award1: 271717135073582480
+      award2: 2493807728878863102
+      cigars: -1642110407927868061
+      clock: 3287472916862403673
+      cloth: 5532540637093987082
+      cookie: 3917487815041665716
+      deadplant: -4569840117744656865
+      footcusion: 162990457772746688
+      hourglass: -1182539760476793743
+      lamp: 6202631706921514135
+      medal: -8589100000219247878
+      pillow1: -902964734036101215
+      pillow2: 21617886744563539
+      scroll: 1515430848394838446
+      spiltdrink: 8146630930222726309
+      spoon: 536161754493672299
+      trophy1: -44474099281726574
+      trophy2: 4811810797932936747
+      trophy3: 4400666819028745399
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

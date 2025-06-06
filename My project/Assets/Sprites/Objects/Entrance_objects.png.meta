@@ -1,0 +1,600 @@
+fileFormatVersion: 2
+guid: 8b27e68e6e075ab458ddbe5ef38cc5a1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7500319207491524947
+    second: Entrance_objects_0
+  - first:
+      213: -3219916326418066792
+    second: Entrance_objects_1
+  - first:
+      213: 8998488845836124463
+    second: Entrance_objects_2
+  - first:
+      213: -8968867841929686505
+    second: Entrance_objects_3
+  - first:
+      213: -3886192056264017051
+    second: Entrance_objects_4
+  - first:
+      213: 7149986274846064509
+    second: Entrance_objects_5
+  - first:
+      213: -240877287987282851
+    second: Entrance_objects_6
+  - first:
+      213: -8397681569570093638
+    second: Entrance_objects_7
+  - first:
+      213: 3245213873906488709
+    second: Entrance_objects_8
+  - first:
+      213: -4675567843840074345
+    second: Entrance_objects_9
+  - first:
+      213: -8284147330838398518
+    second: Entrance_objects_10
+  - first:
+      213: -2515870234310379914
+    second: Entrance_objects_11
+  - first:
+      213: -4961716871701682669
+    second: Entrance_objects_12
+  - first:
+      213: 2844388912382112767
+    second: Entrance_objects_13
+  - first:
+      213: 1743467987634909654
+    second: Entrance_objects_14
+  - first:
+      213: 1346370780094353468
+    second: Entrance_objects_15
+  - first:
+      213: 4399307565512277043
+    second: Entrance_objects_16
+  - first:
+      213: 2696958750029731807
+    second: Entrance_objects_17
+  - first:
+      213: -1336345313305017877
+    second: Entrance_objects_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: brush
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 886
+        width: 172
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da6ad6f4b6389e790800000000000000
+      internalID: -7500319207491524947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: suitcase
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 909
+        width: 205
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 892de55392f8053d0800000000000000
+      internalID: -3219916326418066792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: note
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 912
+        width: 157
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f218063eded01ec70800000000000000
+      internalID: 8998488845836124463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: socks
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 877
+        width: 209
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56b307d2ae8711ac0800000000000000
+      internalID: -3886192056264017051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bookStack
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 884
+        width: 234
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7f3e1d72aad93360800000000000000
+      internalID: 7149986274846064509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paperStack
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 883
+        width: 192
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5cfe0ff16b38acf0800000000000000
+      internalID: -240877287987282851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catBed
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 886
+        width: 292
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab50ee4fa11757b80800000000000000
+      internalID: -8397681569570093638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bag
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 693
+        width: 127
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5859d5e03d0590d20800000000000000
+      internalID: 3245213873906488709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Entrance_objects_9
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 885
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79d5ca871db0d1fb0800000000000000
+      internalID: -4675567843840074345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coat1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 437
+        width: 225
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac97066d4ebc80d80800000000000000
+      internalID: -8284147330838398518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coat2
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 431
+        width: 227
+        height: 370
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67673fef955d51dd0800000000000000
+      internalID: -2515870234310379914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coat3
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 479
+        width: 173
+        height: 348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 316a8222bc0742bb0800000000000000
+      internalID: -4961716871701682669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coat4
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 430
+        width: 155
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff3789545ac497720800000000000000
+      internalID: 2844388912382112767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsPaper
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 702
+        width: 243
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d17e30c5ea023810800000000000000
+      internalID: 1743467987634909654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bookshelfed
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 649
+        width: 152
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c305d7357154fa210800000000000000
+      internalID: 1346370780094353468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boots
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 452
+        width: 204
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33c3c0c1cea7d0d30800000000000000
+      internalID: 4399307565512277043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterPuddle
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 415
+        width: 402
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd7576da1b58d6520800000000000000
+      internalID: 2696958750029731807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashcan
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 75
+        width: 232
+        height: 261
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be1423f8409547de0800000000000000
+      internalID: -1336345313305017877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c8cb5f3548d77a64e8e6970afe19e1f9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bag: 3245213873906488709
+      bookStack: 7149986274846064509
+      bookshelfed: 1346370780094353468
+      boots: 4399307565512277043
+      brush: -7500319207491524947
+      catBed: -8397681569570093638
+      coat1: -8284147330838398518
+      coat2: -2515870234310379914
+      coat3: -4961716871701682669
+      coat4: 2844388912382112767
+      newsPaper: 1743467987634909654
+      note: 8998488845836124463
+      paperStack: -240877287987282851
+      socks: -3886192056264017051
+      suitcase: -3219916326418066792
+      trashcan: -1336345313305017877
+      waterPuddle: 2696958750029731807
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
