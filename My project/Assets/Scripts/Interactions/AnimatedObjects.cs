@@ -8,7 +8,7 @@ using UnityEngine;
  [2] Cup On Table Sfx. mixkit. [Sound Effect] https://mixkit.co/free-sound-effects/ Date Accessed: 08 / 05 / 2025
  */
 
-public class ObjectInteraction : MonoBehaviour
+public class AnimatedObjects : MonoBehaviour
 {
 
 
