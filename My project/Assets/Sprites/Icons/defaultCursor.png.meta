@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 0ffe49a4e63c4bc43bda0291198c9dca
+guid: 6c2c29eb72ab09447bcc898b441a32be
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4514878311770001818
-    second: mist_0
-  - first:
-      213: 6994388660509835131
-    second: mist_1
-  - first:
-      213: -7278219955047813226
-    second: mist_2
-  - first:
-      213: 3456337522445850978
-    second: mist_3
-  - first:
-      213: 7742002139257251094
-    second: mist_4
+      213: 3445821709504244403
+    second: defaultCursor_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -125,89 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mist_0
+      name: defaultCursor_0
       rect:
         serializedVersion: 2
-        x: 87
-        y: 618
-        width: 847
-        height: 434
+        x: 7
+        y: 1
+        width: 38
+        height: 47
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 66e65d6a81ee751c0800000000000000
-      internalID: -4514878311770001818
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mist_1
-      rect:
-        serializedVersion: 2
-        x: 1059
-        y: 642
-        width: 841
-        height: 385
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b7f75bacd6f011160800000000000000
-      internalID: 6994388660509835131
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mist_2
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 21
-        width: 965
-        height: 518
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 69f273633819efa90800000000000000
-      internalID: -7278219955047813226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mist_4
-      rect:
-        serializedVersion: 2
-        x: 1046
-        y: 10
-        width: 843
-        height: 434
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6152eb04ded117b60800000000000000
-      internalID: 7742002139257251094
+      spriteID: 3ba645a869402df20800000000000000
+      internalID: 3445821709504244403
       vertices: []
       indices: 
       edges: []
@@ -216,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4f3b7afd2b5127b4aa24797a46672174
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -225,12 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      mist_0: -4514878311770001818
-      mist_1: 6994388660509835131
-      mist_2: -7278219955047813226
-      mist_3: 3456337522445850978
-      mist_4: 7742002139257251094
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

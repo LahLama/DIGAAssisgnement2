@@ -80,11 +80,31 @@
                 },
                 {
                     "objID": "Room_Rooms_4",
-                    "colorValue": "BF4040FF"
+                    "colorValue": "4040BFFF"
                 },
                 {
-                    "objID": "Room_AudioSystems_7",
-                    "colorValue": "4CB5FFFF"
+                    "objID": "Room_Puzzle1Manager_0_Puzzle1 Word_0_Puzzles_5",
+                    "colorValue": "262626FF"
+                },
+                {
+                    "objID": "Room_Puzzle2Manager_0_Puzzle2 Colour Wordle_1_Puzzles_5",
+                    "colorValue": "262626FF"
+                },
+                {
+                    "objID": "Room_Puzzle3Manager_0_Puzzle3 Circuit_2_Puzzles_5",
+                    "colorValue": "262626FF"
+                },
+                {
+                    "objID": "Room_Puzzle6Manager_0_Puzzle6 Captca_5_Puzzles_5",
+                    "colorValue": "262626FF"
+                },
+                {
+                    "objID": "Room_Puzzle5Manager_0_Puzzle5 Jigsaw_4_Puzzles_5",
+                    "colorValue": "262626FF"
+                },
+                {
+                    "objID": "Room_Puzzle4Manager_0_Puzzle4 Simon Says_3_Puzzles_5",
+                    "colorValue": "262626FF"
                 }
             ],
             "styles": [

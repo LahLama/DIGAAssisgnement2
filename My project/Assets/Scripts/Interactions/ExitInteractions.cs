@@ -23,6 +23,8 @@ public class ExitInteractions : MonoBehaviour
     public Puzzle3Manager puzzle3Manager;
     public Puzzle4Manager puzzle4Manager;
 
+    public Texture2D ButtonCursor;
+    public Texture2D NormalCursor;
     public int playerlvl;
     public bool playerlevelUpbool;
 
@@ -143,6 +145,7 @@ public class ExitInteractions : MonoBehaviour
         SoundManager.PlaySound("DoorOpen");
     }
 
+
     public void MoveCamera()                //Depending on the button name, this function will detect the name and move the camera in the stipulated direction. 
                                             //this is easier like this as this reduces the amount of code that is repeated
     {
@@ -210,6 +213,17 @@ public class ExitInteractions : MonoBehaviour
 
 
 
+    }
+
+
+    public void OnButtonCursorEnter() // this is used to change the cursor when hovering over the buttons
+    {
+        Cursor.SetCursor(ButtonCursor, Vector2.zero, CursorMode.Auto);
+    }
+
+    public void OnButtonCursorExit()  // this is used to change the cursor back to the default when not hovering over the buttons
+    {
+        Cursor.SetCursor(NormalCursor, Vector2.zero, CursorMode.Auto);
     }
 }
 
