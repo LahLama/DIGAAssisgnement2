@@ -22,30 +22,17 @@ Availibility: https://www.youtube.com/watch?v=vje0x1BNpp8
 
 
 */
-public class MicrochipInteraction : MonoBehaviour
+public class AnomalyInteraction : MonoBehaviour
 {
 
     public PlayerStatus playerStatus;       // refencing the player status script for the methods
-
-    public int MicrochipCount;
-    public Material microchipMaterial;
+    public Material AnomMaterial;
     private Material clonedMaterial;
-    Button button;
 
 
 
+    // each time an anomaly is clicked on it calls this method that hides it from the player view
 
-
-
-    void Start()
-    {
-        playerStatus = GameObject.FindWithTag("Player").GetComponent<PlayerStatus>();
-        MicrochipCount = playerStatus.MicrochipCount;
-
-
-    }
-
-    // each time an microchip is clicked on it calls this method that hides it from the player view
     private void OnMouseDown()
     {
         Collider2D collider = GetComponent<Collider2D>();
@@ -56,8 +43,8 @@ public class MicrochipInteraction : MonoBehaviour
 
         //ornaments are manahed in PointnClick.cs
         //        print("Microchip Clicked");
-        playerStatus.IncMicrochipCount();
-        SoundManager.PlaySound("MicrochipPickUp");
+        playerStatus.IncAnomalyCount();
+        SoundManager.PlaySound("AnomalySelect");
 
         //[2]
         if (clonedMaterial == null)

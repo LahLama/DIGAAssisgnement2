@@ -39,40 +39,12 @@ public class AnimatedObjects : MonoBehaviour
         // Sounds are played depending on thier properties, this limits the amount of code we need to implement as there will be a random sound played each tie
         // giving the illusion of different sounding objects
         //[1]
-        ObjectSounds();
+
     }
 
 
 
-    private void ObjectSounds()
-    {
-        if (name.StartsWith("soft"))
-        {
-            SoundManager.PlaySound("soft");
-        }
-        //[2]
-        if (name.StartsWith("glass"))
-        {
-            SoundManager.PlaySound("glass");
-        }
-        // No sound for these yet.
-        if (name.StartsWith("metal"))
-        {
-            SoundManager.PlaySound("metal");
-        }
-        if (name.StartsWith("plastic"))
-        {
-            SoundManager.PlaySound("plastic");
-        }
-        if (name.StartsWith("food"))
-        {
-            SoundManager.PlaySound("food");
-        }
-        if (name.StartsWith("wood"))
-        {
-            SoundManager.PlaySound("wood");
-        }
-    }
+
 
     private IEnumerator AnimateVerticalMovement()
     {

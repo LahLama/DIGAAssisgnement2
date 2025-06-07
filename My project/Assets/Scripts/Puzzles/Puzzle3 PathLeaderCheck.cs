@@ -8,6 +8,7 @@ public class Puzzle3PathLeaderCheck : MonoBehaviour
     void OnTriggerEnter2D(Collider2D PathSwitch)
     {
         {
+            print("PathSwitch entered");
             if (PathSwitch.tag == "SwitchAllow")
             {
                 //Debug.Log("can PASS");

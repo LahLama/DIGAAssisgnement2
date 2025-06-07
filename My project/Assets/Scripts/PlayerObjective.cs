@@ -18,11 +18,15 @@ public class PlayerObjective : MonoBehaviour
     public TextMeshProUGUI Objective;
     public GameObject AIHolder;
     private Animator AIAnimator;
+    public Material Material;
+    public GameObject playerObjectiveHolder;
+    private Material clonedMaterial;
 
     string newObjective = "";
 
     private void Start()
     {
+
         AiInteractionSoundManager.PlaySound("Intro");
 
         AIAnimator = AIHolder.GetComponent<Animator>();
@@ -32,6 +36,16 @@ public class PlayerObjective : MonoBehaviour
 
     public void UpdateObjective()
     {
+        // Example usage: if (grandchild != null) { ... }
+        if (clonedMaterial == null)
+        {
+            clonedMaterial = Instantiate(playerObjectiveHolder.GetComponent<Image>().material);
+            playerObjectiveHolder.GetComponent<Image>().material = clonedMaterial;
+        }
+
+        StartCoroutine(DelayForObjectDown());
+
+
         PlayerStatus.GameState gamestate = playerStatus.CurrentGameState;
 
         if (gamestate.Equals(PlayerStatus.GameState.Puzzle1))
@@ -88,6 +102,7 @@ public class PlayerObjective : MonoBehaviour
             Objective.text = "End Game";
         }
 
+
     }
 
     private IEnumerator WaitForAnimationAndPopAway()
@@ -95,5 +110,30 @@ public class PlayerObjective : MonoBehaviour
         yield return new WaitForSeconds(3.2f);        //Three seconds is the delay of the animation
         AIAnimator.SetTrigger("PopAway");
         Objective.text = newObjective;
+    }
+
+
+    private IEnumerator DelayForObjectDown()
+    {
+        float targetHeight = 0f;
+        while (targetHeight <= 1f)
+        {
+            clonedMaterial.SetFloat("_CutOff_Height", targetHeight);
+            targetHeight += 0.1f;
+            yield return new WaitForSeconds(0.5f);
+        }
+    }
+
+    private IEnumerator DelayForObjectUp()
+    {
+        float targetHeight = 1f;
+        while (targetHeight > 0f)
+        {
+            clonedMaterial.SetFloat("_CutOff_Height", targetHeight);
+            targetHeight -= 0.1f;
+            yield return new WaitForSeconds(0.05f);
+        }
+
+
     }
 }

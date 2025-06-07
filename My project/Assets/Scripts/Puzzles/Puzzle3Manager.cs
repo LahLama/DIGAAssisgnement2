@@ -43,11 +43,12 @@ public class Puzzle3Manager : PuzzleClass
             if (WayIndex <= Waypoints.Length - 1)
             {
                 Vector3 targetPosition = new Vector3(Waypoints[WayIndex].transform.position.x, Waypoints[WayIndex].transform.position.y, PathLeader.transform.position.z);
-                PathLeader.transform.position = Vector2.MoveTowards(
+                Vector2 newPos2D = Vector2.MoveTowards(
                     new Vector2(PathLeader.transform.position.x, PathLeader.transform.position.y),
                     new Vector2(targetPosition.x, targetPosition.y),
                     moveSpeed * Time.deltaTime
                 );
+                PathLeader.transform.position = new Vector3(newPos2D.x, newPos2D.y, PathLeader.transform.position.z);
                 // Check if the PathLeader reached the target x/y (ignore z)
                 if (Vector2.Distance(new Vector2(PathLeader.transform.position.x, PathLeader.transform.position.y), new Vector2(targetPosition.x, targetPosition.y)) < 0.01f)
                 {
@@ -74,8 +75,8 @@ public class Puzzle3Manager : PuzzleClass
         PuzzleFailSound();
         PathLeader.transform.position = new Vector3(Waypoints[0].transform.position.x, Waypoints[0].transform.position.y, PathLeader.transform.position.z);
         WayIndex = 0;
+        Puzzle3Start = false; // resets the puzzle status
 
-        Puzzle3Start = false;
     }
     public void StartPuzzle3()
     {
@@ -84,13 +85,13 @@ public class Puzzle3Manager : PuzzleClass
 
     public void OnClick()
     {
-        // Sets the puzzle status to the opposite of what it was
-        Puzzle3Start = !Puzzle3Start;
+
         GameInteractionSoundManager.PlaySound("spark");
         //[1]
         // sets the path leader to the intial position
         ResetPathLeader();
-
+        // Sets the puzzle status to the opposite of what it was
+        Puzzle3Start = !Puzzle3Start;
 
 
     }

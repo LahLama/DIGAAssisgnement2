@@ -93,7 +93,8 @@ public class ExitInteractions : MonoBehaviour
             }
         }
         else
-        { print("No doors to open for this level"); }
+        { //print("No doors to open for this level");
+        }
         playerlevelUpbool = false;
 
     }
