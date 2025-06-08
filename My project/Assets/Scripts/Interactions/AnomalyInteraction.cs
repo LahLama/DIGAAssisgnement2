@@ -28,18 +28,23 @@ public class AnomalyInteraction : MonoBehaviour
     public PlayerStatus playerStatus;       // refencing the player status script for the methods
     public Material AnomMaterial;
     private Material clonedMaterial;
+    public float takeAwayHeightstep;
+    public float stepTime;
 
-
-
+    private void Awake()
+    {
+        stepTime = 0.05f;
+        takeAwayHeightstep = 0.1f;
+    }
     // each time an anomaly is clicked on it calls this method that hides it from the player view
 
     private void OnMouseDown()
     {
-        Collider2D collider = GetComponent<Collider2D>();
-        if (collider != null)
-        {
-            collider.enabled = false;
-        }
+        /* Collider2D collider = GetComponent<Collider2D>();
+         if (collider != null)
+         {
+             collider.enabled = false;
+         }*/
 
         //ornaments are manahed in PointnClick.cs
         //        print("Microchip Clicked");
@@ -63,13 +68,13 @@ public class AnomalyInteraction : MonoBehaviour
     private IEnumerator DelayForMaterialMicrochip()
     {
         float targetHeight = 0f;
-        while (targetHeight < 1f)
+        while (targetHeight < 2)
         {
             clonedMaterial.SetFloat("_CutOff_Height", targetHeight);
-            targetHeight += 0.1f;
-            yield return new WaitForSeconds(0.05f);
+            targetHeight += takeAwayHeightstep;
+            yield return new WaitForSeconds(stepTime);
         }
-        this.gameObject.SetActive(false);
+        //this.gameObject.SetActive(false);
 
     }
 
