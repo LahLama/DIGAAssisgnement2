@@ -20,7 +20,6 @@ public class Puzzle1Manager : PuzzleClass
     public GameObject IncorrectText;
     public TextMeshProUGUI ChangeText;
     public TextMeshProUGUI ChangeNum;
-    public TimerScript Puzzle1Timer;
     public GameObject WordScrollAnimations;
 
     // array of the words that could appear, their real words, the assosiated number combination

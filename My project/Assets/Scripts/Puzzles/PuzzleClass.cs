@@ -26,10 +26,10 @@ public class PuzzleClass : MonoBehaviour
         AiInteractionSoundManager.PlaySound("Failure");
     }
 
-    public void StartTimer()
+    public virtual void StartTimer()
     {
         PuzzleTimerGO.SetActive(true);
-        PuzzleTimer.remianingTime = 120;//seconds
+        PuzzleTimer.remianingTime = 60;//seconds
         PuzzleTimer.StartTimer = true;
     }
     public void StopTimer()
