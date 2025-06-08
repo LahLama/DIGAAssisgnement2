@@ -2243,7 +2243,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8973238898707295039, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -8.399841
+      value: -8.05
       objectReference: {fileID: 0}
     - target: {fileID: 8973238898707295039, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2451,7 +2451,7 @@ Transform:
   m_GameObject: {fileID: 139558288}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.4099998, y: -0.72999954, z: 0}
+  m_LocalPosition: {x: 4.69, y: -3.3899994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2473,7 +2473,25 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1857343669}
+  - {fileID: 1048443113}
+  - {fileID: 2072557259}
+  - {fileID: 1156491354}
+  - {fileID: 342400550}
+  - {fileID: 717087139}
+  - {fileID: 627263298}
+  - {fileID: 1661368852}
+  - {fileID: 304450002}
+  - {fileID: 1875645373}
+  - {fileID: 1454510625}
+  - {fileID: 219126710}
+  - {fileID: 1933068527}
+  - {fileID: 1879447172}
+  - {fileID: 1204640973}
+  - {fileID: 676077459}
+  - {fileID: 139558289}
+  - {fileID: 1955102345}
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -2549,7 +2567,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4017,7 +4035,7 @@ Transform:
   m_GameObject: {fileID: 219126709}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.5499997, y: 2.3700004, z: 0}
+  m_LocalPosition: {x: 7.7899995, y: -0.2899996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -4039,7 +4057,25 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1857343669}
+  - {fileID: 1048443113}
+  - {fileID: 2072557259}
+  - {fileID: 1156491354}
+  - {fileID: 342400550}
+  - {fileID: 717087139}
+  - {fileID: 627263298}
+  - {fileID: 1661368852}
+  - {fileID: 304450002}
+  - {fileID: 1875645373}
+  - {fileID: 1454510625}
+  - {fileID: 219126710}
+  - {fileID: 1933068527}
+  - {fileID: 1879447172}
+  - {fileID: 1204640973}
+  - {fileID: 676077459}
+  - {fileID: 139558289}
+  - {fileID: 1955102345}
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -4115,7 +4151,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5621,7 +5657,7 @@ Transform:
   m_GameObject: {fileID: 304450001}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.7900004, y: 2.3700004, z: 0}
+  m_LocalPosition: {x: -1.5100005, y: -0.2899996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -5643,7 +5679,25 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1857343669}
+  - {fileID: 1048443113}
+  - {fileID: 2072557259}
+  - {fileID: 1156491354}
+  - {fileID: 342400550}
+  - {fileID: 717087139}
+  - {fileID: 627263298}
+  - {fileID: 1661368852}
+  - {fileID: 304450002}
+  - {fileID: 1875645373}
+  - {fileID: 1454510625}
+  - {fileID: 219126710}
+  - {fileID: 1933068527}
+  - {fileID: 1879447172}
+  - {fileID: 1204640973}
+  - {fileID: 676077459}
+  - {fileID: 139558289}
+  - {fileID: 1955102345}
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -5719,7 +5773,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6866,7 +6920,7 @@ Transform:
   m_GameObject: {fileID: 342400549}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.4499998, y: 5.4700003, z: 0}
+  m_LocalPosition: {x: 4.73, y: 2.8100004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -6888,7 +6942,25 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1857343669}
+  - {fileID: 1048443113}
+  - {fileID: 2072557259}
+  - {fileID: 1156491354}
+  - {fileID: 342400550}
+  - {fileID: 717087139}
+  - {fileID: 627263298}
+  - {fileID: 1661368852}
+  - {fileID: 304450002}
+  - {fileID: 1875645373}
+  - {fileID: 1454510625}
+  - {fileID: 219126710}
+  - {fileID: 1933068527}
+  - {fileID: 1879447172}
+  - {fileID: 1204640973}
+  - {fileID: 676077459}
+  - {fileID: 139558289}
+  - {fileID: 1955102345}
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -6964,7 +7036,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7029,7 +7101,6 @@ Transform:
   m_Children:
   - {fileID: 665128780}
   - {fileID: 1704819144}
-  - {fileID: 898942596}
   m_Father: {fileID: 503859085}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!199 &356557431
@@ -7245,7 +7316,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 19.13
+      scalar: 11.78
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -7299,7 +7370,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 0.07019687, b: 1, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -7363,7 +7434,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.72
+      scalar: 1.48
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -7628,7 +7699,7 @@ ParticleSystem:
     startRotation:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 0.49986228
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -8384,8 +8455,8 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.06377697, g: 0, b: 1, a: 1}
-        key1: {r: 0.069526486, g: 0.5182095, b: 0.5849056, a: 0.45490196}
+        key0: {r: 0.4264151, g: 0.4264151, b: 0.4264151, a: 1}
+        key1: {r: 0.062335394, g: 0.06391538, b: 0.06415099, a: 0.45490196}
         key2: {r: 1, g: 1, b: 1, a: 0}
         key3: {r: 1, g: 1, b: 1, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -14205,12 +14276,11 @@ Transform:
   m_GameObject: {fileID: 494884435}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -539.99976, z: -90}
+  m_LocalPosition: {x: 0, y: 0.00024414062, z: -90}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 220812302}
-  - {fileID: 550536747}
   - {fileID: 521329433}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15109,17 +15179,17 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550536746}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.34, y: 0.34, z: 0.34}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1738989001}
   - {fileID: 1245841784}
-  m_Father: {fileID: 494884436}
+  m_Father: {fileID: 1044679656}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 284, y: 783}
+  m_AnchoredPosition: {x: 12923.3, y: 1298.4502}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &550536748
@@ -18303,7 +18373,7 @@ Transform:
   m_GameObject: {fileID: 627263297}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.95, y: 2.3700004, z: 0}
+  m_LocalPosition: {x: -7.6699996, y: -0.2899996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -18325,7 +18395,25 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1857343669}
+  - {fileID: 1048443113}
+  - {fileID: 2072557259}
+  - {fileID: 1156491354}
+  - {fileID: 342400550}
+  - {fileID: 717087139}
+  - {fileID: 627263298}
+  - {fileID: 1661368852}
+  - {fileID: 304450002}
+  - {fileID: 1875645373}
+  - {fileID: 1454510625}
+  - {fileID: 219126710}
+  - {fileID: 1933068527}
+  - {fileID: 1879447172}
+  - {fileID: 1204640973}
+  - {fileID: 676077459}
+  - {fileID: 139558289}
+  - {fileID: 1955102345}
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -18401,7 +18489,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19402,7 +19490,7 @@ Transform:
   m_GameObject: {fileID: 676077458}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.3099999, y: -0.72999954, z: 0}
+  m_LocalPosition: {x: 1.5899999, y: -3.3899994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -19424,7 +19512,25 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1857343669}
+  - {fileID: 1048443113}
+  - {fileID: 2072557259}
+  - {fileID: 1156491354}
+  - {fileID: 342400550}
+  - {fileID: 717087139}
+  - {fileID: 627263298}
+  - {fileID: 1661368852}
+  - {fileID: 304450002}
+  - {fileID: 1875645373}
+  - {fileID: 1454510625}
+  - {fileID: 219126710}
+  - {fileID: 1933068527}
+  - {fileID: 1879447172}
+  - {fileID: 1204640973}
+  - {fileID: 676077459}
+  - {fileID: 139558289}
+  - {fileID: 1955102345}
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -19500,7 +19606,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20298,7 +20404,7 @@ Transform:
   m_GameObject: {fileID: 717087138}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.5499997, y: 5.4700003, z: 0}
+  m_LocalPosition: {x: 7.8299994, y: 2.8100004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -20320,7 +20426,25 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1857343669}
+  - {fileID: 1048443113}
+  - {fileID: 2072557259}
+  - {fileID: 1156491354}
+  - {fileID: 342400550}
+  - {fileID: 717087139}
+  - {fileID: 627263298}
+  - {fileID: 1661368852}
+  - {fileID: 304450002}
+  - {fileID: 1875645373}
+  - {fileID: 1454510625}
+  - {fileID: 219126710}
+  - {fileID: 1933068527}
+  - {fileID: 1879447172}
+  - {fileID: 1204640973}
+  - {fileID: 676077459}
+  - {fileID: 139558289}
+  - {fileID: 1955102345}
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -20396,7 +20520,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24347,97 +24471,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3011578054517195546, guid: 4a71df34ed409ef49b44c4988e4b9db8, type: 3}
   m_PrefabInstance: {fileID: 892183364}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &898942595
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 898942596}
-  - component: {fileID: 898942598}
-  - component: {fileID: 898942597}
-  m_Layer: 0
-  m_Name: window_1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &898942596
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 898942595}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 26.212238, y: 0.0746633, z: 333.05988}
-  m_LocalScale: {x: 7.566194, y: 7.5661893, z: 7.5661893}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 356557430}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &898942597
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 898942595}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.43, y: 2.67}
-    newSize: {x: 3.39, y: 2.65}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 3.43, y: 2.67}
-  m_EdgeRadius: 0
---- !u!114 &898942598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 898942595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83eebfa930e6a774a821bb034f937961, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &902419633
 GameObject:
   m_ObjectHideFlags: 0
@@ -27391,10 +27424,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.39, y: 2.65}
+  m_Size: {x: 4.32, y: 2.86}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1013935625
@@ -27447,8 +27480,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.44, y: 2.91}
-    newSize: {x: 3.39, y: 2.65}
+    oldSize: {x: 4.32, y: 2.86}
+    newSize: {x: 4.32, y: 2.86}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -28497,6 +28530,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 550536747}
   - {fileID: 1985358893}
   - {fileID: 1284715952}
   m_Father: {fileID: 0}
@@ -28558,7 +28592,7 @@ Transform:
   m_GameObject: {fileID: 1048443112}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.85, y: 5.4700003, z: 0}
+  m_LocalPosition: {x: -4.57, y: 2.8100004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -28580,7 +28614,25 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1857343669}
+  - {fileID: 1048443113}
+  - {fileID: 2072557259}
+  - {fileID: 1156491354}
+  - {fileID: 342400550}
+  - {fileID: 717087139}
+  - {fileID: 627263298}
+  - {fileID: 1661368852}
+  - {fileID: 304450002}
+  - {fileID: 1875645373}
+  - {fileID: 1454510625}
+  - {fileID: 219126710}
+  - {fileID: 1933068527}
+  - {fileID: 1879447172}
+  - {fileID: 1204640973}
+  - {fileID: 676077459}
+  - {fileID: 139558289}
+  - {fileID: 1955102345}
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -28656,7 +28708,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29774,7 +29826,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 19.13
+      scalar: 11.78
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -29828,7 +29880,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 0.07019687, b: 1, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -29892,7 +29944,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.72
+      scalar: 1.48
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -30157,7 +30209,7 @@ ParticleSystem:
     startRotation:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 0.49986228
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -30913,8 +30965,8 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.06377697, g: 0, b: 1, a: 1}
-        key1: {r: 0.069526486, g: 0.5182095, b: 0.5849056, a: 0.45490196}
+        key0: {r: 0.4264151, g: 0.4264151, b: 0.4264151, a: 1}
+        key1: {r: 0.062335394, g: 0.06391538, b: 0.06415099, a: 0.45490196}
         key2: {r: 1, g: 1, b: 1, a: 0}
         key3: {r: 1, g: 1, b: 1, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -35400,7 +35452,7 @@ Transform:
   m_GameObject: {fileID: 1156491353}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.3499999, y: 5.4700007, z: 0}
+  m_LocalPosition: {x: 1.6299999, y: 2.810001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -35422,7 +35474,25 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1857343669}
+  - {fileID: 1048443113}
+  - {fileID: 2072557259}
+  - {fileID: 1156491354}
+  - {fileID: 342400550}
+  - {fileID: 717087139}
+  - {fileID: 627263298}
+  - {fileID: 1661368852}
+  - {fileID: 304450002}
+  - {fileID: 1875645373}
+  - {fileID: 1454510625}
+  - {fileID: 219126710}
+  - {fileID: 1933068527}
+  - {fileID: 1879447172}
+  - {fileID: 1204640973}
+  - {fileID: 676077459}
+  - {fileID: 139558289}
+  - {fileID: 1955102345}
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -35498,7 +35568,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -35925,10 +35995,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.39, y: 2.65}
+  m_Size: {x: 1.7, y: 1.6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1173619112
@@ -35981,8 +36051,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.69, y: 1.59}
-    newSize: {x: 3.39, y: 2.65}
+    oldSize: {x: 1.7, y: 1.6}
+    newSize: {x: 1.7, y: 1.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -36535,7 +36605,7 @@ Transform:
   m_GameObject: {fileID: 1204640972}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.79, y: -0.72999954, z: 0}
+  m_LocalPosition: {x: -1.51, y: -3.3899994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -36557,7 +36627,25 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1857343669}
+  - {fileID: 1048443113}
+  - {fileID: 2072557259}
+  - {fileID: 1156491354}
+  - {fileID: 342400550}
+  - {fileID: 717087139}
+  - {fileID: 627263298}
+  - {fileID: 1661368852}
+  - {fileID: 304450002}
+  - {fileID: 1875645373}
+  - {fileID: 1454510625}
+  - {fileID: 219126710}
+  - {fileID: 1933068527}
+  - {fileID: 1879447172}
+  - {fileID: 1204640973}
+  - {fileID: 676077459}
+  - {fileID: 139558289}
+  - {fileID: 1955102345}
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -36633,7 +36721,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -38720,7 +38808,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -236.46014, y: 2987}
+  m_AnchoredPosition: {x: -236.4602, y: 2987}
   m_SizeDelta: {x: -472.9158, y: -401.2766}
   m_Pivot: {x: 0.5, y: -6.442013}
 --- !u!114 &1333863820
@@ -46489,7 +46577,7 @@ Transform:
   m_GameObject: {fileID: 1454510624}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.4099998, y: 2.3700004, z: 0}
+  m_LocalPosition: {x: 4.69, y: -0.2899996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -46511,7 +46599,25 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1857343669}
+  - {fileID: 1048443113}
+  - {fileID: 2072557259}
+  - {fileID: 1156491354}
+  - {fileID: 342400550}
+  - {fileID: 717087139}
+  - {fileID: 627263298}
+  - {fileID: 1661368852}
+  - {fileID: 304450002}
+  - {fileID: 1875645373}
+  - {fileID: 1454510625}
+  - {fileID: 219126710}
+  - {fileID: 1933068527}
+  - {fileID: 1879447172}
+  - {fileID: 1204640973}
+  - {fileID: 676077459}
+  - {fileID: 139558289}
+  - {fileID: 1955102345}
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -46587,7 +46693,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -48301,7 +48407,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 19.13
+      scalar: 11.78
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -48355,7 +48461,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 0.07019687, b: 1, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -48419,7 +48525,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.72
+      scalar: 1.48
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -48684,7 +48790,7 @@ ParticleSystem:
     startRotation:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 0.49986228
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -49440,8 +49546,8 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.06377697, g: 0, b: 1, a: 1}
-        key1: {r: 0.069526486, g: 0.5182095, b: 0.5849056, a: 0.45490196}
+        key0: {r: 0.4264151, g: 0.4264151, b: 0.4264151, a: 1}
+        key1: {r: 0.062335394, g: 0.06391538, b: 0.06415099, a: 0.45490196}
         key2: {r: 1, g: 1, b: 1, a: 0}
         key3: {r: 1, g: 1, b: 1, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -55284,7 +55390,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 19.13
+      scalar: 11.78
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -55338,7 +55444,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 0.07019687, b: 1, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -55402,7 +55508,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.72
+      scalar: 1.48
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -55667,7 +55773,7 @@ ParticleSystem:
     startRotation:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 0.49986228
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -56423,8 +56529,8 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.06377697, g: 0, b: 1, a: 1}
-        key1: {r: 0.069526486, g: 0.5182095, b: 0.5849056, a: 0.45490196}
+        key0: {r: 0.4264151, g: 0.4264151, b: 0.4264151, a: 1}
+        key1: {r: 0.062335394, g: 0.06391538, b: 0.06415099, a: 0.45490196}
         key2: {r: 1, g: 1, b: 1, a: 0}
         key3: {r: 1, g: 1, b: 1, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -60212,6 +60318,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1596526940}
+  - component: {fileID: 1596526941}
   m_Layer: 0
   m_Name: PiecesHolder
   m_TagString: Untagged
@@ -60253,9 +60360,61 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12, y: -92}
+  m_AnchoredPosition: {x: -47, y: 49}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1596526941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596526939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 2
+  m_LightType: 1
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 2
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: 000000009da224331d1581a5cbbf5eed9b9ed6dd
+  m_LightCookieSprite: {fileID: -1484532987555698938, guid: 1c940620ffb394c4094858d7c8910c47, type: 3}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 1
+  m_ShadowIntensity: 0.75
+  m_ShadowSoftness: 0.3
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: -0.19914961, y: -0.1631, z: 0}
+    m_Extent: {x: 9.55405, y: 5.3588, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -9.180235, y: -5.020953, z: 0.0000000037252903}
+  - {x: 8.854725, y: -4.8039465, z: 0.0000000037252903}
+  - {x: 8.818557, y: 4.3699403, z: 0.0000000037252903}
+  - {x: -9.252569, y: 4.695448, z: 0.0000000037252903}
 --- !u!1001 &1609340943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60989,7 +61148,7 @@ Transform:
   m_GameObject: {fileID: 1661368851}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.89, y: 2.3700004, z: 0}
+  m_LocalPosition: {x: -4.61, y: -0.2899996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -61011,7 +61170,25 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1857343669}
+  - {fileID: 1048443113}
+  - {fileID: 2072557259}
+  - {fileID: 1156491354}
+  - {fileID: 342400550}
+  - {fileID: 717087139}
+  - {fileID: 627263298}
+  - {fileID: 1661368852}
+  - {fileID: 304450002}
+  - {fileID: 1875645373}
+  - {fileID: 1454510625}
+  - {fileID: 219126710}
+  - {fileID: 1933068527}
+  - {fileID: 1879447172}
+  - {fileID: 1204640973}
+  - {fileID: 676077459}
+  - {fileID: 139558289}
+  - {fileID: 1955102345}
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -61087,7 +61264,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -65565,7 +65742,7 @@ Transform:
   m_GameObject: {fileID: 1857343668}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.95, y: 5.47, z: 0}
+  m_LocalPosition: {x: -7.67, y: 2.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -65587,7 +65764,25 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1857343669}
+  - {fileID: 1048443113}
+  - {fileID: 2072557259}
+  - {fileID: 1156491354}
+  - {fileID: 342400550}
+  - {fileID: 717087139}
+  - {fileID: 627263298}
+  - {fileID: 1661368852}
+  - {fileID: 304450002}
+  - {fileID: 1875645373}
+  - {fileID: 1454510625}
+  - {fileID: 219126710}
+  - {fileID: 1933068527}
+  - {fileID: 1879447172}
+  - {fileID: 1204640973}
+  - {fileID: 676077459}
+  - {fileID: 139558289}
+  - {fileID: 1955102345}
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -65663,7 +65858,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -66229,7 +66424,7 @@ Transform:
   m_GameObject: {fileID: 1875645372}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.30999994, y: 2.3700004, z: 0}
+  m_LocalPosition: {x: 1.5899999, y: -0.2899996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -66251,7 +66446,25 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1857343669}
+  - {fileID: 1048443113}
+  - {fileID: 2072557259}
+  - {fileID: 1156491354}
+  - {fileID: 342400550}
+  - {fileID: 717087139}
+  - {fileID: 627263298}
+  - {fileID: 1661368852}
+  - {fileID: 304450002}
+  - {fileID: 1875645373}
+  - {fileID: 1454510625}
+  - {fileID: 219126710}
+  - {fileID: 1933068527}
+  - {fileID: 1879447172}
+  - {fileID: 1204640973}
+  - {fileID: 676077459}
+  - {fileID: 139558289}
+  - {fileID: 1955102345}
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -66327,7 +66540,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -66387,7 +66600,7 @@ Transform:
   m_GameObject: {fileID: 1879447171}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.89, y: -0.72999954, z: 0}
+  m_LocalPosition: {x: -4.61, y: -3.3899994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -66409,7 +66622,25 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1857343669}
+  - {fileID: 1048443113}
+  - {fileID: 2072557259}
+  - {fileID: 1156491354}
+  - {fileID: 342400550}
+  - {fileID: 717087139}
+  - {fileID: 627263298}
+  - {fileID: 1661368852}
+  - {fileID: 304450002}
+  - {fileID: 1875645373}
+  - {fileID: 1454510625}
+  - {fileID: 219126710}
+  - {fileID: 1933068527}
+  - {fileID: 1879447172}
+  - {fileID: 1204640973}
+  - {fileID: 676077459}
+  - {fileID: 139558289}
+  - {fileID: 1955102345}
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -66485,7 +66716,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -66894,7 +67125,7 @@ Transform:
   m_GameObject: {fileID: 1933068526}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.950001, y: -0.72999954, z: 0}
+  m_LocalPosition: {x: -7.6700015, y: -3.3899994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -66916,7 +67147,25 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1857343669}
+  - {fileID: 1048443113}
+  - {fileID: 2072557259}
+  - {fileID: 1156491354}
+  - {fileID: 342400550}
+  - {fileID: 717087139}
+  - {fileID: 627263298}
+  - {fileID: 1661368852}
+  - {fileID: 304450002}
+  - {fileID: 1875645373}
+  - {fileID: 1454510625}
+  - {fileID: 219126710}
+  - {fileID: 1933068527}
+  - {fileID: 1879447172}
+  - {fileID: 1204640973}
+  - {fileID: 676077459}
+  - {fileID: 139558289}
+  - {fileID: 1955102345}
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -66992,7 +67241,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -67206,7 +67455,7 @@ Transform:
   m_GameObject: {fileID: 1955102344}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.5099998, y: -0.72999954, z: 0}
+  m_LocalPosition: {x: 7.7899995, y: -3.3899994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -67228,7 +67477,25 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1857343669}
+  - {fileID: 1048443113}
+  - {fileID: 2072557259}
+  - {fileID: 1156491354}
+  - {fileID: 342400550}
+  - {fileID: 717087139}
+  - {fileID: 627263298}
+  - {fileID: 1661368852}
+  - {fileID: 304450002}
+  - {fileID: 1875645373}
+  - {fileID: 1454510625}
+  - {fileID: 219126710}
+  - {fileID: 1933068527}
+  - {fileID: 1879447172}
+  - {fileID: 1204640973}
+  - {fileID: 676077459}
+  - {fileID: 139558289}
+  - {fileID: 1955102345}
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -67304,7 +67571,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -68974,6 +69241,12 @@ MonoBehaviour:
   - {fileID: 1875645373}
   - {fileID: 1454510625}
   - {fileID: 219126710}
+  - {fileID: 1933068527}
+  - {fileID: 1879447172}
+  - {fileID: 1204640973}
+  - {fileID: 676077459}
+  - {fileID: 139558289}
+  - {fileID: 1955102345}
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -70075,7 +70348,7 @@ Transform:
   m_GameObject: {fileID: 2072557258}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.75, y: 5.4700003, z: 0}
+  m_LocalPosition: {x: -1.47, y: 2.8100004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -70097,7 +70370,25 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
-  puzzlePieces: []
+  puzzlePieces:
+  - {fileID: 1857343669}
+  - {fileID: 1048443113}
+  - {fileID: 2072557259}
+  - {fileID: 1156491354}
+  - {fileID: 342400550}
+  - {fileID: 717087139}
+  - {fileID: 627263298}
+  - {fileID: 1661368852}
+  - {fileID: 304450002}
+  - {fileID: 1875645373}
+  - {fileID: 1454510625}
+  - {fileID: 219126710}
+  - {fileID: 1933068527}
+  - {fileID: 1879447172}
+  - {fileID: 1204640973}
+  - {fileID: 676077459}
+  - {fileID: 139558289}
+  - {fileID: 1955102345}
   exitInteractions: {fileID: 2033192350}
   PuzzleRotations:
   - 90
@@ -70173,7 +70464,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -70929,7 +71220,7 @@ Transform:
   m_GameObject: {fileID: 2090867041}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 1.6600002, y: 0.074627995, z: 12.836002}
+  m_LocalPosition: {x: 1.7, y: 0.074627995, z: 12.836002}
   m_LocalScale: {x: 7.566194, y: 7.5661902, z: 7.5661902}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -70984,10 +71275,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.39, y: 2.65}
+  m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &2093559175

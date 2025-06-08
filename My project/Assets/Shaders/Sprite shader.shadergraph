@@ -1585,7 +1585,7 @@
     "m_ObjectId": "50ff0e376c93469a8e4d5e68e6e2d241",
     "m_Title": "Apply the difference to the image",
     "m_Position": {
-        "x": 163.19998168945313,
+        "x": 163.2001953125,
         "y": -323.199951171875
     }
 }
@@ -1988,7 +1988,7 @@
     "m_Title": "Generate noise",
     "m_Position": {
         "x": -2043.9998779296875,
-        "y": -189.59999084472657
+        "y": -189.5999755859375
     }
 }
 
@@ -3335,8 +3335,8 @@
     "m_ObjectId": "d71fe8942d124f4d8245c5e359ed2631",
     "m_Title": "Get a step before and now and minus eachother to get the difference",
     "m_Position": {
-        "x": -902.3999633789063,
-        "y": 209.60006713867188
+        "x": -902.4000244140625,
+        "y": 209.5999755859375
     }
 }
 
@@ -3626,7 +3626,7 @@
     "overrideHLSLDeclaration": true,
     "hlslDeclarationOverride": 3,
     "m_Hidden": false,
-    "m_Value": 0.20999999344348908,
+    "m_Value": 0.0,
     "m_FloatType": 0,
     "m_RangeValues": {
         "x": 0.0,

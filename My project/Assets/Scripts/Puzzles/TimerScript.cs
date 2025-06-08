@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using JetBrains.Annotations;
+using UnityEngine.SceneManagement;
 
 public class TimerScript : MonoBehaviour
 {
@@ -30,6 +31,8 @@ public class TimerScript : MonoBehaviour
                 // TimeisUp();
                 timerText.color = Color.red;
                 StartTimer = false;
+                AiInteractionSoundManager.PlaySound("EndGame");
+                SceneManager.LoadScene("GameOver");
             }
             int minutes = Mathf.FloorToInt(remianingTime / 60);
             int seconds = Mathf.FloorToInt(remianingTime % 60);

@@ -46,7 +46,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _: 0
-    - _CutOff_Height: -0.29
+    - _CutOff_Height: 0.78
     - _noise_scale: 100
     - _noise_strength: 0.345
     m_Colors:

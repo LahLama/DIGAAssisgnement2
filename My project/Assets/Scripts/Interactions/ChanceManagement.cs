@@ -19,6 +19,7 @@ public class ChanceManagement : MonoBehaviour
             if (playerStatus.GameChances <= 0)
             {
                 StartCoroutine(WaitForAITease());
+                AiInteractionSoundManager.PlaySound("EndGame");
                 SceneManager.LoadScene("GameOver");
                 //GameOver
             }
