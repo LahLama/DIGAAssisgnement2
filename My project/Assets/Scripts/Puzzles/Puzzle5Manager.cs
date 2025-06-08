@@ -1,8 +1,5 @@
 using UnityEngine;
 using System.Collections.Generic;
-using UnityEngine.UI;
-using System.Runtime.CompilerServices;
-using UnityEditor.U2D.Aseprite;
 using System.Collections;
 public class Puzzle5Manager : PuzzleClass
 {
