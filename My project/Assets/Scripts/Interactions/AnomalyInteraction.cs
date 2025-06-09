@@ -40,11 +40,11 @@ public class AnomalyInteraction : MonoBehaviour
 
     private void OnMouseDown()
     {
-        /* Collider2D collider = GetComponent<Collider2D>();
-         if (collider != null)
-         {
-             collider.enabled = false;
-         }*/
+        Collider2D collider = GetComponent<Collider2D>();
+        if (collider != null)
+        {
+            collider.enabled = false;
+        }
 
         //ornaments are manahed in PointnClick.cs
         //        print("Microchip Clicked");

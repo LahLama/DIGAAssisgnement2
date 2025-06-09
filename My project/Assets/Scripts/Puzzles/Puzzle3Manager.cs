@@ -60,7 +60,7 @@ public class Puzzle3Manager : PuzzleClass
 
                     GameInteractionSoundManager.StopSound();
                     EndPuzzleSound();
-                    playerStatus.CurrentGameState = PlayerStatus.GameState.Puzzle4;
+                    playerStatus.CurrentGameState = PlayerStatus.GameState.Puzzle6;
                     playerObjective.UpdateObjective();
                     StartCoroutine(WaitBeforeReset());
 

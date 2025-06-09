@@ -278,9 +278,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 49
-        y: 569
+        y: 564
         width: 803
-        height: 255
+        height: 260
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,8 +365,8 @@ TextureImporter:
       name: clothes1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 319
+        x: 23
+        y: 217
         width: 340
         height: 239
       alignment: 0
@@ -387,8 +387,8 @@ TextureImporter:
       name: clothes2
       rect:
         serializedVersion: 2
-        x: 376
-        y: 277
+        x: 403
+        y: 160
         width: 299
         height: 299
       alignment: 0

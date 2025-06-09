@@ -22,6 +22,7 @@ public class ExitInteractions : MonoBehaviour
     public Puzzle2Manager puzzle2Manager;
     public Puzzle3Manager puzzle3Manager;
     public Puzzle4Manager puzzle4Manager;
+    public Puzzle5Manager puzzle5Manager;
 
     public Texture2D ButtonCursor;
     public Texture2D NormalCursor;
@@ -195,13 +196,14 @@ public class ExitInteractions : MonoBehaviour
                 if (gamestate.Equals(PlayerStatus.GameState.Puzzle3))
                 {
                     MoveCameraUp();
-                    AiInteractionSoundManager.PlaySound("Puzzle3");
-                    puzzle3Manager.StartPuzzle3();
+                    print("Puzzle 3 started ********************");
+                    AiInteractionSoundManager.PlaySound("Puzzle5");
+                    puzzle5Manager.Puzzle5Start();
                     //Asset [2]
                     SoundManager.PlaySound("PuzzleOpen");
-
-                    puzzle4Manager.Puzzle4Start();
+                    break;
                 }
+
                 else
                 {
                     MoveCameraUp();

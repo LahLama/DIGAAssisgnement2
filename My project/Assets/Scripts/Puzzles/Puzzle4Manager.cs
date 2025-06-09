@@ -63,7 +63,7 @@ public class Puzzle4Manager : PuzzleClass
             {
                 EndPuzzleSound();
 
-                playerStatus.CurrentGameState = PlayerStatus.GameState.Puzzle5;
+                playerStatus.CurrentGameState = PlayerStatus.GameState.Puzzle3;
                 playerObjective.UpdateObjective();
                 StartCoroutine(WaitBeforeReset());
             }

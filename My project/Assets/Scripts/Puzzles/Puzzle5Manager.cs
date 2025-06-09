@@ -5,6 +5,7 @@ public class Puzzle5Manager : PuzzleClass
 {
     public PlayerStatus playerStatus;
     public PlayerObjective playerObjective;
+    public Puzzle3Manager puzzle3Manager;
     public List<Transform> puzzlePieces;
     public ExitInteractions exitInteractions;
     public List<float> PuzzleRotations = new List<float> { 90, 180, 270 };
@@ -52,7 +53,7 @@ public class Puzzle5Manager : PuzzleClass
         if (correctPieces == piecesTotal)
         {
             EndPuzzleSound();
-            playerStatus.CurrentGameState = PlayerStatus.GameState.Puzzle6;
+            playerStatus.CurrentGameState = PlayerStatus.GameState.Puzzle4;
             playerObjective.UpdateObjective();
             StartCoroutine(WaitBeforeReset());
         }

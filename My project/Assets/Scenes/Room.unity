@@ -500,6 +500,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: plastic - toothpaste
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1025,6 +1029,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cloth - pillow
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.52496505
@@ -1514,6 +1522,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'food - sponge '
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1653,7 +1665,8 @@ Transform:
   m_LocalPosition: {x: -1.9543548, y: -3.0789568, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1570068838}
   m_Father: {fileID: 1780462678}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.361}
 --- !u!114 &88621216
@@ -1717,6 +1730,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1499113052}
     m_Modifications:
+    - target: {fileID: 4957518225342222168, guid: e631495643bc9c74d923b0eb153b25b6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.315
+      objectReference: {fileID: 0}
+    - target: {fileID: 4957518225342222168, guid: e631495643bc9c74d923b0eb153b25b6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.729
+      objectReference: {fileID: 0}
     - target: {fileID: 4996671751471881337, guid: e631495643bc9c74d923b0eb153b25b6, type: 3}
       propertyPath: m_Name
       value: Camera
@@ -2477,6 +2498,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
+  puzzle3Manager: {fileID: 0}
   puzzlePieces:
   - {fileID: 1857343669}
   - {fileID: 1048443113}
@@ -2663,6 +2685,10 @@ PrefabInstance:
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Name
       value: paper - bookstack
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -2905,6 +2931,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: plastic - spatula
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3083,6 +3113,10 @@ PrefabInstance:
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Name
       value: cloth - undewear
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -3296,7 +3330,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -4088,6 +4122,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
+  puzzle3Manager: {fileID: 0}
   puzzlePieces:
   - {fileID: 1857343669}
   - {fileID: 1048443113}
@@ -5016,6 +5051,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: plastic - clock
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.52496505
@@ -5548,7 +5587,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -5714,6 +5753,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
+  puzzle3Manager: {fileID: 0}
   puzzlePieces:
   - {fileID: 1857343669}
   - {fileID: 1048443113}
@@ -6981,6 +7021,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
+  puzzle3Manager: {fileID: 0}
   puzzlePieces:
   - {fileID: 1857343669}
   - {fileID: 1048443113}
@@ -12797,6 +12838,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: plastic - earbuds
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -12907,6 +12952,92 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
   m_PrefabInstance: {fileID: 389635621}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &394188669
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 394188670}
+  - component: {fileID: 394188671}
+  m_Layer: 0
+  m_Name: Kitchen Bulb_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &394188670
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394188669}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0326, y: -0.323, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 657696280}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.361}
+--- !u!114 &394188671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394188669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 2
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 26.3
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: 000000009da224331d1581a5cbbf5eed9b9ed6dd
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 1
+  m_ShadowIntensity: 0.75
+  m_ShadowSoftness: 0.3
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 19.64
+  m_PointLightOuterAngle: 175.17
+  m_PointLightInnerRadius: 8.67
+  m_PointLightOuterRadius: 19.61
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.08
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.71870923, y: -0.25786817, z: 0}
+  - {x: -0.00019249796, y: -0.56070334, z: 0}
+  - {x: 0.7937354, y: -0.16973478, z: 0}
+  - {x: 0.79164606, y: 0.71341413, z: 0}
+  - {x: -0.025180694, y: 0.7037101, z: 0}
+  - {x: -0.72593683, y: 0.7221415, z: 0}
 --- !u!1 &395233051
 GameObject:
   m_ObjectHideFlags: 0
@@ -13232,7 +13363,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 1, y: 0}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &433572545
@@ -13974,6 +14105,92 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &470964810
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 470964811}
+  - component: {fileID: 470964812}
+  m_Layer: 0
+  m_Name: Kitchen Bulb_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &470964811
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470964810}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1126, y: -5.261, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2061168429}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.361}
+--- !u!114 &470964812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470964810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 2
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 26.3
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: 000000009da224331d1581a5cbbf5eed9b9ed6dd
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 1
+  m_ShadowIntensity: 0.75
+  m_ShadowSoftness: 0.3
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 19.64
+  m_PointLightOuterAngle: 175.17
+  m_PointLightInnerRadius: 8.67
+  m_PointLightOuterRadius: 19.61
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.08
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.71870923, y: -0.25786817, z: 0}
+  - {x: -0.00019249796, y: -0.56070334, z: 0}
+  - {x: 0.7937354, y: -0.16973478, z: 0}
+  - {x: 0.79164606, y: 0.71341413, z: 0}
+  - {x: -0.025180694, y: 0.7037101, z: 0}
+  - {x: -0.72593683, y: 0.7221415, z: 0}
 --- !u!1 &471304876
 GameObject:
   m_ObjectHideFlags: 0
@@ -14094,17 +14311,25 @@ PrefabInstance:
       propertyPath: playerStatus
       value: 
       objectReference: {fileID: 2033192346}
+    - target: {fileID: 5211073254265196470, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
+      propertyPath: puzzle4Manager
+      value: 
+      objectReference: {fileID: 1404904147}
+    - target: {fileID: 5211073254265196470, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
+      propertyPath: puzzle5Manager
+      value: 
+      objectReference: {fileID: 2025560877}
     - target: {fileID: 5294867587090129059, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_Interactable
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5758693079653581294, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7154957708209871559, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_Name
-      value: UpBtn
+      value: UpOrPuzzle3
       objectReference: {fileID: 0}
     - target: {fileID: 7154957708209871559, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_IsActive
@@ -14315,7 +14540,7 @@ Transform:
   m_GameObject: {fileID: 494884435}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.00024414062, z: -90}
+  m_LocalPosition: {x: 0, y: -539.99976, z: -90}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -15338,6 +15563,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: plastic - cup
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -16006,7 +16235,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -16982,7 +17211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_TagString
-      value: Anomaly
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -17654,7 +17883,7 @@ Transform:
   m_GameObject: {fileID: 580792837}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1920, y: 6480, z: 0}
+  m_LocalPosition: {x: 1920, y: 7560, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17991,6 +18220,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: plastic - toothbrush
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -18156,6 +18389,10 @@ PrefabInstance:
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Name
       value: metal - trophy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -18558,6 +18795,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
+  puzzle3Manager: {fileID: 0}
   puzzlePieces:
   - {fileID: 1857343669}
   - {fileID: 1048443113}
@@ -18720,6 +18958,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: food - cheese
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -18861,6 +19103,10 @@ PrefabInstance:
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Name
       value: food - cookie
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -19007,6 +19253,10 @@ PrefabInstance:
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Name
       value: plastic - bucket
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -19353,10 +19603,11 @@ Transform:
   m_GameObject: {fileID: 657696279}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.99999946, w: 0.0010261579}
-  m_LocalPosition: {x: -1.9461981, y: 3.2518003, z: 0}
+  m_LocalPosition: {x: -1.936, y: 3.231, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 394188670}
   m_Father: {fileID: 1780462678}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.361}
 --- !u!114 &657696281
@@ -19683,6 +19934,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
+  puzzle3Manager: {fileID: 0}
   puzzlePieces:
   - {fileID: 1857343669}
   - {fileID: 1048443113}
@@ -19845,6 +20097,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: paper - bookshelfed
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.52496505
@@ -19991,6 +20247,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: plastic - jug
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -20132,6 +20392,10 @@ PrefabInstance:
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Name
       value: food - apple
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -20623,6 +20887,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
+  puzzle3Manager: {fileID: 0}
   puzzlePieces:
   - {fileID: 1857343669}
   - {fileID: 1048443113}
@@ -21216,6 +21481,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cloth - ovenmitts
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -21674,6 +21943,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1024760659}
     m_Modifications:
+    - target: {fileID: 4957518225342222168, guid: e631495643bc9c74d923b0eb153b25b6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.298
+      objectReference: {fileID: 0}
+    - target: {fileID: 4957518225342222168, guid: e631495643bc9c74d923b0eb153b25b6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.491
+      objectReference: {fileID: 0}
     - target: {fileID: 4996671751471881337, guid: e631495643bc9c74d923b0eb153b25b6, type: 3}
       propertyPath: m_Name
       value: Camera
@@ -22123,7 +22400,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -22298,6 +22575,10 @@ PrefabInstance:
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Name
       value: food - apple
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -23190,7 +23471,8 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 2100000, guid: 822c97709c13bbb4abf76924e1293bfd, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8935446292936362897, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -23630,6 +23912,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cloth - blue top
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.52496505
@@ -23778,7 +24064,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -23937,7 +24223,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -24108,6 +24394,10 @@ PrefabInstance:
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Name
       value: food -pizza
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -25003,6 +25293,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cloth - sheet
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.52496505
@@ -25152,6 +25446,10 @@ PrefabInstance:
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Name
       value: cloth - red bottom
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -25658,11 +25956,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3011578054517195546, guid: 4a71df34ed409ef49b44c4988e4b9db8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 364
+      value: 246
       objectReference: {fileID: 0}
     - target: {fileID: 3011578054517195546, guid: 4a71df34ed409ef49b44c4988e4b9db8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 225
+      value: -175
       objectReference: {fileID: 0}
     - target: {fileID: 3011578054517195546, guid: 4a71df34ed409ef49b44c4988e4b9db8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -25733,6 +26031,10 @@ PrefabInstance:
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Name
       value: metal - cans
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -25858,7 +26160,7 @@ PrefabInstance:
       objectReference: {fileID: 2033192346}
     - target: {fileID: 5758693079653581294, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7154957708209871559, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_Name
@@ -25871,6 +26173,22 @@ PrefabInstance:
     - target: {fileID: 7154957708209871559, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_TagString
       value: Level3Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 8764414531016798924, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 304.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 8764414531016798924, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 6.59746
+      objectReference: {fileID: 0}
+    - target: {fileID: 8764414531016798924, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 13.357
+      objectReference: {fileID: 0}
+    - target: {fileID: 8764414531016798924, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.2511
       objectReference: {fileID: 0}
     - target: {fileID: 8939140559302003014, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_text
@@ -25922,11 +26240,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8973238898707295039, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 701.0487
+      value: 331.082
       objectReference: {fileID: 0}
     - target: {fileID: 8973238898707295039, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 14.0192
+      value: 14.011
       objectReference: {fileID: 0}
     - target: {fileID: 8973238898707295039, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25954,15 +26272,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8973238898707295039, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.00012227621
       objectReference: {fileID: 0}
     - target: {fileID: 8973238898707295039, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1
+      value: 31.925
       objectReference: {fileID: 0}
     - target: {fileID: 8973238898707295039, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -464
+      value: -465.537
       objectReference: {fileID: 0}
     - target: {fileID: 8973238898707295039, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -25974,7 +26292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8973238898707295039, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 0.014
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26023,7 +26341,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.68029785, y: 0.5857394}
+  m_Offset: {x: 0.68029785, y: -2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -26033,7 +26351,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 701.6599, y: 12.949011}
+  m_Size: {x: 667.92, y: 7.6}
   m_EdgeRadius: 0
 --- !u!1001 &970702586
 PrefabInstance:
@@ -26053,7 +26371,7 @@ PrefabInstance:
       objectReference: {fileID: 2033192346}
     - target: {fileID: 5758693079653581294, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7154957708209871559, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_Name
@@ -26121,11 +26439,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8973238898707295039, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 245.746
+      value: 223.138
       objectReference: {fileID: 0}
     - target: {fileID: 8973238898707295039, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 49.7436
+      value: 65.439
       objectReference: {fileID: 0}
     - target: {fileID: 8973238898707295039, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26157,11 +26475,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8973238898707295039, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -803
+      value: -815.434
       objectReference: {fileID: 0}
     - target: {fileID: 8973238898707295039, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -163
+      value: -62.748
       objectReference: {fileID: 0}
     - target: {fileID: 8973238898707295039, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -26232,7 +26550,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 246.66095, y: 49.669888}
+  m_Size: {x: 268.4, y: 42.8}
   m_EdgeRadius: 0
 --- !u!1 &972899125
 GameObject:
@@ -26685,6 +27003,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: food - yogurt
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -27008,6 +27330,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cloth - slippers
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -27200,6 +27526,10 @@ PrefabInstance:
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Name
       value: cloth - red top
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -27497,7 +27827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -28311,7 +28641,7 @@ Transform:
   m_GameObject: {fileID: 1019751303}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1916, y: 8640, z: 0}
+  m_LocalPosition: {x: 1916, y: 5400, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -28319,6 +28649,92 @@ Transform:
   - {fileID: 809684200}
   m_Father: {fileID: 1331813272}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1023169545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1023169546}
+  - component: {fileID: 1023169547}
+  m_Layer: 0
+  m_Name: Kitchen Bulb
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1023169546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023169545}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.001317348, y: -0.64199877, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1364991078}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.361}
+--- !u!114 &1023169547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023169545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 2
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 26.3
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: 000000009da224331d1581a5cbbf5eed9b9ed6dd
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 1
+  m_ShadowIntensity: 0.75
+  m_ShadowSoftness: 0.3
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 19.64
+  m_PointLightOuterAngle: 175.17
+  m_PointLightInnerRadius: 8.67
+  m_PointLightOuterRadius: 19.61
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.08
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.71870923, y: -0.25786817, z: 0}
+  - {x: -0.00019249796, y: -0.56070334, z: 0}
+  - {x: 0.7937354, y: -0.16973478, z: 0}
+  - {x: 0.79164606, y: 0.71341413, z: 0}
+  - {x: -0.025180694, y: 0.7037101, z: 0}
+  - {x: -0.72593683, y: 0.7221415, z: 0}
 --- !u!1 &1024760658
 GameObject:
   m_ObjectHideFlags: 0
@@ -28390,6 +28806,10 @@ PrefabInstance:
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Name
       value: plastic - soap
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -28899,6 +29319,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
+  puzzle3Manager: {fileID: 0}
   puzzlePieces:
   - {fileID: 1857343669}
   - {fileID: 1048443113}
@@ -29239,6 +29660,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: metal - trophy
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -29473,6 +29898,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cloth - slippers
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.52496505
@@ -29618,6 +30047,10 @@ PrefabInstance:
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Name
       value: plastic - bowl
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -29780,6 +30213,10 @@ PrefabInstance:
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Name
       value: 'metal - can '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -35231,7 +35668,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -35895,6 +36332,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
+  puzzle3Manager: {fileID: 0}
   puzzlePieces:
   - {fileID: 1857343669}
   - {fileID: 1048443113}
@@ -36904,6 +37342,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: paper - grocieries
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -37060,6 +37502,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
+  puzzle3Manager: {fileID: 0}
   puzzlePieces:
   - {fileID: 1857343669}
   - {fileID: 1048443113}
@@ -37216,7 +37659,7 @@ Transform:
   m_GameObject: {fileID: 1216837119}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1854, y: 5400, z: 0}
+  m_LocalPosition: {x: 1854, y: 6480, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -37352,7 +37795,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -38221,6 +38664,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: metal - can
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -38508,7 +38955,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -38885,10 +39332,11 @@ Transform:
   m_GameObject: {fileID: 1303802667}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.99999946, w: 0.0010261579}
-  m_LocalPosition: {x: -1.9510921, y: 0, z: 0}
+  m_LocalPosition: {x: -1.969, y: 0.085, z: 0}
   m_LocalScale: {x: 1, y: 0.76, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1847145457}
   m_Father: {fileID: 1780462678}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.361}
 --- !u!114 &1303802669
@@ -40209,10 +40657,11 @@ Transform:
   m_GameObject: {fileID: 1364991077}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.99999946, w: 0.0010261579}
-  m_LocalPosition: {x: -1.945, y: 4.825, z: 0}
+  m_LocalPosition: {x: -1.945, y: 4.803, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1023169546}
   m_Father: {fileID: 1780462678}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.361}
 --- !u!114 &1364991079
@@ -40759,7 +41208,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -1.0219489, z: 228.20287, w: 11.933395}
+  m_margin: {x: 0, y: -1.0219489, z: 185.9232, w: 11.933395}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -41248,7 +41697,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -46555,6 +47004,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cloth - boots
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.52496505
@@ -46918,6 +47371,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: paper - toilet paper
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -47188,6 +47645,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
+  puzzle3Manager: {fileID: 0}
   puzzlePieces:
   - {fileID: 1857343669}
   - {fileID: 1048443113}
@@ -47876,6 +48334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cloth - tie
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.52496505
@@ -48015,7 +48477,8 @@ Transform:
   m_LocalPosition: {x: -1.9527235, y: -1.5204364, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1848156196}
   m_Father: {fileID: 1780462678}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.361}
 --- !u!114 &1474572197
@@ -48106,6 +48569,10 @@ PrefabInstance:
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Name
       value: 'metal - spoon '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -53871,6 +54338,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cloth - socks
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -54019,7 +54490,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -54752,6 +55223,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cloth - cloth
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -55109,6 +55584,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: plastic - comb
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.52496505
@@ -55442,6 +55921,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1568802660}
   m_CullTransparentMesh: 1
+--- !u!1 &1570068837
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1570068838}
+  - component: {fileID: 1570068839}
+  m_Layer: 0
+  m_Name: Kitchen Bulb_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1570068838
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570068837}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.008138794, y: -8.523957, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 88621215}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.361}
+--- !u!114 &1570068839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570068837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 2
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 26.3
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: 000000009da224331d1581a5cbbf5eed9b9ed6dd
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 1
+  m_ShadowIntensity: 0.75
+  m_ShadowSoftness: 0.3
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 19.64
+  m_PointLightOuterAngle: 175.17
+  m_PointLightInnerRadius: 8.67
+  m_PointLightOuterRadius: 19.61
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.08
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.71870923, y: -0.25786817, z: 0}
+  - {x: -0.00019249796, y: -0.56070334, z: 0}
+  - {x: 0.7937354, y: -0.16973478, z: 0}
+  - {x: 0.79164606, y: 0.71341413, z: 0}
+  - {x: -0.025180694, y: 0.7037101, z: 0}
+  - {x: -0.72593683, y: 0.7221415, z: 0}
 --- !u!1 &1572658525
 GameObject:
   m_ObjectHideFlags: 0
@@ -61050,6 +61615,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: plastic - board
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -61186,10 +61755,11 @@ Transform:
   m_GameObject: {fileID: 1614300734}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.99999946, w: 0.0010261579}
-  m_LocalPosition: {x: -1.9494607, y: 1.5907456, z: 0}
+  m_LocalPosition: {x: -1.9494607, y: 1.523, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1624765556}
   m_Father: {fileID: 1780462678}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.361}
 --- !u!114 &1614300736
@@ -61245,6 +61815,92 @@ MonoBehaviour:
   - {x: 0.7079146, y: -0.24452537, z: 0}
   - {x: 0.71288747, y: 0.6423602, z: 0}
   - {x: -0.7229204, y: 0.6432982, z: 0}
+--- !u!1 &1624765555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1624765556}
+  - component: {fileID: 1624765557}
+  m_Layer: 0
+  m_Name: Kitchen Bulb
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1624765556
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624765555}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.0265, y: -0.6617, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1614300735}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.361}
+--- !u!114 &1624765557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624765555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 2
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 26.3
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: 000000009da224331d1581a5cbbf5eed9b9ed6dd
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 1
+  m_ShadowIntensity: 0.75
+  m_ShadowSoftness: 0.3
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 19.64
+  m_PointLightOuterAngle: 175.17
+  m_PointLightInnerRadius: 8.67
+  m_PointLightOuterRadius: 19.61
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.08
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.71870923, y: -0.25786817, z: 0}
+  - {x: -0.00019249796, y: -0.56070334, z: 0}
+  - {x: 0.7937354, y: -0.16973478, z: 0}
+  - {x: 0.79164606, y: 0.71341413, z: 0}
+  - {x: -0.025180694, y: 0.7037101, z: 0}
+  - {x: -0.72593683, y: 0.7221415, z: 0}
 --- !u!1 &1630126738
 GameObject:
   m_ObjectHideFlags: 0
@@ -61769,6 +62425,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
+  puzzle3Manager: {fileID: 0}
   puzzlePieces:
   - {fileID: 1857343669}
   - {fileID: 1048443113}
@@ -61931,6 +62588,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: food - butter
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -62072,6 +62733,10 @@ PrefabInstance:
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Name
       value: food - egg
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -62629,7 +63294,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundEffectsGroups:
-  - name: TestSound
+  - name: soft
+    audioClips:
+    - {fileID: 8300000, guid: 9116ca0cc0b559e47a4e8275872eb1e6, type: 3}
+  - name: glass
+    audioClips:
+    - {fileID: 8300000, guid: 9116ca0cc0b559e47a4e8275872eb1e6, type: 3}
+  - name: metal
+    audioClips:
+    - {fileID: 8300000, guid: 9116ca0cc0b559e47a4e8275872eb1e6, type: 3}
+  - name: plastic
+    audioClips:
+    - {fileID: 8300000, guid: 9116ca0cc0b559e47a4e8275872eb1e6, type: 3}
+  - name: food
+    audioClips:
+    - {fileID: 8300000, guid: 9116ca0cc0b559e47a4e8275872eb1e6, type: 3}
+  - name: wood
     audioClips:
     - {fileID: 8300000, guid: 9116ca0cc0b559e47a4e8275872eb1e6, type: 3}
 --- !u!82 &1697013113
@@ -62772,7 +63452,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -63702,23 +64382,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1
+      value: 2.74914
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1
+      value: 2.09195
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.86
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.86
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.17647058
+      value: 0.3035294
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_LocalPosition.x
@@ -63750,11 +64430,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 3.47
+      value: 3.226
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1.62
+      value: -1.61
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -63841,6 +64521,10 @@ PrefabInstance:
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Name
       value: cloth - towel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -64682,6 +65366,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: plastic - pot
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -64863,6 +65551,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: food - egg
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -65040,6 +65732,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cloth - basket
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -65188,7 +65884,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -65339,6 +66035,10 @@ PrefabInstance:
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Name
       value: metal - scissors
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -65588,6 +66288,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1957260111}
     m_Modifications:
+    - target: {fileID: 4957518225342222168, guid: e631495643bc9c74d923b0eb153b25b6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.271
+      objectReference: {fileID: 0}
+    - target: {fileID: 4957518225342222168, guid: e631495643bc9c74d923b0eb153b25b6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.485
+      objectReference: {fileID: 0}
     - target: {fileID: 4996671751471881337, guid: e631495643bc9c74d923b0eb153b25b6, type: 3}
       propertyPath: m_Name
       value: Camera
@@ -65684,6 +66392,10 @@ PrefabInstance:
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Name
       value: paper - toilet rolls
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -65931,6 +66643,178 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1843238128}
   m_CullTransparentMesh: 1
+--- !u!1 &1847145456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1847145457}
+  - component: {fileID: 1847145458}
+  m_Layer: 0
+  m_Name: Kitchen Bulb_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1847145457
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847145456}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.007, y: -0.639, z: 0}
+  m_LocalScale: {x: 1, y: 1.3157896, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1303802668}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.361}
+--- !u!114 &1847145458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847145456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 2
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 26.3
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: 000000009da224331d1581a5cbbf5eed9b9ed6dd
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 1
+  m_ShadowIntensity: 0.75
+  m_ShadowSoftness: 0.3
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 19.64
+  m_PointLightOuterAngle: 175.17
+  m_PointLightInnerRadius: 8.67
+  m_PointLightOuterRadius: 19.61
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.08
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.71870923, y: -0.25786817, z: 0}
+  - {x: -0.00019249796, y: -0.56070334, z: 0}
+  - {x: 0.7937354, y: -0.16973478, z: 0}
+  - {x: 0.79164606, y: 0.71341413, z: 0}
+  - {x: -0.025180694, y: 0.7037101, z: 0}
+  - {x: -0.72593683, y: 0.7221415, z: 0}
+--- !u!1 &1848156195
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1848156196}
+  - component: {fileID: 1848156197}
+  m_Layer: 0
+  m_Name: Kitchen Bulb_4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1848156196
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848156195}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.0307, y: -0.543, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1474572196}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.361}
+--- !u!114 &1848156197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848156195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 2
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 26.3
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: 000000009da224331d1581a5cbbf5eed9b9ed6dd
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 1
+  m_ShadowIntensity: 0.75
+  m_ShadowSoftness: 0.3
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 19.64
+  m_PointLightOuterAngle: 175.17
+  m_PointLightInnerRadius: 8.67
+  m_PointLightOuterRadius: 19.61
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.08
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.71870923, y: -0.25786817, z: 0}
+  - {x: -0.00019249796, y: -0.56070334, z: 0}
+  - {x: 0.7937354, y: -0.16973478, z: 0}
+  - {x: 0.79164606, y: 0.71341413, z: 0}
+  - {x: -0.025180694, y: 0.7037101, z: 0}
+  - {x: -0.72593683, y: 0.7221415, z: 0}
 --- !u!1 &1851474855 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7154957708209871559, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
@@ -66247,6 +67131,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
+  puzzle3Manager: {fileID: 0}
   puzzlePieces:
   - {fileID: 1857343669}
   - {fileID: 1048443113}
@@ -66429,6 +67314,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: food - pizza
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -66578,7 +67467,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -66729,6 +67618,10 @@ PrefabInstance:
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Name
       value: paper - tissue box
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -66941,6 +67834,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
+  puzzle3Manager: {fileID: 0}
   puzzlePieces:
   - {fileID: 1857343669}
   - {fileID: 1048443113}
@@ -67117,6 +68011,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
+  puzzle3Manager: {fileID: 0}
   puzzlePieces:
   - {fileID: 1857343669}
   - {fileID: 1048443113}
@@ -67484,7 +68379,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -67650,6 +68545,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
+  puzzle3Manager: {fileID: 0}
   puzzlePieces:
   - {fileID: 1857343669}
   - {fileID: 1048443113}
@@ -67832,6 +68728,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: plastic - phone
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -67988,6 +68888,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
+  puzzle3Manager: {fileID: 0}
   puzzlePieces:
   - {fileID: 1857343669}
   - {fileID: 1048443113}
@@ -68357,6 +69258,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1438780367}
     m_Modifications:
+    - target: {fileID: 4957518225342222168, guid: e631495643bc9c74d923b0eb153b25b6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.276
+      objectReference: {fileID: 0}
+    - target: {fileID: 4957518225342222168, guid: e631495643bc9c74d923b0eb153b25b6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.557
+      objectReference: {fileID: 0}
     - target: {fileID: 4996671751471881337, guid: e631495643bc9c74d923b0eb153b25b6, type: 3}
       propertyPath: m_Name
       value: Camera
@@ -69115,6 +70024,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: plastic - cup
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -69229,6 +70142,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 829459158}
     m_Modifications:
+    - target: {fileID: 4957518225342222168, guid: e631495643bc9c74d923b0eb153b25b6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.265
+      objectReference: {fileID: 0}
+    - target: {fileID: 4957518225342222168, guid: e631495643bc9c74d923b0eb153b25b6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.447
+      objectReference: {fileID: 0}
     - target: {fileID: 4996671751471881337, guid: e631495643bc9c74d923b0eb153b25b6, type: 3}
       propertyPath: m_Name
       value: Camera
@@ -69321,7 +70242,11 @@ PrefabInstance:
       objectReference: {fileID: -8713238166815989317, guid: 11af01146800f984e86737dd04d21694, type: 3}
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Name
-      value: metla - spoon
+      value: metal - spoon
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -69469,6 +70394,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: plastic - bowlstack
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -69610,6 +70539,10 @@ PrefabInstance:
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Name
       value: plastic - cup
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -69765,6 +70698,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
+  puzzle3Manager: {fileID: 0}
   puzzlePieces:
   - {fileID: 1857343669}
   - {fileID: 1048443113}
@@ -69882,6 +70816,7 @@ MonoBehaviour:
   puzzle2Manager: {fileID: 44055501}
   puzzle3Manager: {fileID: 171032500}
   puzzle4Manager: {fileID: 1404904147}
+  puzzle5Manager: {fileID: 0}
   ButtonCursor: {fileID: 2800000, guid: 335d2e7ff5e17254698ba01783b80020, type: 3}
   NormalCursor: {fileID: 2800000, guid: 6c2c29eb72ab09447bcc898b441a32be, type: 3}
   playerlvl: 0
@@ -70075,7 +71010,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7154957708209871559, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_Name
-      value: UpOrPuzzle3
+      value: UpBtn
       objectReference: {fileID: 0}
     - target: {fileID: 7154957708209871559, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_IsActive
@@ -70575,7 +71510,8 @@ Transform:
   m_LocalPosition: {x: -1.9380413, y: 9.512249, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 470964811}
   m_Father: {fileID: 1780462678}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.361}
 --- !u!114 &2061168430
@@ -70745,7 +71681,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -70911,6 +71847,7 @@ MonoBehaviour:
   PuzzleTimer: {fileID: 1245841785}
   playerStatus: {fileID: 2033192346}
   playerObjective: {fileID: 1044679657}
+  puzzle3Manager: {fileID: 0}
   puzzlePieces:
   - {fileID: 1857343669}
   - {fileID: 1048443113}
@@ -71072,6 +72009,10 @@ PrefabInstance:
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Name
       value: plastic - ladel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -71509,7 +72450,7 @@ Transform:
   m_GameObject: {fileID: 2082295176}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 4320, z: 0}
+  m_LocalPosition: {x: 0, y: 5400, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -71743,7 +72684,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 401.97287, y: 15.385838}
+  m_Size: {x: 728.6, y: 13.2}
   m_EdgeRadius: 0
 --- !u!1 &2090867041
 GameObject:
@@ -71840,6 +72781,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 20484271}
     m_Modifications:
+    - target: {fileID: 4957518225342222168, guid: e631495643bc9c74d923b0eb153b25b6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.298
+      objectReference: {fileID: 0}
+    - target: {fileID: 4957518225342222168, guid: e631495643bc9c74d923b0eb153b25b6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.546
+      objectReference: {fileID: 0}
     - target: {fileID: 4996671751471881337, guid: e631495643bc9c74d923b0eb153b25b6, type: 3}
       propertyPath: m_Name
       value: Camera
@@ -72003,6 +72952,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: plastic - globe
       objectReference: {fileID: 0}
+    - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
+      objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -72147,7 +73100,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6623990344503947735, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 8417033787098926339, guid: 10a27927c97caf4479dcf80e39db2842, type: 3}
       propertyPath: m_Pivot.x
@@ -72892,11 +73845,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 22640283571366196, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 415.5166
+      value: 312.5657
       objectReference: {fileID: 0}
     - target: {fileID: 22640283571366196, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 103.64787
+      value: 80.11624
       objectReference: {fileID: 0}
     - target: {fileID: 22640283571366196, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -72904,7 +73857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22640283571366196, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -14
+      value: -0.0000038147
       objectReference: {fileID: 0}
     - target: {fileID: 22640283571366196, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -72952,19 +73905,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8764414531016798924, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 408.5987
+      value: 270.79
       objectReference: {fileID: 0}
     - target: {fileID: 8764414531016798924, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 9.59742
+      value: 6.3739
       objectReference: {fileID: 0}
     - target: {fileID: 8764414531016798924, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -107
+      value: 0.00002670288
       objectReference: {fileID: 0}
     - target: {fileID: 8764414531016798924, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 21.7
+      value: 3.1869497
       objectReference: {fileID: 0}
     - target: {fileID: 8939140559302003014, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_text
@@ -73022,11 +73975,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8973238898707295039, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 446
+      value: 270.78894
       objectReference: {fileID: 0}
     - target: {fileID: 8973238898707295039, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 55
+      value: 54.5133
       objectReference: {fileID: 0}
     - target: {fileID: 8973238898707295039, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_LocalScale.x
@@ -73066,11 +74019,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8973238898707295039, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 41.5
+      value: 40.05
       objectReference: {fileID: 0}
     - target: {fileID: 8973238898707295039, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -5.5
+      value: -6.588
       objectReference: {fileID: 0}
     - target: {fileID: 8973238898707295039, guid: 8a875286281452546891e1f8bb9be05e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -73131,7 +74084,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 21.207214, y: 6.5054007}
+  m_Offset: {x: 17.864681, y: 5.5268383}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -73141,7 +74094,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 441.05292, y: 54.641006}
+  m_Size: {x: 273.9249, y: 50.381374}
   m_EdgeRadius: 0
 --- !u!1 &2129758972
 GameObject:
@@ -73206,6 +74159,10 @@ PrefabInstance:
     - target: {fileID: 4052540069113032650, guid: 9ffc92a3b338cef439fef0e103b64210, type: 3}
       propertyPath: m_Name
       value: metal - fan
+      objectReference: {fileID: 0}
+    - target: {fileID: 4052540069113032650, guid: 9ffc92a3b338cef439fef0e103b64210, type: 3}
+      propertyPath: m_TagString
+      value: MinusChanceObject
       objectReference: {fileID: 0}
     - target: {fileID: 5374816618847772577, guid: 9ffc92a3b338cef439fef0e103b64210, type: 3}
       propertyPath: ChanceText
