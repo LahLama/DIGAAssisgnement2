@@ -49,7 +49,7 @@ public class AnomalyInteraction : MonoBehaviour
         //ornaments are manahed in PointnClick.cs
         //        print("Microchip Clicked");
         playerStatus.IncAnomalyCount();
-        SoundManager.PlaySound("AnomalySelect");
+        GameInteractionSoundManager.PlaySound("anomaly");
 
         //[2]
         if (clonedMaterial == null)

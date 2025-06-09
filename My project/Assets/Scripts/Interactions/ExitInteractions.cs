@@ -126,7 +126,7 @@ public class ExitInteractions : MonoBehaviour
         newPosition1.y += movementAmount1;
         MainCamera.transform.position = newPosition1;
         //Asset [1]
-        SoundManager.PlaySound("DoorOpen");
+
     }
     public void MoveCameraDown()        //this moves the camera down
     {
@@ -135,7 +135,7 @@ public class ExitInteractions : MonoBehaviour
         newPosition2.y += movementAmount2;
         MainCamera.transform.position = newPosition2;
         //Asset [1]
-        SoundManager.PlaySound("DoorOpen");
+
     }
 
     public void MoveCameraLeft()        //this moves the camera left solely for puzzles 1 and 2
@@ -145,7 +145,7 @@ public class ExitInteractions : MonoBehaviour
         newPosition3.x += movementAmount3;
         MainCamera.transform.position = newPosition3;
         //Asset [1]
-        SoundManager.PlaySound("DoorOpen");
+
     }
 
 
@@ -157,9 +157,11 @@ public class ExitInteractions : MonoBehaviour
         {
             case "UpBtn":
                 MoveCameraUp();
+                GameInteractionSoundManager.PlaySound("door");
                 break;
             case "DownBtn":
                 MoveCameraDown();
+                GameInteractionSoundManager.PlaySound("door");
                 break;
             case "UpOrPuzzle1":             //Detemines if the button pressed takes the player to the puzzle or to the next room if they have completeted the puzzle
                 if (gamestate.Equals(PlayerStatus.GameState.Puzzle1))
@@ -170,12 +172,13 @@ public class ExitInteractions : MonoBehaviour
                     puzzle1Manager.StartPuzzle1();
                     Debug.Log("Puzzle 1 started ********************");
                     //Asset [2]
-                    SoundManager.PlaySound("PuzzleOpen");
+                    GameInteractionSoundManager.PlaySound("puzzleEnter");
 
                 }
                 else
                 {
                     MoveCameraUp();
+                    GameInteractionSoundManager.PlaySound("door");
                 }
                 break;
             case "DownOrPuzzle2":
@@ -185,11 +188,12 @@ public class ExitInteractions : MonoBehaviour
                     AiInteractionSoundManager.PlaySound("Puzzle2");
                     puzzle2Manager.StartPuzzle2();
                     //Asset [2]
-                    SoundManager.PlaySound("PuzzleOpen");
+                    GameInteractionSoundManager.PlaySound("puzzleEnter");
                 }
                 else
                 {
                     MoveCameraDown();
+                    GameInteractionSoundManager.PlaySound("door");
                 }
                 break;
             case "UpOrPuzzle3":
@@ -200,13 +204,14 @@ public class ExitInteractions : MonoBehaviour
                     AiInteractionSoundManager.PlaySound("Puzzle5");
                     puzzle5Manager.Puzzle5Start();
                     //Asset [2]
-                    SoundManager.PlaySound("PuzzleOpen");
+                    GameInteractionSoundManager.PlaySound("puzzleEnter");
                     break;
                 }
 
                 else
                 {
                     MoveCameraUp();
+                    GameInteractionSoundManager.PlaySound("door");
                 }
                 break;
             default:
@@ -215,6 +220,7 @@ public class ExitInteractions : MonoBehaviour
 
 
         }
+
 
 
 

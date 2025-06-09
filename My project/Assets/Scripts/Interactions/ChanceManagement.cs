@@ -15,7 +15,7 @@ public class ChanceManagement : MonoBehaviour
             //when the player clicks on an empty space , a chance is taken away.
             playerStatus.GameChances--;
             ChanceText.text = playerStatus.GameChances.ToString();
-            SoundManager.PlaySound("GameChanceMinus");
+            GameInteractionSoundManager.PlaySound("chanceMinus");
             if (playerStatus.GameChances <= 0)
             {
                 StartCoroutine(WaitForAITease());
@@ -29,6 +29,7 @@ public class ChanceManagement : MonoBehaviour
             print("Anomaly Clicked");
             if (playerStatus.GameChances < 5)
             {
+                GameInteractionSoundManager.PlaySound("chancePlus");
                 playerStatus.GameChances++;
                 ChanceText.text = playerStatus.GameChances.ToString();
             }
@@ -38,6 +39,6 @@ public class ChanceManagement : MonoBehaviour
     private IEnumerator WaitForAITease()
     {
         yield return new WaitForSeconds(2f);
-        SoundManager.PlaySound("AI_GameOver");
+        AiInteractionSoundManager.PlaySound("Failure");
     }
 }

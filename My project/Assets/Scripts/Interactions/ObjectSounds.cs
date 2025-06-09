@@ -5,31 +5,25 @@ public class ObjectSounds : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void OnMouseDown()
     {
-        if (name.StartsWith("soft"))
+        if (name.StartsWith("cloth"))
         {
-            SoundManager.PlaySound("soft");
+            CollectiblesInteractionSoundManager.PlaySound("cloth");
         }
-        //[2]
-        if (name.StartsWith("glass"))
-        {
-            SoundManager.PlaySound("glass");
-        }
-        // No sound for these yet.
         if (name.StartsWith("metal"))
         {
-            SoundManager.PlaySound("metal");
+            CollectiblesInteractionSoundManager.PlaySound("metal");
         }
         if (name.StartsWith("plastic"))
         {
-            SoundManager.PlaySound("plastic");
+            CollectiblesInteractionSoundManager.PlaySound("plastic");
         }
         if (name.StartsWith("food"))
         {
-            SoundManager.PlaySound("food");
+            CollectiblesInteractionSoundManager.PlaySound("food");
         }
-        if (name.StartsWith("wood"))
+        if (name.StartsWith("paper"))
         {
-            SoundManager.PlaySound("wood");
+            CollectiblesInteractionSoundManager.PlaySound("paper");
         }
     }
 }
