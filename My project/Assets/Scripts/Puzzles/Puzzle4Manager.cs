@@ -54,7 +54,7 @@ public class Puzzle4Manager : PuzzleClass
                 {
                     IncorrectText.text = "Incorrect sequence! Please try again.";
                     //     print("Incorrect sequence!");
-                    SoundManager.PlaySound("AI_CommentOnFailure");
+                    AiInteractionSoundManager.PlaySound("Failure");
                     robot.ShowColour();
 
                 }

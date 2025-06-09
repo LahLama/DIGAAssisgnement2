@@ -29,7 +29,7 @@ public class Puzzle2CodeButtons : MonoBehaviour
         // Cycles through the colours and tags stipulated in the arrays above. 
         if (ChoiceIndex == CodeOptionsImageNames.Length)
         {//[1]
-        
+
             ChoiceIndex = 0;
             CodeBlock.sprite = CodeOptionsImageNames[ChoiceIndex];
             gameObject.tag = CodeOptions[ChoiceIndex];
@@ -37,7 +37,7 @@ public class Puzzle2CodeButtons : MonoBehaviour
         }
         else
         {
-            SoundManager.PlaySound("ButtonClick");
+            GameInteractionSoundManager.PlaySound("knob");
             CodeBlock = GetComponent<Image>();
             //Color CurrentColor = CodeBlock.color;
             //CodeBlock.color = CodeOptionsColor[ChoiceIndex];

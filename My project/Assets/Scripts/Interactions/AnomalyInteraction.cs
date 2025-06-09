@@ -74,7 +74,7 @@ public class AnomalyInteraction : MonoBehaviour
             targetHeight += takeAwayHeightstep;
             yield return new WaitForSeconds(stepTime);
         }
-        //this.gameObject.SetActive(false);
+        this.gameObject.SetActive(false);
 
     }
 

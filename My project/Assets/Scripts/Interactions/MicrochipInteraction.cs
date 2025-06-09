@@ -57,7 +57,7 @@ public class MicrochipInteraction : MonoBehaviour
         //ornaments are manahed in PointnClick.cs
         //        print("Microchip Clicked");
         playerStatus.IncMicrochipCount();
-        SoundManager.PlaySound("MicrochipPickUp");
+        GameInteractionSoundManager.PlaySound("microchip");
 
         //[2]
         if (clonedMaterial == null)

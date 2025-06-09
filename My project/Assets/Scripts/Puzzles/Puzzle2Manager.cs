@@ -51,7 +51,7 @@ public class Puzzle2Manager : PuzzleClass
                 //if the corresponding element is correct then turn the circle above it to green to show a correct choice
                 CodeLights[indexure].GetComponent<SpriteRenderer>().color = Color.green;
                 CorrectChoice++;
-                SoundManager.PlaySound("ButtonClick");
+                GameInteractionSoundManager.PlaySound("knob");
                 if (CorrectChoice == 4)
                 {
                     EndPuzzleSound();
@@ -63,7 +63,7 @@ public class Puzzle2Manager : PuzzleClass
             }
             else
             {   //if it was an incorrect choice, set the above circle to be red.
-                SoundManager.PlaySound("ButtonClick");
+                GameInteractionSoundManager.PlaySound("knob");
                 CodeLights[indexure].GetComponent<SpriteRenderer>().color = Color.red;
             }
             print(Codechances);

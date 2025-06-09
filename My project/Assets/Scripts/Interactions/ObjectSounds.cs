@@ -7,23 +7,23 @@ public class ObjectSounds : MonoBehaviour
     {
         if (name.StartsWith("cloth"))
         {
-            CollectiblesInteractionSoundManager.PlaySound("cloth");
+            ObjectsSoundManager.PlaySound("cloth");
         }
         if (name.StartsWith("metal"))
         {
-            CollectiblesInteractionSoundManager.PlaySound("metal");
+            ObjectsSoundManager.PlaySound("metal");
         }
         if (name.StartsWith("plastic"))
         {
-            CollectiblesInteractionSoundManager.PlaySound("plastic");
+            ObjectsSoundManager.PlaySound("plastic");
         }
         if (name.StartsWith("food"))
         {
-            CollectiblesInteractionSoundManager.PlaySound("food");
+            ObjectsSoundManager.PlaySound("food");
         }
         if (name.StartsWith("paper"))
         {
-            CollectiblesInteractionSoundManager.PlaySound("paper");
+            ObjectsSoundManager.PlaySound("paper");
         }
     }
 }

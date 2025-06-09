@@ -21,5 +21,9 @@ public class ObjectInteractions : MonoBehaviour
         {
             ObjectInteractionSoundManager.PlaySound("windowtap");
         }
+        if (name.StartsWith("globe"))
+        {
+            ObjectInteractionSoundManager.PlaySound("globe");
+        }
     }
 }

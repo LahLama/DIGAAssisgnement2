@@ -20,7 +20,7 @@ public class RandomSoundEffect : MonoBehaviour
             {
 
                 // add that dont play the same sound twice in a row
-                SoundManager.PlaySound("RandomEffect");
+                GameInteractionSoundManager.PlaySound("RandomEffect");
                 //                print("Random sound played at" + Time.time + " seconds");
                 waitTimeCountdown = Random.Range(minWaitBetweenPlays, maxWaitBetweenPlays);
             }

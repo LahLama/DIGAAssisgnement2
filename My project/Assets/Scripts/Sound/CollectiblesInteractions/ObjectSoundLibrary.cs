@@ -8,7 +8,7 @@ Author: Game Code Library
 Date :  16 Feb 2024
 Availibility: https://www.youtube.com/watch?v=rAX_r0yBwzQ
 */
-public class CollectiblesInteractionSoundLibrary : MonoBehaviour      //here
+public class ObjectsSoundManagerLibrary : MonoBehaviour      //here
 {
     [SerializeField] private SoundEffectGroup[] soundEffectsGroups; // Array of sound effect groups
     private Dictionary<string, List<AudioClip>> soundDirectory; // Dictionary to hold sound effects categorized by their names
