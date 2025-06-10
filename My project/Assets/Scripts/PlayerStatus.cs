@@ -80,6 +80,9 @@ public class PlayerStatus : MonoBehaviour
         GameChances = 5;
         playerObjective.UpdateObjective();
         IncPlayerLevel();
+        GameChancesText.text = ": " + GameChances.ToString();
+
+
     }
 
     private void IncPlayerLevel()
@@ -91,6 +94,8 @@ public class PlayerStatus : MonoBehaviour
     {
         MicrochipCount++;
         //        print("Microchip: " + MicrochipCount);
+        MicroChipCountText.text = ": " + MicrochipCount.ToString() + "/" + MicrosPerLevel[PlayerLevel - 1].ToString();
+
     }
     public void IncAnomalyCount()
     {

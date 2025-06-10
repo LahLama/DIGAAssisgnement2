@@ -18,11 +18,7 @@ public class ExitInteractions : MonoBehaviour
 
     // refences the scripts need to check the player status for each puzzle
     public PlayerStatus playerStatus;
-    public Puzzle1Manager puzzle1Manager;
-    public Puzzle2Manager puzzle2Manager;
-    public Puzzle3Manager puzzle3Manager;
-    public Puzzle4Manager puzzle4Manager;
-    public Puzzle5Manager puzzle5Manager;
+
 
     public Texture2D ButtonCursor;
     public Texture2D NormalCursor;
@@ -30,8 +26,14 @@ public class ExitInteractions : MonoBehaviour
     public bool playerlevelUpbool;
 
     public int playerMicroCount;
+
+    private CaptchaManager captchaManager;
+    private BruteForceManager bruteForceManager;
+    private JigsawManager jigsawManager;
     public void Awake()
     {
+
+
         //playerStatus = GetComponent<PlayerStatus>();
         //print("THE PLAYERS LEVEL IS " + playerStatus.PlayerLevel);
         InitDoors();
@@ -168,8 +170,9 @@ public class ExitInteractions : MonoBehaviour
                 {
                     MoveCameraLeft();
                     AiInteractionSoundManager.PlaySound("Puzzle1");
+                    captchaManager.PuzzleCaptchaStart();
 
-                    puzzle1Manager.StartPuzzle1();
+
                     Debug.Log("Puzzle 1 started ********************");
                     //Asset [2]
                     GameInteractionSoundManager.PlaySound("puzzleEnter");
@@ -186,7 +189,7 @@ public class ExitInteractions : MonoBehaviour
                 {
                     MoveCameraLeft();
                     AiInteractionSoundManager.PlaySound("Puzzle2");
-                    puzzle2Manager.StartPuzzle2();
+                    bruteForceManager.StartPuzzleBruteForce();
                     //Asset [2]
                     GameInteractionSoundManager.PlaySound("puzzleEnter");
                 }
@@ -202,7 +205,7 @@ public class ExitInteractions : MonoBehaviour
                     MoveCameraUp();
                     print("Puzzle 3 started ********************");
                     AiInteractionSoundManager.PlaySound("Puzzle5");
-                    puzzle5Manager.Puzzle5Start();
+                    jigsawManager.StartJigsawPuzzle();
                     //Asset [2]
                     GameInteractionSoundManager.PlaySound("puzzleEnter");
                     break;
@@ -212,7 +215,11 @@ public class ExitInteractions : MonoBehaviour
                 {
                     MoveCameraUp();
                     GameInteractionSoundManager.PlaySound("door");
+                    break;
                 }
+            case "UpPuzzle4":
+                CircuitManager circuitManager = new CircuitManager();
+                circuitManager.StartCircuitPuzzle();
                 break;
             default:
                 Debug.Log("No camera movement assigned for this button.");
