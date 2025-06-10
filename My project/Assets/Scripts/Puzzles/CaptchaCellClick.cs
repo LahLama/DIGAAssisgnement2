@@ -1,9 +1,9 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Puzzle6CellClick : CaptchaManager
+public class CaptchaCellClick : MonoBehaviour
 {
-
+    public CaptchaManager captchaManager;
     private bool isClicked = false;
     void OnMouseDown()
     {
@@ -12,14 +12,14 @@ public class Puzzle6CellClick : CaptchaManager
                                 //        print("Clicked on: " + gameObject.name);
         if (isClicked)
         {
-            PlayerCells.Add(gameObject);
+            captchaManager.PlayerCells.Add(gameObject);
             transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
         }
         else if (!isClicked)
         {
-            if (PlayerCells.Contains(gameObject))
+            if (captchaManager.PlayerCells.Contains(gameObject))
             {
-                PlayerCells.Remove(gameObject);
+                captchaManager.PlayerCells.Remove(gameObject);
             }
             transform.localScale = new Vector3(1f, 1f, 1f);
         }

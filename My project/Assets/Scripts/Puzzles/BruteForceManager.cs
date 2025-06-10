@@ -5,7 +5,6 @@ using UnityEngine.Rendering.Universal;
 public class BruteForceManager : PuzzleClass
 {
     // Varibles that are used across puzzle 2 scripts. Intial values are stored here
-    private BruteForceManager instance;
     public int CorrectChoice = 0;
     public int Codechances = 5;
     bool CanTalk = true;

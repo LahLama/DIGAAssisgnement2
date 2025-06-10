@@ -22,7 +22,6 @@ public class PlayerObjective : MonoBehaviour
     public GameObject playerObjectiveHolder;
     private Material clonedMaterial;
 
-    string newObjective = "";
     string objective = "objective";
 
     private void Start()

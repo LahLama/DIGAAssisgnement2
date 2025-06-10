@@ -85,20 +85,20 @@ public class Puzzle1Manager : PuzzleClass
     IEnumerator WaitBeforeReset() // this is a delay timer that simulates a delay and does other tasks after said delay
     {
         yield return new WaitForSeconds(2);     //we have to add it here cause coroutines happen asyncourously
-        StopTimer();
-        // moves the camera to the right and up so it can be on to the next room.
 
+        // moves the camera to the right and up so it can be on to the next room.
+        StopTimer();
         Vector3 newPosition = camera1.transform.position;
         newPosition.x += 960;
         newPosition.y += 540;
         camera1.transform.position = newPosition;
-
+        // Plays the AI voice reacting to the puzzle behind completed
+        playerObjective.UpdateObjective();
 
         WordScrollAnimations.SetActive(false); // Deactivates the word scroll animations
 
 
-        // Plays the AI voice reacting to the puzzle behind completed
-        playerObjective.UpdateObjective();
+
 
 
 

@@ -11,7 +11,7 @@ public class ReplicateCodeRobot : MonoBehaviour
     public List<string> CodeOptions = new List<string> { "Red", "Blue", "Green", "Yellow", "White" };
 
     public List<string> CorrectSequence = new List<string> { "Red", "Red", "Red", "Red" };
-    public ReplicateCodeManager ReplicateCodeManager;
+    public ReplicateCodeManager replicateCodeManager;
     public SpriteRenderer spriteRenderer;
     public Sprite[] CodeOptionsImageNames;
 
@@ -32,7 +32,7 @@ public class ReplicateCodeRobot : MonoBehaviour
     public void ShowColour()
     {
         // disables player input by the buttons
-        ReplicateCodeManager.ButtonsOff();
+        replicateCodeManager.ButtonsOff();
         StartCoroutine(ShowColourDelay());
 
 
@@ -79,7 +79,7 @@ public class ReplicateCodeRobot : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
 
         }
-        ReplicateCodeManager.ButtonsOn();
+        replicateCodeManager.ButtonsOn();
     }
 
 

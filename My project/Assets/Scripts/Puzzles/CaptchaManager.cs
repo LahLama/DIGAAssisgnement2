@@ -6,12 +6,12 @@ using UnityEngine;
 
 public class CaptchaManager : PuzzleClass
 {
-    private CaptchaManager instance;
     public PlayerStatus playerStatus;
     public PlayerObjective playerObjective;
+    public ExitInteractions exitInteractions;
     public List<GameObject> NeedToClickCells; // Array to hold the cell GameObjects
     public List<GameObject> PlayerCells; // Array to hold the player cells
-    public ExitInteractions exitInteractions;
+
 
 
     public void PuzzleCaptchaStart()
@@ -47,7 +47,7 @@ public class CaptchaManager : PuzzleClass
             }
             Debug.Log("---------------- Puzzle complete");
             EndPuzzleSound();
-            playerStatus.CurrentGameState = PlayerStatus.GameState.Player2;
+
             playerObjective.UpdateObjective();
             StartCoroutine(WaitBeforeReset()); // If all cells match, start the coroutine to reset the puzzle
             return;
@@ -60,6 +60,9 @@ public class CaptchaManager : PuzzleClass
 
         StopTimer();
         exitInteractions.MoveCameraUp();
+        exitInteractions.MoveCameraRight();
+        playerStatus.CurrentGameState = PlayerStatus.GameState.Player2;
+
 
     }
 }

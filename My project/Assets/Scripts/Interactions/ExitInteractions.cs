@@ -27,9 +27,9 @@ public class ExitInteractions : MonoBehaviour
 
     public int playerMicroCount;
 
-    private CaptchaManager captchaManager;
-    private BruteForceManager bruteForceManager;
-    private JigsawManager jigsawManager;
+    public CaptchaManager captchaManager;
+    public BruteForceManager bruteForceManager;
+    public JigsawManager jigsawManager;
     public void Awake()
     {
 
@@ -149,6 +149,15 @@ public class ExitInteractions : MonoBehaviour
         //Asset [1]
 
     }
+    public void MoveCameraRight()        //this moves the camera left solely for puzzles 1 and 2
+    {
+        float movementAmount4 = +960;
+        Vector3 newPosition4 = MainCamera.transform.position;
+        newPosition4.x += movementAmount4;
+        MainCamera.transform.position = newPosition4;
+        //Asset [1]
+
+    }
 
 
     public void MoveCamera()                //Depending on the button name, this function will detect the name and move the camera in the stipulated direction. 
@@ -171,7 +180,6 @@ public class ExitInteractions : MonoBehaviour
                     MoveCameraLeft();
                     AiInteractionSoundManager.PlaySound("Puzzle1");
                     captchaManager.PuzzleCaptchaStart();
-
 
                     Debug.Log("Puzzle 1 started ********************");
                     //Asset [2]

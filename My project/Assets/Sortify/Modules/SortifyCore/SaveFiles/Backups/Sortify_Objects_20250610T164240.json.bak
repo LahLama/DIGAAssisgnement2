@@ -31,7 +31,7 @@
                     "colorValue": "8000FFFF"
                 },
                 {
-                    "objID": "Room_=======Room_Pantry=======_1_------- LEVEL 4 ------- _3_Rooms_3",
+                    "objID": "Room_=======Room_Pantry=======_2_------- LEVEL 4 ------- _3_Rooms_3",
                     "colorValue": "8000FFFF"
                 },
                 {
@@ -87,23 +87,23 @@
                     "colorValue": "262626FF"
                 },
                 {
-                    "objID": "Room_Puzzle2Manager_0_BruteForce_1_Puzzles_4",
+                    "objID": "Room_BruteForceManager_0_BruteForce_1_Puzzles_4",
                     "colorValue": "262626FF"
                 },
                 {
-                    "objID": "Room_Puzzle3Manager_0_Circuit_2_Puzzles_4",
+                    "objID": "Room_CircuitManager_0_Circuit_2_Puzzles_4",
                     "colorValue": "262626FF"
                 },
                 {
-                    "objID": "Room_Puzzle6Manager_0_Captcha_5_Puzzles_4",
+                    "objID": "Room_CaptchaManager_0_Captcha_5_Puzzles_4",
                     "colorValue": "262626FF"
                 },
                 {
-                    "objID": "Room_Puzzle5Manager_0_Jigsaw_4_Puzzles_4",
+                    "objID": "Room_JigsawManager_0_Jigsaw_4_Puzzles_4",
                     "colorValue": "262626FF"
                 },
                 {
-                    "objID": "Room_Puzzle4Manager_0_ReplicateCode_3_Puzzles_4",
+                    "objID": "Room_ReplicateCodeManager_0_ReplicateCode_3_Puzzles_4",
                     "colorValue": "262626FF"
                 },
                 {

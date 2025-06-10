@@ -56,6 +56,7 @@ public class ReplicateCodeManager : PuzzleClass
                     //     print("Incorrect sequence!");
                     AiInteractionSoundManager.PlaySound("Failure");
                     robot.ShowColour();
+                    exitInteractions.MoveCameraUp();
 
                 }
             }
