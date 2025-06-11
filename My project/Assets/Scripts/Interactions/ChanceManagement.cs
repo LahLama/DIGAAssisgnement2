@@ -33,7 +33,9 @@ public class ChanceManagement : MonoBehaviour
                 playerStatus.GameChances++;
                 ChanceText.text = playerStatus.GameChances.ToString();
             }
+
         }
+        ChanceText.text = playerStatus.GameChances.ToString();
     }
 
     private IEnumerator WaitForAITease()

@@ -168,6 +168,18 @@
                 }
             ],
             "sceneName": "Room"
+        },
+        {
+            "colors": [],
+            "styles": [],
+            "showComponents": [],
+            "sceneName": ""
+        },
+        {
+            "colors": [],
+            "styles": [],
+            "showComponents": [],
+            "sceneName": "USBInsertPuzzle"
         }
     ]
 }
