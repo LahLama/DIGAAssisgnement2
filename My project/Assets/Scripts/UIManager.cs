@@ -17,10 +17,10 @@ public class UIManager : MonoBehaviour
         
     }
 
-    public void onPlayButtonClicked() 
+    public void onPlayButtonClicked()
     {
         PlayerPrefs.SetString("Scene to go to", "James Room");
-         SceneManager.LoadScene("LoadingScene");
-
+        SceneManager.LoadScene("LoadingScene");
     }
+
 }
