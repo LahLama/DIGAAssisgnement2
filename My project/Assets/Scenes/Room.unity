@@ -40444,7 +40444,7 @@ Transform:
   m_GameObject: {fileID: 1185050604}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -481.9, y: 0, z: -51}
+  m_LocalPosition: {x: -2401.9, y: 0, z: -51}
   m_LocalScale: {x: 25, y: 25, z: 25}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -71173,7 +71173,7 @@ Transform:
   m_GameObject: {fileID: 1792153593}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1930, y: 1080, z: 0}
+  m_LocalPosition: {x: -1930, y: 1080, z: -50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -76754,7 +76754,6 @@ MonoBehaviour:
   - {fileID: 801408958}
   - {fileID: 2060395809}
   Level4Doors:
-  - {fileID: 0}
   - {fileID: 1102755521}
   - {fileID: 1851474855}
   playerStatus: {fileID: 2033192346}
@@ -79919,7 +79918,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.77625006, y: 0}
   m_AnchorMax: {x: 1, y: 0.102561}
-  m_AnchoredPosition: {x: -1.5, y: -2}
+  m_AnchoredPosition: {x: -1.5, y: -2.000002}
   m_SizeDelta: {x: 83.77399, y: 19.391388}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2120340511

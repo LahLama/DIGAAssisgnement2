@@ -65,7 +65,6 @@ public class ReplicateCodeManager : PuzzleClass
             {
                 EndPuzzleSound();
 
-                playerStatus.CurrentGameState = PlayerStatus.GameState.Puzzle3;
                 playerObjective.UpdateObjective();
                 StartCoroutine(WaitBeforeReset());
             }

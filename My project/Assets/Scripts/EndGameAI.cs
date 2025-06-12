@@ -110,6 +110,7 @@ public class EndGameAI : MonoBehaviour
 
         if (destroyStage == 4)
         {
+
             GameInteractionSoundManager.PlaySound("Explosion");
             targetHeight = 0;
             stopHeight = 2f;

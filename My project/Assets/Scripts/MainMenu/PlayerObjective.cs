@@ -50,61 +50,61 @@ public class PlayerObjective : MonoBehaviour
 
         if (gamestate.Equals(PlayerStatus.GameState.Puzzle1))
         {
-            AiInteractionSoundManager.PlaySound("Taunt");
+
             // AiInteractionSoundManager.PlaySound("Puzzle1");
-            objective = "Puzzle 1";
+            objective = "A";
         }
         else if (gamestate.Equals(PlayerStatus.GameState.Puzzle2))
         {
             //AiInteractionSoundManager.PlaySound("Puzzle2");
             AiInteractionSoundManager.PlaySound("Taunt");
-            objective = "Puzzle 2";
+            objective = "B";
         }
         else if (gamestate.Equals(PlayerStatus.GameState.Puzzle3))
         {
             //AiInteractionSoundManager.PlaySound("Puzzle3");
             AiInteractionSoundManager.PlaySound("Taunt");
-            objective = "Puzzle 3";
+            objective = "C";
         }
         else if (gamestate.Equals(PlayerStatus.GameState.Puzzle4))
         {
             AiInteractionSoundManager.PlaySound("Taunt");
-            objective = "Puzzle 4";
+            objective = "D";
         }
         else if (gamestate.Equals(PlayerStatus.GameState.Puzzle5))
         {
             //AiInteractionSoundManager.PlaySound("Puzzle5");
             AiInteractionSoundManager.PlaySound("Taunt");
-            objective = "Puzzle 5";
+            objective = "E";
         }
         else if (gamestate.Equals(PlayerStatus.GameState.Puzzle6))
         {
             ///AiInteractionSoundManager.PlaySound("Puzzle6");
             AiInteractionSoundManager.PlaySound("Taunt");
-            objective = "Puzzle 6";
+            objective = "F";
         }
 
         else if (gamestate.Equals(PlayerStatus.GameState.Player1))
         {
             AiInteractionSoundManager.PlaySound("Intro");
-            objective = "Intro";
+            objective = "G";
         }
 
         else if (gamestate.Equals(PlayerStatus.GameState.Player2))
         {
             AiInteractionSoundManager.PlaySound("Microchip1");
-            objective = "Microchip 1";
+            objective = "H";
         }
         else if (gamestate.Equals(PlayerStatus.GameState.Player3))
         {
             AiInteractionSoundManager.PlaySound("Microchip2");
-            objective = "Microchip 2";
+            objective = "I";
         }
 
         else if (gamestate.Equals(PlayerStatus.GameState.EndGame))
         {
             AiInteractionSoundManager.PlaySound("EndGame");
-            objective = "End Game";
+            objective = "J";
         }
         StartCoroutine(DelayForObjectRebuild());
 
