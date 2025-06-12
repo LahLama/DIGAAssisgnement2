@@ -51,7 +51,7 @@ public class EndGameAI : MonoBehaviour
                 USBai.SetActive(true);
                 uSBinsert.USBPuzzleStart();
 
-                playerStatus.CurrentGameState = PlayerStatus.GameState.Puzzle4;
+                playerStatus.CurrentGameState = PlayerStatus.GameState.Puzzle6;
                 playerObjective.UpdateObjective();
 
                 break;

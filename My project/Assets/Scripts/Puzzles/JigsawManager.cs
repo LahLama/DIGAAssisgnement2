@@ -7,6 +7,8 @@ public class JigsawManager : PuzzleClass
     private CircuitManager circuitManager;
     public List<Transform> puzzlePieces;
     public ExitInteractions exitInteractions;
+    public PlayerStatus playerStatus;
+    public PlayerObjective playerObjective;
     public List<float> PuzzleRotations = new List<float> { 90, 180, 270 };
     int piecesTotal;
     // Tolerance for checking rotation
@@ -68,7 +70,8 @@ public class JigsawManager : PuzzleClass
 
         Debug.Log("Puzzle Solved!");
 
-
+        playerStatus.CurrentGameState = PlayerStatus.GameState.Puzzle4;
+        playerObjective.UpdateObjective();
         exitInteractions.MoveCameraUp();
 
 

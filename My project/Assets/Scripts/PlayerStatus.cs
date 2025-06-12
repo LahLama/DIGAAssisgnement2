@@ -58,7 +58,7 @@ public class PlayerStatus : MonoBehaviour
             //BlackBars.SetActive(true);
         }
         //AnomalyCountText.text = ": " + AnomalyCount.ToString();
-        PlayerLevelText.text = "Player Level: " + PlayerLevel.ToString();
+
 
     }
 

@@ -178,7 +178,7 @@ public class ExitInteractions : MonoBehaviour
                 if (gamestate.Equals(PlayerStatus.GameState.Puzzle1))
                 {
                     MoveCameraLeft();
-                    AiInteractionSoundManager.PlaySound("Puzzle1");
+
                     captchaManager.PuzzleCaptchaStart();
 
                     Debug.Log("Puzzle 1 started ********************");
@@ -196,7 +196,7 @@ public class ExitInteractions : MonoBehaviour
                 if (gamestate.Equals(PlayerStatus.GameState.Puzzle2))
                 {
                     MoveCameraLeft();
-                    AiInteractionSoundManager.PlaySound("Puzzle2");
+
                     bruteForceManager.StartPuzzleBruteForce();
                     //Asset [2]
                     GameInteractionSoundManager.PlaySound("puzzleEnter");
@@ -212,7 +212,6 @@ public class ExitInteractions : MonoBehaviour
                 {
                     MoveCameraUp();
                     print("Puzzle 3 started ********************");
-                    AiInteractionSoundManager.PlaySound("Puzzle5");
                     jigsawManager.StartJigsawPuzzle();
                     //Asset [2]
                     GameInteractionSoundManager.PlaySound("puzzleEnter");
@@ -225,10 +224,7 @@ public class ExitInteractions : MonoBehaviour
                     GameInteractionSoundManager.PlaySound("door");
                     break;
                 }
-            case "EndGameBtn":
-                MoveCameraUp();
 
-                break;
             default:
                 Debug.Log("No camera movement assigned for this button.");
                 break;
