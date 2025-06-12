@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EndGameAI : MonoBehaviour
@@ -13,6 +14,8 @@ public class EndGameAI : MonoBehaviour
     public CircuitManager circuitManager;
     public USBinsert uSBinsert;
     public ReplicateCodeManager replicateCodeManager;
+    public Sprite OuchSprite;
+    public Sprite NormalSprite;
 
     private void Awake()
     {
@@ -62,7 +65,7 @@ public class EndGameAI : MonoBehaviour
         material = GetComponent<SpriteRenderer>().material;
 
 
-
+        this.GetComponent<SpriteRenderer>().sprite = OuchSprite;
         StartCoroutine(DelayForMaterialMicrochip());
 
 
@@ -146,6 +149,7 @@ public class EndGameAI : MonoBehaviour
 
 
         }
+        this.GetComponent<SpriteRenderer>().sprite = NormalSprite;
         Collider2D collider = GetComponent<Collider2D>();
         collider.enabled = true;
 

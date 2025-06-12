@@ -25,7 +25,6 @@ public class CircuitManager : PuzzleClass
     public Transform[] Waypoints;
     public Rigidbody2D camera1;
 
-    int playerlvl;
     public int moveSpeed = 5;
     public int WayIndex = 0;
     public bool Puzzle3Start = false;

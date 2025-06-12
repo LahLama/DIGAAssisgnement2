@@ -35,6 +35,7 @@ public class AiInteractionSoundManager : MonoBehaviour     //here
             {
                 audioSource.Stop();
                 print("Audio is already playing, stopping the current sound before playing a new one.");
+                GameInteractionSoundManager.PlaySound("chanceMinus");
                 audioSource.PlayOneShot(audioClip); // Play the audio clip using the AudioSource
             }
             else

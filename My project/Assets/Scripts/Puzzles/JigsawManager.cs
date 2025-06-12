@@ -72,7 +72,6 @@ public class JigsawManager : PuzzleClass
         StopTimer();
 
         exitInteractions.MoveCameraUp();
-        StartTimer(); //for the next puzzle
 
 
     }
