@@ -98,6 +98,8 @@ public class CircuitManager : PuzzleClass
 
     IEnumerator WaitBeforeReset() // this is a delay timer that simulates a delay and does other tasks after said delay
     {
+        StopTimer();
+
         yield return new WaitForSeconds(2);     //we have to add it here cause coroutines happen asyncourously
 
 
@@ -108,8 +110,9 @@ public class CircuitManager : PuzzleClass
         // Puzzle 3 has been played
 
         //moves camera up with exinteractions method and starts the next puzzle
-        StopTimer();
+
         exitInteractions.MoveCameraRight();
+
 
 
         // Add ai voice line here

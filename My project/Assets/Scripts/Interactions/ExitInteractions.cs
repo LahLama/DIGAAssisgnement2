@@ -244,8 +244,7 @@ public class ExitInteractions : MonoBehaviour
     public void OnButtonCursorEnter() // this is used to change the cursor when hovering over the buttons
     {
         Cursor.SetCursor(ButtonCursor, Vector2.zero, CursorMode.Auto);
-        Transform child = transform.GetChild(0); // Gets the first child
-        child.gameObject.SetActive(true); // Activates the child GameObject
+
 
 
     }
@@ -253,8 +252,7 @@ public class ExitInteractions : MonoBehaviour
     public void OnButtonCursorExit()  // this is used to change the cursor back to the default when not hovering over the buttons
     {
         Cursor.SetCursor(NormalCursor, Vector2.zero, CursorMode.Auto);
-        Transform child = transform.GetChild(0); // Gets the first child
-        child.gameObject.SetActive(false); // Deactivates the child GameObject
+
     }
 }
 

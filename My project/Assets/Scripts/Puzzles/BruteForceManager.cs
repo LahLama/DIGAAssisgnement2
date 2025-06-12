@@ -89,10 +89,11 @@ public class BruteForceManager : PuzzleClass
 
     IEnumerator WaitBeforeReset() // this is a delay timer that simulates a delay and does other tasks after said delay
     {
+        StopTimer();
         yield return new WaitForSeconds(2);     //we have to add it here cause coroutines happen asyncourously
 
 
-        StopTimer();
+
         //move camera to the next level
         Vector3 newPosition = camera1.transform.position;
         newPosition.x += 960;

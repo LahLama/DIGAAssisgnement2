@@ -20,7 +20,7 @@ public class ChanceManagement : MonoBehaviour
             {
                 StartCoroutine(WaitForAITease());
                 AiInteractionSoundManager.PlaySound("EndGame");
-                SceneManager.LoadScene("GameOver");
+
                 //GameOver
             }
         }
@@ -42,5 +42,8 @@ public class ChanceManagement : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         AiInteractionSoundManager.PlaySound("Failure");
+
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("GameOver");
     }
 }

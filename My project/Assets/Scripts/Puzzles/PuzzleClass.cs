@@ -29,7 +29,7 @@ public class PuzzleClass : MonoBehaviour
     public virtual void StartTimer()
     {
         PuzzleTimerGO.SetActive(true);
-        PuzzleTimer.remianingTime = 60;//seconds
+        PuzzleTimer.remianingTime = 90;//seconds
         PuzzleTimer.StartTimer = true;
     }
     public void StopTimer()

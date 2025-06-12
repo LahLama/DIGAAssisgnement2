@@ -171,7 +171,7 @@
             ],
             "showComponents": [
                 {
-                    "objID": "Room_Contollers_0",
+                    "objID": "Room_GameContollers_0",
                     "show": false
                 },
                 {
