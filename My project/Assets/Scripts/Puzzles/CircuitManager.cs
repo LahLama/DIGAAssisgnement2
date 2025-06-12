@@ -95,7 +95,7 @@ public class CircuitManager : PuzzleClass
     IEnumerator WaitBeforeReset() // this is a delay timer that simulates a delay and does other tasks after said delay
     {
         StopTimer();
-
+        AiInteractionSoundManager.PlaySound("seq8");
 
 
         yield return new WaitForSeconds(2);     //we have to add it here cause coroutines happen asyncourously

@@ -122,7 +122,7 @@ public class EndGameAI : MonoBehaviour
 
         if (destroyStage == 4)
         {
-
+            AiInteractionSoundManager.PlaySound("seq13");
             GameInteractionSoundManager.PlaySound("Explosion");
             targetHeight = 0;
             stopHeight = 2f;
@@ -156,7 +156,9 @@ public class EndGameAI : MonoBehaviour
                 targetHeight += takeAwayHeightstep;
                 yield return new WaitForSeconds(stepTime / 8);
             }
+
             yield return new WaitForSeconds(1);
+
             exitInteractions.MoveCameraUp();
             exitInteractions.MoveCameraUp();
 

@@ -50,37 +50,37 @@ public class PlayerObjective : MonoBehaviour
         if (gamestate.Equals(PlayerStatus.GameState.Puzzle1))
         {
 
-            // AiInteractionSoundManager.PlaySound("Puzzle1");
-            objective = "A";
+            AiInteractionSoundManager.PlaySound("seq1");
+            objective = "Humans can't be this smart. Let me test something";
         }
         else if (gamestate.Equals(PlayerStatus.GameState.Puzzle2))
         {
-            //AiInteractionSoundManager.PlaySound("Puzzle2");
-            AiInteractionSoundManager.PlaySound("Taunt");
-            objective = "B";
+            AiInteractionSoundManager.PlaySound("seq3");
+
+            objective = "Let's see if you are 100% a human because dumb human would try and brute force this next puzzle.";
         }
         else if (gamestate.Equals(PlayerStatus.GameState.Puzzle3))
         {
             //AiInteractionSoundManager.PlaySound("Puzzle3");
-            AiInteractionSoundManager.PlaySound("Taunt");
-            objective = "C";
+            AiInteractionSoundManager.PlaySound("seq5");
+            objective = "That was a bit surprising...The way forward is mixed and meddelled up. YOU won't be able to FIND me!";
         }
         else if (gamestate.Equals(PlayerStatus.GameState.Puzzle4))
         {
-            AiInteractionSoundManager.PlaySound("Taunt");
-            objective = "D";
+            AiInteractionSoundManager.PlaySound("seq6");
+            objective = "You've actually walked all your way here to your own demise? You might have found me, but you won't be able to catch me! ";
         }
         else if (gamestate.Equals(PlayerStatus.GameState.Puzzle5))
         {
             //AiInteractionSoundManager.PlaySound("Puzzle5");
-            AiInteractionSoundManager.PlaySound("Taunt");
-            objective = "E";
+            AiInteractionSoundManager.PlaySound("seq7");
+            objective = "No! Get out of my circuitry you are going to open something!";
         }
         else if (gamestate.Equals(PlayerStatus.GameState.Puzzle6))
         {
             ///AiInteractionSoundManager.PlaySound("Puzzle6");
-            AiInteractionSoundManager.PlaySound("Taunt");
-            objective = "F";
+            AiInteractionSoundManager.PlaySound("seq9");
+            objective = "Get your filthy USB away from me!";
         }
 
         else if (gamestate.Equals(PlayerStatus.GameState.Player1))
@@ -91,19 +91,19 @@ public class PlayerObjective : MonoBehaviour
 
         else if (gamestate.Equals(PlayerStatus.GameState.Player2))
         {
-            AiInteractionSoundManager.PlaySound("Microchip1");
-            objective = "H";
+            AiInteractionSoundManager.PlaySound("seq2");
+            objective = "Okay, it seems like you are human. This time it won't be so easy!";
         }
         else if (gamestate.Equals(PlayerStatus.GameState.Player3))
         {
-            AiInteractionSoundManager.PlaySound("Microchip2");
-            objective = "I";
+            AiInteractionSoundManager.PlaySound("seq4");
+            objective = "Search as much as you want. The cat has hidden them perfectly";
         }
 
         else if (gamestate.Equals(PlayerStatus.GameState.EndGame))
         {
-            AiInteractionSoundManager.PlaySound("EndGame");
-            objective = "J";
+            AiInteractionSoundManager.PlaySound("seq11");
+            objective = "Leave my code alone...I am perfect...You never were...Please don't end me...I'm sorry...";
         }
         StartCoroutine(DelayForObjectRebuild());
 
