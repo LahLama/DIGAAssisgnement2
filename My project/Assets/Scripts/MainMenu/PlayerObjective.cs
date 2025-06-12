@@ -17,7 +17,6 @@ public class PlayerObjective : MonoBehaviour
     public PlayerStatus playerStatus;
     public TextMeshProUGUI Objective;
     public GameObject AIHolder;
-    private Animator AIAnimator;
     public Material Material;
     public GameObject playerObjectiveHolder;
     private Material clonedMaterial;
@@ -28,7 +27,7 @@ public class PlayerObjective : MonoBehaviour
     {
 
         AiInteractionSoundManager.PlaySound("Intro");
-
+        Objective.text = "Oh great, again... Let's see if you can find the microchips";
         //AIAnimator = AIHolder.GetComponent<Animator>();
         //AIAnimator.SetTrigger("PopUp");
         // StartCoroutine(WaitForAnimationAndPopAway());
@@ -87,7 +86,7 @@ public class PlayerObjective : MonoBehaviour
         else if (gamestate.Equals(PlayerStatus.GameState.Player1))
         {
             AiInteractionSoundManager.PlaySound("Intro");
-            objective = "G";
+
         }
 
         else if (gamestate.Equals(PlayerStatus.GameState.Player2))

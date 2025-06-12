@@ -15,10 +15,8 @@ public class CircuitManager : PuzzleClass
     //refencing the scripts needed
 
     public ExitInteractions exitInteractions;
-    public PlayerStatus playerStatus;
-    public ReplicateCodeManager replicateCodeManager;
-    public PlayerObjective playerObjective;
 
+    public ReplicateCodeManager replicateCodeManager;
 
     //Varibles needed
     public GameObject PathLeader;
@@ -59,8 +57,6 @@ public class CircuitManager : PuzzleClass
 
                     GameInteractionSoundManager.StopSound();
                     EndPuzzleSound();
-                    playerStatus.CurrentGameState = PlayerStatus.GameState.Puzzle6;
-                    playerObjective.UpdateObjective();
                     StartCoroutine(WaitBeforeReset());
 
                 }
@@ -99,6 +95,8 @@ public class CircuitManager : PuzzleClass
     IEnumerator WaitBeforeReset() // this is a delay timer that simulates a delay and does other tasks after said delay
     {
         StopTimer();
+
+
 
         yield return new WaitForSeconds(2);     //we have to add it here cause coroutines happen asyncourously
 

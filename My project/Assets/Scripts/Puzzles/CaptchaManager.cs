@@ -49,7 +49,7 @@ public class CaptchaManager : PuzzleClass
             Debug.Log("---------------- Puzzle complete");
             EndPuzzleSound();
 
-            playerObjective.UpdateObjective();
+
             StartCoroutine(WaitBeforeReset()); // If all cells match, start the coroutine to reset the puzzle
             return;
         }
@@ -59,10 +59,10 @@ public class CaptchaManager : PuzzleClass
     {
         yield return new WaitForSeconds(2);     //we have to add it here cause coroutines happen asyncourously
 
-        StopTimer();
         exitInteractions.MoveCameraUp();
         exitInteractions.MoveCameraRight();
         playerStatus.CurrentGameState = PlayerStatus.GameState.Player2;
+        playerObjective.UpdateObjective();
 
 
     }

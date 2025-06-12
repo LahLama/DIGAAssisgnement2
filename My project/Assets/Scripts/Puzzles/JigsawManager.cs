@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Collections;
 public class JigsawManager : PuzzleClass
 {
-    public PlayerStatus playerStatus;
-    public PlayerObjective playerObjective;
+
     private CircuitManager circuitManager;
     public List<Transform> puzzlePieces;
     public ExitInteractions exitInteractions;
@@ -54,8 +53,6 @@ public class JigsawManager : PuzzleClass
         if (correctPieces == piecesTotal)
         {
             EndPuzzleSound();
-            playerStatus.CurrentGameState = PlayerStatus.GameState.Puzzle4;
-            playerObjective.UpdateObjective();
             StartCoroutine(WaitBeforeReset());
         }
         else

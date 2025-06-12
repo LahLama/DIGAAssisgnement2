@@ -225,7 +225,9 @@ public class ExitInteractions : MonoBehaviour
                     GameInteractionSoundManager.PlaySound("door");
                     break;
                 }
-            case "UpPuzzle4":
+            case "EndGameBtn":
+                MoveCameraUp();
+
                 break;
             default:
                 Debug.Log("No camera movement assigned for this button.");

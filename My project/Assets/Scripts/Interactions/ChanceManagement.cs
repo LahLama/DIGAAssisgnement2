@@ -40,8 +40,13 @@ public class ChanceManagement : MonoBehaviour
 
     private IEnumerator WaitForAITease()
     {
-        yield return new WaitForSeconds(2f);
+        //stops the cursor from being used
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
         AiInteractionSoundManager.PlaySound("Failure");
+
+
 
         yield return new WaitForSeconds(2f);
         SceneManager.LoadScene("GameOver");

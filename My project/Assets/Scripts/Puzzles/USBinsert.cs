@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class USBinsert : MonoBehaviour
+public class USBinsert : PuzzleClass
 {
 
     //RaycastHit2D USBPort = Physics2D.Raycast(gameObject.transform.position, Vector2.right, 1.5f);
@@ -13,8 +13,10 @@ public class USBinsert : MonoBehaviour
     public GameObject StaticObj;
     public GameObject AnimatedAI;
     public GameObject StaticAi;
+    public PlayerStatus playerStatus;
+    public PlayerObjective playerObjective;
 
-    void Awake()
+    new void Awake()
     {
         AnimatingObj.SetActive(false); // Deactivates the USB puzzle object
         AnimatedAI.GetComponent<SpriteRenderer>().material.SetFloat("_CutOff_Height", 0.55f);
@@ -23,6 +25,7 @@ public class USBinsert : MonoBehaviour
 
     public void USBPuzzleStart()
     {
+        StartTimer();
         AiInteractionSoundManager.PlaySound("PuzzleUSB");
         // Initialize the USB puzzle, if needed
         Debug.Log("USB Puzzle Initialized");
@@ -49,12 +52,14 @@ public class USBinsert : MonoBehaviour
         Vector2 targetPos = new Vector2(mousePosition.x, mousePosition.y);
         rb.MovePosition(targetPos);
 
-        Debug.DrawRay(gameObject.transform.position, Vector2.right * 1.5f, Color.cyan);
+        //Debug.DrawRay(gameObject.transform.position, Vector2.right * 1.5f, Color.cyan);
     }
 
 
     IEnumerator WaitBeforeReset() // this is a delay timer that simulates a delay and does other tasks after said delay
     {
+        playerStatus.CurrentGameState = PlayerStatus.GameState.Puzzle6;
+        playerObjective.UpdateObjective();
         yield return new WaitForSeconds(2);     //we have to add it here cause coroutines happen asyncourously
 
         exitInteractions.MoveCameraLeft();

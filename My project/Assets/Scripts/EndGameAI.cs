@@ -16,7 +16,8 @@ public class EndGameAI : MonoBehaviour
     public ReplicateCodeManager replicateCodeManager;
     public Sprite OuchSprite;
     public Sprite NormalSprite;
-
+    public PlayerStatus playerStatus;
+    public PlayerObjective playerObjective;
     private void Awake()
     {
         stepTime = 0.05f;
@@ -40,15 +41,26 @@ public class EndGameAI : MonoBehaviour
             case 1:
                 exitInteractions.MoveCameraLeft();
                 circuitManager.StartCircuitPuzzle();
+
+                playerStatus.CurrentGameState = PlayerStatus.GameState.Puzzle5;
+                playerObjective.UpdateObjective();
+
                 break;
             case 2:
                 exitInteractions.MoveCameraRight();
                 USBai.SetActive(true);
                 uSBinsert.USBPuzzleStart();
+
+                playerStatus.CurrentGameState = PlayerStatus.GameState.Puzzle4;
+                playerObjective.UpdateObjective();
+
                 break;
             case 3:
                 exitInteractions.MoveCameraUp();
                 replicateCodeManager.ReplicateCodePuzzleStart();
+
+                playerStatus.CurrentGameState = PlayerStatus.GameState.EndGame;
+                playerObjective.UpdateObjective();
                 break;
             default:
                 break;

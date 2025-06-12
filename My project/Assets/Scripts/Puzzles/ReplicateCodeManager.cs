@@ -7,8 +7,7 @@ using UnityEngine.UI;
 public class ReplicateCodeManager : PuzzleClass
 {
     [Header("Scripts")]
-    public PlayerObjective playerObjective;
-    public PlayerStatus playerStatus;
+
 
     public JigsawManager puzzle5Manager;
     public ExitInteractions exitInteractions;
@@ -65,7 +64,7 @@ public class ReplicateCodeManager : PuzzleClass
             {
                 EndPuzzleSound();
 
-                playerObjective.UpdateObjective();
+
                 StartCoroutine(WaitBeforeReset());
             }
 
@@ -117,11 +116,11 @@ public class ReplicateCodeManager : PuzzleClass
     IEnumerator WaitBeforeReset() // this is a delay timer that simulates a delay and does other tasks after said delay
     {
         StopTimer();
+
         yield return new WaitForSeconds(2);     //we have to add it here cause coroutines happen asyncourously
 
         //    print("Correct sequence!");
         IncorrectText.text = "Correct sequence!";
-        playerObjective.UpdateObjective();
         exitInteractions.MoveCameraDown();
 
 

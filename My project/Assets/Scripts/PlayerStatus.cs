@@ -19,9 +19,10 @@ public class PlayerStatus : MonoBehaviour
     public bool PlayerLevelUpBool = false;
 
     // Text Gameobjects that update with the current players stats
-    public Canvas CheatButtons;
+
     //public TextMeshProUGUI AnomalyCountText;
     public TextMeshProUGUI MicroChipCountText;
+    public GameObject MIcrochipCountSprite;
     public TextMeshProUGUI PlayerLevelText;
     public TextMeshProUGUI GameChancesText;
 
@@ -52,7 +53,9 @@ public class PlayerStatus : MonoBehaviour
         }
         else
         {
-            MicroChipCountText.text = "NULL";
+            MicroChipCountText.gameObject.SetActive(false);
+            MIcrochipCountSprite.gameObject.SetActive(false);
+            //BlackBars.SetActive(true);
         }
         //AnomalyCountText.text = ": " + AnomalyCount.ToString();
         PlayerLevelText.text = "Player Level: " + PlayerLevel.ToString();
@@ -75,12 +78,13 @@ public class PlayerStatus : MonoBehaviour
     // used by ObjectInteractions.
     private void LevelupSeq()
     {
+        AiInteractionSoundManager.PlaySound("Taunt");
         PlayerLevelUpBool = true;
         MicrochipCount = 0;
         GameChances = 5;
         playerObjective.UpdateObjective();
         IncPlayerLevel();
-        GameChancesText.text = ": " + GameChances.ToString();
+        GameChancesText.text = GameChances.ToString();
 
 
     }
