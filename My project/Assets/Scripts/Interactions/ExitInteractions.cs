@@ -226,8 +226,6 @@ public class ExitInteractions : MonoBehaviour
                     break;
                 }
             case "UpPuzzle4":
-                CircuitManager circuitManager = new CircuitManager();
-                circuitManager.StartCircuitPuzzle();
                 break;
             default:
                 Debug.Log("No camera movement assigned for this button.");

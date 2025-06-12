@@ -80,6 +80,7 @@ public class CircuitManager : PuzzleClass
     }
     public void StartCircuitPuzzle()
     {
+        AiInteractionSoundManager.PlaySound("PuzzleCircuit");
         StartTimer();
     }
 
@@ -109,8 +110,8 @@ public class CircuitManager : PuzzleClass
 
         //moves camera up with exinteractions method and starts the next puzzle
         StopTimer();
-        exitInteractions.MoveCameraUp();
-        replicateCodeManager.ReplicateCodePuzzleStart();
+        exitInteractions.MoveCameraRight();
+
 
         // Add ai voice line here
 

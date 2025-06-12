@@ -17,6 +17,7 @@ public class CaptchaManager : PuzzleClass
     public void PuzzleCaptchaStart()
     {
         StartTimer();
+        AiInteractionSoundManager.PlaySound("PuzzleCaptcha");
     }
     public void CheckCapthca()
     {

@@ -20,6 +20,7 @@ public class JigsawManager : PuzzleClass
 
     public void StartJigsawPuzzle()
     {
+        AiInteractionSoundManager.PlaySound("PuzzleJigsaw");
 
         foreach (Transform puzzleRot in puzzlePieces)
         {

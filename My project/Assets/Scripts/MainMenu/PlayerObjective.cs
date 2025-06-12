@@ -50,32 +50,37 @@ public class PlayerObjective : MonoBehaviour
 
         if (gamestate.Equals(PlayerStatus.GameState.Puzzle1))
         {
+            AiInteractionSoundManager.PlaySound("Taunt");
             // AiInteractionSoundManager.PlaySound("Puzzle1");
             objective = "Puzzle 1";
         }
         else if (gamestate.Equals(PlayerStatus.GameState.Puzzle2))
         {
             //AiInteractionSoundManager.PlaySound("Puzzle2");
+            AiInteractionSoundManager.PlaySound("Taunt");
             objective = "Puzzle 2";
         }
         else if (gamestate.Equals(PlayerStatus.GameState.Puzzle3))
         {
             //AiInteractionSoundManager.PlaySound("Puzzle3");
+            AiInteractionSoundManager.PlaySound("Taunt");
             objective = "Puzzle 3";
         }
         else if (gamestate.Equals(PlayerStatus.GameState.Puzzle4))
         {
-            AiInteractionSoundManager.PlaySound("Puzzle4");
+            AiInteractionSoundManager.PlaySound("Taunt");
             objective = "Puzzle 4";
         }
         else if (gamestate.Equals(PlayerStatus.GameState.Puzzle5))
         {
-            AiInteractionSoundManager.PlaySound("Puzzle5");
+            //AiInteractionSoundManager.PlaySound("Puzzle5");
+            AiInteractionSoundManager.PlaySound("Taunt");
             objective = "Puzzle 5";
         }
         else if (gamestate.Equals(PlayerStatus.GameState.Puzzle6))
         {
-            AiInteractionSoundManager.PlaySound("Puzzle6");
+            ///AiInteractionSoundManager.PlaySound("Puzzle6");
+            AiInteractionSoundManager.PlaySound("Taunt");
             objective = "Puzzle 6";
         }
 

@@ -33,12 +33,14 @@ public class AiInteractionSoundManager : MonoBehaviour     //here
         {
             if (audioSource.isPlaying)
             {
+                audioSource.Stop();
                 print("Audio is already playing, stopping the current sound before playing a new one.");
+                audioSource.PlayOneShot(audioClip); // Play the audio clip using the AudioSource
             }
             else
             {
                 audioSource.PlayOneShot(audioClip); // Play the audio clip using the AudioSource
-                print("Playing sound: " + soundName);
+                                                    // print("Playing sound: " + soundName);
             }
         }
     }

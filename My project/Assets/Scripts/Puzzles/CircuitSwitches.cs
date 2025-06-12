@@ -22,7 +22,7 @@ public class CircuitSwitches : MonoBehaviour
         }
         else
         {
-            Debug.Log("NO TAG FOUND");
+            //   Debug.Log("NO TAG FOUND");
         }
     }
 }

@@ -1,19 +1,24 @@
 using System.Collections;
 using UnityEngine;
 
-public class DestroyAi : MonoBehaviour
+public class EndGameAI : MonoBehaviour
 {
 
-    public Material AnomMaterial;
-    private Material clonedMaterial;
+    private Material material;
+    public ExitInteractions exitInteractions;
     public float takeAwayHeightstep;
     public float stepTime;
     public int destroyStage = 0;
+    public GameObject USBai;
+    public CircuitManager circuitManager;
+    public USBinsert uSBinsert;
+    public ReplicateCodeManager replicateCodeManager;
 
     private void Awake()
     {
         stepTime = 0.05f;
         takeAwayHeightstep = 0.1f;
+        USBai.SetActive(false);
     }
     // each time an anomaly is clicked on it calls this method that hides it from the player view
 
@@ -27,17 +32,35 @@ public class DestroyAi : MonoBehaviour
 
         destroyStage++;
 
+        switch (destroyStage)
+        {
+            case 1:
+                exitInteractions.MoveCameraLeft();
+                circuitManager.StartCircuitPuzzle();
+                break;
+            case 2:
+                exitInteractions.MoveCameraRight();
+                USBai.SetActive(true);
+                uSBinsert.USBPuzzleStart();
+                break;
+            case 3:
+                exitInteractions.MoveCameraUp();
+                replicateCodeManager.ReplicateCodePuzzleStart();
+                break;
+            default:
+                break;
+        }
+
+
         //ornaments are manahed in PointnClick.cs
         //        print("Microchip Clicked");
 
         GameInteractionSoundManager.PlaySound("anomaly");
 
         //[2]
-        if (clonedMaterial == null)
-        {
-            clonedMaterial = Instantiate(GetComponent<SpriteRenderer>().material);
-            GetComponent<SpriteRenderer>().material = clonedMaterial;
-        }
+
+        material = GetComponent<SpriteRenderer>().material;
+
 
 
         StartCoroutine(DelayForMaterialMicrochip());
@@ -76,7 +99,7 @@ public class DestroyAi : MonoBehaviour
 
         while (targetHeight < stopHeight)
         {
-            clonedMaterial.SetFloat("_CutOff_Height", targetHeight);
+            material.SetFloat("_CutOff_Height", targetHeight);
             targetHeight += takeAwayHeightstep;
             yield return new WaitForSeconds(stepTime);
         }
@@ -89,7 +112,7 @@ public class DestroyAi : MonoBehaviour
             stopHeight = 2f;
             while (targetHeight < stopHeight)
             {
-                clonedMaterial.SetFloat("_CutOff_Height", targetHeight);
+                material.SetFloat("_CutOff_Height", targetHeight);
                 targetHeight += takeAwayHeightstep;
                 yield return new WaitForSeconds(stepTime);
             }
@@ -97,7 +120,7 @@ public class DestroyAi : MonoBehaviour
             stopHeight = 2f;
             while (targetHeight < stopHeight)
             {
-                clonedMaterial.SetFloat("_CutOff_Height", targetHeight);
+                material.SetFloat("_CutOff_Height", targetHeight);
                 targetHeight += takeAwayHeightstep;
                 yield return new WaitForSeconds(stepTime / 2);
             }
@@ -105,7 +128,7 @@ public class DestroyAi : MonoBehaviour
             stopHeight = 2f;
             while (targetHeight < stopHeight)
             {
-                clonedMaterial.SetFloat("_CutOff_Height", targetHeight);
+                material.SetFloat("_CutOff_Height", targetHeight);
                 targetHeight += takeAwayHeightstep;
                 yield return new WaitForSeconds(stepTime / 4);
             }
@@ -113,10 +136,13 @@ public class DestroyAi : MonoBehaviour
             stopHeight = 2f;
             while (targetHeight < stopHeight)
             {
-                clonedMaterial.SetFloat("_CutOff_Height", targetHeight);
+                material.SetFloat("_CutOff_Height", targetHeight);
                 targetHeight += takeAwayHeightstep;
                 yield return new WaitForSeconds(stepTime / 8);
             }
+            yield return new WaitForSeconds(1);
+            exitInteractions.MoveCameraUp();
+            exitInteractions.MoveCameraUp();
 
 
         }

@@ -27,6 +27,7 @@ public class BruteForceManager : PuzzleClass
     {
         StartTimer();
         intializeColours(); // initializes the colours
+        AiInteractionSoundManager.PlaySound("PuzzleBruteForce");
 
 
     }

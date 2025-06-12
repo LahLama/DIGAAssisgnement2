@@ -1,5 +1,5 @@
-
 using UnityEngine;
+using System.Collections;
 
 public class USBinsert : MonoBehaviour
 {
@@ -8,17 +8,22 @@ public class USBinsert : MonoBehaviour
     //raycasting cant be used here because raycast is not optimal for detecting mouse position in 2D space.
 
     private Vector3 mousePosition;
+    public ExitInteractions exitInteractions;
     public GameObject AnimatingObj;
     public GameObject StaticObj;
+    public GameObject AnimatedAI;
+    public GameObject StaticAi;
 
     void Awake()
     {
         AnimatingObj.SetActive(false); // Deactivates the USB puzzle object
-        USBPuzzleStart();
+        AnimatedAI.GetComponent<SpriteRenderer>().material.SetFloat("_CutOff_Height", 0.55f);
+
     }
 
-    void USBPuzzleStart()
+    public void USBPuzzleStart()
     {
+        AiInteractionSoundManager.PlaySound("PuzzleUSB");
         // Initialize the USB puzzle, if needed
         Debug.Log("USB Puzzle Initialized");
         AnimatingObj.SetActive(true);
@@ -29,9 +34,10 @@ public class USBinsert : MonoBehaviour
         print("TRIGGERED");
 
         StaticObj.SetActive(true); // Deactivates the static USB object
-
+        StaticAi.GetComponent<SpriteRenderer>().material.SetFloat("_CutOff_Height", 0.75f);
         AnimatingObj.SetActive(false); // Activates the animating USB object
-        this.gameObject.SetActive(false); // Deactivates the USB insert object
+        this.transform.position = new(0, 0, -20); // Deactivates the USB insert object
+        StartCoroutine(WaitBeforeReset());
 
     }
 
@@ -46,5 +52,15 @@ public class USBinsert : MonoBehaviour
         Debug.DrawRay(gameObject.transform.position, Vector2.right * 1.5f, Color.cyan);
     }
 
+
+    IEnumerator WaitBeforeReset() // this is a delay timer that simulates a delay and does other tasks after said delay
+    {
+        yield return new WaitForSeconds(2);     //we have to add it here cause coroutines happen asyncourously
+
+        exitInteractions.MoveCameraLeft();
+
+
+
+    }
 
 }

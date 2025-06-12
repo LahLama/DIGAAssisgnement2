@@ -24,6 +24,7 @@ public class ReplicateCodeManager : PuzzleClass
 
     public void ReplicateCodePuzzleStart()
     {
+        AiInteractionSoundManager.PlaySound("PuzzleSourceCode");
         ButtonsOff();
         robot.ReplicateCodeRobotStart();
         StartTimer();
@@ -123,7 +124,7 @@ public class ReplicateCodeManager : PuzzleClass
         playerObjective.UpdateObjective();
         StopTimer();
 
-        exitInteractions.MoveCameraUp();
+        exitInteractions.MoveCameraDown();
 
 
 
