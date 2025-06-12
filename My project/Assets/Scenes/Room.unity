@@ -14491,7 +14491,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8.57, y: 7.247461}
+    oldSize: {x: 8.73, y: 7.247461}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -43844,7 +43844,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -236.46027, y: 2987}
+  m_AnchoredPosition: {x: -236.46028, y: 2987}
   m_SizeDelta: {x: -472.9158, y: -401.2766}
   m_Pivot: {x: 0.5, y: -6.442013}
 --- !u!114 &1333863820
@@ -65877,7 +65877,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1583077642}
   m_Layer: 0
-  m_Name: Contollers
+  m_Name: GameContollers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
