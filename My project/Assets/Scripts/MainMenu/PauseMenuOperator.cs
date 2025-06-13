@@ -7,25 +7,39 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
 
-    
-        void Update()
-        {// Checks if the current room is the game room and if the escape key is down, if both are true it will pause the game
-            {
-            if (SceneManager.GetActiveScene().name == "Room")
-                if (Input.GetKeyDown(KeyCode.Escape))
-                {
-                    if (GameIsPaused)
-                    {
-                        Resume();
-                    }
-                    else
-                    {
-                        Pause();
-                    }
 
+    void Update()
+    {// Checks if the current room is the game room and if the escape key is down, if both are true it will pause the game
+        {
+            if (SceneManager.GetActiveScene().name == "Room")
+            {
+                bool pauseMenuLoaded = false;
+                for (int i = 0; i < SceneManager.sceneCount; i++)
+                {
+                    if (SceneManager.GetSceneAt(i).name == "PauseMenu")
+                    {
+                        pauseMenuLoaded = true;
+                        break;
+                    }
+                }
+
+                if (!pauseMenuLoaded)
+                {
+                    if (Input.GetKeyDown(KeyCode.Escape))
+                    {
+                        if (GameIsPaused)
+                        {
+                            Resume();
+                        }
+                        else
+                        {
+                            Pause();
+                        }
+                    }
                 }
             }
         }
+    }
 
     public void Resume()
     {
@@ -40,6 +54,7 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive);
         Time.timeScale = 0f;
         GameIsPaused = true;
+
     }
 
     public void LoadMenu()
