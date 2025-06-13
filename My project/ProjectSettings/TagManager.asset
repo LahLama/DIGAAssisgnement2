@@ -21,6 +21,7 @@ TagManager:
   - Ornaments
   - Microchip
   - Puzzle1Manager
+  - MinusChanceObject
   layers:
   - Default
   - TransparentFX
@@ -28,7 +29,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - mist
   - 
   - 
   - 

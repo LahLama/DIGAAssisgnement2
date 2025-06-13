@@ -156,7 +156,7 @@ TextureImporter:
         width: 877
         height: 728
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -169,77 +169,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: AI overdrived cat_1
-      rect:
-        serializedVersion: 2
-        x: 1359
-        y: 98
-        width: 236
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 43f3536663d555f60800000000000000
-      internalID: 8022420799454789428
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AI overdrived cat_2
-      rect:
-        serializedVersion: 2
-        x: 1146
-        y: 133
-        width: 22
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dfacf5e19d68d8480800000000000000
-      internalID: -8895305421911241987
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AI overdrived cat_3
-      rect:
-        serializedVersion: 2
-        x: 1583
-        y: 136
-        width: 15
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6b2d7fa8cc355c980800000000000000
-      internalID: -8519310982131494218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d93d0b8d2170a434984cc8f9398f390d
     internalID: 0
     vertices: []
     indices: 
