@@ -8,7 +8,7 @@ public class UIManager : MonoBehaviour
 
     public void onPlayButtonClicked()
     {
-        PlayerPrefs.SetString("Scene to go to", "James Room");
+        PlayerPrefs.SetString("Scene to go to", "Room");
         SceneManager.LoadScene("LoadingScene");
     }
 
