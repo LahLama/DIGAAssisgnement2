@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 361c37bd659b95946b60330e991c94a5
+guid: 3753f658940b73048b63ad69180f5fa0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3356517355837927205
-    second: AI Pop Up_0
+      213: -935638543513539121
+    second: AI 3_0
+  - first:
+      213: -4139681820493067357
+    second: AI 3_1
+  - first:
+      213: -5098380150099209541
+    second: AI 3_2
+  - first:
+      213: 5918091736996246507
+    second: AI 3_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,10 +81,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 512
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AI Pop Up_0
+      name: AI 3_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 67
-        width: 28
-        height: 28
+        x: 16
+        y: 135
+        width: 392
+        height: 329
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,140 +137,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd0d8da9f314b61d0800000000000000
-      internalID: -3356517355837927205
+      spriteID: fcd26bfa3b1f303f0800000000000000
+      internalID: -935638543513539121
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AI Pop Up_1
+      name: AI 3_1
       rect:
         serializedVersion: 2
-        x: 35
-        y: 67
-        width: 28
-        height: 29
+        x: 515
+        y: 119
+        width: 396
+        height: 329
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ab4d4d2d876ab0b44b885e9b6f6f8502
-      internalID: -1616726456
+      spriteID: 3ab4e563155ec86c0800000000000000
+      internalID: -4139681820493067357
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AI Pop Up_2
+      name: AI 3_2
       rect:
         serializedVersion: 2
-        x: 67
-        y: 67
-        width: 28
-        height: 28
+        x: 993
+        y: 121
+        width: 385
+        height: 328
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 609052c638b08fe46a8ba911eda8c3fc
-      internalID: 1875546717
+      spriteID: bb21f6f044aee39b0800000000000000
+      internalID: -5098380150099209541
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AI Pop Up_3
+      name: AI 3_3
       rect:
         serializedVersion: 2
-        x: 3
-        y: 35
-        width: 28
-        height: 29
+        x: 1445
+        y: 128
+        width: 389
+        height: 325
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ae5511d5b5717bc4887f55b43a483b9f
-      internalID: 1832941226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AI Pop Up_4
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 35
-        width: 28
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5647aa21b85ea145ae0f0da7c8fb0a3
-      internalID: 671250964
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AI Pop Up_5
-      rect:
-        serializedVersion: 2
-        x: 67
-        y: 35
-        width: 28
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c91f66f1ed2cbd4f9b809ba67354e99
-      internalID: 1209967638
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AI Pop Up_6
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 3
-        width: 28
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4dc85c8762af2264b821da104985a1f1
-      internalID: 1181494057
+      spriteID: be3f5d35419412250800000000000000
+      internalID: 5918091736996246507
       vertices: []
       indices: 
       edges: []
@@ -270,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 48774defb1276b440a7a9e8703992a73
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -279,14 +222,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      AI Pop Up_0: -3356517355837927205
-      AI Pop Up_1: -1616726456
-      AI Pop Up_2: 1875546717
-      AI Pop Up_3: 1832941226
-      AI Pop Up_4: 671250964
-      AI Pop Up_5: 1209967638
-      AI Pop Up_6: 1181494057
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

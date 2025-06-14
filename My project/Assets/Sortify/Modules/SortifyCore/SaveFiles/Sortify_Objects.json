@@ -137,7 +137,7 @@
                     "colorValue": "262626FF"
                 },
                 {
-                    "objID": "Room_CameraMovement_1",
+                    "objID": "Room_CameraMovement_0",
                     "colorValue": "BFBF40FF"
                 },
                 {
@@ -175,25 +175,25 @@
                     "styleType": 0
                 },
                 {
-                    "objID": "Room_Particles_2",
+                    "objID": "Room_Particles_5",
                     "styleType": 0
                 },
                 {
-                    "objID": "Room_UI_1_CameraMovement_1",
+                    "objID": "Room_UI_1_CameraMovement_0",
                     "styleType": 0
                 },
                 {
-                    "objID": "Room_CameraMovement_1",
+                    "objID": "Room_CameraMovement_0",
                     "styleType": 0
                 }
             ],
             "showComponents": [
                 {
-                    "objID": "Room_GameContollers_0",
+                    "objID": "Room_GameContollers_1",
                     "show": false
                 },
                 {
-                    "objID": "Room_Particles_2",
+                    "objID": "Room_Particles_5",
                     "show": false
                 },
                 {

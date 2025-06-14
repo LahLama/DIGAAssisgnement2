@@ -16,25 +16,25 @@ public class ReplicateCodeChooseColours : MonoBehaviour
         replicateCodeManager.IncorrectText.text = "";
         switch (name)
         {
-            case "Red":
+            case "PuzzleRed":
                 replicateCodeManager.playerSequence.Add("Red");
                 replicateCodeRobot.spriteRenderer.sprite = replicateCodeRobot.CodeOptionsImageNames[0];
                 replicateCodeRobot.GetComponent<Light2D>().color = Color.red;
                 StartCoroutine(Delay());
                 break;
-            case "Blue":
+            case "PuzzleBlue":
                 replicateCodeManager.playerSequence.Add("Blue");
                 replicateCodeRobot.spriteRenderer.sprite = replicateCodeRobot.CodeOptionsImageNames[1];
                 replicateCodeRobot.GetComponent<Light2D>().color = Color.blue;
                 StartCoroutine(Delay());
                 break;
-            case "Green":
+            case "PuzzleGreen":
                 replicateCodeManager.playerSequence.Add("Green");
                 replicateCodeRobot.spriteRenderer.sprite = replicateCodeRobot.CodeOptionsImageNames[2];
                 replicateCodeRobot.GetComponent<Light2D>().color = Color.green;
                 StartCoroutine(Delay());
                 break;
-            case "Yellow":
+            case "PuzzleYellow":
                 replicateCodeManager.playerSequence.Add("Yellow");
                 replicateCodeRobot.spriteRenderer.sprite = replicateCodeRobot.CodeOptionsImageNames[3];
                 replicateCodeRobot.GetComponent<Light2D>().color = Color.yellow;
