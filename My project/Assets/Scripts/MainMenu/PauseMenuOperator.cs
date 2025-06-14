@@ -16,7 +16,7 @@ public class PauseMenu : MonoBehaviour
                 bool pauseMenuLoaded = false;
                 for (int i = 0; i < SceneManager.sceneCount; i++)
                 {
-                    if (SceneManager.GetSceneAt(i).name == "PauseMenu")
+                    if (SceneManager.GetSceneAt(i).name == "PauseScreen")
                     {
                         pauseMenuLoaded = true;
                         break;
@@ -44,14 +44,14 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         //removes the pause screen menu
-        SceneManager.UnloadSceneAsync("PauseMenu");
+        SceneManager.UnloadSceneAsync("PauseScreen");
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
     void Pause()
     {
         //adds the pause screen menu scene in a way where the scene overlays the current (room) scene
-        SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive);
+        SceneManager.LoadScene("PauseScreen", LoadSceneMode.Additive);
         Time.timeScale = 0f;
         GameIsPaused = true;
 
