@@ -15,8 +15,13 @@ public class MainMenu : MonoBehaviour
     public void ButtonStartGame()
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         UnityEngine.SceneManagement.SceneManager.LoadScene("Room");
         MusicManager.Instance.PlayMusic("Room");
+=======
+        UnityEngine.SceneManagement.SceneManager.LoadScene("LoadingScene");
+        //MusicManager.Instance.PlayMusic("Room");
+>>>>>>> Stashed changes
 =======
         UnityEngine.SceneManagement.SceneManager.LoadScene("LoadingScene");
         //MusicManager.Instance.PlayMusic("Room");

@@ -170,6 +170,7 @@ MonoBehaviour:
   m_AtlasPopulationMode: 1
   InternalDynamicOS: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_GlyphTable:
   - m_Index: 392
     m_Metrics:
@@ -499,6 +500,10 @@ MonoBehaviour:
   m_GlyphTable: []
   m_CharacterTable: []
 >>>>>>> Stashed changes
+=======
+  m_GlyphTable: []
+  m_CharacterTable: []
+>>>>>>> Stashed changes
   m_AtlasTextures:
   - {fileID: 28933816116536082}
   m_AtlasTextureIndex: 0
@@ -509,6 +514,7 @@ MonoBehaviour:
   m_AtlasHeight: 1024
   m_AtlasPadding: 9
   m_AtlasRenderMode: 4165
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_UsedGlyphRects:
   - m_X: 0
@@ -643,10 +649,17 @@ MonoBehaviour:
 =======
   m_UsedGlyphRects: []
   m_FreeGlyphRects:
+=======
+  m_UsedGlyphRects: []
+  m_FreeGlyphRects:
+>>>>>>> Stashed changes
   - m_X: 0
     m_Y: 0
     m_Width: 1023
     m_Height: 1023
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_FontFeatureTable:
     m_MultipleSubstitutionRecords: []
