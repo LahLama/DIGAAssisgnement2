@@ -20,6 +20,7 @@ public class CircuitPathLeaderCheck : MonoBehaviour
                 // Debug.Log("MINUS A CHANCE HERE");
                 GameInteractionSoundManager.StopSound();
                 _CircuitScript.ResetPathLeader();
+                _CircuitScript.PuzzleFailSound();
 
             }
         }

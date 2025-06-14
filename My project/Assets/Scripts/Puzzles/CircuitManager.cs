@@ -67,7 +67,7 @@ public class CircuitManager : PuzzleClass
 
     public void ResetPathLeader()
     {
-        PuzzleFailSound();
+
         PathLeader.transform.position = new Vector3(Waypoints[0].transform.position.x, Waypoints[0].transform.position.y, PathLeader.transform.position.z);
         WayIndex = 0;
         Puzzle3Start = false; // resets the puzzle status

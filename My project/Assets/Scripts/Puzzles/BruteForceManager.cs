@@ -6,15 +6,11 @@ public class BruteForceManager : PuzzleClass
 {
     // Varibles that are used across puzzle 2 scripts. Intial values are stored here
     public int CorrectChoice = 0;
-    public int Codechances = 5;
-    bool CanTalk = true;
     public string[] CorrectCode = { "Puzzle3Blue", "Puzzle3Blue", "Puzzle3Blue", "Puzzle3Blue" };
     public GameObject[] PlayerCode;
     public GameObject[] CodeLights;
     public BruteForceCodeButtons CdeBtn;
     public Rigidbody2D camera1;
-    private Light2D light2D;
-    bool startTimer;
 
     //Referencing the scripts that are needed for player stas, and for starting and stopping the timer two 
     public PlayerStatus playerStatus;
@@ -35,7 +31,6 @@ public class BruteForceManager : PuzzleClass
     // intializes the values with random values
     void intializeColours()
     {
-        Codechances = 5;
         CorrectChoice = 0;
 
         CorrectCode[0] = CdeBtn.CodeOptions[UnityEngine.Random.Range(0, 4)];
@@ -71,20 +66,15 @@ public class BruteForceManager : PuzzleClass
                 CodeLights[indexure].GetComponent<SpriteRenderer>().color = Color.red;
                 CodeLights[indexure].GetComponent<Light2D>().color = Color.red;
             }
-            print(Codechances);
+
 
             indexure++;
         }
-        if (CanTalk)
-        {
-            PuzzleFailSound();
-            Codechances--;
-        }
-        // STILL TO BE IMPLEMENTED
-        if (Codechances <= 0)
-        {
-            print("PUZZLE FAILED");
-        }
+        PuzzleFailSound();
+
+
+
+
     }
 
     IEnumerator WaitBeforeReset() // this is a delay timer that simulates a delay and does other tasks after said delay
@@ -106,7 +96,6 @@ public class BruteForceManager : PuzzleClass
 
 
         playerObjective.UpdateObjective();
-        CanTalk = false;
 
     }
 }
