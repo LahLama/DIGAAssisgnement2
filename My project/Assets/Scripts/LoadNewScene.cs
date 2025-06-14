@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class LoadNewScene : MonoBehaviour
 {
     [SerializeField] GameObject loadingBar;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(LoadAsynchrously());
@@ -25,7 +25,7 @@ public class LoadNewScene : MonoBehaviour
 
         while (!operation.isDone)
         {
-            float progress = Mathf.Clamp01(operation.progress / 0.9f);
+            float progress = Mathf.Clamp01(operation.progress / 0.20f);
 
             loadingBar.transform.localScale = new Vector3(progress, loadingBar.transform.localScale.y, loadingBar.transform.localScale.z);
 
