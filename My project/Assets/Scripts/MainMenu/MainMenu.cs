@@ -1,7 +1,7 @@
-using System;
+
 using UnityEngine;
-using UnityEngine.Audio;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class MainMenu : MonoBehaviour
 {
@@ -15,7 +15,7 @@ public class MainMenu : MonoBehaviour
 
     public void ButtonStartGame()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("LoadingScreen");
+        SceneManager.LoadScene("LoadingScene");
         //MusicManager.Instance.PlayMusic("Room");
     }
 

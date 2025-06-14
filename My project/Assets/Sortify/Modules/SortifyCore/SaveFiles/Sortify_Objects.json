@@ -207,6 +207,12 @@
             "colors": [],
             "styles": [],
             "showComponents": [],
+            "sceneName": "LoadingScene"
+        },
+        {
+            "colors": [],
+            "styles": [],
+            "showComponents": [],
             "sceneName": "StartScreen"
         }
     ]
