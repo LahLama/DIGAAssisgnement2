@@ -19,25 +19,31 @@
             "sceneName": "PauseMenu"
         },
         {
+            "colors": [],
+            "styles": [],
+            "showComponents": [],
+            "sceneName": "PauseScreen"
+        },
+        {
             "colors": [
                 {
                     "objID": "Room_=======Room_Entrance=======_0_------- LEVEL 1 ------- _0_Rooms_3",
                     "colorValue": "8000FFFF"
                 },
                 {
-                    "objID": "Room_=======Room_Attic=======_0_------- LEVEL 4 ------- _3_Rooms_3",
+                    "objID": "Room_=======Room_Attic=======_0_------- LEVEL 4 ------- _4_Rooms_3",
                     "colorValue": "8000FFFF"
                 },
                 {
-                    "objID": "Room_=======Room_Bathroom=======_1_------- LEVEL 3 -------_2_Rooms_3",
+                    "objID": "Room_=======Room_Bathroom=======_1_------- LEVEL 3 -------_3_Rooms_3",
                     "colorValue": "8000FFFF"
                 },
                 {
-                    "objID": "Room_=======Room_Bedroom=======_0_------- LEVEL 3 -------_2_Rooms_3",
+                    "objID": "Room_=======Room_Bedroom=======_0_------- LEVEL 3 -------_3_Rooms_3",
                     "colorValue": "8000FFFF"
                 },
                 {
-                    "objID": "Room_=======Room_DiningRoom=======_1_------- LEVEL 2 ------- _1_Rooms_3",
+                    "objID": "Room_=======Room_DiningRoom=======_2_Rooms_3",
                     "colorValue": "8000FFFF"
                 },
                 {
@@ -49,7 +55,7 @@
                     "colorValue": "8000FFFF"
                 },
                 {
-                    "objID": "Room_=======Room_Pantry=======_1_------- LEVEL 4 ------- _3_Rooms_3",
+                    "objID": "Room_=======Room_Pantry=======_1_------- LEVEL 4 ------- _4_Rooms_3",
                     "colorValue": "8000FFFF"
                 },
                 {
@@ -61,11 +67,11 @@
                     "colorValue": "4CB5FFFF"
                 },
                 {
-                    "objID": "Room_------- LEVEL 3 -------_2_Rooms_3",
+                    "objID": "Room_------- LEVEL 3 -------_3_Rooms_3",
                     "colorValue": "4CB5FFFF"
                 },
                 {
-                    "objID": "Room_------- LEVEL 4 ------- _3_Rooms_3",
+                    "objID": "Room_------- LEVEL 4 ------- _4_Rooms_3",
                     "colorValue": "4CB5FFFF"
                 },
                 {
@@ -147,11 +153,11 @@
                     "styleType": 0
                 },
                 {
-                    "objID": "Room_------- LEVEL 3 -------_2_Rooms_3",
+                    "objID": "Room_------- LEVEL 3 -------_3_Rooms_3",
                     "styleType": 0
                 },
                 {
-                    "objID": "Room_------- LEVEL 4 ------- _3_Rooms_3",
+                    "objID": "Room_------- LEVEL 4 ------- _4_Rooms_3",
                     "styleType": 0
                 },
                 {
@@ -190,12 +196,6 @@
                 }
             ],
             "sceneName": "Room"
-        },
-        {
-            "colors": [],
-            "styles": [],
-            "showComponents": [],
-            "sceneName": "PauseScreen"
         }
     ]
 }
