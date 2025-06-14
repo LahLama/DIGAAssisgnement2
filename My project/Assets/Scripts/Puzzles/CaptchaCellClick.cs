@@ -13,7 +13,7 @@ public class CaptchaCellClick : MonoBehaviour
         if (isClicked)
         {
             captchaManager.PlayerCells.Add(gameObject);
-            transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
+            transform.localScale = new Vector3(1.1f, 1.1f, 1.1f);
         }
         else if (!isClicked)
         {
@@ -21,7 +21,7 @@ public class CaptchaCellClick : MonoBehaviour
             {
                 captchaManager.PlayerCells.Remove(gameObject);
             }
-            transform.localScale = new Vector3(1f, 1f, 1f);
+            transform.localScale = new Vector3(1.35f, 1.35f, 1.35f);
         }
 
     }

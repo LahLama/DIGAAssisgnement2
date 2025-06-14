@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c0c9d840f6c10b94399e6511d94d2868
+guid: 8ddd2b36fc1dd314590b63bea530a7aa
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -116,12 +116,12 @@ TextureImporter:
       name: USB_port_0
       rect:
         serializedVersion: 2
-        x: 695
-        y: 350
-        width: 438
-        height: 417
-      alignment: 3
-      pivot: {x: 1, y: 1}
+        x: 694
+        y: 349
+        width: 440
+        height: 419
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 01e0e8dc2eacd1e4ab37d6e8fe955f3b
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      USB_port_0: 1503952975306370397
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
