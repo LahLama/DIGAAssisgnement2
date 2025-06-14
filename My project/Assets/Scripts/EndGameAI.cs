@@ -91,23 +91,23 @@ public class EndGameAI : MonoBehaviour
         float targetHeight = 0;
         if (destroyStage == 1)
         {
-            stopHeight = 0.55f;
+            stopHeight = 0.75f;
             targetHeight = 0;
         }
         else if (destroyStage == 2)
         {
-            targetHeight = 0.55f;
-            stopHeight = 0.75f;
+            targetHeight = 0.75f;
+            stopHeight = 0.88f;
 
         }
         else if (destroyStage == 3)
         {
-            targetHeight = 0.75f;
-            stopHeight = 0.90f;
+            targetHeight = 0.88f;
+            stopHeight = 0.95f;
         }
         else if (destroyStage == 4)
         {
-            targetHeight = 0.90f;
+            targetHeight = 0.95f;
             stopHeight = 2f;
         }
 
