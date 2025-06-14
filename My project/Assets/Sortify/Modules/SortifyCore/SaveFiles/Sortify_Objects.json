@@ -22,13 +22,13 @@
             "colors": [],
             "styles": [],
             "showComponents": [],
-            "sceneName": "PauseScreen"
+            "sceneName": "GameOver"
         },
         {
             "colors": [],
             "styles": [],
             "showComponents": [],
-            "sceneName": "GameOver"
+            "sceneName": "PauseScreen"
         },
         {
             "colors": [
