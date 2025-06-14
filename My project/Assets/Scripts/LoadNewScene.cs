@@ -25,7 +25,7 @@ public class LoadNewScene : MonoBehaviour
 
         while (!operation.isDone)
         {
-            float progress = Mathf.Clamp01(operation.progress / 0.30f);
+            float progress = Mathf.Clamp01(operation.progress / 0.20f);
 
             loadingBar.transform.localScale = new Vector3(progress, loadingBar.transform.localScale.y, loadingBar.transform.localScale.z);
 
