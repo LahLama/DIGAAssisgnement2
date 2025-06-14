@@ -125,7 +125,7 @@ public class PlayerObjective : MonoBehaviour
         {
             clonedMaterial.SetFloat("_CutOff_Height", targetHeight);
             targetHeight += 0.1f;
-            if (targetHeight == 0.5f)
+            if (targetHeight == 0.4f)
             {
                 Objective.text = "";
             }
@@ -142,7 +142,7 @@ public class PlayerObjective : MonoBehaviour
         {
             clonedMaterial.SetFloat("_CutOff_Height", targetHeight);
             targetHeight -= 0.1f;
-            if (targetHeight < 0.5f)
+            if (targetHeight < 0.2f)
             {
                 Objective.text = objective;
             }

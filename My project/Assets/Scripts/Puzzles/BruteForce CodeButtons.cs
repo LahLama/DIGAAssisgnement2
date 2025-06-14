@@ -37,6 +37,7 @@ public class BruteForceCodeButtons : MonoBehaviour
             ChoiceIndex = 0;
             CodeBlock.sprite = CodeOptionsImageNames[ChoiceIndex];
             gameObject.tag = CodeOptions[ChoiceIndex];
+            gameObject.GetComponent<Light2D>().color = CodeOptionsColor[ChoiceIndex]; // Store the current color of the CodeBlock
             ChoiceIndex++;
         }
         else

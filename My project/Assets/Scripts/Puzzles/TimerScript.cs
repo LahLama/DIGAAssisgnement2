@@ -31,12 +31,31 @@ public class TimerScript : MonoBehaviour
                 // TimeisUp();
                 timerText.color = Color.red;
                 StartTimer = false;
-                AiInteractionSoundManager.PlaySound("EndGame");
-                SceneManager.LoadScene("GameOver");
+                StartCoroutine(WaitForDeath());
+
             }
             int minutes = Mathf.FloorToInt(remianingTime / 60);
             int seconds = Mathf.FloorToInt(remianingTime % 60);
             timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
         }
+    }
+
+    private IEnumerator WaitForDeath()
+    {
+
+        AiInteractionSoundManager.PlaySound("EndGame");
+        //stops the cursor from being used
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
+
+
+
+
+        yield return new WaitForSeconds(5f);
+
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        SceneManager.LoadSceneAsync("GameOver");
     }
 }

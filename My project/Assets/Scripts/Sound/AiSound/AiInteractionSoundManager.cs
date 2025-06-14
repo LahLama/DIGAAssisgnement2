@@ -10,7 +10,7 @@ public class AiInteractionSoundManager : MonoBehaviour     //here
     Availibility: https://www.youtube.com/watch?v=rAX_r0yBwzQ
     */
     private static AiInteractionSoundManager instance;          //here
-    private static AudioSource audioSource; // Reference to the AudioSource component
+    public static AudioSource audioSource; // Reference to the AudioSource component
     private static AiInteractionSoundLibrary aiInteractionSoundLibrary; // Reference to the SoundEffectLibrary script       //here
 
     private void Awake()

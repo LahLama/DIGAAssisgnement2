@@ -18,7 +18,7 @@ public class ChanceManagement : MonoBehaviour
             // GameInteractionSoundManager.PlaySound("chanceMinus");
             if (playerStatus.GameChances <= 0)
             {
-                StartCoroutine(WaitForAITease());
+                StartCoroutine(WaitForDeath());
                 AiInteractionSoundManager.PlaySound("EndGame");
 
                 //GameOver
@@ -38,17 +38,17 @@ public class ChanceManagement : MonoBehaviour
         ChanceText.text = playerStatus.GameChances.ToString();
     }
 
-    private IEnumerator WaitForAITease()
+    private IEnumerator WaitForDeath()
     {
+        AiInteractionSoundManager.PlaySound("EndGame");
         //stops the cursor from being used
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
 
-        AiInteractionSoundManager.PlaySound("Failure");
+        yield return new WaitForSeconds(6f);
 
-
-
-        yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene("GameOver");
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        SceneManager.LoadSceneAsync("GameOver");
     }
 }
