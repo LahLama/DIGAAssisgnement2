@@ -5,18 +5,24 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/James StartScreen.unity
+    guid: 13afaf570f21e9f4e8124d29db4af7e4
   - enabled: 1
     path: Assets/Scenes/StartScreen.unity
     guid: c543ea4f6c534214ea8e1116d95ef22b
   - enabled: 1
-    path: Assets/Scenes/LoadingScene.unity
-    guid: 6ce7216f6cc2bc54592b100243984c15
-  - enabled: 1
-    path: Assets/Scenes/James Room.unity
+    path: Assets/Scenes/Room.unity
     guid: ae27fb364e1358a4293b9098ff250b79
   - enabled: 1
-    path: Assets/Scenes/PauseMenu.unity
+    path: Assets/Scenes/LoadingScene.unity
+    guid: 490a0328d16840f459c31aeeb084e0f9
+  - enabled: 1
+    path: Assets/Scenes/PauseScreen.unity
     guid: ac203e1a53b3e594d93ce9a459f411ff
+  - enabled: 1
+    path: Assets/Scenes/Promise/GameOver.unity
+    guid: 16520d8aefaa30a4b9986b001a2c8a51
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 58cfcbcee2ec7784d8108ec22da95d5c, type: 2}
   m_UseUCBPForAssetBundles: 0
