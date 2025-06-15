@@ -213,7 +213,25 @@
             "colors": [],
             "styles": [],
             "showComponents": [],
+            "sceneName": "Scene6"
+        },
+        {
+            "colors": [],
+            "styles": [],
+            "showComponents": [],
+            "sceneName": "Scene1"
+        },
+        {
+            "colors": [],
+            "styles": [],
+            "showComponents": [],
             "sceneName": "StartScreen"
+        },
+        {
+            "colors": [],
+            "styles": [],
+            "showComponents": [],
+            "sceneName": "StoryLine"
         }
     ]
 }
