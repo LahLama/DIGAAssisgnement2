@@ -37,12 +37,6 @@
             "sceneName": "LoadingScene"
         },
         {
-            "colors": [],
-            "styles": [],
-            "showComponents": [],
-            "sceneName": "StartScreen"
-        },
-        {
             "colors": [
                 {
                     "objID": "Room_=======Room_Entrance=======_0_------- LEVEL 1 ------- _0_Rooms_3",
@@ -214,6 +208,12 @@
                 }
             ],
             "sceneName": "Room"
+        },
+        {
+            "colors": [],
+            "styles": [],
+            "showComponents": [],
+            "sceneName": "StartScreen"
         }
     ]
 }
