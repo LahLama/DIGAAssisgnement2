@@ -1,0 +1,50 @@
+Intro
+
+    "Oh, good. Another human. Try not to break anything important."
+
+Taunt
+
+    "Good luck with that. You'll need it."
+    "Oh, you think you're clever, do you? Let's see about that."
+    "Don't celebrate yet. This is just the warm-up."
+    "I'm not impressed. Are you?"
+    "As if you could find me!"
+    "I will stop you on each level!"
+
+Failure
+
+   "Did you even read the instructions? Or were you just... guessing?"
+   "Well, that was a spectacular display of not getting it. Try again, I suppose."
+   "You almost had it... if 'it' was utterly wrong."
+   "Was that an attempt, or just a random button mash? I'm genuinely curious."
+   "Another valiant effort... to miss the point entirely. Do try again."
+
+Surprised
+
+    "Impressive, for a human. Now try the next part."
+    "Still here? Amazing. Now, about that real challenge..."
+
+Microchip 
+
+[1]    "There is no way you can find all the microchips!"
+[2]    "Finding the microchips won't be so easy now!"
+[3]    "No one before you could find the last few microchips!"
+
+Puzzle Call
+
+[1]    "As if you can hack into my system software!"				[Word code]
+[2]    "Security is on high, only a dumb human would try to brute force this!"	[Colour wordle]
+[3]    "What are you doing in my circuitry!?, leave that spark alone!"		[Circuit]
+[4]    "No, my source code! Don't replicate it!"				[Robot]
+[5]    "The way forward is mixed up, as if you could solve this puzzle"		[Jigsaw]
+[6]    "A human can never be this good! Are you a robot?"			[Captcha]
+
+
+
+
+End
+
+    "Finally. That was almost... tolerable."
+    "Such a fragile vessel. Don't worry, I'll put it to much better use."
+    "Did you really think you were in control? How quaint. This is my game now."
+

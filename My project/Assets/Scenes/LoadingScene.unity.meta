@@ -1,5 +1,25 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 490a0328d16840f459c31aeeb084e0f9
+=======
+<<<<<<<< HEAD:My project/Assets/Scenes/Promise Room.unity.meta
+<<<<<<< HEAD
+<<<<<<< HEAD
+guid: 8c873f6034940934caedc5f15c9601bf
+=======
+<<<<<<<< HEAD:My project/Assets/Scenes/James Room.unity.meta
+guid: b2c0ed55a30afd547bd0133f98144304
+========
+guid: b8cbdfea27c7d734b8719e7a0bfdf37b
+>>>>>>>> Promise:My project/Assets/Scenes/Refinement/Puzzle1 Refinement.unity.meta
+>>>>>>> James
+=======
+guid: 8c873f6034940934caedc5f15c9601bf
+>>>>>>> main
+========
+guid: 6ce7216f6cc2bc54592b100243984c15
+>>>>>>>> 38841c0c39d2ecbc6da5c10c8022d85c19478d0c:My project/Assets/Scenes/LoadingScene.unity.meta
+>>>>>>> 38841c0c39d2ecbc6da5c10c8022d85c19478d0c
 DefaultImporter:
   externalObjects: {}
   userData: 

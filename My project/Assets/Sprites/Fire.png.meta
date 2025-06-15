@@ -105,93 +105,106 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fire_0
+      name: Fire_13
       rect:
         serializedVersion: 2
-        x: 327
-        y: 303
-        width: 33
-        height: 23
+        x: 187
+        y: 38
+        width: 146
+        height: 231
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7491445d795ed3f00800000000000000
-      internalID: 1098286324429101383
+      spriteID: 42c7561103fe35347bbde0aee2439c6f
+      internalID: 350007401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_1
+      name: Fire_17
       rect:
         serializedVersion: 2
-        x: 344
-        y: 271
-        width: 11
-        height: 20
+        x: 533
+        y: 39
+        width: 146
+        height: 155
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2875941d14ea7f660800000000000000
-      internalID: 7419590508823533442
+      spriteID: 1f03c3393d425cd48b1f55113a634132
+      internalID: 769500149
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_2
+      name: Fire_12
       rect:
         serializedVersion: 2
-        x: 358
-        y: 270
-        width: 12
-        height: 21
+        x: 16
+        y: 38
+        width: 146
+        height: 231
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f4827aef1b6936020800000000000000
-      internalID: 2333874723133794383
+      spriteID: 133a2d8ed972dca42b1fc5cd0e5343bd
+      internalID: 1140448913
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_3
+      name: Fire_14
       rect:
         serializedVersion: 2
-        x: 272
-        y: 34
-        width: 148
-        height: 233
+        x: 361
+        y: 39
+        width: 146
+        height: 193
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b32c67dd858023650800000000000000
-      internalID: 6211036013863027259
+      spriteID: c6318abf74d285b45a2ed05445da1a48
+      internalID: 1695898988
       vertices: []
       indices: 
       edges: []
@@ -200,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -211,9 +224,23 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Fire_0: 1098286324429101383
-      Fire_1: 7419590508823533442
-      Fire_2: 2333874723133794383
-      Fire_3: 6211036013863027259
+      Fire_1: 1951931533
+      Fire_10: -1950032523
+      Fire_11: -1710227295
+      Fire_12: 1140448913
+      Fire_13: 350007401
+      Fire_14: 1695898988
+      Fire_15: -2056815877
+      Fire_16: 1213301456
+      Fire_17: 769500149
+      Fire_2: -1612796704
+      Fire_3: 365619284
+      Fire_4: 948860922
+      Fire_5: 324639107
+      Fire_6: -55894803
+      Fire_7: -1323442083
+      Fire_8: 667097816
+      Fire_9: 488193001
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

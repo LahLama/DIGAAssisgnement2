@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 <<<<<<<< HEAD:My project/Assets/Scenes/StartScreen.unity.meta
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -24,6 +25,9 @@ guid: 13afaf570f21e9f4e8124d29db4af7e4
 ========
 guid: e2bc949951c4b4844b377731756806af
 >>>>>>>> James:My project/Assets/Scenes/Promise/GameOver.unity.meta
+=======
+guid: c543ea4f6c534214ea8e1116d95ef22b
+>>>>>>> 38841c0c39d2ecbc6da5c10c8022d85c19478d0c
 DefaultImporter:
   externalObjects: {}
   userData: 
