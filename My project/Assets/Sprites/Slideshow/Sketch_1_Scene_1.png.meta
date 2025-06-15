@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 971a0714e5734c14ea79fde6c0b519ad
+guid: 2955fa6547830994bb57aaa06f35d14a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7375365286134463326
-    second: StartSceneCabinImage_0
+      213: -6402669290576400018
+    second: Sketch_1_Scene_1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,27 +96,40 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StartSceneCabinImage_0
+      name: Sketch_1_Scene_1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1280
-        height: 720
-      alignment: 9
-      pivot: {x: 0.43, y: 0.5459373}
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e5bbac0c6af8a5660800000000000000
-      internalID: 7375365286134463326
+      spriteID: e6134e8f3362527a0800000000000000
+      internalID: -6402669290576400018
       vertices: []
       indices: 
       edges: []
@@ -125,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4523c8b88636dbb4995b2e9a54327e7d
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      StartSceneCabinImage_0: 7375365286134463326
+      Sketch_1_Scene_1_0: -6402669290576400018
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

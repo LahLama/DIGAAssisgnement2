@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e811d53da8b32214688914b4d6449e63
+guid: 971a0714e5734c14ea79fde6c0b519ad
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 825629069115139490
-    second: puzzle1Own_0
+      213: 7375365286134463326
+    second: StartSceneCabinImage_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: puzzle1Own_0
+      name: StartSceneCabinImage_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 1280
+        height: 720
+      alignment: 9
+      pivot: {x: 0.43, y: 0.5459373}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2a528d49349357b00800000000000000
-      internalID: 825629069115139490
+      spriteID: e5bbac0c6af8a5660800000000000000
+      internalID: 7375365286134463326
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4523c8b88636dbb4995b2e9a54327e7d
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      puzzle1Own_0: 825629069115139490
+      StartSceneCabinImage_0: 7375365286134463326
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
