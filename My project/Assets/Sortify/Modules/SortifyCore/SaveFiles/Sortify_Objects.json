@@ -22,13 +22,43 @@
             "colors": [],
             "styles": [],
             "showComponents": [],
+            "sceneName": "LoadingScene"
+        },
+        {
+            "colors": [],
+            "styles": [],
+            "showComponents": [],
+            "sceneName": "Scene6"
+        },
+        {
+            "colors": [],
+            "styles": [],
+            "showComponents": [],
+            "sceneName": "Scene1"
+        },
+        {
+            "colors": [],
+            "styles": [],
+            "showComponents": [],
+            "sceneName": "StoryLine"
+        },
+        {
+            "colors": [],
+            "styles": [],
+            "showComponents": [],
+            "sceneName": "GameOver"
+        },
+        {
+            "colors": [],
+            "styles": [],
+            "showComponents": [],
             "sceneName": "PauseScreen"
         },
         {
             "colors": [],
             "styles": [],
             "showComponents": [],
-            "sceneName": "LoadingScene"
+            "sceneName": "StartScreen"
         },
         {
             "colors": [
@@ -202,36 +232,6 @@
                 }
             ],
             "sceneName": "Room"
-        },
-        {
-            "colors": [],
-            "styles": [],
-            "showComponents": [],
-            "sceneName": "Scene6"
-        },
-        {
-            "colors": [],
-            "styles": [],
-            "showComponents": [],
-            "sceneName": "Scene1"
-        },
-        {
-            "colors": [],
-            "styles": [],
-            "showComponents": [],
-            "sceneName": "StartScreen"
-        },
-        {
-            "colors": [],
-            "styles": [],
-            "showComponents": [],
-            "sceneName": "StoryLine"
-        },
-        {
-            "colors": [],
-            "styles": [],
-            "showComponents": [],
-            "sceneName": "GameOver"
         }
     ]
 }
