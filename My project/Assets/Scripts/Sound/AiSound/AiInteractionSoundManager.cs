@@ -45,9 +45,5 @@ public class AiInteractionSoundManager : MonoBehaviour     //here
             }
         }
     }
-    public void Test()
-    {
-        // This method is for testing purposes, you can call it to test the sound manager
-        PlaySound("TestSound"); // Replace "TestSound" with the name of the sound you want to play
-    }
+
 }
