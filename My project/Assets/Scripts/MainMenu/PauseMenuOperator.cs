@@ -57,17 +57,17 @@ public class PauseMenu : MonoBehaviour
 
     }
 
+    public void RestartGame()
+    {
+        //this restarts the game
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Room");
+    }
     public void LoadMenu()
     {
         //this takes you back to the start screen
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Room");
-    }
-
-    public void Setting()
-    {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("Setting");
+        SceneManager.LoadScene("StartScreen");
     }
 
     public void QuitGame()
