@@ -40,12 +40,6 @@
             "colors": [],
             "styles": [],
             "showComponents": [],
-            "sceneName": "StoryLine"
-        },
-        {
-            "colors": [],
-            "styles": [],
-            "showComponents": [],
             "sceneName": "GameOver"
         },
         {
@@ -232,6 +226,12 @@
                 }
             ],
             "sceneName": "Room"
+        },
+        {
+            "colors": [],
+            "styles": [],
+            "showComponents": [],
+            "sceneName": "StoryLine"
         }
     ]
 }
