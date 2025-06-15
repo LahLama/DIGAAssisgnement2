@@ -70,12 +70,6 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene("Room");
     }
 
-    public void Setting()
-    {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("Setting");
-    }
-
     public void QuitGame()
     {
         //this quits the game
