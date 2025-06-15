@@ -25,5 +25,14 @@ public class ObjectInteractions : MonoBehaviour
         {
             ObjectInteractionSoundManager.PlaySound("globe");
         }
+        if (name.Contains("clock"))
+        {
+            ObjectInteractionSoundManager.PlaySound("clock");
+        }
+        /* if (name.Contains("fan"))
+         {
+             ObjectInteractionSoundManager.PlaySound("fan");
+         }*/
+
     }
 }

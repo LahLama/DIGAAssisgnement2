@@ -42,9 +42,13 @@ public class ObjectsSoundManager : MonoBehaviour     //here
         //}
         //}
     }
-    public void Test()
+    public static void StopSound(string soundName)
     {
-        // This method is for testing purposes, you can call it to test the sound manager
-        PlaySound("TestSound"); // Replace "TestSound" with the name of the sound you want to play
+        AudioClip audioClip = objectsSoundManagerLibrary.GetRandomClip(soundName); // Get a random audio clip from the SoundEffectLibrary            //here
+
+        // Play the audio clip using the AudioSource
+        print("Playing sound: " + soundName);
+        //}
+        //}
     }
 }
