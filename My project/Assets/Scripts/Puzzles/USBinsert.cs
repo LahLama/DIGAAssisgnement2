@@ -19,7 +19,7 @@ public class USBinsert : PuzzleClass
     new void Awake()
     {
         AnimatingObj.SetActive(false); // Deactivates the USB puzzle object
-        AnimatedAI.GetComponent<SpriteRenderer>().material.SetFloat("_CutOff_Height", 0.55f);
+        AnimatedAI.GetComponent<SpriteRenderer>().material.SetFloat("_CutOff_Height", 0.79f);
 
     }
 
@@ -62,7 +62,7 @@ public class USBinsert : PuzzleClass
 
 
         AiInteractionSoundManager.PlaySound("seq10");
-        yield return new WaitForSeconds(2);     //we have to add it here cause coroutines happen asyncourously
+        yield return new WaitForSeconds(4);     //we have to add it here cause coroutines happen asyncourously
 
         exitInteractions.MoveCameraLeft();
 
