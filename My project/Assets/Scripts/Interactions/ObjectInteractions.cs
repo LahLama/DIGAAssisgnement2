@@ -29,10 +29,10 @@ public class ObjectInteractions : MonoBehaviour
         {
             ObjectInteractionSoundManager.PlaySound("clock");
         }
-        /* if (name.Contains("fan"))
-         {
-             ObjectInteractionSoundManager.PlaySound("fan");
-         }*/
+        if (name.Contains("toilet"))
+        {
+            ObjectInteractionSoundManager.PlaySound("toilet");
+        }
 
     }
 }

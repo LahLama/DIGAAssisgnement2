@@ -40,6 +40,7 @@ public class ChanceManagement : MonoBehaviour
 
     private IEnumerator WaitForDeath()
     {
+        GameInteractionSoundManager.PlaySound("GameOver");
         AiInteractionSoundManager.PlaySound("EndGame");
         //stops the cursor from being used
         Cursor.visible = false;

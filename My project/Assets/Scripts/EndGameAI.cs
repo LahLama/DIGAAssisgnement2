@@ -39,6 +39,7 @@ public class EndGameAI : MonoBehaviour
         switch (destroyStage)
         {
             case 1:
+
                 exitInteractions.MoveCameraLeft();
                 circuitManager.StartCircuitPuzzle();
 

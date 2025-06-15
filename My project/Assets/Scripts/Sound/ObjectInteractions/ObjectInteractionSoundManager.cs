@@ -33,7 +33,9 @@ public class ObjectInteractionSoundManager : MonoBehaviour     //here
         {
             if (audioSource.isPlaying)
             {
+                audioSource.Stop();
                 print("Audio is already playing, stopping the current sound before playing a new one.");
+                audioSource.PlayOneShot(audioClip);
             }
             else
             {
