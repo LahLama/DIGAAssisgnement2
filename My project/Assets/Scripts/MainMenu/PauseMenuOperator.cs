@@ -67,7 +67,7 @@ public class PauseMenu : MonoBehaviour
     {
         //this takes you back to the start screen
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Room");
+        SceneManager.LoadScene("StartScreen");
     }
 
     public void QuitGame()
