@@ -22,12 +22,6 @@
             "colors": [],
             "styles": [],
             "showComponents": [],
-            "sceneName": "GameOver"
-        },
-        {
-            "colors": [],
-            "styles": [],
-            "showComponents": [],
             "sceneName": "PauseScreen"
         },
         {
@@ -232,6 +226,12 @@
             "styles": [],
             "showComponents": [],
             "sceneName": "StoryLine"
+        },
+        {
+            "colors": [],
+            "styles": [],
+            "showComponents": [],
+            "sceneName": "GameOver"
         }
     ]
 }
